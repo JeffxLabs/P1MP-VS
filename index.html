@@ -423,10 +423,11 @@
       border-radius: 4px;
       letter-spacing: 0.04em;
     }
-    .tier-whale { background: rgba(251, 191, 36, 0.15); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.3); }
+    .tier-titan { background: rgba(251, 191, 36, 0.18); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.4); font-weight: 700; }
     .tier-high { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
     .tier-core { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
-    .tier-active { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.3); }
+    .tier-quota { background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
+    .tier-deadweight { background: rgba(244, 63, 94, 0.2); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.4); font-weight: 600; }
 
     /* Mini Sparkline Bar Chart */
     .mini-chart {
@@ -819,22 +820,22 @@
         <div class="stat-card">
           <div class="stat-title">P1MP Active Roster</div>
           <div class="stat-value" id="rosterCountVal">96</div>
-          <div class="stat-sub">100% attendance on Saturday</div>
+          <div class="stat-sub">100% participation</div>
         </div>
         <div class="stat-card">
-          <div class="stat-title">Top 10 Whale Contribution</div>
-          <div class="stat-value" id="whaleShareVal">1.37B pts</div>
-          <div class="stat-sub">34.6% of alliance weekly total</div>
+          <div class="stat-title">Quota Met (≥11.4M)</div>
+          <div class="stat-value" id="quotaComplianceVal" style="color: #4ade80;">89 (92.7%)</div>
+          <div class="stat-sub">Hit 1.9M/day 3-chest baseline</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">⚠️ Deadweight (&lt;11.4M)</div>
+          <div class="stat-value" id="deadweightVal" style="color: #fb7185;">7 (7.3%)</div>
+          <div class="stat-sub">Under weekly baseline quota</div>
         </div>
         <div class="stat-card">
           <div class="stat-title">Median Member Output</div>
           <div class="stat-value" id="medianPtsVal">32.8M pts</div>
-          <div class="stat-sub">Solid combat depth across members</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-title">MVP Highest Single Day</div>
-          <div class="stat-value" id="mvpDayVal">66.0M pts</div>
-          <div class="stat-sub" id="mvpDaySub">RollingStoners (Hero Growth)</div>
+          <div class="stat-sub" id="mvpDaySub">Top: ViE (228.2M pts)</div>
         </div>
       </div>
 
@@ -843,11 +844,12 @@
         <div class="filter-group">
           <input type="text" id="memberSearch" class="search-input" placeholder="Search commander name..." oninput="filterMembers()">
           <select id="tierFilter" class="select-dropdown" onchange="filterMembers()">
-            <option value="ALL">All Tiers (96 Members)</option>
-            <option value="Whale / Top 10">Whales / Top 10</option>
-            <option value="High Performer">High Performers (11-30)</option>
-            <option value="Core Contributor">Core Contributors (31-60)</option>
-            <option value="Active Member">Active Members (61-96)</option>
+            <option value="ALL">All Operatives (96 Members)</option>
+            <option value="Titan (100M+)">Titans (100M+)</option>
+            <option value="High Performer (50M+)">High Performers (50M+)</option>
+            <option value="Core Contributor (20M+)">Core Contributors (20M+)</option>
+            <option value="Quota Met (11.4M+)">Quota Met (11.4M+)</option>
+            <option value="Deadweight (<11.4M)">⚠️ Deadweight (&lt;11.4M) [7]</option>
           </select>
         </div>
         <div style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);" id="memberCountText">
@@ -1101,6 +1103,7 @@
         <button class="modal-close-btn" onclick="closeModal()">&times;</button>
       </div>
       <div class="modal-body">
+        <div id="modalQuotaBanner"></div>
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; text-align: center;">
           <div style="background: var(--bg-surface); padding: 0.85rem; border-radius: 8px;">
             <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Alliance Rank</div>
@@ -1229,6 +1232,21 @@
       document.getElementById('marginText').textContent = `+${formatNumber(margin)} Margin`;
       document.getElementById('stagesScore').textContent = `MATCH SCORE: ${res.match_score || '9 : 0'} (${res.p1mp_wins || 9} of ${res.total_possible_wins || 13} Wins)`;
 
+      // Update Roster Summary Cards
+      const deadweightCount = w.members.filter(m => m.weekly_points < 11400000).length;
+      const passingCount = w.members.length - deadweightCount;
+      const passingPct = ((passingCount / w.members.length) * 100).toFixed(1);
+
+      document.getElementById('rosterCountVal').textContent = w.members.length;
+      const quotaEl = document.getElementById('quotaComplianceVal');
+      if (quotaEl) quotaEl.textContent = `${passingCount} (${passingPct}%)`;
+      const deadEl = document.getElementById('deadweightVal');
+      if (deadEl) deadEl.textContent = `${deadweightCount} (${(100 - passingPct).toFixed(1)}%)`;
+
+      const ptsArr = w.members.map(m => m.weekly_points).sort((a, b) => a - b);
+      const median = ptsArr[Math.floor(ptsArr.length / 2)] || 0;
+      document.getElementById('medianPtsVal').textContent = `${(median / 1000000).toFixed(1)}M pts`;
+
       // Render roster
       filterMembers();
       renderStages();
@@ -1249,12 +1267,22 @@
       }
     }
 
+    function getTierBadgeClass(tier) {
+      if (!tier) return 'tier-quota';
+      if (tier.includes('Titan')) return 'tier-titan';
+      if (tier.includes('High')) return 'tier-high';
+      if (tier.includes('Core')) return 'tier-core';
+      if (tier.includes('Deadweight')) return 'tier-deadweight';
+      if (tier.includes('Quota')) return 'tier-quota';
+      return 'tier-quota';
+    }
+
     /* Roster Table Rendering */
     function renderMembers(data) {
       const tbody = document.getElementById('memberTableBody');
       tbody.innerHTML = data.map(m => {
         const medal = m.alliance_rank === 1 ? 'medal-1' : m.alliance_rank === 2 ? 'medal-2' : m.alliance_rank === 3 ? 'medal-3' : '';
-        const tierClass = m.tier.includes('Whale') ? 'tier-whale' : m.tier.includes('High') ? 'tier-high' : m.tier.includes('Core') ? 'tier-core' : 'tier-active';
+        const tierClass = getTierBadgeClass(m.tier);
 
         const maxMemberPt = Math.max(...['mon','tue','wed','thu','fri','sat'].map(d => m.daily_breakdown[d]?.points || 0), 1);
         const miniBars = ['mon','tue','wed','thu','fri','sat'].map(d => {
@@ -1325,7 +1353,28 @@
       document.getElementById('modalPlayerName').textContent = m.player;
       const tierBadge = document.getElementById('modalPlayerTier');
       tierBadge.textContent = m.tier;
-      tierBadge.className = 'tier-badge ' + (m.tier.includes('Whale') ? 'tier-whale' : m.tier.includes('High') ? 'tier-high' : m.tier.includes('Core') ? 'tier-core' : 'tier-active');
+      tierBadge.className = 'tier-badge ' + getTierBadgeClass(m.tier);
+
+      // Quota Status Banner (11.4M weekly baseline)
+      const quotaThreshold = 11400000;
+      const isMet = m.weekly_points >= quotaThreshold;
+      const diff = Math.abs(m.weekly_points - quotaThreshold);
+      const quotaBanner = document.getElementById('modalQuotaBanner');
+      if (isMet) {
+        quotaBanner.innerHTML = `
+          <div style="background: rgba(34, 197, 94, 0.12); border: 1px solid rgba(34, 197, 94, 0.35); padding: 0.65rem 0.9rem; border-radius: 6px; font-size: 0.82rem; color: #4ade80; display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+            <span>🛡️ <strong>Baseline Quota Met</strong> (11.4M / 1.9M/day 3-Chest Target)</span>
+            <span style="font-family: var(--font-mono); font-weight: 700; color: #4ade80;">+${formatNumber(diff)} pts surplus</span>
+          </div>
+        `;
+      } else {
+        quotaBanner.innerHTML = `
+          <div style="background: rgba(244, 63, 94, 0.15); border: 1px solid rgba(244, 63, 94, 0.45); padding: 0.65rem 0.9rem; border-radius: 6px; font-size: 0.82rem; color: #fb7185; display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+            <span>⚠️ <strong>Below Baseline Quota &mdash; DEADWEIGHT</strong> (Target: 11.4M)</span>
+            <span style="font-family: var(--font-mono); font-weight: 700; color: #f43f5e;">-${formatNumber(diff)} pts deficit</span>
+          </div>
+        `;
+      }
 
       document.getElementById('modalAllyRank').textContent = `#${m.alliance_rank}`;
       document.getElementById('modalWeeklyPts').textContent = formatNumber(m.weekly_points);

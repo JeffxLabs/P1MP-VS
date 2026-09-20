@@ -104,15 +104,22 @@ def main():
                     'alliance_rank': None
                 }
 
-        # Assign tier
-        if ally_rank <= 10:
-            tier = "Whale / Top 10"
-        elif ally_rank <= 30:
-            tier = "High Performer"
-        elif ally_rank <= 60:
-            tier = "Core Contributor"
+        # Assign tier based on 11.4M weekly baseline quota and contribution
+        if wk_pts < 11400000:
+            tier = "Deadweight (<11.4M)"
+            quota_status = "FAILED"
+        elif wk_pts >= 100000000:
+            tier = "Titan (100M+)"
+            quota_status = "MET"
+        elif wk_pts >= 50000000:
+            tier = "High Performer (50M+)"
+            quota_status = "MET"
+        elif wk_pts >= 20000000:
+            tier = "Core Contributor (20M+)"
+            quota_status = "MET"
         else:
-            tier = "Active Member"
+            tier = "Quota Met (11.4M+)"
+            quota_status = "MET"
 
         pct = round((wk_pts / p1mp_total_points) * 100, 2)
 
@@ -124,6 +131,9 @@ def main():
             'weekly_points': wk_pts,
             'share_pct': pct,
             'tier': tier,
+            'quota_status': quota_status,
+            'quota_met': wk_pts >= 11400000,
+            'deficit_to_quota': max(0, 11400000 - wk_pts),
             'active_days': active_days,
             'best_day': highest_day,
             'best_day_points': highest_day_pts,
