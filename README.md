@@ -1,12 +1,23 @@
 # S117 [P1MP] JU1CE — Alliance Duel Performance Intelligence
 
-Tactical performance analysis, daily stage breakdowns, and member combat intelligence for **[P1MP] JU1CE** (Server 117) during the Alliance Duel (Alliance Competition / VS) against **[0BS] ZeroBullsht** in *Z Route: Redemption*.
+Tactical multi-week performance analysis, daily stage breakdowns, and member combat intelligence for **[P1MP] JU1CE** (Server 117) during the weekly Alliance Duel (Alliance Competition / VS) in *Z Route: Redemption*.
 
-🌐 **Live Interactive Dashboard**: [https://jeffxlabs.github.io/s117-p1mp/](https://jeffxlabs.github.io/s117-p1mp/)
+🌐 **Live Interactive Multi-Week Dashboard**: [https://jeffxlabs.github.io/s117-p1mp/](https://jeffxlabs.github.io/s117-p1mp/)
 
 ---
 
-## 🏆 Duel Summary: P1MP Victory (5 - 1)
+## ⚡ Features & Capabilities
+
+- 📅 **Multi-Week Event Selector**: Seamlessly switch between any past or present VS match week, or view the **Multi-Week / Career Trends** dashboard.
+- 👥 **Operatives Performance Tracker**: Searchable, tier-filtered (*Whale / Top 10*, *High Performer*, *Core*, *Active*), and sortable roster of all 96 alliance members with inline daily trajectory sparklines.
+- 🗂️ **Interactive Combat Dossier Modal**: Click any member to pop up their full combat dossier, complete with daily points trajectory, alliance rank, overall rank, and multi-week career history.
+- ⚔️ **Daily Stage Breakdown (Monday – Saturday)**: Head-to-head comparison cards for all 6 VS stages (Radar, Base Expansion, Science, Hero Growth, Troop Training, Enemy Assault).
+- 🏆 **Full Duel Leaderboards**: Complete daily standings (Mon-Sat + Weekly Total) covering all ~190 duel combatants with live alliance filtering (`[P1MP]` vs opponent).
+- ✅ **Strict Rank Integrity Verification**: Built-in verification ensuring strictly contiguous rankings ($1 \dots N$) with zero skipped numbers across every leaderboard.
+
+---
+
+## 🏆 Current Week Summary (2026-09-19: vs [0BS] ZeroBullsht)
 
 | Metric | [P1MP] JU1CE (Home / S117) | [0BS] ZeroBullsht (Opponent) | Advantage |
 | :--- | :--- | :--- | :--- |
@@ -15,9 +26,7 @@ Tactical performance analysis, daily stage breakdowns, and member combat intelli
 | **War Share** | **53.94%** | 46.06% | **+7.88%** |
 | **Active Roster** | **96 Operatives** | 94 Operatives | **+2** |
 
----
-
-## 📅 Daily Stage Breakdown (Monday – Saturday)
+### Daily Stage Results
 
 | Day | Stage Theme | [P1MP] JU1CE | [0BS] ZeroBullsht | Stage Winner | Margin |
 | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -30,7 +39,7 @@ Tactical performance analysis, daily stage breakdowns, and member combat intelli
 
 ---
 
-## 🌟 Top 10 MVP Alliance Operatives
+## 🌟 Top 10 MVP Operatives (Current Week)
 
 | Alliance Rank | Overall Duel Rank | Commander | Weekly Points | Alliance Share | Best Stage | Active Days |
 | :---: | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -47,26 +56,31 @@ Tactical performance analysis, daily stage breakdowns, and member combat intelli
 
 ---
 
-## 📁 Repository Structure & Datasets
+## 📁 Repository Structure
 
 ```
 s117-p1mp/
-├── index.html                   # Interactive visual web application & member tracker
+├── index.html                   # Interactive multi-week dashboard & visual tracking application
 ├── README.md                    # Intelligence briefing & pipeline documentation
 ├── data/
-│   ├── mon.json                 # Monday Stage 1 complete duel rankings (182 players)
-│   ├── tue.json                 # Tuesday Stage 2 complete duel rankings (179 players)
-│   ├── wed.json                 # Wednesday Stage 3 complete duel rankings (191 players)
-│   ├── thu.json                 # Thursday Stage 4 complete duel rankings (192 players)
-│   ├── fri.json                 # Friday Stage 5 complete duel rankings (191 players)
-│   ├── sat.json                 # Saturday Stage 6 complete duel rankings (187 players)
-│   ├── week.json                # Weekly Total complete duel rankings (190 players)
-│   ├── p1mp_members.json        # Consolidated 96-member roster with daily metrics & tiers
-│   ├── duel_summary.json        # High-level duel match summary & stage point margins
-│   └── embedded_data.js         # Offline-first standalone data bundle
+│   ├── weeks_index.json         # Master registry of all ingested VS weeks
+│   ├── multi_week_analytics.json# Career standings, multi-week trajectories & win rates
+│   ├── embedded_data.js         # Offline-first bundle containing all weeks & analytics
+│   └── weeks/
+│       └── 2026-09-19/          # Week archive (Mon-Sat + Weekly Total, summaries, roster)
+│           ├── duel_summary.json
+│           ├── p1mp_members.json
+│           ├── mon.json
+│           ├── tue.json
+│           ├── wed.json
+│           ├── thu.json
+│           ├── fri.json
+│           ├── sat.json
+│           └── week.json
 └── pipeline/
     ├── capture_all.py           # Automated BlueStacks capture & Vision OCR ingest engine
-    ├── build_analytics.py       # Member performance aggregator and validator
+    ├── build_analytics.py       # Single-week roster aggregator & mathematical validator
+    ├── build_multiweek.py       # Multi-week aggregator & rank contiguity auditor
     ├── cleaner.py               # Data normalizer and integrity checker
     ├── vision_ocr.swift         # Native Apple Vision OCR worker source
     └── vision_ocr               # High-performance compiled native binary
@@ -74,23 +88,27 @@ s117-p1mp/
 
 ---
 
-## 🚀 Re-Running the Pipeline for Future VS Events
+## 🚀 Ingesting Future Weekly Events
 
-To ingest a new VS Alliance Competition week automatically from BlueStacks:
+To document a new VS Alliance Competition week from BlueStacks:
 
 1. Ensure the target BlueStacks device is connected:
    ```bash
    adb connect 127.0.0.1:5555
    ```
-2. Navigate to the in-game **Alliance Competition -> Rankings** screen.
-3. Execute the automated pipeline:
+2. Navigate in-game to **Alliance Competition -> Rankings**.
+3. Run the automated pipeline with the new week date:
    ```bash
-   python3 pipeline/capture_all.py
-   python3 pipeline/build_analytics.py
+   python3 pipeline/capture_all.py --week 2026-09-26 --device 127.0.0.1:5555
    ```
-4. Commit and push:
+   *The pipeline automatically:*
+   - Captures all 6 daily stages + weekly total in under 4 minutes.
+   - Runs rank integrity verification ensuring **zero skipped ranks** from Rank 1 to bottom.
+   - Saves into `data/weeks/<week_id>/`.
+   - Aggregates multi-week trends and updates `data/embedded_data.js`.
+4. Deploy updates to GitHub Pages:
    ```bash
    git add data/ index.html
-   git commit -m "feat(duel): ingest weekly VS competition data"
+   git commit -m "feat(duel): document week 2026-09-26 VS performance"
    git push origin main
    ```

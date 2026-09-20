@@ -1,0 +1,5135 @@
+{
+  "total_weeks": 1,
+  "record": "1-0",
+  "total_p1mp_points": 3972000390,
+  "total_opponent_points": 3392662344,
+  "average_weekly_points": 3972000390,
+  "stage_dominance": {
+    "mon": {
+      "wins": 1,
+      "win_pct": 100.0,
+      "total_p1mp_pts": 726993167,
+      "total_opp_pts": 491589978
+    },
+    "tue": {
+      "wins": 1,
+      "win_pct": 100.0,
+      "total_p1mp_pts": 515673737,
+      "total_opp_pts": 481958232
+    },
+    "wed": {
+      "wins": 1,
+      "win_pct": 100.0,
+      "total_p1mp_pts": 564910851,
+      "total_opp_pts": 544811851
+    },
+    "thu": {
+      "wins": 0,
+      "win_pct": 0.0,
+      "total_p1mp_pts": 1102056044,
+      "total_opp_pts": 1128796856
+    },
+    "fri": {
+      "wins": 1,
+      "win_pct": 100.0,
+      "total_p1mp_pts": 587062055,
+      "total_opp_pts": 567396280
+    },
+    "sat": {
+      "wins": 1,
+      "win_pct": 100.0,
+      "total_p1mp_pts": 470889288,
+      "total_opp_pts": 326733492
+    }
+  },
+  "members": [
+    {
+      "player": "ViE",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 228182613,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 228182613,
+      "best_week_rank": 1,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 228182613,
+          "alliance_rank": 1,
+          "overall_rank": 1,
+          "tier": "Whale / Top 10",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 62065742,
+              "overall_rank": 1,
+              "alliance_rank": 1
+            },
+            "tue": {
+              "points": 31610229,
+              "overall_rank": 1,
+              "alliance_rank": 1
+            },
+            "wed": {
+              "points": 27922755,
+              "overall_rank": 2,
+              "alliance_rank": 2
+            },
+            "thu": {
+              "points": 56953016,
+              "overall_rank": 3,
+              "alliance_rank": 2
+            },
+            "fri": {
+              "points": 23521670,
+              "overall_rank": 2,
+              "alliance_rank": 1
+            },
+            "sat": {
+              "points": 26109201,
+              "overall_rank": 3,
+              "alliance_rank": 3
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 228182613,
+      "career_rank": 1
+    },
+    {
+      "player": "RollingStoners",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 167053463,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 167053463,
+      "best_week_rank": 2,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 167053463,
+          "alliance_rank": 2,
+          "overall_rank": 2,
+          "tier": "Whale / Top 10",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 32976630,
+              "overall_rank": 3,
+              "alliance_rank": 3
+            },
+            "tue": {
+              "points": 13035761,
+              "overall_rank": 6,
+              "alliance_rank": 3
+            },
+            "wed": {
+              "points": 16652249,
+              "overall_rank": 9,
+              "alliance_rank": 6
+            },
+            "thu": {
+              "points": 66041772,
+              "overall_rank": 1,
+              "alliance_rank": 1
+            },
+            "fri": {
+              "points": 17786473,
+              "overall_rank": 4,
+              "alliance_rank": 3
+            },
+            "sat": {
+              "points": 20560578,
+              "overall_rank": 4,
+              "alliance_rank": 4
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 167053463,
+      "career_rank": 2
+    },
+    {
+      "player": "TheRequiem",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 158455480,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 158455480,
+      "best_week_rank": 3,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 158455480,
+          "alliance_rank": 3,
+          "overall_rank": 3,
+          "tier": "Whale / Top 10",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 48640776,
+              "overall_rank": 2,
+              "alliance_rank": 2
+            },
+            "tue": {
+              "points": 10171349,
+              "overall_rank": 15,
+              "alliance_rank": 8
+            },
+            "wed": {
+              "points": 18530015,
+              "overall_rank": 7,
+              "alliance_rank": 4
+            },
+            "thu": {
+              "points": 35528080,
+              "overall_rank": 7,
+              "alliance_rank": 4
+            },
+            "fri": {
+              "points": 11469728,
+              "overall_rank": 14,
+              "alliance_rank": 7
+            },
+            "sat": {
+              "points": 34115532,
+              "overall_rank": 1,
+              "alliance_rank": 1
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 158455480,
+      "career_rank": 3
+    },
+    {
+      "player": "Eldagrim",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 124385768,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 124385768,
+      "best_week_rank": 4,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 124385768,
+          "alliance_rank": 4,
+          "overall_rank": 6,
+          "tier": "Whale / Top 10",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 28099140,
+              "overall_rank": 4,
+              "alliance_rank": 4
+            },
+            "tue": {
+              "points": 2214200,
+              "overall_rank": 150,
+              "alliance_rank": 79
+            },
+            "wed": {
+              "points": 24119944,
+              "overall_rank": 3,
+              "alliance_rank": 3
+            },
+            "thu": {
+              "points": 33036452,
+              "overall_rank": 9,
+              "alliance_rank": 5
+            },
+            "fri": {
+              "points": 10726594,
+              "overall_rank": 16,
+              "alliance_rank": 9
+            },
+            "sat": {
+              "points": 26189438,
+              "overall_rank": 2,
+              "alliance_rank": 2
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 124385768,
+      "career_rank": 4
+    },
+    {
+      "player": "Jeff",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 123757662,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 123757662,
+      "best_week_rank": 5,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 123757662,
+          "alliance_rank": 5,
+          "overall_rank": 7,
+          "tier": "Whale / Top 10",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 22933838,
+              "overall_rank": 6,
+              "alliance_rank": 6
+            },
+            "tue": {
+              "points": 11544338,
+              "overall_rank": 8,
+              "alliance_rank": 5
+            },
+            "wed": {
+              "points": 10623976,
+              "overall_rank": 22,
+              "alliance_rank": 10
+            },
+            "thu": {
+              "points": 54654576,
+              "overall_rank": 5,
+              "alliance_rank": 3
+            },
+            "fri": {
+              "points": 10211836,
+              "overall_rank": 21,
+              "alliance_rank": 11
+            },
+            "sat": {
+              "points": 13789098,
+              "overall_rank": 8,
+              "alliance_rank": 6
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 123757662,
+      "career_rank": 5
+    },
+    {
+      "player": "JimmyJam",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 109315014,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 109315014,
+      "best_week_rank": 6,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 109315014,
+          "alliance_rank": 6,
+          "overall_rank": 8,
+          "tier": "Whale / Top 10",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 9858112,
+              "overall_rank": 21,
+              "alliance_rank": 15
+            },
+            "tue": {
+              "points": 12561986,
+              "overall_rank": 7,
+              "alliance_rank": 4
+            },
+            "wed": {
+              "points": 29877289,
+              "overall_rank": 1,
+              "alliance_rank": 1
+            },
+            "thu": {
+              "points": 30795626,
+              "overall_rank": 10,
+              "alliance_rank": 6
+            },
+            "fri": {
+              "points": 13560730,
+              "overall_rank": 9,
+              "alliance_rank": 5
+            },
+            "sat": {
+              "points": 12661271,
+              "overall_rank": 10,
+              "alliance_rank": 8
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 109315014,
+      "career_rank": 6
+    },
+    {
+      "player": "AyeGee",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 106943331,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 106943331,
+      "best_week_rank": 7,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 106943331,
+          "alliance_rank": 7,
+          "overall_rank": 9,
+          "tier": "Whale / Top 10",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 25173118,
+              "overall_rank": 5,
+              "alliance_rank": 5
+            },
+            "tue": {
+              "points": 9812034,
+              "overall_rank": 19,
+              "alliance_rank": 10
+            },
+            "wed": {
+              "points": 18176930,
+              "overall_rank": 8,
+              "alliance_rank": 5
+            },
+            "thu": {
+              "points": 25358848,
+              "overall_rank": 17,
+              "alliance_rank": 9
+            },
+            "fri": {
+              "points": 20673985,
+              "overall_rank": 3,
+              "alliance_rank": 2
+            },
+            "sat": {
+              "points": 7748416,
+              "overall_rank": 24,
+              "alliance_rank": 16
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 106943331,
+      "career_rank": 7
+    },
+    {
+      "player": "chauncey",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 88793726,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 88793726,
+      "best_week_rank": 8,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 88793726,
+          "alliance_rank": 8,
+          "overall_rank": 13,
+          "tier": "Whale / Top 10",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 20151682,
+              "overall_rank": 8,
+              "alliance_rank": 7
+            },
+            "tue": {
+              "points": 10150858,
+              "overall_rank": 16,
+              "alliance_rank": 9
+            },
+            "wed": {
+              "points": 10467787,
+              "overall_rank": 23,
+              "alliance_rank": 11
+            },
+            "thu": {
+              "points": 22068908,
+              "overall_rank": 20,
+              "alliance_rank": 10
+            },
+            "fri": {
+              "points": 12696627,
+              "overall_rank": 11,
+              "alliance_rank": 6
+            },
+            "sat": {
+              "points": 13257864,
+              "overall_rank": 9,
+              "alliance_rank": 7
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 88793726,
+      "career_rank": 8
+    },
+    {
+      "player": "Whiteline876",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 84619317,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 84619317,
+      "best_week_rank": 9,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 84619317,
+          "alliance_rank": 9,
+          "overall_rank": 14,
+          "tier": "Whale / Top 10",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 8262832,
+              "overall_rank": 47,
+              "alliance_rank": 28
+            },
+            "tue": {
+              "points": 21245361,
+              "overall_rank": 2,
+              "alliance_rank": 2
+            },
+            "wed": {
+              "points": 4087354,
+              "overall_rank": 111,
+              "alliance_rank": 53
+            },
+            "thu": {
+              "points": 27152396,
+              "overall_rank": 14,
+              "alliance_rank": 8
+            },
+            "fri": {
+              "points": 11393284,
+              "overall_rank": 15,
+              "alliance_rank": 8
+            },
+            "sat": {
+              "points": 12478090,
+              "overall_rank": 11,
+              "alliance_rank": 9
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 84619317,
+      "career_rank": 9
+    },
+    {
+      "player": "Boomboomberry",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 82039444,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 82039444,
+      "best_week_rank": 10,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 82039444,
+          "alliance_rank": 10,
+          "overall_rank": 15,
+          "tier": "Whale / Top 10",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 17146386,
+              "overall_rank": 9,
+              "alliance_rank": 8
+            },
+            "tue": {
+              "points": 8724224,
+              "overall_rank": 24,
+              "alliance_rank": 12
+            },
+            "wed": {
+              "points": 7519818,
+              "overall_rank": 48,
+              "alliance_rank": 20
+            },
+            "thu": {
+              "points": 29860436,
+              "overall_rank": 11,
+              "alliance_rank": 7
+            },
+            "fri": {
+              "points": 9760658,
+              "overall_rank": 24,
+              "alliance_rank": 13
+            },
+            "sat": {
+              "points": 9027922,
+              "overall_rank": 16,
+              "alliance_rank": 13
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 82039444,
+      "career_rank": 10
+    },
+    {
+      "player": "Chickendog",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 73661445,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 73661445,
+      "best_week_rank": 11,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 73661445,
+          "alliance_rank": 11,
+          "overall_rank": 17,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "wed",
+          "daily_breakdown": {
+            "mon": {
+              "points": 10449776,
+              "overall_rank": 18,
+              "alliance_rank": 13
+            },
+            "tue": {
+              "points": 11509035,
+              "overall_rank": 10,
+              "alliance_rank": 6
+            },
+            "wed": {
+              "points": 15685012,
+              "overall_rank": 11,
+              "alliance_rank": 7
+            },
+            "thu": {
+              "points": 12707074,
+              "overall_rank": 62,
+              "alliance_rank": 30
+            },
+            "fri": {
+              "points": 15321292,
+              "overall_rank": 6,
+              "alliance_rank": 4
+            },
+            "sat": {
+              "points": 7989256,
+              "overall_rank": 21,
+              "alliance_rank": 14
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 73661445,
+      "career_rank": 11
+    },
+    {
+      "player": "Shunter",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 63599298,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 63599298,
+      "best_week_rank": 12,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 63599298,
+          "alliance_rank": 12,
+          "overall_rank": 22,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 10698502,
+              "overall_rank": 17,
+              "alliance_rank": 12
+            },
+            "tue": {
+              "points": 7975584,
+              "overall_rank": 33,
+              "alliance_rank": 17
+            },
+            "wed": {
+              "points": 7382918,
+              "overall_rank": 53,
+              "alliance_rank": 24
+            },
+            "thu": {
+              "points": 19925114,
+              "overall_rank": 26,
+              "alliance_rank": 13
+            },
+            "fri": {
+              "points": 9675709,
+              "overall_rank": 26,
+              "alliance_rank": 14
+            },
+            "sat": {
+              "points": 7941471,
+              "overall_rank": 22,
+              "alliance_rank": 15
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 63599298,
+      "career_rank": 12
+    },
+    {
+      "player": "BoredAtWork",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 63094782,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 63094782,
+      "best_week_rank": 13,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 63094782,
+          "alliance_rank": 13,
+          "overall_rank": 23,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 9726968,
+              "overall_rank": 23,
+              "alliance_rank": 16
+            },
+            "tue": {
+              "points": 7209782,
+              "overall_rank": 58,
+              "alliance_rank": 29
+            },
+            "wed": {
+              "points": 9188179,
+              "overall_rank": 29,
+              "alliance_rank": 15
+            },
+            "thu": {
+              "points": 15030716,
+              "overall_rank": 48,
+              "alliance_rank": 22
+            },
+            "fri": {
+              "points": 7497920,
+              "overall_rank": 62,
+              "alliance_rank": 29
+            },
+            "sat": {
+              "points": 14441217,
+              "overall_rank": 7,
+              "alliance_rank": 5
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 63094782,
+      "career_rank": 13
+    },
+    {
+      "player": "Wacker",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 61752915,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 61752915,
+      "best_week_rank": 14,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 61752915,
+          "alliance_rank": 14,
+          "overall_rank": 25,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 9694084,
+              "overall_rank": 25,
+              "alliance_rank": 18
+            },
+            "tue": {
+              "points": 8765194,
+              "overall_rank": 23,
+              "alliance_rank": 11
+            },
+            "wed": {
+              "points": 9629276,
+              "overall_rank": 27,
+              "alliance_rank": 14
+            },
+            "thu": {
+              "points": 20223308,
+              "overall_rank": 25,
+              "alliance_rank": 12
+            },
+            "fri": {
+              "points": 8745186,
+              "overall_rank": 33,
+              "alliance_rank": 18
+            },
+            "sat": {
+              "points": 4695867,
+              "overall_rank": 46,
+              "alliance_rank": 28
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 61752915,
+      "career_rank": 14
+    },
+    {
+      "player": "alggagi",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 60661008,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 60661008,
+      "best_week_rank": 15,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 60661008,
+          "alliance_rank": 15,
+          "overall_rank": 27,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 9320270,
+              "overall_rank": 30,
+              "alliance_rank": 21
+            },
+            "tue": {
+              "points": 8564422,
+              "overall_rank": 25,
+              "alliance_rank": 13
+            },
+            "wed": {
+              "points": 6520991,
+              "overall_rank": 63,
+              "alliance_rank": 29
+            },
+            "thu": {
+              "points": 17423498,
+              "overall_rank": 34,
+              "alliance_rank": 15
+            },
+            "fri": {
+              "points": 9309112,
+              "overall_rank": 28,
+              "alliance_rank": 15
+            },
+            "sat": {
+              "points": 9522715,
+              "overall_rank": 14,
+              "alliance_rank": 12
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 60661008,
+      "career_rank": 15
+    },
+    {
+      "player": "InvaderPimp",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 57999021,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 57999021,
+      "best_week_rank": 16,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 57999021,
+          "alliance_rank": 16,
+          "overall_rank": 28,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 6966654,
+              "overall_rank": 73,
+              "alliance_rank": 39
+            },
+            "tue": {
+              "points": 11408529,
+              "overall_rank": 11,
+              "alliance_rank": 7
+            },
+            "wed": {
+              "points": 12562259,
+              "overall_rank": 15,
+              "alliance_rank": 8
+            },
+            "thu": {
+              "points": 13863504,
+              "overall_rank": 57,
+              "alliance_rank": 26
+            },
+            "fri": {
+              "points": 7195720,
+              "overall_rank": 76,
+              "alliance_rank": 38
+            },
+            "sat": {
+              "points": 6002355,
+              "overall_rank": 33,
+              "alliance_rank": 19
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 57999021,
+      "career_rank": 16
+    },
+    {
+      "player": "MrWhiskey",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 57854850,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 57854850,
+      "best_week_rank": 17,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 57854850,
+          "alliance_rank": 17,
+          "overall_rank": 29,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 10230494,
+              "overall_rank": 19,
+              "alliance_rank": 14
+            },
+            "tue": {
+              "points": 8177836,
+              "overall_rank": 30,
+              "alliance_rank": 16
+            },
+            "wed": {
+              "points": 5741868,
+              "overall_rank": 69,
+              "alliance_rank": 34
+            },
+            "thu": {
+              "points": 21102048,
+              "overall_rank": 21,
+              "alliance_rank": 11
+            },
+            "fri": {
+              "points": 10057876,
+              "overall_rank": 23,
+              "alliance_rank": 12
+            },
+            "sat": {
+              "points": 2544728,
+              "overall_rank": 110,
+              "alliance_rank": 57
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 57854850,
+      "career_rank": 17
+    },
+    {
+      "player": "YEAG3R",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 56493719,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 56493719,
+      "best_week_rank": 18,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 56493719,
+          "alliance_rank": 18,
+          "overall_rank": 31,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 12299594,
+              "overall_rank": 11,
+              "alliance_rank": 9
+            },
+            "tue": {
+              "points": 7956714,
+              "overall_rank": 34,
+              "alliance_rank": 18
+            },
+            "wed": {
+              "points": 7468561,
+              "overall_rank": 50,
+              "alliance_rank": 21
+            },
+            "thu": {
+              "points": 16405504,
+              "overall_rank": 39,
+              "alliance_rank": 17
+            },
+            "fri": {
+              "points": 8461420,
+              "overall_rank": 39,
+              "alliance_rank": 20
+            },
+            "sat": {
+              "points": 3901926,
+              "overall_rank": 63,
+              "alliance_rank": 35
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 56493719,
+      "career_rank": 18
+    },
+    {
+      "player": "Zegion",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 54131885,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 54131885,
+      "best_week_rank": 19,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 54131885,
+          "alliance_rank": 19,
+          "overall_rank": 36,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 9491386,
+              "overall_rank": 28,
+              "alliance_rank": 20
+            },
+            "tue": {
+              "points": 8419822,
+              "overall_rank": 26,
+              "alliance_rank": 14
+            },
+            "wed": {
+              "points": 10081455,
+              "overall_rank": 24,
+              "alliance_rank": 12
+            },
+            "thu": {
+              "points": 16672740,
+              "overall_rank": 38,
+              "alliance_rank": 16
+            },
+            "fri": {
+              "points": 8162482,
+              "overall_rank": 44,
+              "alliance_rank": 22
+            },
+            "sat": {
+              "points": 1304000,
+              "overall_rank": 162,
+              "alliance_rank": 85
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 54131885,
+      "career_rank": 19
+    },
+    {
+      "player": "Agam0017",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 53582875,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 53582875,
+      "best_week_rank": 20,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 53582875,
+          "alliance_rank": 20,
+          "overall_rank": 38,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 9574596,
+              "overall_rank": 27,
+              "alliance_rank": 19
+            },
+            "tue": {
+              "points": 7256603,
+              "overall_rank": 48,
+              "alliance_rank": 21
+            },
+            "wed": {
+              "points": 10971701,
+              "overall_rank": 19,
+              "alliance_rank": 9
+            },
+            "thu": {
+              "points": 15806752,
+              "overall_rank": 42,
+              "alliance_rank": 18
+            },
+            "fri": {
+              "points": 7271135,
+              "overall_rank": 72,
+              "alliance_rank": 34
+            },
+            "sat": {
+              "points": 2702088,
+              "overall_rank": 104,
+              "alliance_rank": 56
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 53582875,
+      "career_rank": 20
+    },
+    {
+      "player": "KaryLive",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 51846686,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 51846686,
+      "best_week_rank": 21,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 51846686,
+          "alliance_rank": 21,
+          "overall_rank": 39,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 11398058,
+              "overall_rank": 15,
+              "alliance_rank": 11
+            },
+            "tue": {
+              "points": 5557132,
+              "overall_rank": 73,
+              "alliance_rank": 35
+            },
+            "wed": {
+              "points": 9674699,
+              "overall_rank": 26,
+              "alliance_rank": 13
+            },
+            "thu": {
+              "points": 13551016,
+              "overall_rank": 59,
+              "alliance_rank": 28
+            },
+            "fri": {
+              "points": 8276498,
+              "overall_rank": 43,
+              "alliance_rank": 21
+            },
+            "sat": {
+              "points": 3389283,
+              "overall_rank": 79,
+              "alliance_rank": 44
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 51846686,
+      "career_rank": 21
+    },
+    {
+      "player": "Rhyzup",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 51384388,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 51384388,
+      "best_week_rank": 22,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 51384388,
+          "alliance_rank": 22,
+          "overall_rank": 42,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 8587530,
+              "overall_rank": 39,
+              "alliance_rank": 26
+            },
+            "tue": {
+              "points": 7462885,
+              "overall_rank": 44,
+              "alliance_rank": 20
+            },
+            "wed": {
+              "points": 7198466,
+              "overall_rank": 57,
+              "alliance_rank": 26
+            },
+            "thu": {
+              "points": 15169710,
+              "overall_rank": 47,
+              "alliance_rank": 21
+            },
+            "fri": {
+              "points": 7519680,
+              "overall_rank": 61,
+              "alliance_rank": 28
+            },
+            "sat": {
+              "points": 5446117,
+              "overall_rank": 37,
+              "alliance_rank": 23
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 51384388,
+      "career_rank": 22
+    },
+    {
+      "player": "PreacheR",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 50072599,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 50072599,
+      "best_week_rank": 23,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 50072599,
+          "alliance_rank": 23,
+          "overall_rank": 44,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 7270660,
+              "overall_rank": 70,
+              "alliance_rank": 37
+            },
+            "tue": {
+              "points": 7669994,
+              "overall_rank": 40,
+              "alliance_rank": 19
+            },
+            "wed": {
+              "points": 7437617,
+              "overall_rank": 52,
+              "alliance_rank": 23
+            },
+            "thu": {
+              "points": 15552150,
+              "overall_rank": 44,
+              "alliance_rank": 19
+            },
+            "fri": {
+              "points": 8864939,
+              "overall_rank": 31,
+              "alliance_rank": 17
+            },
+            "sat": {
+              "points": 3277239,
+              "overall_rank": 82,
+              "alliance_rank": 45
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 50072599,
+      "career_rank": 23
+    },
+    {
+      "player": "IKARI°P1MP",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 49238359,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 49238359,
+      "best_week_rank": 24,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 49238359,
+          "alliance_rank": 24,
+          "overall_rank": 46,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 11859294,
+              "overall_rank": 13,
+              "alliance_rank": 10
+            },
+            "tue": {
+              "points": 5482022,
+              "overall_rank": 75,
+              "alliance_rank": 37
+            },
+            "wed": {
+              "points": 7728318,
+              "overall_rank": 43,
+              "alliance_rank": 19
+            },
+            "thu": {
+              "points": 11817928,
+              "overall_rank": 70,
+              "alliance_rank": 36
+            },
+            "fri": {
+              "points": 6589906,
+              "overall_rank": 80,
+              "alliance_rank": 40
+            },
+            "sat": {
+              "points": 5760891,
+              "overall_rank": 36,
+              "alliance_rank": 22
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 49238359,
+      "career_rank": 24
+    },
+    {
+      "player": "Squad0o",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 46093327,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 46093327,
+      "best_week_rank": 25,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 46093327,
+          "alliance_rank": 25,
+          "overall_rank": 54,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 8619068,
+              "overall_rank": 38,
+              "alliance_rank": 25
+            },
+            "tue": {
+              "points": 7190521,
+              "overall_rank": 63,
+              "alliance_rank": 32
+            },
+            "wed": {
+              "points": 8421948,
+              "overall_rank": 35,
+              "alliance_rank": 18
+            },
+            "thu": {
+              "points": 11832868,
+              "overall_rank": 69,
+              "alliance_rank": 35
+            },
+            "fri": {
+              "points": 6449376,
+              "overall_rank": 85,
+              "alliance_rank": 44
+            },
+            "sat": {
+              "points": 3579546,
+              "overall_rank": 77,
+              "alliance_rank": 42
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 46093327,
+      "career_rank": 25
+    },
+    {
+      "player": "Brody138",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 45115620,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 45115620,
+      "best_week_rank": 26,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 45115620,
+          "alliance_rank": 26,
+          "overall_rank": 58,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 9302634,
+              "overall_rank": 31,
+              "alliance_rank": 22
+            },
+            "tue": {
+              "points": 8228976,
+              "overall_rank": 29,
+              "alliance_rank": 15
+            },
+            "wed": {
+              "points": 5415462,
+              "overall_rank": 73,
+              "alliance_rank": 36
+            },
+            "thu": {
+              "points": 11934012,
+              "overall_rank": 68,
+              "alliance_rank": 34
+            },
+            "fri": {
+              "points": 7366987,
+              "overall_rank": 67,
+              "alliance_rank": 31
+            },
+            "sat": {
+              "points": 2867549,
+              "overall_rank": 97,
+              "alliance_rank": 54
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 45115620,
+      "career_rank": 26
+    },
+    {
+      "player": "B3N",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 44435826,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 44435826,
+      "best_week_rank": 27,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 44435826,
+          "alliance_rank": 27,
+          "overall_rank": 59,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 7326218,
+              "overall_rank": 65,
+              "alliance_rank": 35
+            },
+            "tue": {
+              "points": 7198464,
+              "overall_rank": 61,
+              "alliance_rank": 31
+            },
+            "wed": {
+              "points": 3839771,
+              "overall_rank": 119,
+              "alliance_rank": 58
+            },
+            "thu": {
+              "points": 14266904,
+              "overall_rank": 54,
+              "alliance_rank": 25
+            },
+            "fri": {
+              "points": 7246444,
+              "overall_rank": 74,
+              "alliance_rank": 36
+            },
+            "sat": {
+              "points": 4558025,
+              "overall_rank": 52,
+              "alliance_rank": 30
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 44435826,
+      "career_rank": 27
+    },
+    {
+      "player": "Smiddy240472",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 44063887,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 44063887,
+      "best_week_rank": 28,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 44063887,
+          "alliance_rank": 28,
+          "overall_rank": 60,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 8856258,
+              "overall_rank": 33,
+              "alliance_rank": 23
+            },
+            "tue": {
+              "points": 4964963,
+              "overall_rank": 88,
+              "alliance_rank": 42
+            },
+            "wed": {
+              "points": 5289224,
+              "overall_rank": 77,
+              "alliance_rank": 39
+            },
+            "thu": {
+              "points": 17796764,
+              "overall_rank": 31,
+              "alliance_rank": 14
+            },
+            "fri": {
+              "points": 4837481,
+              "overall_rank": 99,
+              "alliance_rank": 50
+            },
+            "sat": {
+              "points": 2319197,
+              "overall_rank": 125,
+              "alliance_rank": 67
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 44063887,
+      "career_rank": 28
+    },
+    {
+      "player": "Elizasnopchenko",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 42520816,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 42520816,
+      "best_week_rank": 29,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 42520816,
+          "alliance_rank": 29,
+          "overall_rank": 63,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 7405606,
+              "overall_rank": 61,
+              "alliance_rank": 33
+            },
+            "tue": {
+              "points": 7241202,
+              "overall_rank": 50,
+              "alliance_rank": 23
+            },
+            "wed": {
+              "points": 4872724,
+              "overall_rank": 87,
+              "alliance_rank": 45
+            },
+            "thu": {
+              "points": 12399516,
+              "overall_rank": 65,
+              "alliance_rank": 31
+            },
+            "fri": {
+              "points": 7552190,
+              "overall_rank": 58,
+              "alliance_rank": 26
+            },
+            "sat": {
+              "points": 3049578,
+              "overall_rank": 90,
+              "alliance_rank": 49
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 42520816,
+      "career_rank": 29
+    },
+    {
+      "player": "laggingPotato",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 42210027,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 42210027,
+      "best_week_rank": 30,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 42210027,
+          "alliance_rank": 30,
+          "overall_rank": 64,
+          "tier": "High Performer",
+          "active_days": 6,
+          "best_day": "wed",
+          "daily_breakdown": {
+            "mon": {
+              "points": 7361162,
+              "overall_rank": 63,
+              "alliance_rank": 34
+            },
+            "tue": {
+              "points": 3763928,
+              "overall_rank": 112,
+              "alliance_rank": 58
+            },
+            "wed": {
+              "points": 8858199,
+              "overall_rank": 31,
+              "alliance_rank": 16
+            },
+            "thu": {
+              "points": 7378000,
+              "overall_rank": 119,
+              "alliance_rank": 61
+            },
+            "fri": {
+              "points": 7524803,
+              "overall_rank": 60,
+              "alliance_rank": 27
+            },
+            "sat": {
+              "points": 7323935,
+              "overall_rank": 25,
+              "alliance_rank": 17
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 42210027,
+      "career_rank": 30
+    },
+    {
+      "player": "InkedBabyeePIMP",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 42092353,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 42092353,
+      "best_week_rank": 31,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 42092353,
+          "alliance_rank": 31,
+          "overall_rank": 65,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 6131048,
+              "overall_rank": 80,
+              "alliance_rank": 44
+            },
+            "tue": {
+              "points": 5252302,
+              "overall_rank": 80,
+              "alliance_rank": 39
+            },
+            "wed": {
+              "points": 5868726,
+              "overall_rank": 67,
+              "alliance_rank": 32
+            },
+            "thu": {
+              "points": 12382574,
+              "overall_rank": 66,
+              "alliance_rank": 32
+            },
+            "fri": {
+              "points": 7365295,
+              "overall_rank": 68,
+              "alliance_rank": 32
+            },
+            "sat": {
+              "points": 5092408,
+              "overall_rank": 39,
+              "alliance_rank": 24
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 42092353,
+      "career_rank": 31
+    },
+    {
+      "player": "SingularityPIMP",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 41486333,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 41486333,
+      "best_week_rank": 32,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 41486333,
+          "alliance_rank": 32,
+          "overall_rank": 67,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "sat",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4701049,
+              "overall_rank": 102,
+              "alliance_rank": 55
+            },
+            "tue": {
+              "points": 3066313,
+              "overall_rank": 133,
+              "alliance_rank": 68
+            },
+            "wed": {
+              "points": 4346811,
+              "overall_rank": 104,
+              "alliance_rank": 50
+            },
+            "thu": {
+              "points": 11382868,
+              "overall_rank": 74,
+              "alliance_rank": 37
+            },
+            "fri": {
+              "points": 5859603,
+              "overall_rank": 89,
+              "alliance_rank": 45
+            },
+            "sat": {
+              "points": 12129689,
+              "overall_rank": 12,
+              "alliance_rank": 10
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 41486333,
+      "career_rank": 32
+    },
+    {
+      "player": "CallMeP1MPKamil",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 41083515,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 41083515,
+      "best_week_rank": 33,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 41083515,
+          "alliance_rank": 33,
+          "overall_rank": 68,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4944334,
+              "overall_rank": 98,
+              "alliance_rank": 51
+            },
+            "tue": {
+              "points": 7246800,
+              "overall_rank": 49,
+              "alliance_rank": 22
+            },
+            "wed": {
+              "points": 8471836,
+              "overall_rank": 34,
+              "alliance_rank": 17
+            },
+            "thu": {
+              "points": 9397590,
+              "overall_rank": 91,
+              "alliance_rank": 47
+            },
+            "fri": {
+              "points": 8005233,
+              "overall_rank": 47,
+              "alliance_rank": 24
+            },
+            "sat": {
+              "points": 3017722,
+              "overall_rank": 91,
+              "alliance_rank": 50
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 41083515,
+      "career_rank": 33
+    },
+    {
+      "player": "Tekinsoldier",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 40222893,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 40222893,
+      "best_week_rank": 34,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 40222893,
+          "alliance_rank": 34,
+          "overall_rank": 70,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 7566610,
+              "overall_rank": 57,
+              "alliance_rank": 31
+            },
+            "tue": {
+              "points": 7218585,
+              "overall_rank": 55,
+              "alliance_rank": 27
+            },
+            "wed": {
+              "points": 5303756,
+              "overall_rank": 76,
+              "alliance_rank": 38
+            },
+            "thu": {
+              "points": 11999167,
+              "overall_rank": 67,
+              "alliance_rank": 33
+            },
+            "fri": {
+              "points": 3831622,
+              "overall_rank": 126,
+              "alliance_rank": 65
+            },
+            "sat": {
+              "points": 4303153,
+              "overall_rank": 58,
+              "alliance_rank": 33
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 40222893,
+      "career_rank": 34
+    },
+    {
+      "player": "Toblinice",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 39488132,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 39488132,
+      "best_week_rank": 35,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 39488132,
+          "alliance_rank": 35,
+          "overall_rank": 71,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3958290,
+              "overall_rank": 117,
+              "alliance_rank": 63
+            },
+            "tue": {
+              "points": 4283802,
+              "overall_rank": 104,
+              "alliance_rank": 54
+            },
+            "wed": {
+              "points": 4973979,
+              "overall_rank": 84,
+              "alliance_rank": 42
+            },
+            "thu": {
+              "points": 14716004,
+              "overall_rank": 51,
+              "alliance_rank": 23
+            },
+            "fri": {
+              "points": 7791399,
+              "overall_rank": 52,
+              "alliance_rank": 25
+            },
+            "sat": {
+              "points": 3764658,
+              "overall_rank": 67,
+              "alliance_rank": 37
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 39488132,
+      "career_rank": 35
+    },
+    {
+      "player": "CuteCat",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 39313176,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 39313176,
+      "best_week_rank": 36,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 39313176,
+          "alliance_rank": 36,
+          "overall_rank": 72,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4789108,
+              "overall_rank": 100,
+              "alliance_rank": 53
+            },
+            "tue": {
+              "points": 7212806,
+              "overall_rank": 57,
+              "alliance_rank": 28
+            },
+            "wed": {
+              "points": 4690187,
+              "overall_rank": 91,
+              "alliance_rank": 46
+            },
+            "thu": {
+              "points": 13583288,
+              "overall_rank": 58,
+              "alliance_rank": 27
+            },
+            "fri": {
+              "points": 7265541,
+              "overall_rank": 73,
+              "alliance_rank": 35
+            },
+            "sat": {
+              "points": 1772246,
+              "overall_rank": 142,
+              "alliance_rank": 76
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 39313176,
+      "career_rank": 36
+    },
+    {
+      "player": "BHBH",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 39022194,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 39022194,
+      "best_week_rank": 37,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 39022194,
+          "alliance_rank": 37,
+          "overall_rank": 73,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 8771676,
+              "overall_rank": 35,
+              "alliance_rank": 24
+            },
+            "tue": {
+              "points": 7220163,
+              "overall_rank": 54,
+              "alliance_rank": 26
+            },
+            "wed": {
+              "points": 7457490,
+              "overall_rank": 51,
+              "alliance_rank": 22
+            },
+            "thu": {
+              "points": 7781882,
+              "overall_rank": 104,
+              "alliance_rank": 52
+            },
+            "fri": {
+              "points": 4836525,
+              "overall_rank": 100,
+              "alliance_rank": 51
+            },
+            "sat": {
+              "points": 2954458,
+              "overall_rank": 92,
+              "alliance_rank": 51
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 39022194,
+      "career_rank": 37
+    },
+    {
+      "player": "SadSquatch",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 38983056,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 38983056,
+      "best_week_rank": 38,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 38983056,
+          "alliance_rank": 38,
+          "overall_rank": 74,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 7435654,
+              "overall_rank": 59,
+              "alliance_rank": 32
+            },
+            "tue": {
+              "points": 7229717,
+              "overall_rank": 53,
+              "alliance_rank": 25
+            },
+            "wed": {
+              "points": 6432732,
+              "overall_rank": 64,
+              "alliance_rank": 30
+            },
+            "thu": {
+              "points": 10374538,
+              "overall_rank": 83,
+              "alliance_rank": 42
+            },
+            "fri": {
+              "points": 5855675,
+              "overall_rank": 90,
+              "alliance_rank": 46
+            },
+            "sat": {
+              "points": 1654740,
+              "overall_rank": 146,
+              "alliance_rank": 79
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 38983056,
+      "career_rank": 38
+    },
+    {
+      "player": "Staemmo",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 38812793,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 38812793,
+      "best_week_rank": 39,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 38812793,
+          "alliance_rank": 39,
+          "overall_rank": 75,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4114880,
+              "overall_rank": 114,
+              "alliance_rank": 61
+            },
+            "tue": {
+              "points": 3671623,
+              "overall_rank": 115,
+              "alliance_rank": 59
+            },
+            "wed": {
+              "points": 6754042,
+              "overall_rank": 62,
+              "alliance_rank": 28
+            },
+            "thu": {
+              "points": 14554713,
+              "overall_rank": 53,
+              "alliance_rank": 24
+            },
+            "fri": {
+              "points": 4704049,
+              "overall_rank": 102,
+              "alliance_rank": 53
+            },
+            "sat": {
+              "points": 5013486,
+              "overall_rank": 42,
+              "alliance_rank": 26
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 38812793,
+      "career_rank": 39
+    },
+    {
+      "player": "archer339",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 38076615,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 38076615,
+      "best_week_rank": 40,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 38076615,
+          "alliance_rank": 40,
+          "overall_rank": 77,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "sat",
+          "daily_breakdown": {
+            "mon": {
+              "points": 6679554,
+              "overall_rank": 76,
+              "alliance_rank": 41
+            },
+            "tue": {
+              "points": 4006258,
+              "overall_rank": 108,
+              "alliance_rank": 56
+            },
+            "wed": {
+              "points": 4005178,
+              "overall_rank": 115,
+              "alliance_rank": 55
+            },
+            "thu": {
+              "points": 7419504,
+              "overall_rank": 117,
+              "alliance_rank": 59
+            },
+            "fri": {
+              "points": 4669486,
+              "overall_rank": 103,
+              "alliance_rank": 54
+            },
+            "sat": {
+              "points": 11296635,
+              "overall_rank": 13,
+              "alliance_rank": 11
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 38076615,
+      "career_rank": 40
+    },
+    {
+      "player": "Disorder762",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 37310322,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 37310322,
+      "best_week_rank": 41,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 37310322,
+          "alliance_rank": 41,
+          "overall_rank": 78,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3807448,
+              "overall_rank": 121,
+              "alliance_rank": 64
+            },
+            "tue": {
+              "points": 4498249,
+              "overall_rank": 101,
+              "alliance_rank": 52
+            },
+            "wed": {
+              "points": 5493025,
+              "overall_rank": 72,
+              "alliance_rank": 35
+            },
+            "thu": {
+              "points": 15359704,
+              "overall_rank": 45,
+              "alliance_rank": 20
+            },
+            "fri": {
+              "points": 4487219,
+              "overall_rank": 107,
+              "alliance_rank": 55
+            },
+            "sat": {
+              "points": 3664677,
+              "overall_rank": 74,
+              "alliance_rank": 41
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 37310322,
+      "career_rank": 41
+    },
+    {
+      "player": "Nando6331",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 35641778,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 35641778,
+      "best_week_rank": 42,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 35641778,
+          "alliance_rank": 42,
+          "overall_rank": 80,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 7256778,
+              "overall_rank": 71,
+              "alliance_rank": 38
+            },
+            "tue": {
+              "points": 3995187,
+              "overall_rank": 109,
+              "alliance_rank": 57
+            },
+            "wed": {
+              "points": 4485392,
+              "overall_rank": 100,
+              "alliance_rank": 48
+            },
+            "thu": {
+              "points": 12795240,
+              "overall_rank": 61,
+              "alliance_rank": 29
+            },
+            "fri": {
+              "points": 3946058,
+              "overall_rank": 120,
+              "alliance_rank": 62
+            },
+            "sat": {
+              "points": 3163123,
+              "overall_rank": 86,
+              "alliance_rank": 47
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 35641778,
+      "career_rank": 42
+    },
+    {
+      "player": "Bad®Boy",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 35506132,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 35506132,
+      "best_week_rank": 43,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 35506132,
+          "alliance_rank": 43,
+          "overall_rank": 81,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4383890,
+              "overall_rank": 109,
+              "alliance_rank": 58
+            },
+            "tue": {
+              "points": 6505376,
+              "overall_rank": 65,
+              "alliance_rank": 33
+            },
+            "wed": {
+              "points": 3230457,
+              "overall_rank": 128,
+              "alliance_rank": 66
+            },
+            "thu": {
+              "points": 10404562,
+              "overall_rank": 82,
+              "alliance_rank": 41
+            },
+            "fri": {
+              "points": 6620942,
+              "overall_rank": 79,
+              "alliance_rank": 39
+            },
+            "sat": {
+              "points": 4360905,
+              "overall_rank": 57,
+              "alliance_rank": 32
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 35506132,
+      "career_rank": 43
+    },
+    {
+      "player": "DemonKiller",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 34862907,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 34862907,
+      "best_week_rank": 44,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 34862907,
+          "alliance_rank": 44,
+          "overall_rank": 83,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 2510646,
+              "overall_rank": 145,
+              "alliance_rank": 80
+            },
+            "tue": {
+              "points": 4650614,
+              "overall_rank": 94,
+              "alliance_rank": 48
+            },
+            "wed": {
+              "points": 5385634,
+              "overall_rank": 74,
+              "alliance_rank": 37
+            },
+            "thu": {
+              "points": 10214062,
+              "overall_rank": 84,
+              "alliance_rank": 43
+            },
+            "fri": {
+              "points": 8157770,
+              "overall_rank": 45,
+              "alliance_rank": 23
+            },
+            "sat": {
+              "points": 3944181,
+              "overall_rank": 62,
+              "alliance_rank": 34
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 34862907,
+      "career_rank": 44
+    },
+    {
+      "player": "DLiner75",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 34769989,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 34769989,
+      "best_week_rank": 45,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 34769989,
+          "alliance_rank": 45,
+          "overall_rank": 85,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 7791718,
+              "overall_rank": 51,
+              "alliance_rank": 29
+            },
+            "tue": {
+              "points": 5305916,
+              "overall_rank": 78,
+              "alliance_rank": 38
+            },
+            "wed": {
+              "points": 7234961,
+              "overall_rank": 54,
+              "alliance_rank": 25
+            },
+            "thu": {
+              "points": 7502114,
+              "overall_rank": 114,
+              "alliance_rank": 56
+            },
+            "fri": {
+              "points": 3701344,
+              "overall_rank": 130,
+              "alliance_rank": 67
+            },
+            "sat": {
+              "points": 3233936,
+              "overall_rank": 85,
+              "alliance_rank": 46
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 34769989,
+      "career_rank": 45
+    },
+    {
+      "player": "Goodjian",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 33623660,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 33623660,
+      "best_week_rank": 46,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 33623660,
+          "alliance_rank": 46,
+          "overall_rank": 88,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4157446,
+              "overall_rank": 112,
+              "alliance_rank": 60
+            },
+            "tue": {
+              "points": 2918238,
+              "overall_rank": 136,
+              "alliance_rank": 70
+            },
+            "wed": {
+              "points": 5271425,
+              "overall_rank": 79,
+              "alliance_rank": 40
+            },
+            "thu": {
+              "points": 8416508,
+              "overall_rank": 101,
+              "alliance_rank": 50
+            },
+            "fri": {
+              "points": 9185140,
+              "overall_rank": 29,
+              "alliance_rank": 16
+            },
+            "sat": {
+              "points": 3674903,
+              "overall_rank": 72,
+              "alliance_rank": 39
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 33623660,
+      "career_rank": 46
+    },
+    {
+      "player": "Grandpaowl",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 33074081,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 33074081,
+      "best_week_rank": 47,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 33074081,
+          "alliance_rank": 47,
+          "overall_rank": 90,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 5549520,
+              "overall_rank": 90,
+              "alliance_rank": 48
+            },
+            "tue": {
+              "points": 4729543,
+              "overall_rank": 89,
+              "alliance_rank": 43
+            },
+            "wed": {
+              "points": 6901164,
+              "overall_rank": 61,
+              "alliance_rank": 27
+            },
+            "thu": {
+              "points": 4347968,
+              "overall_rank": 145,
+              "alliance_rank": 71
+            },
+            "fri": {
+              "points": 10262233,
+              "overall_rank": 20,
+              "alliance_rank": 10
+            },
+            "sat": {
+              "points": 1283653,
+              "overall_rank": 163,
+              "alliance_rank": 86
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 33074081,
+      "career_rank": 47
+    },
+    {
+      "player": "Slickback",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 32805335,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 32805335,
+      "best_week_rank": 48,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 32805335,
+          "alliance_rank": 48,
+          "overall_rank": 91,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 6192032,
+              "overall_rank": 78,
+              "alliance_rank": 43
+            },
+            "tue": {
+              "points": 3334073,
+              "overall_rank": 123,
+              "alliance_rank": 65
+            },
+            "wed": {
+              "points": 3248001,
+              "overall_rank": 127,
+              "alliance_rank": 65
+            },
+            "thu": {
+              "points": 7444948,
+              "overall_rank": 116,
+              "alliance_rank": 58
+            },
+            "fri": {
+              "points": 5308575,
+              "overall_rank": 97,
+              "alliance_rank": 48
+            },
+            "sat": {
+              "points": 7277706,
+              "overall_rank": 26,
+              "alliance_rank": 18
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 32805335,
+      "career_rank": 48
+    },
+    {
+      "player": "Bahamut1",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 32761017,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 32761017,
+      "best_week_rank": 49,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 32761017,
+          "alliance_rank": 49,
+          "overall_rank": 92,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3177422,
+              "overall_rank": 129,
+              "alliance_rank": 70
+            },
+            "tue": {
+              "points": 7202694,
+              "overall_rank": 59,
+              "alliance_rank": 30
+            },
+            "wed": {
+              "points": 4913110,
+              "overall_rank": 85,
+              "alliance_rank": 43
+            },
+            "thu": {
+              "points": 7619060,
+              "overall_rank": 110,
+              "alliance_rank": 54
+            },
+            "fri": {
+              "points": 7355140,
+              "overall_rank": 69,
+              "alliance_rank": 33
+            },
+            "sat": {
+              "points": 2493591,
+              "overall_rank": 112,
+              "alliance_rank": 59
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 32761017,
+      "career_rank": 49
+    },
+    {
+      "player": "NickiV",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 32678979,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 32678979,
+      "best_week_rank": 50,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 32678979,
+          "alliance_rank": 50,
+          "overall_rank": 93,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3676648,
+              "overall_rank": 123,
+              "alliance_rank": 66
+            },
+            "tue": {
+              "points": 4694668,
+              "overall_rank": 92,
+              "alliance_rank": 46
+            },
+            "wed": {
+              "points": 5859668,
+              "overall_rank": 68,
+              "alliance_rank": 33
+            },
+            "thu": {
+              "points": 5161650,
+              "overall_rank": 138,
+              "alliance_rank": 67
+            },
+            "fri": {
+              "points": 8693604,
+              "overall_rank": 34,
+              "alliance_rank": 19
+            },
+            "sat": {
+              "points": 4592741,
+              "overall_rank": 51,
+              "alliance_rank": 29
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 32678979,
+      "career_rank": 50
+    },
+    {
+      "player": "Fugitivelama",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 30333791,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 30333791,
+      "best_week_rank": 51,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 30333791,
+          "alliance_rank": 51,
+          "overall_rank": 100,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 5346118,
+              "overall_rank": 92,
+              "alliance_rank": 49
+            },
+            "tue": {
+              "points": 3517911,
+              "overall_rank": 118,
+              "alliance_rank": 61
+            },
+            "wed": {
+              "points": 2502661,
+              "overall_rank": 148,
+              "alliance_rank": 77
+            },
+            "thu": {
+              "points": 8984714,
+              "overall_rank": 99,
+              "alliance_rank": 49
+            },
+            "fri": {
+              "points": 4109926,
+              "overall_rank": 114,
+              "alliance_rank": 59
+            },
+            "sat": {
+              "points": 5872461,
+              "overall_rank": 35,
+              "alliance_rank": 21
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 30333791,
+      "career_rank": 51
+    },
+    {
+      "player": "1STQ8",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 30004287,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 30004287,
+      "best_week_rank": 52,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 30004287,
+          "alliance_rank": 52,
+          "overall_rank": 101,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 2791170,
+              "overall_rank": 141,
+              "alliance_rank": 77
+            },
+            "tue": {
+              "points": 4074247,
+              "overall_rank": 107,
+              "alliance_rank": 55
+            },
+            "wed": {
+              "points": 3095710,
+              "overall_rank": 131,
+              "alliance_rank": 69
+            },
+            "thu": {
+              "points": 9763700,
+              "overall_rank": 87,
+              "alliance_rank": 44
+            },
+            "fri": {
+              "points": 7371939,
+              "overall_rank": 66,
+              "alliance_rank": 30
+            },
+            "sat": {
+              "points": 2907521,
+              "overall_rank": 94,
+              "alliance_rank": 52
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 30004287,
+      "career_rank": 52
+    },
+    {
+      "player": "CelticWarrioR",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 29999147,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 29999147,
+      "best_week_rank": 53,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 29999147,
+          "alliance_rank": 53,
+          "overall_rank": 102,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 5786020,
+              "overall_rank": 87,
+              "alliance_rank": 47
+            },
+            "tue": {
+              "points": 4573290,
+              "overall_rank": 98,
+              "alliance_rank": 51
+            },
+            "wed": {
+              "points": 3667602,
+              "overall_rank": 121,
+              "alliance_rank": 60
+            },
+            "thu": {
+              "points": 9574965,
+              "overall_rank": 88,
+              "alliance_rank": 45
+            },
+            "fri": {
+              "points": 3935637,
+              "overall_rank": 122,
+              "alliance_rank": 63
+            },
+            "sat": {
+              "points": 2461633,
+              "overall_rank": 114,
+              "alliance_rank": 61
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 29999147,
+      "career_rank": 53
+    },
+    {
+      "player": "GrandmaFrog",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 29879379,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 29879379,
+      "best_week_rank": 54,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 29879379,
+          "alliance_rank": 54,
+          "overall_rank": 103,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 6305353,
+              "overall_rank": 77,
+              "alliance_rank": 42
+            },
+            "tue": {
+              "points": 4626305,
+              "overall_rank": 95,
+              "alliance_rank": 49
+            },
+            "wed": {
+              "points": 4497005,
+              "overall_rank": 99,
+              "alliance_rank": 47
+            },
+            "thu": {
+              "points": 3547496,
+              "overall_rank": 154,
+              "alliance_rank": 77
+            },
+            "fri": {
+              "points": 7229353,
+              "overall_rank": 75,
+              "alliance_rank": 37
+            },
+            "sat": {
+              "points": 3673867,
+              "overall_rank": 73,
+              "alliance_rank": 40
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 29879379,
+      "career_rank": 54
+    },
+    {
+      "player": "VikciN",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 29000914,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 29000914,
+      "best_week_rank": 55,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 29000914,
+          "alliance_rank": 55,
+          "overall_rank": 105,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 9707332,
+              "overall_rank": 24,
+              "alliance_rank": 17
+            },
+            "tue": {
+              "points": 5528083,
+              "overall_rank": 74,
+              "alliance_rank": 36
+            },
+            "wed": {
+              "points": 4879807,
+              "overall_rank": 86,
+              "alliance_rank": 44
+            },
+            "thu": {
+              "points": 5075972,
+              "overall_rank": 140,
+              "alliance_rank": 68
+            },
+            "fri": {
+              "points": 3409013,
+              "overall_rank": 137,
+              "alliance_rank": 73
+            },
+            "sat": {
+              "points": 400707,
+              "overall_rank": 183,
+              "alliance_rank": 93
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 29000914,
+      "career_rank": 55
+    },
+    {
+      "player": "Gindzatw",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 28493796,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 28493796,
+      "best_week_rank": 56,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 28493796,
+          "alliance_rank": 56,
+          "overall_rank": 106,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4708532,
+              "overall_rank": 101,
+              "alliance_rank": 54
+            },
+            "tue": {
+              "points": 5092123,
+              "overall_rank": 85,
+              "alliance_rank": 41
+            },
+            "wed": {
+              "points": 3182776,
+              "overall_rank": 129,
+              "alliance_rank": 67
+            },
+            "thu": {
+              "points": 9331285,
+              "overall_rank": 92,
+              "alliance_rank": 48
+            },
+            "fri": {
+              "points": 3681515,
+              "overall_rank": 133,
+              "alliance_rank": 69
+            },
+            "sat": {
+              "points": 2497565,
+              "overall_rank": 111,
+              "alliance_rank": 58
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 28493796,
+      "career_rank": 56
+    },
+    {
+      "player": "KILLABWOY2002",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 27333844,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 27333844,
+      "best_week_rank": 57,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 27333844,
+          "alliance_rank": 57,
+          "overall_rank": 109,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3034540,
+              "overall_rank": 135,
+              "alliance_rank": 72
+            },
+            "tue": {
+              "points": 3346628,
+              "overall_rank": 122,
+              "alliance_rank": 64
+            },
+            "wed": {
+              "points": 3802764,
+              "overall_rank": 120,
+              "alliance_rank": 59
+            },
+            "thu": {
+              "points": 7727316,
+              "overall_rank": 107,
+              "alliance_rank": 53
+            },
+            "fri": {
+              "points": 3501499,
+              "overall_rank": 135,
+              "alliance_rank": 71
+            },
+            "sat": {
+              "points": 5921097,
+              "overall_rank": 34,
+              "alliance_rank": 20
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 27333844,
+      "career_rank": 57
+    },
+    {
+      "player": "Mohammad2824",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 26652089,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 26652089,
+      "best_week_rank": 58,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 26652089,
+          "alliance_rank": 58,
+          "overall_rank": 111,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 5174716,
+              "overall_rank": 94,
+              "alliance_rank": 50
+            },
+            "tue": {
+              "points": 4693600,
+              "overall_rank": 93,
+              "alliance_rank": 47
+            },
+            "wed": {
+              "points": 3251292,
+              "overall_rank": 126,
+              "alliance_rank": 64
+            },
+            "thu": {
+              "points": 9423174,
+              "overall_rank": 90,
+              "alliance_rank": 46
+            },
+            "fri": {
+              "points": 2298822,
+              "overall_rank": 165,
+              "alliance_rank": 85
+            },
+            "sat": {
+              "points": 1810485,
+              "overall_rank": 140,
+              "alliance_rank": 74
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 26652089,
+      "career_rank": 58
+    },
+    {
+      "player": "Skitz0",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 26324473,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 26324473,
+      "best_week_rank": 59,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 26324473,
+          "alliance_rank": 59,
+          "overall_rank": 112,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3029190,
+              "overall_rank": 136,
+              "alliance_rank": 73
+            },
+            "tue": {
+              "points": 3324980,
+              "overall_rank": 124,
+              "alliance_rank": 66
+            },
+            "wed": {
+              "points": 4401399,
+              "overall_rank": 103,
+              "alliance_rank": 49
+            },
+            "thu": {
+              "points": 7412210,
+              "overall_rank": 118,
+              "alliance_rank": 60
+            },
+            "fri": {
+              "points": 5436932,
+              "overall_rank": 95,
+              "alliance_rank": 47
+            },
+            "sat": {
+              "points": 2719762,
+              "overall_rank": 103,
+              "alliance_rank": 55
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 26324473,
+      "career_rank": 59
+    },
+    {
+      "player": "ComandanteMike",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 26188202,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 26188202,
+      "best_week_rank": 60,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 26188202,
+          "alliance_rank": 60,
+          "overall_rank": 113,
+          "tier": "Core Contributor",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4490295,
+              "overall_rank": 107,
+              "alliance_rank": 57
+            },
+            "tue": {
+              "points": 2525301,
+              "overall_rank": 141,
+              "alliance_rank": 73
+            },
+            "wed": {
+              "points": 3899552,
+              "overall_rank": 117,
+              "alliance_rank": 56
+            },
+            "thu": {
+              "points": 10826162,
+              "overall_rank": 79,
+              "alliance_rank": 39
+            },
+            "fri": {
+              "points": 2314276,
+              "overall_rank": 163,
+              "alliance_rank": 84
+            },
+            "sat": {
+              "points": 2132616,
+              "overall_rank": 132,
+              "alliance_rank": 69
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 26188202,
+      "career_rank": 60
+    },
+    {
+      "player": "Dogboy",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 25764669,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 25764669,
+      "best_week_rank": 61,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 25764669,
+          "alliance_rank": 61,
+          "overall_rank": 114,
+          "tier": "Active Member",
+          "active_days": 4,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "tue": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "wed": {
+              "points": 4299568,
+              "overall_rank": 108,
+              "alliance_rank": 51
+            },
+            "thu": {
+              "points": 10620424,
+              "overall_rank": 80,
+              "alliance_rank": 40
+            },
+            "fri": {
+              "points": 2714968,
+              "overall_rank": 149,
+              "alliance_rank": 78
+            },
+            "sat": {
+              "points": 3714461,
+              "overall_rank": 70,
+              "alliance_rank": 38
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 25764669,
+      "career_rank": 61
+    },
+    {
+      "player": "Sinister-Soul",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 24977887,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 24977887,
+      "best_week_rank": 62,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 24977887,
+          "alliance_rank": 62,
+          "overall_rank": 117,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 2875248,
+              "overall_rank": 139,
+              "alliance_rank": 76
+            },
+            "tue": {
+              "points": 4709524,
+              "overall_rank": 90,
+              "alliance_rank": 44
+            },
+            "wed": {
+              "points": 4981231,
+              "overall_rank": 83,
+              "alliance_rank": 41
+            },
+            "thu": {
+              "points": 3881741,
+              "overall_rank": 148,
+              "alliance_rank": 74
+            },
+            "fri": {
+              "points": 6452057,
+              "overall_rank": 84,
+              "alliance_rank": 43
+            },
+            "sat": {
+              "points": 2078086,
+              "overall_rank": 134,
+              "alliance_rank": 70
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 24977887,
+      "career_rank": 62
+    },
+    {
+      "player": "HandStrong",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 24225513,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 24225513,
+      "best_week_rank": 63,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 24225513,
+          "alliance_rank": 63,
+          "overall_rank": 119,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 7291652,
+              "overall_rank": 68,
+              "alliance_rank": 36
+            },
+            "tue": {
+              "points": 5159612,
+              "overall_rank": 84,
+              "alliance_rank": 40
+            },
+            "wed": {
+              "points": 2501314,
+              "overall_rank": 149,
+              "alliance_rank": 78
+            },
+            "thu": {
+              "points": 3942104,
+              "overall_rank": 147,
+              "alliance_rank": 73
+            },
+            "fri": {
+              "points": 3802018,
+              "overall_rank": 127,
+              "alliance_rank": 66
+            },
+            "sat": {
+              "points": 1528813,
+              "overall_rank": 154,
+              "alliance_rank": 82
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 24225513,
+      "career_rank": 63
+    },
+    {
+      "player": "Blockboy5",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 24112886,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 24112886,
+      "best_week_rank": 64,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 24112886,
+          "alliance_rank": 64,
+          "overall_rank": 120,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 2513576,
+              "overall_rank": 144,
+              "alliance_rank": 79
+            },
+            "tue": {
+              "points": 4587814,
+              "overall_rank": 97,
+              "alliance_rank": 50
+            },
+            "wed": {
+              "points": 3460804,
+              "overall_rank": 122,
+              "alliance_rank": 61
+            },
+            "thu": {
+              "points": 4696934,
+              "overall_rank": 142,
+              "alliance_rank": 69
+            },
+            "fri": {
+              "points": 6491218,
+              "overall_rank": 83,
+              "alliance_rank": 42
+            },
+            "sat": {
+              "points": 2362540,
+              "overall_rank": 118,
+              "alliance_rank": 62
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 24112886,
+      "career_rank": 64
+    },
+    {
+      "player": "VoltaP1MP",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 23428301,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 23428301,
+      "best_week_rank": 65,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 23428301,
+          "alliance_rank": 65,
+          "overall_rank": 124,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 5906628,
+              "overall_rank": 86,
+              "alliance_rank": 46
+            },
+            "tue": {
+              "points": 2523151,
+              "overall_rank": 142,
+              "alliance_rank": 74
+            },
+            "wed": {
+              "points": 1154173,
+              "overall_rank": 177,
+              "alliance_rank": 88
+            },
+            "thu": {
+              "points": 7506408,
+              "overall_rank": 113,
+              "alliance_rank": 55
+            },
+            "fri": {
+              "points": 3995905,
+              "overall_rank": 118,
+              "alliance_rank": 61
+            },
+            "sat": {
+              "points": 2342036,
+              "overall_rank": 120,
+              "alliance_rank": 63
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 23428301,
+      "career_rank": 65
+    },
+    {
+      "player": "CrazyGreg",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 23165776,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 23165776,
+      "best_week_rank": 66,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 23165776,
+          "alliance_rank": 66,
+          "overall_rank": 125,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3469015,
+              "overall_rank": 127,
+              "alliance_rank": 68
+            },
+            "tue": {
+              "points": 3450953,
+              "overall_rank": 119,
+              "alliance_rank": 62
+            },
+            "wed": {
+              "points": 5945007,
+              "overall_rank": 65,
+              "alliance_rank": 31
+            },
+            "thu": {
+              "points": 6196122,
+              "overall_rank": 129,
+              "alliance_rank": 63
+            },
+            "fri": {
+              "points": 2360679,
+              "overall_rank": 162,
+              "alliance_rank": 83
+            },
+            "sat": {
+              "points": 1744000,
+              "overall_rank": 144,
+              "alliance_rank": 78
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 23165776,
+      "career_rank": 66
+    },
+    {
+      "player": "Bode",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 22851558,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 22851558,
+      "best_week_rank": 67,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 22851558,
+          "alliance_rank": 67,
+          "overall_rank": 127,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "tue",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4563282,
+              "overall_rank": 106,
+              "alliance_rank": 56
+            },
+            "tue": {
+              "points": 7231652,
+              "overall_rank": 52,
+              "alliance_rank": 24
+            },
+            "wed": {
+              "points": 1440853,
+              "overall_rank": 166,
+              "alliance_rank": 85
+            },
+            "thu": {
+              "points": 2383220,
+              "overall_rank": 168,
+              "alliance_rank": 85
+            },
+            "fri": {
+              "points": 4750041,
+              "overall_rank": 101,
+              "alliance_rank": 52
+            },
+            "sat": {
+              "points": 2482510,
+              "overall_rank": 113,
+              "alliance_rank": 60
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 22851558,
+      "career_rank": 67
+    },
+    {
+      "player": "HAMMERS",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 22698930,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 22698930,
+      "best_week_rank": 68,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 22698930,
+          "alliance_rank": 68,
+          "overall_rank": 128,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 6798898,
+              "overall_rank": 74,
+              "alliance_rank": 40
+            },
+            "tue": {
+              "points": 2937933,
+              "overall_rank": 135,
+              "alliance_rank": 69
+            },
+            "wed": {
+              "points": 2235482,
+              "overall_rank": 157,
+              "alliance_rank": 83
+            },
+            "thu": {
+              "points": 2955484,
+              "overall_rank": 161,
+              "alliance_rank": 81
+            },
+            "fri": {
+              "points": 3392543,
+              "overall_rank": 138,
+              "alliance_rank": 74
+            },
+            "sat": {
+              "points": 4378590,
+              "overall_rank": 56,
+              "alliance_rank": 31
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 22698930,
+      "career_rank": 68
+    },
+    {
+      "player": "DewaLipan",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 22498035,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 22498035,
+      "best_week_rank": 69,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 22498035,
+          "alliance_rank": 69,
+          "overall_rank": 129,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "sat",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4034502,
+              "overall_rank": 115,
+              "alliance_rank": 62
+            },
+            "tue": {
+              "points": 3271947,
+              "overall_rank": 126,
+              "alliance_rank": 67
+            },
+            "wed": {
+              "points": 2667936,
+              "overall_rank": 143,
+              "alliance_rank": 75
+            },
+            "thu": {
+              "points": 4190410,
+              "overall_rank": 146,
+              "alliance_rank": 72
+            },
+            "fri": {
+              "points": 3627793,
+              "overall_rank": 134,
+              "alliance_rank": 70
+            },
+            "sat": {
+              "points": 4705447,
+              "overall_rank": 44,
+              "alliance_rank": 27
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 22498035,
+      "career_rank": 69
+    },
+    {
+      "player": "Xiaolei",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 22239656,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 22239656,
+      "best_week_rank": 70,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 22239656,
+          "alliance_rank": 70,
+          "overall_rank": 130,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3801664,
+              "overall_rank": 122,
+              "alliance_rank": 65
+            },
+            "tue": {
+              "points": 2711337,
+              "overall_rank": 139,
+              "alliance_rank": 71
+            },
+            "wed": {
+              "points": 2683424,
+              "overall_rank": 141,
+              "alliance_rank": 74
+            },
+            "thu": {
+              "points": 7264916,
+              "overall_rank": 122,
+              "alliance_rank": 62
+            },
+            "fri": {
+              "points": 3925894,
+              "overall_rank": 123,
+              "alliance_rank": 64
+            },
+            "sat": {
+              "points": 1852421,
+              "overall_rank": 138,
+              "alliance_rank": 72
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 22239656,
+      "career_rank": 70
+    },
+    {
+      "player": "Analbrutal",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 22030374,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 22030374,
+      "best_week_rank": 71,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 22030374,
+          "alliance_rank": 71,
+          "overall_rank": 132,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 8284364,
+              "overall_rank": 45,
+              "alliance_rank": 27
+            },
+            "tue": {
+              "points": 1157616,
+              "overall_rank": 165,
+              "alliance_rank": 86
+            },
+            "wed": {
+              "points": 2843736,
+              "overall_rank": 138,
+              "alliance_rank": 72
+            },
+            "thu": {
+              "points": 5345678,
+              "overall_rank": 135,
+              "alliance_rank": 65
+            },
+            "fri": {
+              "points": 3281968,
+              "overall_rank": 140,
+              "alliance_rank": 76
+            },
+            "sat": {
+              "points": 1117012,
+              "overall_rank": 169,
+              "alliance_rank": 87
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 22030374,
+      "career_rank": 71
+    },
+    {
+      "player": "GoodBabyGirl",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 21723169,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 21723169,
+      "best_week_rank": 72,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 21723169,
+          "alliance_rank": 72,
+          "overall_rank": 133,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 1024286,
+              "overall_rank": 176,
+              "alliance_rank": 89
+            },
+            "tue": {
+              "points": 4450854,
+              "overall_rank": 102,
+              "alliance_rank": 53
+            },
+            "wed": {
+              "points": 2628474,
+              "overall_rank": 146,
+              "alliance_rank": 76
+            },
+            "thu": {
+              "points": 11097306,
+              "overall_rank": 75,
+              "alliance_rank": 38
+            },
+            "fri": {
+              "points": 197340,
+              "overall_rank": 191,
+              "alliance_rank": 95
+            },
+            "sat": {
+              "points": 2324909,
+              "overall_rank": 123,
+              "alliance_rank": 66
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 21723169,
+      "career_rank": 72
+    },
+    {
+      "player": "Jony1°haish",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 21710495,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 21710495,
+      "best_week_rank": 73,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 21710495,
+          "alliance_rank": 73,
+          "overall_rank": 134,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3490084,
+              "overall_rank": 126,
+              "alliance_rank": 67
+            },
+            "tue": {
+              "points": 2351046,
+              "overall_rank": 146,
+              "alliance_rank": 77
+            },
+            "wed": {
+              "points": 3290413,
+              "overall_rank": 124,
+              "alliance_rank": 62
+            },
+            "thu": {
+              "points": 3743475,
+              "overall_rank": 150,
+              "alliance_rank": 75
+            },
+            "fri": {
+              "points": 6501633,
+              "overall_rank": 82,
+              "alliance_rank": 41
+            },
+            "sat": {
+              "points": 2333844,
+              "overall_rank": 122,
+              "alliance_rank": 65
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 21710495,
+      "career_rank": 73
+    },
+    {
+      "player": "DeathReapers",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 21678958,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 21678958,
+      "best_week_rank": 74,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 21678958,
+          "alliance_rank": 74,
+          "overall_rank": 135,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 1239650,
+              "overall_rank": 170,
+              "alliance_rank": 86
+            },
+            "tue": {
+              "points": 4698047,
+              "overall_rank": 91,
+              "alliance_rank": 45
+            },
+            "wed": {
+              "points": 3261420,
+              "overall_rank": 125,
+              "alliance_rank": 63
+            },
+            "thu": {
+              "points": 7480900,
+              "overall_rank": 115,
+              "alliance_rank": 57
+            },
+            "fri": {
+              "points": 2664207,
+              "overall_rank": 154,
+              "alliance_rank": 80
+            },
+            "sat": {
+              "points": 2334734,
+              "overall_rank": 121,
+              "alliance_rank": 64
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 21678958,
+      "career_rank": 74
+    },
+    {
+      "player": "MartyMar",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 20527603,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 20527603,
+      "best_week_rank": 75,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 20527603,
+          "alliance_rank": 75,
+          "overall_rank": 139,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "tue",
+          "daily_breakdown": {
+            "mon": {
+              "points": 2979372,
+              "overall_rank": 138,
+              "alliance_rank": 75
+            },
+            "tue": {
+              "points": 5570109,
+              "overall_rank": 72,
+              "alliance_rank": 34
+            },
+            "wed": {
+              "points": 2295127,
+              "overall_rank": 155,
+              "alliance_rank": 81
+            },
+            "thu": {
+              "points": 4424573,
+              "overall_rank": 144,
+              "alliance_rank": 70
+            },
+            "fri": {
+              "points": 3465006,
+              "overall_rank": 136,
+              "alliance_rank": 72
+            },
+            "sat": {
+              "points": 1793416,
+              "overall_rank": 141,
+              "alliance_rank": 75
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 20527603,
+      "career_rank": 75
+    },
+    {
+      "player": "Elmayo",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 19409124,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 19409124,
+      "best_week_rank": 76,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 19409124,
+          "alliance_rank": 76,
+          "overall_rank": 146,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3056582,
+              "overall_rank": 133,
+              "alliance_rank": 71
+            },
+            "tue": {
+              "points": 690274,
+              "overall_rank": 174,
+              "alliance_rank": 89
+            },
+            "wed": {
+              "points": 1310919,
+              "overall_rank": 171,
+              "alliance_rank": 86
+            },
+            "thu": {
+              "points": 5219906,
+              "overall_rank": 137,
+              "alliance_rank": 66
+            },
+            "fri": {
+              "points": 4055449,
+              "overall_rank": 116,
+              "alliance_rank": 60
+            },
+            "sat": {
+              "points": 5075994,
+              "overall_rank": 41,
+              "alliance_rank": 25
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 19409124,
+      "career_rank": 76
+    },
+    {
+      "player": "lupa1987",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 19076848,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 19076848,
+      "best_week_rank": 77,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 19076848,
+          "alliance_rank": 77,
+          "overall_rank": 147,
+          "tier": "Active Member",
+          "active_days": 5,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 821600,
+              "overall_rank": 180,
+              "alliance_rank": 91
+            },
+            "tue": {
+              "points": 2627492,
+              "overall_rank": 140,
+              "alliance_rank": 72
+            },
+            "wed": {
+              "points": 4012437,
+              "overall_rank": 114,
+              "alliance_rank": 54
+            },
+            "thu": {
+              "points": 7926628,
+              "overall_rank": 103,
+              "alliance_rank": 51
+            },
+            "fri": {
+              "points": 3688691,
+              "overall_rank": 132,
+              "alliance_rank": 68
+            },
+            "sat": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 19076848,
+      "career_rank": 77
+    },
+    {
+      "player": "Limps",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 18383135,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 18383135,
+      "best_week_rank": 78,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 18383135,
+          "alliance_rank": 78,
+          "overall_rank": 148,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4847164,
+              "overall_rank": 99,
+              "alliance_rank": 52
+            },
+            "tue": {
+              "points": 2179421,
+              "overall_rank": 152,
+              "alliance_rank": 80
+            },
+            "wed": {
+              "points": 3844848,
+              "overall_rank": 118,
+              "alliance_rank": 57
+            },
+            "thu": {
+              "points": 3711562,
+              "overall_rank": 151,
+              "alliance_rank": 76
+            },
+            "fri": {
+              "points": 2056140,
+              "overall_rank": 168,
+              "alliance_rank": 86
+            },
+            "sat": {
+              "points": 1744000,
+              "overall_rank": 143,
+              "alliance_rank": 77
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 18383135,
+      "career_rank": 78
+    },
+    {
+      "player": "priv8",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 17846268,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 17846268,
+      "best_week_rank": 79,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 17846268,
+          "alliance_rank": 79,
+          "overall_rank": 149,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 2015523,
+              "overall_rank": 155,
+              "alliance_rank": 83
+            },
+            "tue": {
+              "points": 3544664,
+              "overall_rank": 117,
+              "alliance_rank": 60
+            },
+            "wed": {
+              "points": 2897731,
+              "overall_rank": 136,
+              "alliance_rank": 70
+            },
+            "thu": {
+              "points": 2162412,
+              "overall_rank": 171,
+              "alliance_rank": 86
+            },
+            "fri": {
+              "points": 4176193,
+              "overall_rank": 110,
+              "alliance_rank": 57
+            },
+            "sat": {
+              "points": 3049745,
+              "overall_rank": 89,
+              "alliance_rank": 48
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 17846268,
+      "career_rank": 79
+    },
+    {
+      "player": "Luke65",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 17775370,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 17775370,
+      "best_week_rank": 80,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 17775370,
+          "alliance_rank": 80,
+          "overall_rank": 150,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3400372,
+              "overall_rank": 128,
+              "alliance_rank": 69
+            },
+            "tue": {
+              "points": 2043970,
+              "overall_rank": 156,
+              "alliance_rank": 83
+            },
+            "wed": {
+              "points": 4297639,
+              "overall_rank": 109,
+              "alliance_rank": 52
+            },
+            "thu": {
+              "points": 2636200,
+              "overall_rank": 165,
+              "alliance_rank": 83
+            },
+            "fri": {
+              "points": 4374158,
+              "overall_rank": 108,
+              "alliance_rank": 56
+            },
+            "sat": {
+              "points": 1023031,
+              "overall_rank": 172,
+              "alliance_rank": 89
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 17775370,
+      "career_rank": 80
+    },
+    {
+      "player": "PettyPandaPimp",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 17477796,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 17477796,
+      "best_week_rank": 81,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 17477796,
+          "alliance_rank": 81,
+          "overall_rank": 151,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 2775106,
+              "overall_rank": 142,
+              "alliance_rank": 78
+            },
+            "tue": {
+              "points": 2522781,
+              "overall_rank": 143,
+              "alliance_rank": 75
+            },
+            "wed": {
+              "points": 3134896,
+              "overall_rank": 130,
+              "alliance_rank": 68
+            },
+            "thu": {
+              "points": 5552962,
+              "overall_rank": 132,
+              "alliance_rank": 64
+            },
+            "fri": {
+              "points": 2846675,
+              "overall_rank": 147,
+              "alliance_rank": 77
+            },
+            "sat": {
+              "points": 645376,
+              "overall_rank": 174,
+              "alliance_rank": 90
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 17477796,
+      "career_rank": 81
+    },
+    {
+      "player": "FerylWeaver",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 16041554,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 16041554,
+      "best_week_rank": 82,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 16041554,
+          "alliance_rank": 82,
+          "overall_rank": 155,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 4371112,
+              "overall_rank": 110,
+              "alliance_rank": 59
+            },
+            "tue": {
+              "points": 1165530,
+              "overall_rank": 164,
+              "alliance_rank": 85
+            },
+            "wed": {
+              "points": 2724212,
+              "overall_rank": 139,
+              "alliance_rank": 73
+            },
+            "thu": {
+              "points": 3165840,
+              "overall_rank": 157,
+              "alliance_rank": 78
+            },
+            "fri": {
+              "points": 2377368,
+              "overall_rank": 161,
+              "alliance_rank": 82
+            },
+            "sat": {
+              "points": 2237492,
+              "overall_rank": 130,
+              "alliance_rank": 68
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 16041554,
+      "career_rank": 82
+    },
+    {
+      "player": "Locianos",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 15404282,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 15404282,
+      "best_week_rank": 83,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 15404282,
+          "alliance_rank": 83,
+          "overall_rank": 156,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 6017792,
+              "overall_rank": 84,
+              "alliance_rank": 45
+            },
+            "tue": {
+              "points": 2296558,
+              "overall_rank": 148,
+              "alliance_rank": 78
+            },
+            "wed": {
+              "points": 1742081,
+              "overall_rank": 159,
+              "alliance_rank": 84
+            },
+            "thu": {
+              "points": 2649766,
+              "overall_rank": 164,
+              "alliance_rank": 82
+            },
+            "fri": {
+              "points": 1609737,
+              "overall_rank": 179,
+              "alliance_rank": 88
+            },
+            "sat": {
+              "points": 1088348,
+              "overall_rank": 170,
+              "alliance_rank": 88
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 15404282,
+      "career_rank": 83
+    },
+    {
+      "player": "TheGreaterGood",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 14710481,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 14710481,
+      "best_week_rank": 84,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 14710481,
+          "alliance_rank": 84,
+          "overall_rank": 157,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 3010482,
+              "overall_rank": 137,
+              "alliance_rank": 74
+            },
+            "tue": {
+              "points": 2092653,
+              "overall_rank": 153,
+              "alliance_rank": 81
+            },
+            "wed": {
+              "points": 2275226,
+              "overall_rank": 156,
+              "alliance_rank": 82
+            },
+            "thu": {
+              "points": 2614260,
+              "overall_rank": 166,
+              "alliance_rank": 84
+            },
+            "fri": {
+              "points": 2693974,
+              "overall_rank": 151,
+              "alliance_rank": 79
+            },
+            "sat": {
+              "points": 2023886,
+              "overall_rank": 136,
+              "alliance_rank": 71
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 14710481,
+      "career_rank": 84
+    },
+    {
+      "player": "Photon",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 14376039,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 14376039,
+      "best_week_rank": 85,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 14376039,
+          "alliance_rank": 85,
+          "overall_rank": 158,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 2266788,
+              "overall_rank": 152,
+              "alliance_rank": 82
+            },
+            "tue": {
+              "points": 2082318,
+              "overall_rank": 154,
+              "alliance_rank": 82
+            },
+            "wed": {
+              "points": 2454162,
+              "overall_rank": 151,
+              "alliance_rank": 79
+            },
+            "thu": {
+              "points": 1864791,
+              "overall_rank": 173,
+              "alliance_rank": 88
+            },
+            "fri": {
+              "points": 4124609,
+              "overall_rank": 113,
+              "alliance_rank": 58
+            },
+            "sat": {
+              "points": 1583371,
+              "overall_rank": 151,
+              "alliance_rank": 81
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 14376039,
+      "career_rank": 85
+    },
+    {
+      "player": "PhantomLord",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 13872537,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 13872537,
+      "best_week_rank": 86,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 13872537,
+          "alliance_rank": 86,
+          "overall_rank": 160,
+          "tier": "Active Member",
+          "active_days": 3,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 7695610,
+              "overall_rank": 53,
+              "alliance_rank": 30
+            },
+            "tue": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "wed": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "thu": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "fri": {
+              "points": 3299122,
+              "overall_rank": 139,
+              "alliance_rank": 75
+            },
+            "sat": {
+              "points": 2877805,
+              "overall_rank": 96,
+              "alliance_rank": 53
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 13872537,
+      "career_rank": 86
+    },
+    {
+      "player": "2hIgH2cArE",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 13443002,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 13443002,
+      "best_week_rank": 87,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 13443002,
+          "alliance_rank": 87,
+          "overall_rank": 162,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 1077277,
+              "overall_rank": 173,
+              "alliance_rank": 87
+            },
+            "tue": {
+              "points": 2473850,
+              "overall_rank": 144,
+              "alliance_rank": 76
+            },
+            "wed": {
+              "points": 2874705,
+              "overall_rank": 137,
+              "alliance_rank": 71
+            },
+            "thu": {
+              "points": 2962019,
+              "overall_rank": 160,
+              "alliance_rank": 80
+            },
+            "fri": {
+              "points": 2573837,
+              "overall_rank": 156,
+              "alliance_rank": 81
+            },
+            "sat": {
+              "points": 1481314,
+              "overall_rank": 157,
+              "alliance_rank": 83
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 13443002,
+      "career_rank": 87
+    },
+    {
+      "player": "Pipocashisha",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 13156858,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 13156858,
+      "best_week_rank": 88,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 13156858,
+          "alliance_rank": 88,
+          "overall_rank": 164,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "sat",
+          "daily_breakdown": {
+            "mon": {
+              "points": 972850,
+              "overall_rank": 178,
+              "alliance_rank": 90
+            },
+            "tue": {
+              "points": 3411256,
+              "overall_rank": 121,
+              "alliance_rank": 63
+            },
+            "wed": {
+              "points": 2422919,
+              "overall_rank": 152,
+              "alliance_rank": 80
+            },
+            "thu": {
+              "points": 1374146,
+              "overall_rank": 179,
+              "alliance_rank": 90
+            },
+            "fri": {
+              "points": 1450175,
+              "overall_rank": 183,
+              "alliance_rank": 91
+            },
+            "sat": {
+              "points": 3525512,
+              "overall_rank": 78,
+              "alliance_rank": 43
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 13156858,
+      "career_rank": 88
+    },
+    {
+      "player": "GeekHunter",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 11491540,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 11491540,
+      "best_week_rank": 89,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 11491540,
+          "alliance_rank": 89,
+          "overall_rank": 166,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "thu",
+          "daily_breakdown": {
+            "mon": {
+              "points": 2350638,
+              "overall_rank": 151,
+              "alliance_rank": 81
+            },
+            "tue": {
+              "points": 1853624,
+              "overall_rank": 159,
+              "alliance_rank": 84
+            },
+            "wed": {
+              "points": 1227443,
+              "overall_rank": 175,
+              "alliance_rank": 87
+            },
+            "thu": {
+              "points": 3043953,
+              "overall_rank": 159,
+              "alliance_rank": 79
+            },
+            "fri": {
+              "points": 1642007,
+              "overall_rank": 177,
+              "alliance_rank": 87
+            },
+            "sat": {
+              "points": 1373875,
+              "overall_rank": 160,
+              "alliance_rank": 84
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 11491540,
+      "career_rank": 89
+    },
+    {
+      "player": "LaylaBee",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 11296621,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 11296621,
+      "best_week_rank": 90,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 11296621,
+          "alliance_rank": 90,
+          "overall_rank": 168,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 1253846,
+              "overall_rank": 169,
+              "alliance_rank": 85
+            },
+            "tue": {
+              "points": 557501,
+              "overall_rank": 175,
+              "alliance_rank": 90
+            },
+            "wed": {
+              "points": 850267,
+              "overall_rank": 185,
+              "alliance_rank": 91
+            },
+            "thu": {
+              "points": 1899888,
+              "overall_rank": 172,
+              "alliance_rank": 87
+            },
+            "fri": {
+              "points": 5137962,
+              "overall_rank": 98,
+              "alliance_rank": 49
+            },
+            "sat": {
+              "points": 1597157,
+              "overall_rank": 149,
+              "alliance_rank": 80
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 11296621,
+      "career_rank": 90
+    },
+    {
+      "player": "-NERO-",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 6805903,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 6805903,
+      "best_week_rank": 91,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 6805903,
+          "alliance_rank": 91,
+          "overall_rank": 183,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 1640882,
+              "overall_rank": 161,
+              "alliance_rank": 84
+            },
+            "tue": {
+              "points": 1057581,
+              "overall_rank": 168,
+              "alliance_rank": 87
+            },
+            "wed": {
+              "points": 799051,
+              "overall_rank": 186,
+              "alliance_rank": 92
+            },
+            "thu": {
+              "points": 1564171,
+              "overall_rank": 176,
+              "alliance_rank": 89
+            },
+            "fri": {
+              "points": 1313629,
+              "overall_rank": 185,
+              "alliance_rank": 93
+            },
+            "sat": {
+              "points": 430589,
+              "overall_rank": 179,
+              "alliance_rank": 91
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 6805903,
+      "career_rank": 91
+    },
+    {
+      "player": "PatrickPTY1",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 5871541,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 5871541,
+      "best_week_rank": 92,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 5871541,
+          "alliance_rank": 92,
+          "overall_rank": 185,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "sat",
+          "daily_breakdown": {
+            "mon": {
+              "points": 371692,
+              "overall_rank": 182,
+              "alliance_rank": 92
+            },
+            "tue": {
+              "points": 928580,
+              "overall_rank": 170,
+              "alliance_rank": 88
+            },
+            "wed": {
+              "points": 886323,
+              "overall_rank": 183,
+              "alliance_rank": 89
+            },
+            "thu": {
+              "points": 401008,
+              "overall_rank": 189,
+              "alliance_rank": 92
+            },
+            "fri": {
+              "points": 1433410,
+              "overall_rank": 184,
+              "alliance_rank": 92
+            },
+            "sat": {
+              "points": 1850528,
+              "overall_rank": 139,
+              "alliance_rank": 73
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 5871541,
+      "career_rank": 92
+    },
+    {
+      "player": "DarkTime66",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 3890922,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 3890922,
+      "best_week_rank": 93,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 3890922,
+          "alliance_rank": 93,
+          "overall_rank": 186,
+          "tier": "Active Member",
+          "active_days": 1,
+          "best_day": "sat",
+          "daily_breakdown": {
+            "mon": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "tue": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "wed": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "thu": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "fri": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "sat": {
+              "points": 3890922,
+              "overall_rank": 64,
+              "alliance_rank": 36
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 3890922,
+      "career_rank": 93
+    },
+    {
+      "player": "PimpIsDaddy",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 3462020,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 3462020,
+      "best_week_rank": 94,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 3462020,
+          "alliance_rank": 94,
+          "overall_rank": 187,
+          "tier": "Active Member",
+          "active_days": 5,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "tue": {
+              "points": 468126,
+              "overall_rank": 176,
+              "alliance_rank": 91
+            },
+            "wed": {
+              "points": 772096,
+              "overall_rank": 187,
+              "alliance_rank": 93
+            },
+            "thu": {
+              "points": 331249,
+              "overall_rank": 190,
+              "alliance_rank": 93
+            },
+            "fri": {
+              "points": 1464606,
+              "overall_rank": 182,
+              "alliance_rank": 90
+            },
+            "sat": {
+              "points": 425943,
+              "overall_rank": 180,
+              "alliance_rank": 92
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 3462020,
+      "career_rank": 94
+    },
+    {
+      "player": "SupremeDuke",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 2850964,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 2850964,
+      "best_week_rank": 95,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 2850964,
+          "alliance_rank": 95,
+          "overall_rank": 188,
+          "tier": "Active Member",
+          "active_days": 6,
+          "best_day": "mon",
+          "daily_breakdown": {
+            "mon": {
+              "points": 1059545,
+              "overall_rank": 174,
+              "alliance_rank": 88
+            },
+            "tue": {
+              "points": 246620,
+              "overall_rank": 179,
+              "alliance_rank": 92
+            },
+            "wed": {
+              "points": 367395,
+              "overall_rank": 191,
+              "alliance_rank": 94
+            },
+            "thu": {
+              "points": 411414,
+              "overall_rank": 188,
+              "alliance_rank": 91
+            },
+            "fri": {
+              "points": 633000,
+              "overall_rank": 189,
+              "alliance_rank": 94
+            },
+            "sat": {
+              "points": 132990,
+              "overall_rank": 186,
+              "alliance_rank": 94
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 2850964,
+      "career_rank": 95
+    },
+    {
+      "player": "Kowski",
+      "alliance": "[P1MP] JU1CE",
+      "total_points": 2539442,
+      "weeks_count": 1,
+      "best_week": "2026-09-19",
+      "best_week_pts": 2539442,
+      "best_week_rank": 96,
+      "history": {
+        "2026-09-19": {
+          "weekly_points": 2539442,
+          "alliance_rank": 96,
+          "overall_rank": 189,
+          "tier": "Active Member",
+          "active_days": 3,
+          "best_day": "fri",
+          "daily_breakdown": {
+            "mon": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "tue": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "wed": {
+              "points": 872632,
+              "overall_rank": 184,
+              "alliance_rank": 90
+            },
+            "thu": {
+              "points": 0,
+              "overall_rank": null,
+              "alliance_rank": null
+            },
+            "fri": {
+              "points": 1568937,
+              "overall_rank": 180,
+              "alliance_rank": 89
+            },
+            "sat": {
+              "points": 97873,
+              "overall_rank": 187,
+              "alliance_rank": 95
+            }
+          }
+        }
+      },
+      "avg_weekly_points": 2539442,
+      "career_rank": 96
+    }
+  ]
+}

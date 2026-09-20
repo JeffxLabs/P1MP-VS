@@ -42,7 +42,7 @@
 
     /* Header */
     header {
-      background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(9, 13, 22, 0.85) 100%);
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.96) 0%, rgba(9, 13, 22, 0.90) 100%);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border-color);
       position: sticky;
@@ -52,7 +52,7 @@
     .header-content {
       max-width: 1440px;
       margin: 0 auto;
-      padding: 1rem 1.5rem;
+      padding: 0.85rem 1.5rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -61,7 +61,7 @@
     }
     .brand-title {
       font-family: var(--font-display);
-      font-size: 1.4rem;
+      font-size: 1.35rem;
       font-weight: 700;
       letter-spacing: 0.05em;
       display: flex;
@@ -79,6 +79,25 @@
       text-transform: uppercase;
       box-shadow: 0 0 12px rgba(6, 182, 212, 0.4);
     }
+    .header-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    .week-select {
+      background: rgba(30, 41, 59, 0.9);
+      border: 1px solid var(--accent-cyan);
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.4rem 0.85rem;
+      border-radius: 6px;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+    }
     .status-tags {
       display: flex;
       flex-wrap: wrap;
@@ -86,19 +105,25 @@
       align-items: center;
     }
     .tag-item {
-      font-size: 0.8rem;
-      padding: 0.3rem 0.75rem;
+      font-size: 0.78rem;
+      padding: 0.25rem 0.65rem;
       border-radius: 9999px;
       background: rgba(30, 41, 59, 0.8);
       border: 1px solid var(--border-color);
       display: flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.35rem;
     }
     .tag-item.victory {
       background: rgba(34, 197, 94, 0.15);
       border-color: rgba(34, 197, 94, 0.4);
       color: #4ade80;
+      font-weight: 600;
+    }
+    .tag-item.verified {
+      background: rgba(56, 189, 248, 0.12);
+      border-color: rgba(56, 189, 248, 0.35);
+      color: var(--accent-cyan);
       font-weight: 600;
     }
 
@@ -198,7 +223,7 @@
     }
     .vs-badge {
       font-family: var(--font-display);
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 700;
       background: linear-gradient(180deg, #fbbf24 0%, #d97706 100%);
       -webkit-background-clip: text;
@@ -207,7 +232,7 @@
     }
     .stages-score {
       font-family: var(--font-display);
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 700;
       color: #4ade80;
       background: rgba(34, 197, 94, 0.15);
@@ -265,7 +290,7 @@
       border-color: var(--border-bright);
     }
     .stat-title {
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 600;
       color: var(--text-muted);
       text-transform: uppercase;
@@ -273,7 +298,7 @@
     }
     .stat-value {
       font-family: var(--font-mono);
-      font-size: 1.6rem;
+      font-size: 1.55rem;
       font-weight: 700;
       color: #fff;
     }
@@ -333,6 +358,7 @@
       border-radius: 10px;
       overflow-x: auto;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      margin-bottom: 2rem;
     }
     table {
       width: 100%;
@@ -607,17 +633,26 @@
         <span class="brand-badge">S117</span>
         <span>[P1MP] JU1CE — Duel Intelligence</span>
       </div>
-      <div class="status-tags">
-        <span class="tag-item victory">🏆 VS DUEL CHAMPION (5-1)</span>
-        <span class="tag-item">📊 3,972,000,390 Total Pts</span>
-        <span class="tag-item">👥 96 Active Operatives</span>
+      <div class="header-controls">
+        <!-- Multi-Week Selector -->
+        <label for="weekSelect" style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">EVENT WEEK:</label>
+        <select id="weekSelect" class="week-select" onchange="onWeekChanged()">
+          <!-- Populated dynamically via JS -->
+        </select>
+        <div class="status-tags">
+          <span class="tag-item victory" id="headerVictoryTag">🏆 VS CHAMPION</span>
+          <span class="tag-item verified">✓ Zero Skipped Ranks</span>
+        </div>
       </div>
     </div>
+
+    <!-- Navigation Tabs -->
     <div class="nav-tabs-wrapper">
-      <button class="nav-tab-btn active" onclick="switchNavTab('roster')">Operatives Roster</button>
-      <button class="nav-tab-btn" onclick="switchNavTab('stages')">Daily Stages (P1MP vs 0BS)</button>
-      <button class="nav-tab-btn" onclick="switchNavTab('leaderboards')">Full Duel Leaderboard</button>
-      <button class="nav-tab-btn" onclick="switchNavTab('analytics')">War Analytics</button>
+      <button class="nav-tab-btn active" onclick="switchNavTab('roster', this)">Operatives Roster</button>
+      <button class="nav-tab-btn" id="navBtnStages" onclick="switchNavTab('stages', this)">Daily Stages (P1MP vs 0BS)</button>
+      <button class="nav-tab-btn" id="navBtnLeaderboard" onclick="switchNavTab('leaderboards', this)">Full Duel Leaderboard</button>
+      <button class="nav-tab-btn" onclick="switchNavTab('analytics', this)">War Analytics</button>
+      <button class="nav-tab-btn" id="navBtnMultiWeek" onclick="switchNavTab('multiweek', this)">Multi-Week Trends</button>
     </div>
   </header>
 
@@ -625,29 +660,29 @@
   <main>
 
     <!-- Scoreboard Banner -->
-    <div class="scoreboard-banner">
+    <div class="scoreboard-banner" id="scoreboardBanner">
       <div class="team-card team-home">
-        <div class="team-title">[P1MP] JU1CE (Server 117)</div>
-        <div class="team-pts" id="p1mpWeeklyPoints">3,972,000,390</div>
-        <div style="font-size: 0.85rem; color: var(--accent-cyan);">96 Combatants • 53.9% War Share</div>
+        <div class="team-title" id="homeTeamTitle">[P1MP] JU1CE (Server 117)</div>
+        <div class="team-pts" id="homePoints">3,972,000,390</div>
+        <div style="font-size: 0.85rem; color: var(--accent-cyan);" id="homeSub">96 Combatants • 53.9% War Share</div>
       </div>
       <div class="vs-center">
-        <div class="vs-badge">VICTORY</div>
-        <div class="stages-score">5 STAGES WON - 1 LOST</div>
-        <div style="font-size: 0.8rem; color: #4ade80; font-family: var(--font-mono); margin-top: 0.2rem;">+579,338,046 Margin</div>
+        <div class="vs-badge" id="vsBadge">VICTORY</div>
+        <div class="stages-score" id="stagesScore">5 STAGES WON - 1 LOST</div>
+        <div style="font-size: 0.8rem; color: #4ade80; font-family: var(--font-mono); margin-top: 0.2rem;" id="marginText">+579,338,046 Margin</div>
       </div>
       <div class="team-card team-away">
-        <div class="team-title">[0BS] ZeroBullsht</div>
-        <div class="team-pts" id="obsWeeklyPoints">3,392,662,344</div>
-        <div style="font-size: 0.85rem; color: var(--obs-rose);">94 Combatants • 46.1% War Share</div>
+        <div class="team-title" id="awayTeamTitle">[0BS] ZeroBullsht</div>
+        <div class="team-pts" id="awayPoints">3,392,662,344</div>
+        <div style="font-size: 0.85rem; color: var(--obs-rose);" id="awaySub">94 Combatants • 46.1% War Share</div>
       </div>
       <div class="progress-bar-wrap">
         <div class="progress-track">
-          <div class="progress-fill-home" style="width: 53.94%;"></div>
+          <div class="progress-fill-home" id="progressFill" style="width: 53.94%;"></div>
         </div>
         <div class="progress-labels">
-          <span>P1MP 53.94%</span>
-          <span>0BS 46.06%</span>
+          <span id="labelHome">P1MP 53.94%</span>
+          <span id="labelAway">0BS 46.06%</span>
         </div>
       </div>
     </div>
@@ -656,24 +691,24 @@
     <section id="tab-roster" class="tab-content active">
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-title">P1MP Roster Total</div>
-          <div class="stat-value">96</div>
+          <div class="stat-title">P1MP Active Roster</div>
+          <div class="stat-value" id="rosterCountVal">96</div>
           <div class="stat-sub">100% attendance on Saturday</div>
         </div>
         <div class="stat-card">
           <div class="stat-title">Top 10 Whale Contribution</div>
-          <div class="stat-value">1.37B pts</div>
-          <div class="stat-sub">34.6% of alliance total score</div>
+          <div class="stat-value" id="whaleShareVal">1.37B pts</div>
+          <div class="stat-sub">34.6% of alliance weekly total</div>
         </div>
         <div class="stat-card">
           <div class="stat-title">Median Member Output</div>
-          <div class="stat-value">32.8M pts</div>
-          <div class="stat-sub">Strong core depth across roster</div>
+          <div class="stat-value" id="medianPtsVal">32.8M pts</div>
+          <div class="stat-sub">Solid combat depth across members</div>
         </div>
         <div class="stat-card">
           <div class="stat-title">MVP Highest Single Day</div>
-          <div class="stat-value">66.0M pts</div>
-          <div class="stat-sub">RollingStoners (Hero Recruitment)</div>
+          <div class="stat-value" id="mvpDayVal">66.0M pts</div>
+          <div class="stat-sub" id="mvpDaySub">RollingStoners (Hero Growth)</div>
         </div>
       </div>
 
@@ -740,9 +775,9 @@
         <div class="filter-group">
           <input type="text" id="leaderboardSearch" class="search-input" placeholder="Search any player..." oninput="filterLeaderboard()">
           <select id="allianceFilter" class="select-dropdown" onchange="filterLeaderboard()">
-            <option value="ALL">All Alliances (P1MP & 0BS)</option>
+            <option value="ALL">All Alliances (P1MP & Opponent)</option>
             <option value="P1MP">[P1MP] JU1CE Only</option>
-            <option value="0BS">[0BS] ZeroBullsht Only</option>
+            <option value="OPP">Opponent Only</option>
           </select>
         </div>
         <div style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);" id="leaderboardCountText">
@@ -771,32 +806,113 @@
     <section id="tab-analytics" class="tab-content">
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-title">Thursday High Tide</div>
+          <div class="stat-title">Thursday Peak Volume</div>
           <div class="stat-value">1.102B pts</div>
-          <div class="stat-sub">Highest daily score recorded by P1MP</div>
+          <div class="stat-sub">Highest single-day points by P1MP</div>
         </div>
         <div class="stat-card">
-          <div class="stat-title">Biggest Victory Margin</div>
+          <div class="stat-title">Largest Stage Margin</div>
           <div class="stat-value">+235.4M</div>
           <div class="stat-sub">Stage 1 (Monday Radar & Exploration)</div>
         </div>
         <div class="stat-card">
-          <div class="stat-title">Clean Sweeps</div>
-          <div class="stat-value">5 of 6</div>
-          <div class="stat-sub">Decisive weekly championship win</div>
+          <div class="stat-title">Stage Win Rate</div>
+          <div class="stat-value">83.3%</div>
+          <div class="stat-sub">5 wins out of 6 daily stages</div>
         </div>
         <div class="stat-card">
-          <div class="stat-title">Roster Depth</div>
+          <div class="stat-title">Average Daily Attendance</div>
           <div class="stat-value">95.8%</div>
-          <div class="stat-sub">Average daily participation rate</div>
+          <div class="stat-sub">Operative commitment across the week</div>
         </div>
       </div>
 
       <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem;">
-        <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 1rem; color: var(--accent-cyan);">DAILY STAGE HEAD-TO-HEAD COMPARISON</h3>
+        <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 1rem; color: var(--accent-cyan);">DAILY STAGE HEAD-TO-HEAD VOLUME</h3>
         <div id="chartContainer" style="width: 100%; height: 320px; position: relative;">
-          <!-- Inline SVG Chart -->
+          <!-- Rendered via JS -->
         </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: MULTI-WEEK / HISTORICAL TRACKER -->
+    <section id="tab-multiweek" class="tab-content">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-title">All-Time VS Record</div>
+          <div class="stat-value" id="mwRecordVal">1 - 0</div>
+          <div class="stat-sub">100% Weekly Matchup Win Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">Cumulative Points Scored</div>
+          <div class="stat-value" id="mwTotalPtsVal">3.972B</div>
+          <div class="stat-sub">Across documented weeks</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">Average Weekly Total</div>
+          <div class="stat-value" id="mwAvgPtsVal">3.972B</div>
+          <div class="stat-sub">P1MP weekly scoring pace</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">Weeks Ingested</div>
+          <div class="stat-value" id="mwWeeksCountVal">1</div>
+          <div class="stat-sub">Documented with zero skipped ranks</div>
+        </div>
+      </div>
+
+      <!-- Historical Matchups Table -->
+      <div style="margin-bottom: 2rem;">
+        <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--accent-cyan);">WEEKLY MATCHUP ARCHIVE</h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Week</th>
+                <th>Opponent</th>
+                <th>Result</th>
+                <th style="text-align: right;">P1MP Points</th>
+                <th style="text-align: right;">Opponent Points</th>
+                <th style="text-align: right;">Margin</th>
+                <th>Top Scorer</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="matchupsTableBody">
+              <!-- Populated via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Career Standings Controls -->
+      <div class="controls-bar">
+        <div class="filter-group">
+          <input type="text" id="mwMemberSearch" class="search-input" placeholder="Search operative career stats..." oninput="filterMultiWeekMembers()">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);" id="mwMemberCountText">
+          Showing 96 operatives across all weeks
+        </div>
+      </div>
+
+      <!-- Multi-Week Career Table -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th onclick="sortMultiWeek('career_rank')">Career Rank ↕</th>
+              <th onclick="sortMultiWeek('player')">Commander ↕</th>
+              <th onclick="sortMultiWeek('total_points')" style="text-align: right;">Total Points ↕</th>
+              <th onclick="sortMultiWeek('avg_weekly_points')" style="text-align: right;">Weekly Avg ↕</th>
+              <th onclick="sortMultiWeek('weeks_count')" style="text-align: center;">Weeks Played ↕</th>
+              <th>Best Week</th>
+              <th style="text-align: right;">Best Week Pts</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="multiWeekTableBody">
+            <!-- Populated via JS -->
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -829,7 +945,7 @@
         </div>
 
         <div style="background: var(--bg-surface); padding: 1rem; border-radius: 8px;">
-          <h4 style="font-family: var(--font-display); font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--accent-cyan); text-transform: uppercase;">Daily Trajectory Breakdown</h4>
+          <h4 style="font-family: var(--font-display); font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--accent-cyan); text-transform: uppercase;">Daily Trajectory (Mon - Sat)</h4>
           <div id="modalDailyChart" style="height: 120px; display: flex; align-items: flex-end; gap: 8px; padding-top: 10px;">
             <!-- Rendered via JS -->
           </div>
@@ -850,13 +966,22 @@
             </tbody>
           </table>
         </div>
+
+        <!-- Career History Section in Modal -->
+        <div id="modalCareerSection" style="background: var(--bg-surface); padding: 1rem; border-radius: 8px;">
+          <h4 style="font-family: var(--font-display); font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--accent-gold); text-transform: uppercase;">Multi-Week History</h4>
+          <div id="modalCareerContent" style="font-size: 0.85rem; color: var(--text-muted);">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 
   <!-- Footer -->
   <footer>
-    <p>Z Route: Redemption • S117 [P1MP] JU1CE Alliance Duel Tracker • Live Visual Dashboard</p>
+    <p>Z Route: Redemption • S117 [P1MP] JU1CE Alliance Duel Multi-Week Performance Tracker</p>
   </footer>
 
   <!-- Scripts -->
@@ -871,11 +996,13 @@
       sat: "Stage 6: Saturday (Enemy Assault)"
     };
 
-    let membersData = window.P1MP_DATA?.members || [];
-    let duelData = window.P1MP_DATA?.duel || {};
-    let dailyData = window.P1MP_DATA?.daily || {};
+    let p1mpBundle = window.P1MP_DATA || {};
+    let weeksIndex = p1mpBundle.weeksIndex || [];
+    let multiWeekData = p1mpBundle.multiWeek || {};
+    let activeWeekId = p1mpBundle.latestWeekId || (weeksIndex[0]?.id || "");
 
     let currentSort = { col: 'alliance_rank', asc: true };
+    let mwSort = { col: 'career_rank', asc: true };
     let activeLeaderboardDay = 'week';
 
     function formatNumber(num) {
@@ -883,15 +1010,69 @@
       return Number(num).toLocaleString();
     }
 
-    function switchNavTab(tabName) {
-      document.querySelectorAll('.nav-tab-btn').forEach(btn => btn.classList.remove('active'));
+    function initWeekSelector() {
+      const sel = document.getElementById('weekSelect');
+      sel.innerHTML = weeksIndex.map(w => `
+        <option value="${w.id}" ${w.id === activeWeekId ? 'selected' : ''}>
+          ${w.title}
+        </option>
+      `).join('');
+    }
+
+    function onWeekChanged() {
+      const sel = document.getElementById('weekSelect');
+      activeWeekId = sel.value;
+      loadWeekData(activeWeekId);
+    }
+
+    function getActiveWeek() {
+      return p1mpBundle.weeks ? p1mpBundle.weeks[activeWeekId] : null;
+    }
+
+    function loadWeekData(weekId) {
+      const w = p1mpBundle.weeks ? p1mpBundle.weeks[weekId] : null;
+      if (!w) return;
+
+      // Update banner
+      document.getElementById('homeTeamTitle').textContent = `[P1MP] JU1CE (Server 117)`;
+      document.getElementById('homePoints').textContent = formatNumber(w.duel.weekly_result.p1mp_total_points);
+      document.getElementById('homeSub').textContent = `${w.members.length} Combatants • 53.9% War Share`;
+
+      const opp = w.duel.opponent_alliance;
+      document.getElementById('awayTeamTitle').textContent = `[${opp.tag}] ${opp.name}`;
+      document.getElementById('awayPoints').textContent = formatNumber(w.duel.weekly_result.obs_total_points);
+      document.getElementById('awaySub').textContent = `Opponent Alliance • 46.1% War Share`;
+
+      const p1mpPts = w.duel.weekly_result.p1mp_total_points;
+      const oppPts = w.duel.weekly_result.obs_total_points;
+      const totalPts = p1mpPts + oppPts;
+      const share = totalPts > 0 ? ((p1mpPts / totalPts) * 100).toFixed(2) : 50;
+
+      document.getElementById('progressFill').style.width = share + '%';
+      document.getElementById('labelHome').textContent = `P1MP ${share}%`;
+      document.getElementById('labelAway').textContent = `${opp.tag} ${(100 - share).toFixed(2)}%`;
+
+      const margin = w.duel.weekly_result.total_margin;
+      document.getElementById('marginText').textContent = `+${formatNumber(margin)} Margin`;
+      document.getElementById('stagesScore').textContent = `${w.duel.weekly_result.p1mp_stages_won} STAGES WON - ${w.duel.weekly_result.obs_stages_lost || 1} LOST`;
+
+      // Render roster
+      filterMembers();
+      renderStages();
+      filterLeaderboard();
+    }
+
+    function switchNavTab(tabName, btn) {
+      document.querySelectorAll('.nav-tab-btn').forEach(b => b.classList.remove('active'));
       document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
 
-      event.currentTarget.classList.add('active');
+      if (btn) btn.classList.add('active');
       document.getElementById('tab-' + tabName).classList.add('active');
 
       if (tabName === 'analytics') {
         renderAnalyticsChart();
+      } else if (tabName === 'multiweek') {
+        renderMultiWeek();
       }
     }
 
@@ -902,7 +1083,6 @@
         const medal = m.alliance_rank === 1 ? 'medal-1' : m.alliance_rank === 2 ? 'medal-2' : m.alliance_rank === 3 ? 'medal-3' : '';
         const tierClass = m.tier.includes('Whale') ? 'tier-whale' : m.tier.includes('High') ? 'tier-high' : m.tier.includes('Core') ? 'tier-core' : 'tier-active';
 
-        // mini bars
         const maxMemberPt = Math.max(...['mon','tue','wed','thu','fri','sat'].map(d => m.daily_breakdown[d]?.points || 0), 1);
         const miniBars = ['mon','tue','wed','thu','fri','sat'].map(d => {
           const pt = m.daily_breakdown[d]?.points || 0;
@@ -931,16 +1111,17 @@
     }
 
     function filterMembers() {
+      const w = getActiveWeek();
+      if (!w) return;
       const q = document.getElementById('memberSearch').value.trim().toLowerCase();
       const tier = document.getElementById('tierFilter').value;
 
-      let filtered = membersData.filter(m => {
+      let filtered = w.members.filter(m => {
         const matchesQuery = !q || m.player.toLowerCase().includes(q);
         const matchesTier = tier === 'ALL' || m.tier === tier;
         return matchesQuery && matchesTier;
       });
 
-      // sort
       filtered.sort((a, b) => {
         let valA = a[currentSort.col];
         let valB = b[currentSort.col];
@@ -963,7 +1144,9 @@
 
     /* Modal */
     function openMemberModal(playerName) {
-      const m = membersData.find(x => x.player === playerName);
+      const w = getActiveWeek();
+      if (!w) return;
+      const m = w.members.find(x => x.player === playerName);
       if (!m) return;
 
       document.getElementById('modalPlayerName').textContent = m.player;
@@ -975,7 +1158,6 @@
       document.getElementById('modalWeeklyPts').textContent = formatNumber(m.weekly_points);
       document.getElementById('modalSharePct').textContent = `${m.share_pct}%`;
 
-      // Render mini chart in modal
       const maxPts = Math.max(...['mon','tue','wed','thu','fri','sat'].map(d => m.daily_breakdown[d]?.points || 0), 1);
       const chartHtml = ['mon','tue','wed','thu','fri','sat'].map(d => {
         const pt = m.daily_breakdown[d]?.points || 0;
@@ -990,7 +1172,6 @@
       }).join('');
       document.getElementById('modalDailyChart').innerHTML = chartHtml;
 
-      // Table rows
       const tableRows = ['mon','tue','wed','thu','fri','sat'].map(d => {
         const dayInfo = m.daily_breakdown[d];
         return `
@@ -1004,6 +1185,21 @@
       }).join('');
       document.getElementById('modalDaysTableBody').innerHTML = tableRows;
 
+      // Multi-week career info
+      const career = multiWeekData.members?.find(x => x.player === playerName);
+      if (career) {
+        document.getElementById('modalCareerContent').innerHTML = `
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-family: var(--font-mono);">
+            <div>Career Rank: <strong style="color: var(--accent-cyan);">#${career.career_rank}</strong></div>
+            <div>Cumulative Points: <strong style="color: #fff;">${formatNumber(career.total_points)}</strong></div>
+            <div>Weeks Tracked: <strong style="color: #fff;">${career.weeks_count}</strong></div>
+            <div>Best Rank: <strong style="color: var(--accent-gold);">#${career.best_week_rank}</strong></div>
+          </div>
+        `;
+      } else {
+        document.getElementById('modalCareerContent').innerHTML = `Single week tracked.`;
+      }
+
       document.getElementById('memberModal').classList.add('open');
     }
 
@@ -1016,8 +1212,10 @@
 
     /* Stages Grid */
     function renderStages() {
+      const w = getActiveWeek();
+      if (!w) return;
       const container = document.getElementById('stagesContainer');
-      const stages = duelData.daily_stages || [];
+      const stages = w.duel.daily_stages || [];
 
       container.innerHTML = stages.map(st => {
         const isWin = st.winner === 'P1MP';
@@ -1026,7 +1224,7 @@
             <div class="stage-header">
               <span class="stage-day-badge">${st.day.toUpperCase()}</span>
               <span class="stage-status-badge ${isWin ? 'stage-win' : 'stage-loss'}">
-                ${isWin ? '🏆 P1MP VICTORY' : 'DEFICIT (0BS)'}
+                ${isWin ? '🏆 P1MP VICTORY' : `DEFICIT (${w.duel.opponent_alliance.tag})`}
               </span>
             </div>
             <div class="stage-title">${escapeHtml(st.title)}</div>
@@ -1036,7 +1234,7 @@
                 <span>${formatNumber(st.p1mp_points)}</span>
               </div>
               <div class="comp-row comp-away">
-                <span>[0BS] ZeroBullsht</span>
+                <span>[${w.duel.opponent_alliance.tag}] ${w.duel.opponent_alliance.name}</span>
                 <span>${formatNumber(st.obs_points)}</span>
               </div>
               <div class="stage-meter">
@@ -1055,19 +1253,23 @@
     /* Leaderboard Rendering */
     function switchLeaderboardDay(dayKey, btn) {
       activeLeaderboardDay = dayKey;
-      document.querySelectorAll('.sub-tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('#tab-leaderboards .sub-tab-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       filterLeaderboard();
     }
 
     function filterLeaderboard() {
-      const list = dailyData[activeLeaderboardDay] || [];
+      const w = getActiveWeek();
+      if (!w) return;
+      const list = w.daily[activeLeaderboardDay] || [];
       const q = document.getElementById('leaderboardSearch').value.trim().toLowerCase();
       const ally = document.getElementById('allianceFilter').value;
 
       const filtered = list.filter(r => {
         const matchesQ = !q || r.player.toLowerCase().includes(q);
-        const matchesAlly = ally === 'ALL' || r.alliance_tag === ally;
+        let matchesAlly = true;
+        if (ally === 'P1MP') matchesAlly = r.alliance_tag === 'P1MP';
+        else if (ally === 'OPP') matchesAlly = r.alliance_tag !== 'P1MP';
         return matchesQ && matchesAlly;
       });
 
@@ -1087,21 +1289,23 @@
           </tr>
         `;
       }).join('');
-      document.getElementById('leaderboardCountText').textContent = `Showing ${filtered.length} players`;
+      document.getElementById('leaderboardCountText').textContent = `Showing ${filtered.length} players (Rank 1 to ${filtered.length > 0 ? filtered[filtered.length - 1].rank : 0})`;
     }
 
-    /* Analytics Inline SVG Chart */
+    /* Analytics Chart */
     function renderAnalyticsChart() {
+      const w = getActiveWeek();
+      if (!w) return;
       const container = document.getElementById('chartContainer');
-      const stages = duelData.daily_stages || [];
+      const stages = w.duel.daily_stages || [];
       if (!stages.length) return;
 
       const maxVal = Math.max(...stages.map(s => Math.max(s.p1mp_points, s.obs_points)));
-      const w = container.clientWidth || 900;
-      const h = 260;
+      const width = container.clientWidth || 900;
+      const height = 260;
       const padding = 50;
-      const innerW = w - padding * 2;
-      const innerH = h - padding;
+      const innerW = width - padding * 2;
+      const innerH = height - padding;
       const barGroupW = innerW / stages.length;
 
       let barsHtml = '';
@@ -1115,29 +1319,102 @@
         const y0BS = innerH - h0BS;
 
         barsHtml += `
-          <!-- P1MP bar -->
           <rect x="${xCenter - bw - 2}" y="${yP1MP}" width="${bw}" height="${hP1MP}" fill="#06b6d4" rx="3">
             <title>P1MP: ${formatNumber(st.p1mp_points)}</title>
           </rect>
-          <!-- 0BS bar -->
           <rect x="${xCenter + 2}" y="${y0BS}" width="${bw}" height="${h0BS}" fill="#f43f5e" rx="3">
-            <title>0BS: ${formatNumber(st.obs_points)}</title>
+            <title>${w.duel.opponent_alliance.tag}: ${formatNumber(st.obs_points)}</title>
           </rect>
-          <!-- Day Label -->
           <text x="${xCenter}" y="${innerH + 20}" text-anchor="middle" fill="#94a3b8" font-size="12" font-family="var(--font-display)">${st.day.toUpperCase()}</text>
         `;
       });
 
       container.innerHTML = `
-        <svg width="100%" height="${h}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
-          <line x1="${padding}" y1="${innerH}" x2="${w - padding}" y2="${innerH}" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+        <svg width="100%" height="${height}" viewBox="0 0 ${width} ${height}" preserveAspectRatio="none">
+          <line x1="${padding}" y1="${innerH}" x2="${width - padding}" y2="${innerH}" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
           ${barsHtml}
         </svg>
         <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 10px; font-size: 0.85rem;">
           <div style="display: flex; align-items: center; gap: 6px;"><div style="width: 12px; height: 12px; background: #06b6d4; border-radius: 2px;"></div> <span style="color: #fff;">[P1MP] JU1CE</span></div>
-          <div style="display: flex; align-items: center; gap: 6px;"><div style="width: 12px; height: 12px; background: #f43f5e; border-radius: 2px;"></div> <span style="color: #fff;">[0BS] ZeroBullsht</span></div>
+          <div style="display: flex; align-items: center; gap: 6px;"><div style="width: 12px; height: 12px; background: #f43f5e; border-radius: 2px;"></div> <span style="color: #fff;">[${w.duel.opponent_alliance.tag}] ${w.duel.opponent_alliance.name}</span></div>
         </div>
       `;
+    }
+
+    /* Multi-Week View */
+    function renderMultiWeek() {
+      // Summary cards
+      document.getElementById('mwRecordVal').textContent = multiWeekData.record || "1 - 0";
+      document.getElementById('mwTotalPtsVal').textContent = (multiWeekData.total_p1mp_points / 1000000000).toFixed(3) + "B";
+      document.getElementById('mwAvgPtsVal').textContent = (multiWeekData.average_weekly_points / 1000000000).toFixed(3) + "B";
+      document.getElementById('mwWeeksCountVal').textContent = multiWeekData.total_weeks || 1;
+
+      // Matchups table
+      const matchupsBody = document.getElementById('matchupsTableBody');
+      matchupsBody.innerHTML = weeksIndex.map(w => `
+        <tr>
+          <td style="font-weight: 600; font-family: var(--font-display);">${w.date}</td>
+          <td><span style="color: var(--obs-rose); font-weight: 600;">[${w.opponent_tag}] ${w.opponent_name}</span></td>
+          <td><span class="stage-status-badge stage-win">🏆 ${w.winner} (${w.stages_won}-${w.stages_lost})</span></td>
+          <td style="text-align: right; font-family: var(--font-mono); color: var(--accent-cyan); font-weight: 700;">${formatNumber(w.p1mp_points)}</td>
+          <td style="text-align: right; font-family: var(--font-mono);">${formatNumber(w.obs_points)}</td>
+          <td style="text-align: right; font-family: var(--font-mono); color: #4ade80;">+${formatNumber(w.margin)}</td>
+          <td style="font-weight: 600; color: var(--accent-gold);">${w.top_performer}</td>
+          <td><button onclick="selectWeekFromArchive('${w.id}')" style="background: rgba(56, 189, 248, 0.1); border: 1px solid var(--border-color); color: var(--accent-cyan); padding: 0.25rem 0.6rem; border-radius: 4px; font-size: 0.75rem; cursor: pointer;">View Week</button></td>
+        </tr>
+      `).join('');
+
+      filterMultiWeekMembers();
+    }
+
+    function selectWeekFromArchive(weekId) {
+      activeWeekId = weekId;
+      document.getElementById('weekSelect').value = weekId;
+      loadWeekData(weekId);
+      switchNavTab('roster', document.querySelector('.nav-tab-btn'));
+    }
+
+    function filterMultiWeekMembers() {
+      const q = document.getElementById('mwMemberSearch')?.value.trim().toLowerCase() || "";
+      let members = multiWeekData.members || [];
+
+      let filtered = members.filter(m => !q || m.player.toLowerCase().includes(q));
+
+      filtered.sort((a, b) => {
+        let valA = a[mwSort.col];
+        let valB = b[mwSort.col];
+        if (typeof valA === 'string') return mwSort.asc ? valA.localeCompare(valB) : valB.localeCompare(valA);
+        return mwSort.asc ? valA - valB : valB - valA;
+      });
+
+      const tbody = document.getElementById('multiWeekTableBody');
+      tbody.innerHTML = filtered.map(m => {
+        const medal = m.career_rank === 1 ? 'medal-1' : m.career_rank === 2 ? 'medal-2' : m.career_rank === 3 ? 'medal-3' : '';
+        return `
+          <tr class="member-row" onclick="openMemberModal('${m.player}')">
+            <td class="rank-cell">${medal ? `<span class="rank-medal ${medal}">${m.career_rank}</span>` : `#${m.career_rank}`}</td>
+            <td style="font-weight: 600; color: #fff;">${escapeHtml(m.player)}</td>
+            <td style="text-align: right; font-family: var(--font-mono); font-weight: 700; color: var(--accent-cyan);">${formatNumber(m.total_points)}</td>
+            <td style="text-align: right; font-family: var(--font-mono);">${formatNumber(m.avg_weekly_points)}</td>
+            <td style="text-align: center; font-family: var(--font-mono);">${m.weeks_count}</td>
+            <td style="font-family: var(--font-display); color: var(--accent-gold);">${m.best_week}</td>
+            <td style="text-align: right; font-family: var(--font-mono);">${formatNumber(m.best_week_pts)}</td>
+            <td><button style="background: rgba(56, 189, 248, 0.1); border: 1px solid var(--border-color); color: var(--accent-cyan); padding: 0.25rem 0.6rem; border-radius: 4px; font-size: 0.75rem; cursor: pointer;">Career</button></td>
+          </tr>
+        `;
+      }).join('');
+
+      document.getElementById('mwMemberCountText').textContent = `Showing ${filtered.length} operatives across all weeks`;
+    }
+
+    function sortMultiWeek(col) {
+      if (mwSort.col === col) {
+        mwSort.asc = !mwSort.asc;
+      } else {
+        mwSort.col = col;
+        mwSort.asc = col === 'player' || col === 'career_rank';
+      }
+      filterMultiWeekMembers();
     }
 
     function escapeHtml(s) {
@@ -1147,9 +1424,8 @@
 
     // Init
     window.addEventListener('DOMContentLoaded', () => {
-      renderMembers(membersData);
-      renderStages();
-      filterLeaderboard();
+      initWeekSelector();
+      loadWeekData(activeWeekId);
     });
   </script>
 </body>

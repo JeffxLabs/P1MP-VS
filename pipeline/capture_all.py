@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 """
-Comprehensive Capture Pipeline for VS Alliance Competition (S117-P1MP vs 0BS).
+Comprehensive Capture Pipeline for VS Alliance Competition (S117-P1MP).
 Captures Monday through Saturday daily rankings plus Weekly Total.
+Automatically archives to data/weeks/<week_id>, validates contiguous ranks,
+and rebuilds multi-week analytics and embedded bundles.
+
+Usage:
+  python3 pipeline/capture_all.py --week 2026-09-19 --device 127.0.0.1:5555
 """
 import os
 import sys
@@ -9,14 +14,18 @@ import time
 import json
 import re
 import shutil
+import argparse
 import subprocess
 import threading
 from cleaner import clean_record
+from build_analytics import main as build_analytics_main
+from build_multiweek import build_multi_week, validate_week_ranks
 
 PIPELINE_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(PIPELINE_DIR)
 SCRATCH_DIR = os.path.join(PIPELINE_DIR, "scratch")
 DATA_DIR = os.path.join(BASE_DIR, "data")
+WEEKS_DIR = os.path.join(DATA_DIR, "weeks")
 OCR_BIN = os.path.join(PIPELINE_DIR, "vision_ocr")
 
 TABS = [
@@ -60,7 +69,6 @@ def parse_items_to_rows(items, max_known_rank=0):
         elif 0.30 <= x <= 0.74:
             middle_boxes.append({'text': text, 'y': y, 'h': h, 'x': x})
 
-    # Sort and dedup rank boxes
     rank_boxes = sorted(rank_boxes, key=lambda r: r['rank'])
     dedup_ranks = {}
     for r in rank_boxes:
@@ -117,7 +125,7 @@ def screencap(adb, device, dest_path):
         subprocess.run([adb, "-s", device, "exec-out", "screencap", "-p"], stdout=f)
 
 def swipe_async(adb, device):
-    # Smaller swipe (from 1250 to 800 = 450px) to ensure no skipped rows
+    # Swipe 450px to ensure continuous overlap and zero missed ranks
     subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", "1250", "540", "800", "400"])
 
 def rewind_to_top(adb, device):
@@ -129,15 +137,12 @@ def rewind_to_top(adb, device):
 
 def switch_to_tab(adb, device, tab_info):
     if tab_info["category"] == "today":
-        # Tap Today first
         subprocess.run([adb, "-s", device, "shell", "input", "tap", "270", "130"])
         time.sleep(0.4)
-        # Tap specific day
         x, y = tab_info["tap"]
         subprocess.run([adb, "-s", device, "shell", "input", "tap", str(x), str(y)])
         time.sleep(0.6)
     else:
-        # Tap This Week
         x, y = tab_info["tap"]
         subprocess.run([adb, "-s", device, "shell", "input", "tap", str(x), str(y)])
         time.sleep(0.6)
@@ -207,15 +212,22 @@ def capture_leaderboard(adb, device, label, max_frames=80):
     return cleaned_records
 
 def main():
-    device = "127.0.0.1:5555"
-    adb = shutil.which("adb") or "/opt/homebrew/bin/adb"
+    parser = argparse.ArgumentParser(description="Capture S117-P1MP VS Alliance Leaderboards")
+    parser.add_argument("--week", default="2026-09-19", help="Week date ID (YYYY-MM-DD)")
+    parser.add_argument("--device", default="127.0.0.1:5555", help="ADB target device (default: 127.0.0.1:5555)")
+    args = parser.parse_args()
+
+    device = args.device
+    week_id = args.week
+    week_dir = os.path.join(WEEKS_DIR, week_id)
+    os.makedirs(week_dir, exist_ok=True)
     os.makedirs(DATA_DIR, exist_ok=True)
 
-    print(f"=== Starting VS Alliance Leaderboard Ingestion ===")
+    adb = shutil.which("adb") or "/opt/homebrew/bin/adb"
+    print(f"=== Starting VS Alliance Leaderboard Ingestion for Week {week_id} ===")
     print(f"Target Device: {device}")
     
     total_start = time.time()
-    all_days_data = {}
 
     for tab in TABS:
         tab_id = tab["id"]
@@ -224,15 +236,38 @@ def main():
         switch_to_tab(adb, device, tab)
         rewind_to_top(adb, device)
         records = capture_leaderboard(adb, device, tab_id.upper())
-        all_days_data[tab_id] = records
         
-        # Save day file
-        out_file = os.path.join(DATA_DIR, f"{tab_id}.json")
-        with open(out_file, "w", encoding="utf-8") as f:
+        # Save to week_dir and DATA_DIR
+        out_week_file = os.path.join(week_dir, f"{tab_id}.json")
+        with open(out_week_file, "w", encoding="utf-8") as f:
             json.dump(records, f, indent=2, ensure_ascii=False)
-        print(f"  Saved to data/{tab_id}.json ({len(records)} entries)")
+            
+        out_root_file = os.path.join(DATA_DIR, f"{tab_id}.json")
+        with open(out_root_file, "w", encoding="utf-8") as f:
+            json.dump(records, f, indent=2, ensure_ascii=False)
 
-    print(f"\nAll 7 tabs captured in {time.time()-total_start:.1f}s!")
+    print(f"\nLeaderboard capture completed in {time.time()-total_start:.1f}s.")
+    
+    # Run analytics
+    print("\n--- Compiling Member Analytics ---")
+    build_analytics_main()
+    # Copy generated summaries to week_dir
+    shutil.copy(os.path.join(DATA_DIR, "duel_summary.json"), os.path.join(week_dir, "duel_summary.json"))
+    shutil.copy(os.path.join(DATA_DIR, "p1mp_members.json"), os.path.join(week_dir, "p1mp_members.json"))
+
+    # Verify rank integrity
+    print("\n--- Verifying Rank Contiguity (No Skipped Numbers) ---")
+    errs = validate_week_ranks(week_dir, week_id)
+    if errs:
+        for e in errs:
+            print("  ⚠️", e)
+    else:
+        print("  ✅ 100% Rank Contiguity Verified: Zero numbers skipped across all 7 leaderboards!")
+
+    # Build multi-week archive
+    print("\n--- Updating Multi-Week History & Bundles ---")
+    build_multi_week()
+    print(f"\n=== Week {week_id} successfully ingested and ready for deployment! ===")
 
 if __name__ == "__main__":
     main()
