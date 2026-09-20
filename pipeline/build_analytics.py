@@ -105,10 +105,7 @@ def main():
                 }
 
         # Assign tier based on 11.4M weekly baseline quota and contribution
-        if wk_pts < 11400000:
-            tier = "Deadweight (<11.4M)"
-            quota_status = "FAILED"
-        elif wk_pts >= 100000000:
+        if wk_pts >= 100000000:
             tier = "Titan (100M+)"
             quota_status = "MET"
         elif wk_pts >= 50000000:
@@ -117,9 +114,15 @@ def main():
         elif wk_pts >= 20000000:
             tier = "Core Contributor (20M+)"
             quota_status = "MET"
-        else:
+        elif wk_pts >= 11400000:
             tier = "Quota Met (11.4M+)"
             quota_status = "MET"
+        elif wk_pts >= 11000000:
+            tier = "Near Quota (11M - 11.4M)"
+            quota_status = "NEAR"
+        else:
+            tier = "Deadweight (<11M)"
+            quota_status = "FAILED"
 
         pct = round((wk_pts / p1mp_total_points) * 100, 2)
 
@@ -142,6 +145,10 @@ def main():
 
     with open(os.path.join(DATA_DIR, "p1mp_members.json"), "w", encoding="utf-8") as f:
         json.dump(members, f, indent=2, ensure_ascii=False)
+    week_p1mp = os.path.join(DATA_DIR, "weeks", "2026-09-19", "p1mp_members.json")
+    if os.path.exists(os.path.dirname(week_p1mp)):
+        with open(week_p1mp, "w", encoding="utf-8") as f:
+            json.dump(members, f, indent=2, ensure_ascii=False)
     print(f"Generated data/p1mp_members.json ({len(members)} members)")
 
 if __name__ == "__main__":

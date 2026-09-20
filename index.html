@@ -427,6 +427,7 @@
     .tier-high { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
     .tier-core { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
     .tier-quota { background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
+    .tier-near { background: rgba(249, 115, 22, 0.18); color: #fb923c; border: 1px solid rgba(249, 115, 22, 0.4); font-weight: 600; }
     .tier-deadweight { background: rgba(244, 63, 94, 0.2); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.4); font-weight: 600; }
 
     /* Mini Sparkline Bar Chart */
@@ -816,7 +817,7 @@
 
     <!-- TAB 1: OPERATIVES ROSTER (MEMBER TRACKER) -->
     <section id="tab-roster" class="tab-content active">
-      <div class="stats-grid">
+      <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
         <div class="stat-card">
           <div class="stat-title">P1MP Active Roster</div>
           <div class="stat-value" id="rosterCountVal">96</div>
@@ -828,9 +829,14 @@
           <div class="stat-sub">Hit 1.9M/day 3-chest baseline</div>
         </div>
         <div class="stat-card">
-          <div class="stat-title">⚠️ Deadweight (&lt;11.4M)</div>
-          <div class="stat-value" id="deadweightVal" style="color: #fb7185;">7 (7.3%)</div>
-          <div class="stat-sub">Under weekly baseline quota</div>
+          <div class="stat-title">⚡ Near Quota (11M - 11.4M)</div>
+          <div class="stat-value" id="nearQuotaVal" style="color: #fb923c;">1 (1.0%)</div>
+          <div class="stat-sub">Narrow miss (LaylaBee: 11.3M)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">⛔ Deadweight (&lt;11M)</div>
+          <div class="stat-value" id="deadweightVal" style="color: #fb7185;">6 (6.3%)</div>
+          <div class="stat-sub">Far below weekly baseline</div>
         </div>
         <div class="stat-card">
           <div class="stat-title">Median Member Output</div>
@@ -849,7 +855,8 @@
             <option value="High Performer (50M+)">High Performers (50M+)</option>
             <option value="Core Contributor (20M+)">Core Contributors (20M+)</option>
             <option value="Quota Met (11.4M+)">Quota Met (11.4M+)</option>
-            <option value="Deadweight (<11.4M)">⚠️ Deadweight (&lt;11.4M) [7]</option>
+            <option value="Near Quota (11M - 11.4M)">⚡ Near Quota (11M - 11.4M) [1]</option>
+            <option value="Deadweight (<11M)">⛔ Deadweight (&lt;11M) [6]</option>
           </select>
         </div>
         <div style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);" id="memberCountText">
@@ -1233,15 +1240,18 @@
       document.getElementById('stagesScore').textContent = `MATCH SCORE: ${res.match_score || '9 : 0'} (${res.p1mp_wins || 9} of ${res.total_possible_wins || 13} Wins)`;
 
       // Update Roster Summary Cards
-      const deadweightCount = w.members.filter(m => m.weekly_points < 11400000).length;
-      const passingCount = w.members.length - deadweightCount;
-      const passingPct = ((passingCount / w.members.length) * 100).toFixed(1);
+      const total = w.members.length;
+      const passingCount = w.members.filter(m => m.weekly_points >= 11400000).length;
+      const nearCount = w.members.filter(m => m.weekly_points >= 11000000 && m.weekly_points < 11400000).length;
+      const deadweightCount = w.members.filter(m => m.weekly_points < 11000000).length;
 
-      document.getElementById('rosterCountVal').textContent = w.members.length;
+      document.getElementById('rosterCountVal').textContent = total;
       const quotaEl = document.getElementById('quotaComplianceVal');
-      if (quotaEl) quotaEl.textContent = `${passingCount} (${passingPct}%)`;
+      if (quotaEl) quotaEl.textContent = `${passingCount} (${((passingCount / total) * 100).toFixed(1)}%)`;
+      const nearEl = document.getElementById('nearQuotaVal');
+      if (nearEl) nearEl.textContent = `${nearCount} (${((nearCount / total) * 100).toFixed(1)}%)`;
       const deadEl = document.getElementById('deadweightVal');
-      if (deadEl) deadEl.textContent = `${deadweightCount} (${(100 - passingPct).toFixed(1)}%)`;
+      if (deadEl) deadEl.textContent = `${deadweightCount} (${((deadweightCount / total) * 100).toFixed(1)}%)`;
 
       const ptsArr = w.members.map(m => m.weekly_points).sort((a, b) => a - b);
       const median = ptsArr[Math.floor(ptsArr.length / 2)] || 0;
@@ -1272,6 +1282,7 @@
       if (tier.includes('Titan')) return 'tier-titan';
       if (tier.includes('High')) return 'tier-high';
       if (tier.includes('Core')) return 'tier-core';
+      if (tier.includes('Near')) return 'tier-near';
       if (tier.includes('Deadweight')) return 'tier-deadweight';
       if (tier.includes('Quota')) return 'tier-quota';
       return 'tier-quota';
@@ -1355,22 +1366,31 @@
       tierBadge.textContent = m.tier;
       tierBadge.className = 'tier-badge ' + getTierBadgeClass(m.tier);
 
-      // Quota Status Banner (11.4M weekly baseline)
+      // Quota Status Banner (11.4M weekly baseline, 11M near quota)
       const quotaThreshold = 11400000;
-      const isMet = m.weekly_points >= quotaThreshold;
-      const diff = Math.abs(m.weekly_points - quotaThreshold);
+      const nearThreshold = 11000000;
       const quotaBanner = document.getElementById('modalQuotaBanner');
-      if (isMet) {
+      if (m.weekly_points >= quotaThreshold) {
+        const diff = m.weekly_points - quotaThreshold;
         quotaBanner.innerHTML = `
           <div style="background: rgba(34, 197, 94, 0.12); border: 1px solid rgba(34, 197, 94, 0.35); padding: 0.65rem 0.9rem; border-radius: 6px; font-size: 0.82rem; color: #4ade80; display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
             <span>🛡️ <strong>Baseline Quota Met</strong> (11.4M / 1.9M/day 3-Chest Target)</span>
             <span style="font-family: var(--font-mono); font-weight: 700; color: #4ade80;">+${formatNumber(diff)} pts surplus</span>
           </div>
         `;
+      } else if (m.weekly_points >= nearThreshold) {
+        const diff = quotaThreshold - m.weekly_points;
+        quotaBanner.innerHTML = `
+          <div style="background: rgba(249, 115, 22, 0.15); border: 1px solid rgba(249, 115, 22, 0.45); padding: 0.65rem 0.9rem; border-radius: 6px; font-size: 0.82rem; color: #fb923c; display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
+            <span>⚡ <strong>Near Quota (Narrow Miss)</strong> &mdash; 11M - 11.4M (Target: 11.4M)</span>
+            <span style="font-family: var(--font-mono); font-weight: 700; color: #fb923c;">-${formatNumber(diff)} pts deficit</span>
+          </div>
+        `;
       } else {
+        const diff = quotaThreshold - m.weekly_points;
         quotaBanner.innerHTML = `
           <div style="background: rgba(244, 63, 94, 0.15); border: 1px solid rgba(244, 63, 94, 0.45); padding: 0.65rem 0.9rem; border-radius: 6px; font-size: 0.82rem; color: #fb7185; display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
-            <span>⚠️ <strong>Below Baseline Quota &mdash; DEADWEIGHT</strong> (Target: 11.4M)</span>
+            <span>⛔ <strong>Below Baseline Quota &mdash; DEADWEIGHT</strong> (Target: 11.4M)</span>
             <span style="font-family: var(--font-mono); font-weight: 700; color: #f43f5e;">-${formatNumber(diff)} pts deficit</span>
           </div>
         `;
