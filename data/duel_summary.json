@@ -1,0 +1,88 @@
+{
+  "home_alliance": {
+    "tag": "P1MP",
+    "name": "JU1CE",
+    "server": "117"
+  },
+  "opponent_alliance": {
+    "tag": "0BS",
+    "name": "ZeroBullsht",
+    "server": "Unknown"
+  },
+  "weekly_result": {
+    "winner": "P1MP",
+    "p1mp_total_points": 3972000390,
+    "obs_total_points": 3392662344,
+    "p1mp_stages_won": 5,
+    "obs_stages_won": 1,
+    "total_margin": 579338046
+  },
+  "daily_stages": [
+    {
+      "day": "mon",
+      "title": "Monday (Radar & Exploration)",
+      "p1mp_points": 726993167,
+      "obs_points": 491589978,
+      "p1mp_players": 92,
+      "obs_players": 90,
+      "winner": "P1MP",
+      "margin": 235403189,
+      "p1mp_point_share_pct": 59.66
+    },
+    {
+      "day": "tue",
+      "title": "Tuesday (Base Expansion & Construction)",
+      "p1mp_points": 515673737,
+      "obs_points": 481958232,
+      "p1mp_players": 92,
+      "obs_players": 87,
+      "winner": "P1MP",
+      "margin": 33715505,
+      "p1mp_point_share_pct": 51.69
+    },
+    {
+      "day": "wed",
+      "title": "Wednesday (Scientific Research)",
+      "p1mp_points": 564910851,
+      "obs_points": 544811851,
+      "p1mp_players": 94,
+      "obs_players": 97,
+      "winner": "P1MP",
+      "margin": 20099000,
+      "p1mp_point_share_pct": 50.91
+    },
+    {
+      "day": "thu",
+      "title": "Thursday (Hero Development & Recruitment)",
+      "p1mp_points": 1102056044,
+      "obs_points": 1128796856,
+      "p1mp_players": 93,
+      "obs_players": 99,
+      "winner": "0BS",
+      "margin": 26740812,
+      "p1mp_point_share_pct": 49.4
+    },
+    {
+      "day": "fri",
+      "title": "Friday (Total Troop Training)",
+      "p1mp_points": 587062055,
+      "obs_points": 567396280,
+      "p1mp_players": 95,
+      "obs_players": 96,
+      "winner": "P1MP",
+      "margin": 19665775,
+      "p1mp_point_share_pct": 50.85
+    },
+    {
+      "day": "sat",
+      "title": "Saturday (Enemy Assault & Elimination)",
+      "p1mp_points": 470889288,
+      "obs_points": 326733492,
+      "p1mp_players": 95,
+      "obs_players": 92,
+      "winner": "P1MP",
+      "margin": 144155796,
+      "p1mp_point_share_pct": 59.04
+    }
+  ]
+}
