@@ -13,6 +13,25 @@ WEEKS_DIR = os.path.join(DATA_DIR, "weeks")
 
 DAYS = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat']
 
+ALIAS_MAP = {
+    'MrPoopypantsр': 'MrPoopypants',
+    'VrPoopypants': 'MrPoopypants',
+    'GUEL07777': 'GUELO7777',
+    'RO0ON': 'ROOON',
+    'O0ON': 'ROOON',
+    'RO0OA': 'ROOON',
+    'Emoinstability': 'Emolnstability',
+    'EmoInstabilityр': 'Emolnstability',
+    'EmoInstability': 'Emolnstability',
+    '★rente★': '*rente*',
+    '太rente大': '*rente*',
+    'ChumTheShark S': 'ChumTheShark',
+    'AngeIZEROBS': 'AngelZEROBS',
+    'DinoPredator ®h': 'DinoPredator n',
+    'DinoPredator®n': 'DinoPredator n',
+    'DinoPredator®a': 'DinoPredator n'
+}
+
 def validate_week_ranks(week_path, week_id):
     """Ensure no numbers are skipped in rankings for any day or weekly total."""
     errors = []
@@ -35,6 +54,11 @@ def build_multi_week():
     week_dirs = sorted([d for d in os.listdir(WEEKS_DIR) if os.path.isdir(os.path.join(WEEKS_DIR, d))])
     print(f"Found {len(week_dirs)} week(s): {week_dirs}")
 
+    comp_stages = {}
+    stages_path = os.path.join(DATA_DIR, "competition_stages.json")
+    if os.path.exists(stages_path):
+        comp_stages = json.load(open(stages_path))
+
     weeks_index = []
     weeks_bundle = {}
     member_history = {} # player -> { total_pts, weeks_played, history: { week_id: {...} } }
@@ -53,18 +77,35 @@ def build_multi_week():
         members = json.load(open(os.path.join(wpath, "p1mp_members.json")))
         daily = {d: json.load(open(os.path.join(wpath, f"{d}.json"))) for d in DAYS + ['week']}
 
+        # Normalize aliases in daily leaderboards
+        for d in DAYS + ['week']:
+            for r in daily[d]:
+                if r['player'] in ALIAS_MAP:
+                    r['player'] = ALIAS_MAP[r['player']]
+
+        res = duel['weekly_result']
+        p1mp_pts = res.get('p1mp_official_points', res.get('p1mp_total_points', 0))
+        obs_pts = res.get('obs_official_points', res.get('obs_total_points', 0))
+
         w_summary = {
             "id": wid,
             "date": wid,
             "title": f"Week {wid} (vs [{duel['opponent_alliance']['tag']}] {duel['opponent_alliance']['name']})",
             "opponent_tag": duel['opponent_alliance']['tag'],
             "opponent_name": duel['opponent_alliance']['name'],
-            "winner": duel['weekly_result']['winner'],
-            "p1mp_points": duel['weekly_result']['p1mp_total_points'],
-            "obs_points": duel['weekly_result']['obs_total_points'],
-            "margin": duel['weekly_result']['total_margin'],
-            "stages_won": duel['weekly_result'].get('p1mp_stages_won', 5),
-            "stages_lost": duel['weekly_result'].get('obs_stages_won', 1),
+            "opponent_server": duel['opponent_alliance'].get('server', 'S113'),
+            "winner": res['winner'],
+            "match_score": res.get('match_score', '9 : 0'),
+            "total_possible_wins": res.get('total_possible_wins', 13),
+            "p1mp_wins": res.get('p1mp_wins', 9),
+            "obs_wins": res.get('obs_wins', 0),
+            "p1mp_points": p1mp_pts,
+            "obs_points": obs_pts,
+            "p1mp_leaderboard_points": res.get('p1mp_leaderboard_points', p1mp_pts),
+            "obs_leaderboard_points": res.get('obs_leaderboard_points', obs_pts),
+            "margin": res.get('total_margin', p1mp_pts - obs_pts),
+            "stages_won": res.get('p1mp_stages_won', 6),
+            "stages_lost": res.get('obs_stages_lost', 0),
             "members_count": len(members),
             "top_performer": members[0]['player'] if members else ""
         }
@@ -175,6 +216,7 @@ def build_multi_week():
         "weeksIndex": weeks_index,
         "latestWeekId": weeks_index[-1]["id"] if weeks_index else "",
         "multiWeek": multi_week_analytics,
+        "competitionStages": comp_stages,
         "weeks": weeks_bundle
     }
 

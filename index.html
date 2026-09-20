@@ -527,6 +527,132 @@
       margin-top: 0.25rem;
     }
 
+    .stage-wins-tag {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.15);
+      border: 1px solid rgba(251, 191, 36, 0.35);
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+      letter-spacing: 0.05em;
+    }
+    .stage-mvp-line {
+      font-size: 0.82rem;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-weight: 500;
+      background: rgba(251, 191, 36, 0.06);
+      padding: 0.35rem 0.6rem;
+      border-radius: 6px;
+      border: 1px solid rgba(251, 191, 36, 0.15);
+    }
+    .stage-activities-toggle {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      color: var(--accent-cyan);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.4rem 0.75rem;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s ease;
+      margin-top: 0.25rem;
+    }
+    .stage-activities-toggle:hover {
+      background: rgba(56, 189, 248, 0.1);
+      border-color: var(--accent-cyan);
+    }
+    .stage-activities-list {
+      display: none;
+      flex-direction: column;
+      gap: 0.35rem;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 6px;
+      padding: 0.6rem 0.75rem;
+      margin-top: 0.35rem;
+      font-size: 0.8rem;
+    }
+    .stage-activities-list.open {
+      display: flex;
+    }
+    .stage-activity-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.4rem;
+      color: #cbd5e1;
+      line-height: 1.35;
+    }
+    .stage-activity-item::before {
+      content: "•";
+      color: var(--accent-cyan);
+      font-weight: bold;
+    }
+    .competition-rules-panel {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.7) 100%);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .rules-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .rules-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .rules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem;
+    }
+    .rule-stage-pill {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 0.6rem 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .rule-stage-pill .pill-day {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+    }
+    .rule-stage-pill .pill-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .rule-stage-pill .pill-wins {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
+
     /* Modal / Drawer */
     .modal-backdrop {
       position: fixed;
@@ -649,7 +775,7 @@
     <!-- Navigation Tabs -->
     <div class="nav-tabs-wrapper">
       <button class="nav-tab-btn active" onclick="switchNavTab('roster', this)">Operatives Roster</button>
-      <button class="nav-tab-btn" id="navBtnStages" onclick="switchNavTab('stages', this)">Daily Stages (P1MP vs 0BS)</button>
+      <button class="nav-tab-btn" id="navBtnStages" onclick="switchNavTab('stages', this)">Daily Stages & Objectives</button>
       <button class="nav-tab-btn" id="navBtnLeaderboard" onclick="switchNavTab('leaderboards', this)">Full Duel Leaderboard</button>
       <button class="nav-tab-btn" onclick="switchNavTab('analytics', this)">War Analytics</button>
       <button class="nav-tab-btn" id="navBtnMultiWeek" onclick="switchNavTab('multiweek', this)">Multi-Week Trends</button>
@@ -754,6 +880,52 @@
 
     <!-- TAB 2: DAILY STAGES BREAKDOWN -->
     <section id="tab-stages" class="tab-content">
+      <div class="competition-rules-panel">
+        <div class="rules-header">
+          <div class="rules-title">
+            <span>⚔️ Alliance Competition Mechanics (VS Duel)</span>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-gold); font-weight: 600;">
+            13 Total Wins Available • First to 7 Wins Clinches Victory
+          </div>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+          The Alliance Competition runs Monday through Saturday across 6 tactical stages. Daily victory awards competition points ("Wins"). Stages 1–5 award 1 to 2 wins each, while Saturday's climax Enemy Assault awards 4 wins with cross-server raid warfare.
+        </p>
+        <div class="rules-grid">
+          <div class="rule-stage-pill">
+            <span class="pill-day">Monday • Stage 1</span>
+            <span class="pill-name">Radar Exploration</span>
+            <span class="pill-wins">⚡ 1 Win Awarded</span>
+          </div>
+          <div class="rule-stage-pill">
+            <span class="pill-day">Tuesday • Stage 2</span>
+            <span class="pill-name">Base Construction</span>
+            <span class="pill-wins">⚡ 2 Wins Awarded</span>
+          </div>
+          <div class="rule-stage-pill">
+            <span class="pill-day">Wednesday • Stage 3</span>
+            <span class="pill-name">Tech Research</span>
+            <span class="pill-wins">⚡ 2 Wins Awarded</span>
+          </div>
+          <div class="rule-stage-pill">
+            <span class="pill-day">Thursday • Stage 4</span>
+            <span class="pill-name">Hero Training</span>
+            <span class="pill-wins">⚡ 2 Wins Awarded</span>
+          </div>
+          <div class="rule-stage-pill">
+            <span class="pill-day">Friday • Stage 5</span>
+            <span class="pill-name">Full Military Prep</span>
+            <span class="pill-wins">⚡ 2 Wins Awarded</span>
+          </div>
+          <div class="rule-stage-pill">
+            <span class="pill-day">Saturday • Stage 6</span>
+            <span class="pill-name">Enemy Assault (Raid)</span>
+            <span class="pill-wins">⚡ 4 Wins Awarded</span>
+          </div>
+        </div>
+      </div>
+
       <div class="stages-grid" id="stagesContainer">
         <!-- Populated via JS -->
       </div>
@@ -1033,28 +1205,29 @@
       const w = p1mpBundle.weeks ? p1mpBundle.weeks[weekId] : null;
       if (!w) return;
 
-      // Update banner
-      document.getElementById('homeTeamTitle').textContent = `[P1MP] JU1CE (Server 117)`;
-      document.getElementById('homePoints').textContent = formatNumber(w.duel.weekly_result.p1mp_total_points);
-      document.getElementById('homeSub').textContent = `${w.members.length} Combatants • 53.9% War Share`;
-
+      const res = w.duel.weekly_result;
       const opp = w.duel.opponent_alliance;
-      document.getElementById('awayTeamTitle').textContent = `[${opp.tag}] ${opp.name}`;
-      document.getElementById('awayPoints').textContent = formatNumber(w.duel.weekly_result.obs_total_points);
-      document.getElementById('awaySub').textContent = `Opponent Alliance • 46.1% War Share`;
-
-      const p1mpPts = w.duel.weekly_result.p1mp_total_points;
-      const oppPts = w.duel.weekly_result.obs_total_points;
+      const p1mpPts = res.p1mp_official_points || res.p1mp_total_points;
+      const oppPts = res.obs_official_points || res.obs_total_points;
       const totalPts = p1mpPts + oppPts;
       const share = totalPts > 0 ? ((p1mpPts / totalPts) * 100).toFixed(2) : 50;
+      const margin = res.total_margin || (p1mpPts - oppPts);
+
+      // Update banner
+      document.getElementById('homeTeamTitle').textContent = `[P1MP] JU1CE (Server 117)`;
+      document.getElementById('homePoints').textContent = formatNumber(p1mpPts);
+      document.getElementById('homeSub').textContent = `${w.members.length} Combatants • Leaderboard: ${formatNumber(res.p1mp_leaderboard_points || res.p1mp_total_points)}`;
+
+      document.getElementById('awayTeamTitle').textContent = `[${opp.tag}] ${opp.name} (${opp.server || 'Server 113'})`;
+      document.getElementById('awayPoints').textContent = formatNumber(oppPts);
+      document.getElementById('awaySub').textContent = `Opponent Alliance • Leaderboard: ${formatNumber(res.obs_leaderboard_points || res.obs_total_points)}`;
 
       document.getElementById('progressFill').style.width = share + '%';
-      document.getElementById('labelHome').textContent = `P1MP ${share}%`;
-      document.getElementById('labelAway').textContent = `${opp.tag} ${(100 - share).toFixed(2)}%`;
+      document.getElementById('labelHome').textContent = `P1MP ${share}% (${formatNumber(p1mpPts)})`;
+      document.getElementById('labelAway').textContent = `${opp.tag} ${(100 - share).toFixed(2)}% (${formatNumber(oppPts)})`;
 
-      const margin = w.duel.weekly_result.total_margin;
       document.getElementById('marginText').textContent = `+${formatNumber(margin)} Margin`;
-      document.getElementById('stagesScore').textContent = `${w.duel.weekly_result.p1mp_stages_won} STAGES WON - ${w.duel.weekly_result.obs_stages_lost || 1} LOST`;
+      document.getElementById('stagesScore').textContent = `MATCH SCORE: ${res.match_score || '9 : 0'} (${res.p1mp_wins || 9} of ${res.total_possible_wins || 13} Wins)`;
 
       // Render roster
       filterMembers();
@@ -1210,24 +1383,52 @@
       if (e.target.id === 'memberModal') closeModal();
     }
 
+    function toggleStageActivities(idx) {
+      const el = document.getElementById('stageActs_' + idx);
+      const btn = document.getElementById('stageToggleBtn_' + idx);
+      if (!el) return;
+      if (el.classList.contains('open')) {
+        el.classList.remove('open');
+        btn.querySelector('.arrow').textContent = '▾';
+      } else {
+        el.classList.add('open');
+        btn.querySelector('.arrow').textContent = '▴';
+      }
+    }
+
     /* Stages Grid */
     function renderStages() {
       const w = getActiveWeek();
       if (!w) return;
       const container = document.getElementById('stagesContainer');
       const stages = w.duel.daily_stages || [];
+      const compStagesList = (p1mpBundle.competitionStages && p1mpBundle.competitionStages.stages) || [];
 
-      container.innerHTML = stages.map(st => {
+      container.innerHTML = stages.map((st, idx) => {
         const isWin = st.winner === 'P1MP';
+        const meta = compStagesList.find(s => s.day_code === st.day || s.day_index === st.stage_num) || {};
+        const winsVal = st.wins_awarded || meta.wins_awarded || (st.day === 'mon' ? 1 : (st.day === 'sat' ? 4 : 2));
+        const acts = meta.activities || [];
+        const mvpName = st.mvp || '';
+        const mvpPts = st.mvp_points ? formatNumber(st.mvp_points) : '';
+
         return `
           <div class="stage-card">
             <div class="stage-header">
-              <span class="stage-day-badge">${st.day.toUpperCase()}</span>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="stage-day-badge">${st.day.toUpperCase()}</span>
+                <span class="stage-wins-tag">⚡ ${winsVal} WIN${winsVal > 1 ? 'S' : ''}</span>
+              </div>
               <span class="stage-status-badge ${isWin ? 'stage-win' : 'stage-loss'}">
                 ${isWin ? '🏆 P1MP VICTORY' : `DEFICIT (${w.duel.opponent_alliance.tag})`}
               </span>
             </div>
             <div class="stage-title">${escapeHtml(st.title)}</div>
+            ${mvpName ? `
+              <div class="stage-mvp-line">
+                <span>👑 MVP: <strong>${escapeHtml(mvpName)}</strong> ${mvpPts ? `(${mvpPts} pts)` : ''}</span>
+              </div>
+            ` : ''}
             <div class="stage-comparison">
               <div class="comp-row comp-home">
                 <span>[P1MP] JU1CE</span>
@@ -1245,6 +1446,15 @@
               <span>Point Margin: <strong>+${formatNumber(st.margin)}</strong></span>
               <span>Share: <strong>${st.p1mp_point_share_pct}%</strong></span>
             </div>
+            ${acts.length > 0 ? `
+              <button class="stage-activities-toggle" id="stageToggleBtn_${idx}" onclick="toggleStageActivities(${idx})">
+                <span>📋 Stage Objectives (${acts.length} activities)</span>
+                <span class="arrow">▾</span>
+              </button>
+              <div class="stage-activities-list" id="stageActs_${idx}">
+                ${acts.map(a => `<div class="stage-activity-item">${escapeHtml(a)}</div>`).join('')}
+              </div>
+            ` : ''}
           </div>
         `;
       }).join('');

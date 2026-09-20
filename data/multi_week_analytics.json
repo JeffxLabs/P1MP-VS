@@ -1,45 +1,45 @@
 {
   "total_weeks": 1,
   "record": "1-0",
-  "total_p1mp_points": 3972000390,
-  "total_opponent_points": 3392662344,
-  "average_weekly_points": 3972000390,
+  "total_p1mp_points": 4033210605,
+  "total_opponent_points": 3516839111,
+  "average_weekly_points": 4033210605,
   "stage_dominance": {
     "mon": {
       "wins": 1,
       "win_pct": 100.0,
-      "total_p1mp_pts": 726993167,
-      "total_opp_pts": 491589978
+      "total_p1mp_pts": 734338768,
+      "total_opp_pts": 492307324
     },
     "tue": {
       "wins": 1,
       "win_pct": 100.0,
-      "total_p1mp_pts": 515673737,
-      "total_opp_pts": 481958232
+      "total_p1mp_pts": 525316659,
+      "total_opp_pts": 483141612
     },
     "wed": {
       "wins": 1,
       "win_pct": 100.0,
-      "total_p1mp_pts": 564910851,
-      "total_opp_pts": 544811851
+      "total_p1mp_pts": 574853865,
+      "total_opp_pts": 540459859
     },
     "thu": {
-      "wins": 0,
-      "win_pct": 0.0,
-      "total_p1mp_pts": 1102056044,
-      "total_opp_pts": 1128796856
+      "wins": 1,
+      "win_pct": 100.0,
+      "total_p1mp_pts": 1125991764,
+      "total_opp_pts": 1105036660
     },
     "fri": {
       "wins": 1,
       "win_pct": 100.0,
-      "total_p1mp_pts": 587062055,
-      "total_opp_pts": 567396280
+      "total_p1mp_pts": 597607611,
+      "total_opp_pts": 564402820
     },
     "sat": {
       "wins": 1,
       "win_pct": 100.0,
-      "total_p1mp_pts": 470889288,
-      "total_opp_pts": 326733492
+      "total_p1mp_pts": 475101938,
+      "total_opp_pts": 331490836
     }
   },
   "members": [
