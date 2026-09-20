@@ -121,7 +121,7 @@ def main():
             tier = "Near Quota (11M - 11.4M)"
             quota_status = "NEAR"
         else:
-            tier = "Deadweight (<11M)"
+            tier = "Passenger (<11M)"
             quota_status = "FAILED"
 
         pct = round((wk_pts / p1mp_total_points) * 100, 2)

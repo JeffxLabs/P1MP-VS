@@ -428,7 +428,7 @@
     .tier-core { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
     .tier-quota { background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
     .tier-near { background: rgba(249, 115, 22, 0.18); color: #fb923c; border: 1px solid rgba(249, 115, 22, 0.4); font-weight: 600; }
-    .tier-deadweight { background: rgba(244, 63, 94, 0.2); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.4); font-weight: 600; }
+    .tier-passenger, .tier-deadweight { background: rgba(244, 63, 94, 0.2); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.4); font-weight: 600; }
 
     /* Mini Sparkline Bar Chart */
     .mini-chart {
@@ -834,7 +834,7 @@
           <div class="stat-sub">Narrow miss (LaylaBee: 11.3M)</div>
         </div>
         <div class="stat-card">
-          <div class="stat-title">⛔ Deadweight (&lt;11M)</div>
+          <div class="stat-title">⛔ Passenger (&lt;11M)</div>
           <div class="stat-value" id="deadweightVal" style="color: #fb7185;">6 (6.3%)</div>
           <div class="stat-sub">Far below weekly baseline</div>
         </div>
@@ -856,7 +856,7 @@
             <option value="Core Contributor (20M+)">Core Contributors (20M+)</option>
             <option value="Quota Met (11.4M+)">Quota Met (11.4M+)</option>
             <option value="Near Quota (11M - 11.4M)">⚡ Near Quota (11M - 11.4M) [1]</option>
-            <option value="Deadweight (<11M)">⛔ Deadweight (&lt;11M) [6]</option>
+            <option value="Passenger (<11M)">⛔ Passenger (&lt;11M) [6]</option>
           </select>
         </div>
         <div style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);" id="memberCountText">
@@ -1283,7 +1283,7 @@
       if (tier.includes('High')) return 'tier-high';
       if (tier.includes('Core')) return 'tier-core';
       if (tier.includes('Near')) return 'tier-near';
-      if (tier.includes('Deadweight')) return 'tier-deadweight';
+      if (tier.includes('Passenger') || tier.includes('Deadweight')) return 'tier-passenger';
       if (tier.includes('Quota')) return 'tier-quota';
       return 'tier-quota';
     }
@@ -1390,7 +1390,7 @@
         const diff = quotaThreshold - m.weekly_points;
         quotaBanner.innerHTML = `
           <div style="background: rgba(244, 63, 94, 0.15); border: 1px solid rgba(244, 63, 94, 0.45); padding: 0.65rem 0.9rem; border-radius: 6px; font-size: 0.82rem; color: #fb7185; display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem;">
-            <span>⛔ <strong>Below Baseline Quota &mdash; DEADWEIGHT</strong> (Target: 11.4M)</span>
+            <span>⛔ <strong>Below Baseline Quota &mdash; PASSENGER</strong> (Target: 11.4M)</span>
             <span style="font-family: var(--font-mono); font-weight: 700; color: #f43f5e;">-${formatNumber(diff)} pts deficit</span>
           </div>
         `;
