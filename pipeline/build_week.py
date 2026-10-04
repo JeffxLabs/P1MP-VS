@@ -287,6 +287,14 @@ def build(week_id, profile, opp_server=None):
     return summary
 
 
+def write_site_config(profile):
+    """data/site.js: which alliance and repo this site is for (brand, links)."""
+    site = {"home_tag": profile["home_tag"], "home_name": profile["home_name"],
+            "server": profile["home_server"], "repo": profile.get("repo", "")}
+    with open(os.path.join(DATA_DIR, "site.js"), "w", encoding="utf-8") as f:
+        f.write(f"window.VS_SITE = {json.dumps(site, ensure_ascii=False)};\n")
+
+
 def write_manifest():
     entries = []
     for wid in sorted(os.listdir(WEEKS_DIR)):
@@ -337,6 +345,7 @@ def main():
                   f"missing pts={v['missing_points']} names={v['missing_names']}{flag}")
         for issue in integ["checksum_issues"][:20]:
             print(f"   checksum: {issue}")
+    write_site_config(profile)
     m = write_manifest()
     print(f"manifest: {len(m)} week(s)")
 

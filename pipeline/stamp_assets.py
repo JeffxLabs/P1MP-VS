@@ -12,7 +12,7 @@ from urllib.parse import parse_qsl, urlencode
 
 
 BASE = Path(__file__).resolve().parent.parent
-ASSETS = ("data/i18n.js", "data/manifest.js", "data/stages.js")
+ASSETS = ("data/site.js", "data/i18n.js", "data/manifest.js", "data/stages.js")
 
 
 def _hash(path):

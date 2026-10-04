@@ -170,6 +170,22 @@ def vs_icon_candidates(items):
     return out
 
 
+def return_to_city(dev, max_back=8):
+    """Back out to the city view (the Apparatchik guard expects it after a capture)."""
+    for _ in range(max_back):
+        items = dev.read(dev.shot("to_city"))
+        cancel = find(items, r"^Cancel$")
+        if cancel and find(items, r"(exit|quit)"):
+            dev.tap(*centre(cancel))
+            return True
+        if find(items, r"^Alliance$") and (find(items, r"Mail$") or find(items, r"^Bag$")):
+            log("  back in the city view")
+            return True
+        dev.back()
+    log("  WARNING: could not confirm the city view")
+    return False
+
+
 def go_to_rankings(dev, max_back=10):
     log("Navigating: VS icon > RANKINGS ...")
     tried = set()
@@ -806,6 +822,11 @@ def main():
                     log(f"  archived {kept} of {total} frames ({size / 1e6:.1f} MB) to "
                         f"data/weeks/{week_id}/screenshots/{tab}/ (every rank on 2+ frames)")
         finally:
+            if profile.get("return_to_city"):
+                try:
+                    return_to_city(dev)
+                except Exception as e:
+                    log(f"  WARNING: return to city failed ({e})")
             dev.close()
 
     ended = datetime.now(SERVER_TZ)

@@ -6,5 +6,12 @@
   "account": "Jeff",
   "device": "127.0.0.1:5555",
   "apparatchik": false,
-  "tag_variants": ["P1MP", "PIMP", "P1MPJ", "PlMP", "P1IMP"]
+  "tag_variants": [
+    "P1MP",
+    "PIMP",
+    "P1MPJ",
+    "PlMP",
+    "P1IMP"
+  ],
+  "repo": "JeffxLabs/P1MP-VS"
 }
