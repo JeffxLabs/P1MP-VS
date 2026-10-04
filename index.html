@@ -375,7 +375,8 @@ function persist(k,v){try{localStorage.setItem(k,v)}catch(e){}}
 let lang=initial.get('lang')||stored('p1mp.lang')||'en';if(!window.I18N?.[lang])lang='en';
 let state={week:manifest.some(w=>w.id===initial.get('week'))?initial.get('week'):manifest.at(-1)?.id,view:VIEWS.includes(initial.get('view'))?initial.get('view'):'overview',tab:BOARDS.includes(initial.get('tab'))?initial.get('tab'):'week',player:initial.get('player')||'',query:'',tier:'all',quota:'all',active:false,includeLeft:false,side:'all',sort:'alliance_rank',direction:1,recFilter:'all',recSort:'selected',former:false};
 let data=null,renderToken=0,profileToken=0,lastProfileFocus=null,historyCache=null,recordLedger=null;
-const NEAR=11e6;
+// Near-quota floor: profile near_quota when the build records it, else the pipeline default (quota − 400K).
+const nearOf=sm=>sm?.near_quota??((sm?.quota||11.4e6)-4e5);
 
 // ---------- formatting ----------
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -577,7 +578,7 @@ async function record(token){try{const weeks=await allWeeks();if(token!==renderT
   <section class="card"><div class="toolbar"><input id="recordSearch" class="input" type="search" value="${esc(state.query)}" placeholder="${esc(t('search'))}" aria-label="${esc(t('search'))}"><div class="segmented" role="group" aria-label="${esc(t('filter'))}">${['all','below_selected','missed_any','perfect','streak'].map(seg).join('')}</div>
   <label class="sr-only" for="recordSort">${esc(t('sort'))}</label><select id="recordSort" class="select">${['selected','record','average','change','name'].map(k=>`<option value="${k}" ${state.recSort===k?'selected':''}>${esc(t('rs_'+k,{date:dateShort(sel)}))}</option>`).join('')}</select>
   <label class="toggle"><input id="formerToggle" type="checkbox" ${state.former?'checked':''}>${esc(t('show_former'))}</label></div>
-  <div class="legend">${statusBadge('met',t('lg_met',{n:n(data.summary.quota,true)}))}${statusBadge('near',t('lg_near',{n:n(NEAR,true)}))}${statusBadge('below',t('lg_below',{n:n(NEAR,true)}))}${statusBadge('absent',t('q_absent'))}${missing?statusBadge('missing',t('not_captured')):''}${led.cols.some(c=>c.live)?`<span class="dim">${esc(t('record_note'))}</span>`:''}</div>
+  <div class="legend">${statusBadge('met',t('lg_met',{n:n(data.summary.quota,true)}))}${statusBadge('near',t('lg_near',{n:n(nearOf(data.summary),true)}))}${statusBadge('below',t('lg_below',{n:n(nearOf(data.summary),true)}))}${statusBadge('absent',t('q_absent'))}${missing?statusBadge('missing',t('not_captured')):''}${led.cols.some(c=>c.live)?`<span class="dim">${esc(t('record_note'))}</span>`:''}</div>
   <div id="recordTable">${recordTable(led)}</div></section></div>`;recordLedger=led}catch(e){if(token===renderToken){$('#view').innerHTML=heading('record')+errorBox();console.error(e)}}}
 
 // ---------- achievements ----------
