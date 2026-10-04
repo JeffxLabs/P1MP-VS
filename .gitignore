@@ -2,3 +2,5 @@
 pipeline/scratch/
 __pycache__/
 *.pyc
+pipeline/vision_ocr
+pipeline/pixel_probe
