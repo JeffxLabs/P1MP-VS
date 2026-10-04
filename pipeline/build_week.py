@@ -81,7 +81,17 @@ def match_to_weekly(rows, weekly_by_key, weekly_rows):
     return out
 
 
+def set_quota(profile):
+    """Weekly quota is an alliance rule: profile weekly_quota / near_quota (default 11.4M / 11.0M)."""
+    global QUOTA, TIERS
+    QUOTA = int(profile.get("weekly_quota", 11_400_000))
+    near = int(profile.get("near_quota", QUOTA - 400_000))
+    TIERS = [(100_000_000, "titan"), (50_000_000, "high"), (20_000_000, "core"),
+             (QUOTA, "quota_met"), (near, "near_quota"), (0, "passenger")]
+
+
 def build(week_id, profile, opp_server=None):
+    set_quota(profile)
     wdir = os.path.join(WEEKS_DIR, week_id)
     meta_over = load(os.path.join(wdir, "meta.json"), {}) or {}
     home = profile["home_tag"]
