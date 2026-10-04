@@ -1,0 +1,318 @@
+{
+  "id": "2026-09-19",
+  "home": {
+    "tag": "P1MP",
+    "name": "JU1CE",
+    "server": "S117"
+  },
+  "opponent": {
+    "tag": "0BS",
+    "name": "ZeroBullsht",
+    "server": "S113"
+  },
+  "status": "in_progress",
+  "live_tabs": [
+    "sat",
+    "week"
+  ],
+  "captured_at_server": "2026-09-19T23:24:00-02:00",
+  "capture_window_server": [
+    "2026-09-19T23:24:00-02:00",
+    "2026-09-19T23:24:00-02:00"
+  ],
+  "captured_at_approximate": true,
+  "snapshots": {
+    "mon": {
+      "at": "2026-09-19T23:24:00-02:00",
+      "source": "legacy file times",
+      "approximate": true
+    },
+    "tue": {
+      "at": "2026-09-19T23:24:00-02:00",
+      "source": "legacy file times",
+      "approximate": true
+    },
+    "wed": {
+      "at": "2026-09-19T23:24:00-02:00",
+      "source": "legacy file times",
+      "approximate": true
+    },
+    "thu": {
+      "at": "2026-09-19T23:24:00-02:00",
+      "source": "legacy file times",
+      "approximate": true
+    },
+    "fri": {
+      "at": "2026-09-19T23:24:00-02:00",
+      "source": "legacy file times",
+      "approximate": true
+    },
+    "sat": {
+      "at": "2026-09-19T23:24:00-02:00",
+      "source": "legacy file times",
+      "approximate": true
+    },
+    "week": {
+      "at": "2026-09-19T23:24:00-02:00",
+      "source": "legacy file times",
+      "approximate": true
+    }
+  },
+  "score": {
+    "home": 9,
+    "opp": 0
+  },
+  "wins_remaining": 4,
+  "decided": "home",
+  "leading_live": {
+    "sat": "home"
+  },
+  "total_wins": 13,
+  "wins_to_clinch": 7,
+  "weekly_points": {
+    "home": 3972000390,
+    "opp": 3392662344
+  },
+  "official_points": {
+    "home": 4033210605,
+    "opp": 3516839111
+  },
+  "quota": 11400000,
+  "home_quota": {
+    "met": 89,
+    "near": 1,
+    "below": 6,
+    "members": 96,
+    "left": 0
+  },
+  "stages": [
+    {
+      "day": "mon",
+      "stage": 1,
+      "wins": 1,
+      "status": "final",
+      "home_points": 734338768,
+      "opp_points": 492307324,
+      "home_players": 92,
+      "opp_players": 90,
+      "winner": "home",
+      "margin": 242031444,
+      "home_share": 59.87,
+      "home_top10_share": 38.3,
+      "home_median": 5786020,
+      "mvp_home": {
+        "player": "ViE",
+        "points": 62065742,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "LarryKing",
+        "points": 22485318,
+        "rank": 7
+      }
+    },
+    {
+      "day": "tue",
+      "stage": 2,
+      "wins": 2,
+      "status": "final",
+      "home_points": 525316659,
+      "opp_points": 483141612,
+      "home_players": 92,
+      "opp_players": 87,
+      "winner": "home",
+      "margin": 42175047,
+      "home_share": 52.09,
+      "home_top10_share": 27.2,
+      "home_median": 4693600,
+      "mvp_home": {
+        "player": "ViE",
+        "points": 31610229,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "VictorDoria",
+        "points": 20113464,
+        "rank": 3
+      }
+    },
+    {
+      "day": "wed",
+      "stage": 3,
+      "wins": 2,
+      "status": "final",
+      "home_points": 574853865,
+      "opp_points": 540459859,
+      "home_players": 94,
+      "opp_players": 97,
+      "winner": "home",
+      "margin": 34394006,
+      "home_share": 51.54,
+      "home_top10_share": 32.2,
+      "home_median": 4485392,
+      "mvp_home": {
+        "player": "JimmyJam",
+        "points": 29877289,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "LarryKing",
+        "points": 24060431,
+        "rank": 4
+      }
+    },
+    {
+      "day": "thu",
+      "stage": 4,
+      "wins": 2,
+      "status": "final",
+      "home_points": 1125991764,
+      "opp_points": 1105036660,
+      "home_players": 93,
+      "opp_players": 99,
+      "winner": "home",
+      "margin": 20955104,
+      "home_share": 50.47,
+      "home_top10_share": 33.9,
+      "home_median": 9397590,
+      "mvp_home": {
+        "player": "RollingStoners",
+        "points": 66041772,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "LarryKing",
+        "points": 65016328,
+        "rank": 2
+      }
+    },
+    {
+      "day": "fri",
+      "stage": 5,
+      "wins": 2,
+      "status": "final",
+      "home_points": 597607611,
+      "opp_points": 564402820,
+      "home_players": 95,
+      "opp_players": 96,
+      "winner": "home",
+      "margin": 33204791,
+      "home_share": 51.43,
+      "home_top10_share": 24.7,
+      "home_median": 5308575,
+      "mvp_home": {
+        "player": "ViE",
+        "points": 23521670,
+        "rank": 2
+      },
+      "mvp_opp": {
+        "player": "Oreooo",
+        "points": 24057208,
+        "rank": 1
+      }
+    },
+    {
+      "day": "sat",
+      "stage": 6,
+      "wins": 4,
+      "status": "live",
+      "home_points": 475101938,
+      "opp_points": 331490836,
+      "home_players": 95,
+      "opp_players": 92,
+      "winner": "home",
+      "margin": 143611102,
+      "home_share": 58.9,
+      "home_top10_share": 39.1,
+      "home_median": 3049745,
+      "mvp_home": {
+        "player": "TheRequiem",
+        "points": 34115532,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "BetterAskRille",
+        "points": 19483543,
+        "rank": 5
+      }
+    }
+  ],
+  "integrity": {
+    "tabs": {
+      "mon": {
+        "rows": 182,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "tue": {
+        "rows": 179,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "wed": {
+        "rows": 191,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "thu": {
+        "rows": 192,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "fri": {
+        "rows": 191,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "sat": {
+        "rows": 187,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": true
+      },
+      "week": {
+        "rows": 190,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": true
+      }
+    },
+    "checksum": {
+      "exact": 180,
+      "joined": 9,
+      "live": 1,
+      "left": 14
+    },
+    "checksum_issues": []
+  },
+  "notes": [
+    "Legacy capture (old single-read OCR pipeline) taken while Saturday was still running; stage totals and winners are the official alliance scores from that capture.",
+    "Snapshot time is approximate: taken from the legacy capture's file times (about 23:24 server time / 21:24 EDT)."
+  ]
+}

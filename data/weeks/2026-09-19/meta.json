@@ -1,0 +1,13 @@
+{
+  "opponent_server": "S113",
+  "live_tabs": [
+    "sat",
+    "week"
+  ],
+  "notes": [
+    "Legacy capture (old single-read OCR pipeline) taken while Saturday was still running; stage totals and winners are the official alliance scores from that capture.",
+    "Snapshot time is approximate: taken from the legacy capture's file times (about 23:24 server time / 21:24 EDT)."
+  ],
+  "captured_at_server": "2026-09-19T23:24:00-02:00",
+  "captured_at_approximate": true
+}

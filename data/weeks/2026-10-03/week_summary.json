@@ -1,0 +1,311 @@
+{
+  "id": "2026-10-03",
+  "home": {
+    "tag": "P1MP",
+    "name": "JU1CE",
+    "server": "S117"
+  },
+  "opponent": {
+    "tag": "DOOM",
+    "name": "Armageddon",
+    "server": "S119"
+  },
+  "status": "in_progress",
+  "live_tabs": [
+    "sat",
+    "week"
+  ],
+  "captured_at_server": "2026-10-03T22:23:16-02:00",
+  "capture_window_server": [
+    "2026-10-03T22:02:45-02:00",
+    "2026-10-03T22:23:16-02:00"
+  ],
+  "captured_at_approximate": false,
+  "snapshots": {
+    "mon": {
+      "at": "2026-10-03T22:02:45-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "tue": {
+      "at": "2026-10-03T22:09:48-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "wed": {
+      "at": "2026-10-03T22:14:30-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "thu": {
+      "at": "2026-10-03T22:15:38-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "fri": {
+      "at": "2026-10-03T22:18:02-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "sat": {
+      "at": "2026-10-03T22:20:22-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "week": {
+      "at": "2026-10-03T22:23:16-02:00",
+      "source": "screenshots",
+      "approximate": false
+    }
+  },
+  "score": {
+    "home": 9,
+    "opp": 0
+  },
+  "wins_remaining": 4,
+  "decided": "home",
+  "leading_live": {
+    "sat": "home"
+  },
+  "total_wins": 13,
+  "wins_to_clinch": 7,
+  "weekly_points": {
+    "home": 4855902583,
+    "opp": 3932140155
+  },
+  "official_points": null,
+  "quota": 11400000,
+  "home_quota": {
+    "met": 84,
+    "near": 1,
+    "below": 10,
+    "members": 95,
+    "left": 0
+  },
+  "stages": [
+    {
+      "day": "mon",
+      "stage": 1,
+      "wins": 1,
+      "status": "final",
+      "home_points": 843652863,
+      "opp_points": 632286784,
+      "home_players": 90,
+      "opp_players": 93,
+      "winner": "home",
+      "margin": 211366079,
+      "home_share": 57.16,
+      "home_top10_share": 39.0,
+      "home_median": 7324856,
+      "mvp_home": {
+        "player": "ViE",
+        "points": 64037916,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Anr23",
+        "points": 30128912,
+        "rank": 5
+      }
+    },
+    {
+      "day": "tue",
+      "stage": 2,
+      "wins": 2,
+      "status": "final",
+      "home_points": 578994917,
+      "opp_points": 530727851,
+      "home_players": 89,
+      "opp_players": 90,
+      "winner": "home",
+      "margin": 48267066,
+      "home_share": 52.17,
+      "home_top10_share": 26.5,
+      "home_median": 5784662,
+      "mvp_home": {
+        "player": "Whiteline876",
+        "points": 30088878,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "snaiperpool",
+        "points": 13200071,
+        "rank": 5
+      }
+    },
+    {
+      "day": "wed",
+      "stage": 3,
+      "wins": 2,
+      "status": "final",
+      "home_points": 652113534,
+      "opp_points": 565291503,
+      "home_players": 89,
+      "opp_players": 88,
+      "winner": "home",
+      "margin": 86822031,
+      "home_share": 53.57,
+      "home_top10_share": 28.5,
+      "home_median": 5973958,
+      "mvp_home": {
+        "player": "Whiteline876",
+        "points": 30417637,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "iSeeU",
+        "points": 20749765,
+        "rank": 5
+      }
+    },
+    {
+      "day": "thu",
+      "stage": 4,
+      "wins": 2,
+      "status": "final",
+      "home_points": 1675713376,
+      "opp_points": 1326704853,
+      "home_players": 90,
+      "opp_players": 92,
+      "winner": "home",
+      "margin": 349008523,
+      "home_share": 55.81,
+      "home_top10_share": 32.7,
+      "home_median": 14328032,
+      "mvp_home": {
+        "player": "Whiteline876",
+        "points": 75015070,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Anr23",
+        "points": 50394006,
+        "rank": 6
+      }
+    },
+    {
+      "day": "fri",
+      "stage": 5,
+      "wins": 2,
+      "status": "final",
+      "home_points": 651720934,
+      "opp_points": 527295423,
+      "home_players": 89,
+      "opp_players": 90,
+      "winner": "home",
+      "margin": 124425511,
+      "home_share": 55.28,
+      "home_top10_share": 28.4,
+      "home_median": 6291748,
+      "mvp_home": {
+        "player": "RollingStoners",
+        "points": 23437356,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Anr23",
+        "points": 15772544,
+        "rank": 8
+      }
+    },
+    {
+      "day": "sat",
+      "stage": 6,
+      "wins": 4,
+      "status": "live",
+      "home_points": 450967191,
+      "opp_points": 418698867,
+      "home_players": 93,
+      "opp_players": 91,
+      "winner": "home",
+      "margin": 32268324,
+      "home_share": 51.86,
+      "home_top10_share": 31.0,
+      "home_median": 3667417,
+      "mvp_home": {
+        "player": "TheRequiem",
+        "points": 34447563,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "EvVa",
+        "points": 19275575,
+        "rank": 2
+      }
+    }
+  ],
+  "integrity": {
+    "tabs": {
+      "mon": {
+        "rows": 183,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "tue": {
+        "rows": 179,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "wed": {
+        "rows": 177,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "thu": {
+        "rows": 182,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "fri": {
+        "rows": 179,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "sat": {
+        "rows": 184,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": true
+      },
+      "week": {
+        "rows": 189,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": true
+      }
+    },
+    "checksum": {
+      "exact": 183,
+      "joined": 6,
+      "left": 5
+    },
+    "checksum_issues": []
+  },
+  "notes": []
+}
