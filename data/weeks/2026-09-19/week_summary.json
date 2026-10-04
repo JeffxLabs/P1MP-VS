@@ -10,7 +10,7 @@
     "name": "ZeroBullsht",
     "server": "S113"
   },
-  "status": "in_progress",
+  "status": "final",
   "live_tabs": [
     "sat",
     "week"
@@ -59,14 +59,12 @@
     }
   },
   "score": {
-    "home": 9,
+    "home": 13,
     "opp": 0
   },
-  "wins_remaining": 4,
+  "wins_remaining": 0,
   "decided": "home",
-  "leading_live": {
-    "sat": "home"
-  },
+  "leading_live": {},
   "total_wins": 13,
   "wins_to_clinch": 7,
   "weekly_points": {
@@ -215,7 +213,7 @@
       "day": "sat",
       "stage": 6,
       "wins": 4,
-      "status": "live",
+      "status": "final",
       "home_points": 475101938,
       "opp_points": 331490836,
       "home_players": 95,
@@ -312,7 +310,7 @@
     "checksum_issues": []
   },
   "notes": [
-    "Legacy capture (old single-read OCR pipeline) taken while Saturday was still running; stage totals and winners are the official alliance scores from that capture.",
+    "Legacy capture (old single-read OCR pipeline) taken shortly before the midnight server reset, the last moment the rankings are visible in game; stage totals and winners are the official alliance scores from that capture.",
     "Snapshot time is approximate: taken from the legacy capture's file times (about 23:24 server time / 21:24 EDT)."
   ]
 }

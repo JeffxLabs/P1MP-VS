@@ -11,9 +11,9 @@
       "name": "ZeroBullsht",
       "server": "S113"
     },
-    "status": "in_progress",
+    "status": "final",
     "score": {
-      "home": 9,
+      "home": 13,
       "opp": 0
     },
     "decided": "home",
@@ -28,7 +28,7 @@
       "2026-09-19T23:24:00-02:00"
     ],
     "captured_at_approximate": true,
-    "data_version": "18fffec286"
+    "data_version": "e1a6681388"
   },
   {
     "id": "2026-10-03",
@@ -42,9 +42,9 @@
       "name": "Armageddon",
       "server": "S119"
     },
-    "status": "in_progress",
+    "status": "final",
     "score": {
-      "home": 9,
+      "home": 13,
       "opp": 0
     },
     "decided": "home",
@@ -59,6 +59,6 @@
       "2026-10-03T22:23:16-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "a0914a17ab"
+    "data_version": "3cd18eeddb"
   }
 ]

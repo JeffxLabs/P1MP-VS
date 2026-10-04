@@ -10,7 +10,7 @@
     "name": "Armageddon",
     "server": "S119"
   },
-  "status": "in_progress",
+  "status": "final",
   "live_tabs": [
     "sat",
     "week"
@@ -59,14 +59,12 @@
     }
   },
   "score": {
-    "home": 9,
+    "home": 13,
     "opp": 0
   },
-  "wins_remaining": 4,
+  "wins_remaining": 0,
   "decided": "home",
-  "leading_live": {
-    "sat": "home"
-  },
+  "leading_live": {},
   "total_wins": 13,
   "wins_to_clinch": 7,
   "weekly_points": {
@@ -212,7 +210,7 @@
       "day": "sat",
       "stage": 6,
       "wins": 4,
-      "status": "live",
+      "status": "final",
       "home_points": 450967191,
       "opp_points": 418698867,
       "home_players": 93,

@@ -101,10 +101,10 @@ def build(week_id, profile, opp_server=None):
     if opp_server and not str(opp_server).upper().startswith("S"):
         opp_server = f"S{opp_server}"
 
+    # Tabs that were still changing while being read (rescanned and merged at capture time). This only
+    # affects the checksum: a capture is always the week's final record, because boards are read shortly
+    # before the midnight server reset (UTC-2), after which the in-game rankings disappear.
     live = set(capture.get("live_tabs", meta_over.get("live_tabs", [])))
-    finished = meta_over.get("final", False)
-    if finished:
-        live = set()
 
     # ---- stages
     stages = []
@@ -115,7 +115,7 @@ def build(week_id, profile, opp_server=None):
         op = sum(r["points"] or 0 for r in rows if r["alliance_tag"] == opp)
         hn = sum(1 for r in rows if r["alliance_tag"] == home)
         on = sum(1 for r in rows if r["alliance_tag"] == opp)
-        status = "pending" if not rows else ("live" if d in live else "final")
+        status = "pending" if not rows else "final"
         official = next((x for x in legacy.get("daily_stages", []) if x.get("day") == d), None)
         if official and official.get("p1mp_points") is not None:
             # Legacy weeks recorded the official alliance stage scores; prefer them to leaderboard sums
@@ -256,7 +256,7 @@ def build(week_id, profile, opp_server=None):
         "id": week_id,
         "home": {"tag": home, "name": profile["home_name"], "server": profile["home_server"]},
         "opponent": {"tag": opp, "name": opp_name, "server": opp_server},
-        "status": "in_progress" if live else "final",
+        "status": "final",
         "live_tabs": sorted(live),
         "captured_at_server": times[-1] if times else capture.get("last_capture_server"),
         "capture_window_server": [times[0], times[-1]] if times else None,

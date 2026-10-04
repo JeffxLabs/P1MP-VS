@@ -28,13 +28,14 @@ Sister project: [S117 Capitol War rankings](https://jeffxlabs.github.io/ZR-S117-
 
 | Week (Sat) | Opponent | Score | Weekly points (leaderboard) | Data snapshot (server time, UTC−2) |
 | :-- | :-- | :-: | :-- | :-- |
-| 2026-10-03 | [DOOM] Armageddon · S119 | **9 : 0** (clinched) | 4,855,902,583 vs 3,932,140,155 | Sat 2026-10-03 22:02–22:23 (Saturday stage still running) |
-| 2026-09-19 | [0BS] ZeroBullsht · S113 | **9 : 0** (clinched) | official 4,033,210,605 vs 3,516,839,111 | ≈ Sat 2026-09-19 23:24 (legacy capture, Saturday still running) |
+| 2026-10-03 | [DOOM] Armageddon · S119 | **13 : 0** | 4,855,902,583 vs 3,932,140,155 | Sat 2026-10-03 22:02–22:23 |
+| 2026-09-19 | [0BS] ZeroBullsht · S113 | **13 : 0** | official 4,033,210,605 vs 3,516,839,111 | ≈ Sat 2026-09-19 23:24 (legacy capture) |
 
 Each board's own snapshot time (MON 22:02, TUE 22:09, WED 22:14, THU 22:15, FRI 22:18, SAT 22:20, This Week 22:23 for
 2026-10-03) is in `data/weeks/<week>/week_summary.json` (`snapshots`) and shown on the dashboard.
 
-The 2026-09-26 week was not captured (the game only shows the current week).
+Every capture is the week's final record: boards are read shortly before the midnight server reset (UTC−2), after
+which the in-game rankings disappear. The 2026-09-26 week was not captured (the game only shows the current week).
 
 ### 2026-10-03 vs [DOOM] Armageddon (S119)
 
@@ -45,7 +46,7 @@ The 2026-09-26 week was not captured (the game only shows the current week).
 | Wed · Tech Research | 2 | **652,113,534** | 565,291,503 | 89 / 88 | Whiteline876 30.4M | iSeeU 20.7M |
 | Thu · Hero Training | 2 | **1,675,713,376** | 1,326,704,853 | 90 / 92 | Whiteline876 75.0M | Anr23 50.4M |
 | Fri · Full Military Preparation | 2 | **651,720,934** | 527,295,423 | 89 / 90 | RollingStoners 23.4M | Anr23 15.8M |
-| Sat · Enemy Assault (live at 22:20) | 4 | 450,967,191 | 418,698,867 | 93 / 91 | TheRequiem 34.4M | EvVa 19.3M |
+| Sat · Enemy Assault | 4 | 450,967,191 | 418,698,867 | 93 / 91 | TheRequiem 34.4M | EvVa 19.3M |
 
 Quota (11.4M weekly): 84 of 95 members met it, 1 near (11M–11.4M), 10 below.
 
@@ -71,7 +72,7 @@ Every published board is checked before it is pushed:
 - **Weekly checksum.** Each player's weekly total must equal the sum of their six days. For 2026-10-03: 183 exact,
   6 joined their alliance mid-week (points earned before joining only appear in the weekly total), 5 left before the
   weekly capture (on day boards only). No unexplained differences.
-- **Live boards.** Saturday and This Week change while being read: if a scan shows movement, the board is scanned again
+- **Boards still updating.** Saturday and This Week can still change while being read: if a scan shows movement, the board is scanned again
   and merged per player, then re-ranked.
 - **Evidence.** Compressed screenshots (720 px WebP) of the frames behind every board are in
   `data/weeks/<week>/screenshots/<tab>/`, chosen so each rank appears on at least two of them, with `index.json`
