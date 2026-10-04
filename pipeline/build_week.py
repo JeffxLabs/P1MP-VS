@@ -19,8 +19,11 @@ import difflib
 import hashlib
 import json
 import os
+import re
 import unicodedata
 from collections import Counter
+
+from aliases import apply as alias_name
 
 PIPELINE_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(PIPELINE_DIR)
@@ -80,7 +83,23 @@ def match_to_weekly(rows, weekly_by_key, weekly_rows):
 
 def build(week_id, profile, opp_server=None):
     wdir = os.path.join(WEEKS_DIR, week_id)
+    meta_over = load(os.path.join(wdir, "meta.json"), {}) or {}
+    home = profile["home_tag"]
     boards = {t: load(os.path.join(wdir, f"{t}.json"), []) for t in DAYS + ["week"]}
+    # Opponent hint (meta.json opponent_tag/opponent_name): OCR can mangle the bracketed tag
+    # (e.g. "[JKRS]JOKERS" read as "UKRSJJOKERS"), so untagged rows whose alliance text is close to the
+    # hinted "[TAG]Name" are assigned to it.
+    hint_tag, hint_name = meta_over.get("opponent_tag"), meta_over.get("opponent_name", "")
+    hint_core = re.sub(r"[^A-Z0-9]", "", f"{hint_tag}{hint_name}".upper()) if hint_tag else ""
+    for rows in boards.values():
+        for r in rows:
+            if hint_tag and r["alliance_tag"] != home:
+                raw_core = re.sub(r"[^A-Z0-9]", "", (r.get("alliance") or "").upper())
+                if r["alliance_tag"] == hint_tag or (raw_core and difflib.SequenceMatcher(
+                        None, raw_core, hint_core).ratio() >= 0.75):
+                    r["alliance_tag"], r["alliance_name"] = hint_tag, hint_name
+                    r["alliance"] = f"[{hint_tag}] {hint_name}"
+            r["player"] = alias_name(r["player"], r.get("alliance", ""))
     capture = load(os.path.join(wdir, "capture.json"), {}) or {}
     qa = load(os.path.join(wdir, "capture_qa.json"), {}) or {}
     legacy = load(os.path.join(wdir, "duel_summary.json"), {}) or {}

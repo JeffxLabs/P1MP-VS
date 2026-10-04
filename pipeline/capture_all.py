@@ -40,6 +40,7 @@ from collections import Counter
 from contextlib import nullcontext
 from datetime import datetime, timedelta, timezone
 
+from aliases import apply as alias_name
 from screenshots import archive as archive_screenshots
 from vs_frame_parser import parse_frame, is_rank_list, to_px, VIEW_TOP, VIEW_TOP_WEEK
 
@@ -271,23 +272,39 @@ def read_frame(dev, label, view_top, at_top=False):
     return res, p
 
 
-def rewind_to_top(dev, view_top, tab):
+def _at_top(res, view_top):
+    return not res.rows or (res.offset == 1 and res.rows[0]["rank"] == 1
+                            and abs(res.rows[0]["y"] - (view_top + 93)) < 15)
+
+
+def rewind_to_top(dev, view_top, tab, reopen=True):
+    """Scroll back to rank 1 with closed-loop drags (~13 rows each). Very fast flings are ignored by
+    some BlueStacks instances, so drags last 300 ms. Fallback: leave and re-enter the RANK page,
+    which opens the tab at rank 1."""
     res, p = read_frame(dev, f"{tab}_top", view_top, at_top=True)
-    if not res.rows or (res.offset == 1 and res.rows[0]["rank"] == 1
-                        and abs(res.rows[0]["y"] - (view_top + 93)) < 15):
-        return res  # a freshly opened tab starts at rank 1
-    for attempt in range(1, 6):
-        for _ in range(4 + 4 * attempt):
-            dev.drag(450, 1750, ms=120)
-            time.sleep(0.05)
-        time.sleep(1.3)
-        res, p = read_frame(dev, f"{tab}_top", view_top, at_top=True)
-        if not res.rows:
-            return res  # empty list (day not started)
-        first = res.rows[0]
-        if res.offset == 1 and first["rank"] == 1 and abs(first["y"] - (view_top + 93)) < 15:
+    last = None
+    stuck = 0
+    for _ in range(30):
+        if _at_top(res, view_top):
             return res
-        log(f"  top check {attempt}: offset={res.offset} first_y={first['y'] if res.rows else None}; rewinding again")
+        off = res.offset or 999
+        for _ in range(max(1, min(6, off // 12 + 1))):
+            dev.drag(450, 1750, ms=300)
+            time.sleep(0.1)
+        time.sleep(0.9)
+        res, p = read_frame(dev, f"{tab}_top", view_top, at_top=True)
+        stuck = stuck + 1 if res.offset == last else 0
+        last = res.offset
+        if stuck >= 2:
+            break
+    if _at_top(res, view_top):
+        return res
+    if reopen:
+        log(f"  list did not scroll back to rank 1 (at {res.offset}); re-entering the RANK page")
+        dev.back(wait=2.0)
+        go_to_rankings(dev)
+        open_tab(dev, tab)
+        return rewind_to_top(dev, view_top, tab, reopen=False)
     raise RuntimeError("Could not verify the top of the list (rank 1)")
 
 
@@ -351,6 +368,8 @@ def vote_name(names):
 
 
 def merge_rank(rank, obs):
+    for o in obs:
+        o["player"] = alias_name(o["player"], o.get("alliance", ""))
     clean = [o for o in obs if o["complete"]]
     pool = clean or obs
     pts = Counter(o["points"] for o in pool if o["points"] is not None)
@@ -559,9 +578,9 @@ def seek(dev, tab, view_top, target, max_moves=40):
         if abs(delta) > 30:
             for _ in range(2 if abs(delta) > 80 else 1):
                 if delta > 0:
-                    dev.drag(1450, 450, ms=150)
+                    dev.drag(1450, 450, ms=300)
                 else:
-                    dev.drag(450, 1450, ms=150)
+                    dev.drag(450, 1450, ms=300)
                 time.sleep(0.2)
             time.sleep(1.4)
         else:
@@ -576,10 +595,15 @@ def seek(dev, tab, view_top, target, max_moves=40):
 
 def repair(dev, tab, store, view_top, live, rounds=3):
     fixed = set()
+    name_tried = set()
     for rnd in range(1, rounds + 1):
         probs = problems(store.merge(), live=live)
+        # Re-reading a name OCR reads differently every time (decorative glyphs) cannot settle it:
+        # try such a rank once, then leave it to data/aliases.json
+        probs = {r: w for r, w in probs.items() if not (w == "name disagree" and r in name_tried)}
+        name_tried.update(r for r, w in probs.items() if w == "name disagree")
         if not probs:
-            return {}
+            break
         log(f"  repair round {rnd}: {len(probs)} rank(s): " +
             ", ".join(f"{r} ({why})" for r, why in list(sorted(probs.items()))[:12]))
         covered = set()
@@ -649,10 +673,18 @@ def live_movement(merged):
         seen.setdefault(k, m["rank"])
         # A real move shows two different players (or point values) each read on 2+ frames at the
         # same rank; one-off variants ('Zlaya' / 'ZlayaR') are OCR noise, not movement.
-        cores = Counter()
+        # cluster readings by similarity, so decoration variants ('TurkishWolfOC*' / 'TurkishWolfOC*O',
+        # '+SINt' / '†SIN†') count as one player
+        clusters = []
         for n, c in m["diag"]["name_reads"].items():
-            cores[loose_key(n)] += c
-        if sum(1 for c in cores.values() if c >= 2) > 1:
+            k = loose_key(n)
+            for cl in clusters:
+                if difflib.SequenceMatcher(None, k, cl[0]).ratio() >= 0.7:
+                    cl[1] += c
+                    break
+            else:
+                clusters.append([k, c])
+        if sum(1 for _, c in clusters if c >= 2) > 1:
             signs.append(f"rank {m['rank']} read as {sorted(m['diag']['name_reads'])}")
         if sum(1 for c in m["diag"]["points_reads"].values() if c >= 2) > 1:
             signs.append(f"rank {m['rank']} points {sorted(m['diag']['points_reads'])}")
@@ -678,8 +710,10 @@ def merge_live_passes(pass_lists):
             if b not in players:
                 continue
             pa, pb = players[a], players[b]
-            if pa["alliance_raw"][:5] == pb["alliance_raw"][:5] and \
-                    difflib.SequenceMatcher(None, a, b).ratio() >= 0.85:
+            ratio = difflib.SequenceMatcher(None, a, b).ratio()
+            same_pts = pa["points"] is not None and pa["points"] == pb["points"]
+            # Same player read two ways: near-identical names, or identical points with a similar name
+            if (pa["alliance_raw"][:5] == pb["alliance_raw"][:5] and ratio >= 0.85) or (same_pts and ratio >= 0.5):
                 keep, drop = (a, b) if (pa["points"] or 0) >= (pb["points"] or 0) else (b, a)
                 players[keep]["diag"]["folded"] = players[drop]["player"]
                 del players[drop]
@@ -760,6 +794,8 @@ def main():
     ap.add_argument("--allow-incomplete", action="store_true")
     ap.add_argument("--no-screenshots", action="store_true", help="do not archive compressed frames into the repo")
     ap.add_argument("--opp-server", help="opponent server number, e.g. 119 (kept in data/weeks/<week>/meta.json)")
+    ap.add_argument("--opp-tag", help="opponent alliance tag, e.g. JKRS (helps when OCR mangles the brackets)")
+    ap.add_argument("--opp-name", help="opponent alliance name, e.g. JOKERS")
     args = ap.parse_args()
 
     profile = json.load(open(os.path.join(PIPELINE_DIR, "profiles", f"{args.profile}.json")))
@@ -771,10 +807,13 @@ def main():
     week_dir = os.path.join(WEEKS_DIR, week_id)
     os.makedirs(week_dir, exist_ok=True)
 
-    if args.opp_server:
+    if args.opp_server or args.opp_tag:
         meta_path = os.path.join(week_dir, "meta.json")
         meta = json.load(open(meta_path)) if os.path.exists(meta_path) else {}
-        meta["opponent_server"] = f"S{args.opp_server.lstrip('Ss')}"
+        if args.opp_server:
+            meta["opponent_server"] = f"S{args.opp_server.lstrip('Ss')}"
+        if args.opp_tag:
+            meta["opponent_tag"], meta["opponent_name"] = args.opp_tag, args.opp_name or ""
         with open(meta_path, "w", encoding="utf-8") as f:
             json.dump(meta, f, indent=2, ensure_ascii=False)
 

@@ -69,7 +69,9 @@ function harness({ query = '', storage = {}, twoWeeks = true, preloadOriginal = 
   run(read(`data/weeks/${first.id}/week_data.js`), first.id);
   const original = context.window.VS_WEEKS[first.id];
   original.summary.status = 'final';
-  original.summary.stages.forEach(stage => { stage.status = 'final'; });
+  original.summary.stages.forEach(stage => { stage.status = 'final'; stage.winner = 'home'; });
+  // Fixture: the real week is treated as a finished home win, whichever alliance's data this is
+  Object.assign(original.summary, { score: { home: 13, opp: 0 }, decided: 'home', wins_remaining: 0, leading_live: {} });
   // Use a fixed synthetic date later than the captured fixture. Loading all real
   // weeks is the separate contract check's responsibility.
   const synthetic = JSON.parse(JSON.stringify(original));
