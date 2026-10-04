@@ -16,7 +16,7 @@ const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
   .filter(match => !/\bsrc\s*=/.test(match[1])).map(match => match[2]);
 assert.equal(scripts.length, 2, 'Expected before-paint theme script and app script');
 const exportCode = `window.TEST = {state, overview, members, leaderboards, stages, dataView,
-  trends, render, boardKey, rankChange, rosterRows, visibleBoard, openProfile,
+  trends, render, eventBar, boardKey, rankChange, rosterRows, visibleBoard, openProfile,
   closeProfile, sync, theme, statusStage, date, t, n, loadWeek,
   setLang:value=>lang=value, getLang:()=>lang, setData:value=>data=value,
   getData:()=>data, getRenderToken:()=>renderToken};`;
@@ -113,7 +113,7 @@ const h = harness(), { T, original, synthetic, node } = h;
 let combinations = 0;
 for (const lang of Object.keys(h.context.window.I18N)) {
   T.setLang(lang);
-  for (const view of ['overview', 'members', 'leaderboards', 'opponent', 'trends', 'stages', 'data']) {
+  for (const view of ['overview', 'record', 'members', 'leaderboards', 'opponent', 'trends', 'stages', 'data']) {
     T.state.view = view; T.state.player = ''; T.state.week = original.summary.id;
     await T.render();
     assert.ok(node('#view').innerHTML.length > 100, `${lang}.${view} did not render`);
@@ -156,10 +156,12 @@ assert.ok(T.visibleBoard().every(row => row.alliance_tag === original.summary.ho
 // A Saturday lead must not add its four wins to the finalized score.
 T.setData(synthetic); T.state.week = synthetic.summary.id; T.state.view = 'overview';
 const overview = T.overview();
+T.eventBar();
+const eventBar = node('#eventBar').innerHTML;
 assert.match(overview, /class="score num">2 : 7<\/div>/);
-assert.ok(overview.includes(T.t('in_progress')) && overview.includes(T.t('leading')));
+assert.ok(eventBar.includes(T.t('in_progress')) && overview.includes(T.t('leading')));
 assert.ok(!overview.includes('class="score num">6 : 7'));
-assert.ok(overview.includes('Snapshot: ') && overview.includes('server time (UTC−2)'), 'Overview must render snapshot header with server time');
+assert.ok(eventBar.includes('Snapshot: ') && eventBar.includes('server time (UTC−2)'), 'Week header must render snapshot window with server time');
 T.state.view = 'leaderboards'; T.state.tab = 'week';
 const boards = T.leaderboards();
 assert.ok(boards.includes('Snapshot') && boards.includes('server time'), 'Leaderboards must render snapshot time for current tab');
@@ -199,7 +201,7 @@ for (const [key, value] of Object.entries({ week: original.summary.id, view: 'le
 }
 deep.T.state.view = 'overview';
 await deep.T.render();
-assert.ok(deep.node('#view').innerHTML.includes('Instantané :') && deep.node('#view').innerHTML.includes('heure serveur (UTC−2)'), 'French overview must render snapshot in French');
+assert.ok(deep.node('#eventBar').innerHTML.includes('Instantané :') && deep.node('#eventBar').innerHTML.includes('heure serveur (UTC−2)'), 'French week header must render snapshot in French');
 deep.node('#themeToggle').events.get('click')();
 assert.equal(deep.store.get('p1mp.theme'), 'dark');
 assert.equal(new URL(deep.location.href).searchParams.get('theme'), 'dark');

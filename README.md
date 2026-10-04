@@ -5,7 +5,20 @@ every daily leaderboard (MON–SAT) and the weekly total, per-member performance
 multi-week trends.
 
 **Dashboard:** https://jeffxlabs.github.io/P1MP-VS/ — dark/light themes, 10 languages, deep links for every view
-(`?week=2026-10-03&view=members&player=…&lang=fr&theme=light`), works offline from `file://`.
+(`?week=2026-10-03&view=members&player=…&lang=fr&theme=light`), works offline from `file://`, laid out for phones and desktop.
+
+- **Overview:** score and day-by-day results, quota check (who is below the 11.4M quota, who missed twice in a row,
+  who is new), key takeaways, top performers, biggest movers vs the previous captured week, stage points, rank tiers.
+- **Week by week** (`view=record`): every member × every tracked week, colour-coded met / near / below / not in alliance
+  / week not captured, with quota record, current streak, average and trend. Filters for "below this week", "missed
+  any week", "never missed" and "on a streak". OCR look-alikes (0/O, 1/l/I) are folded so a player matches across weeks.
+- **Player profile** (click any name): weekly points and alliance rank vs the previous week, active days, tips
+  (quota margin or shortfall, days with no points, strongest stage and the stage with most room to grow vs the alliance
+  median, week-over-week change, quota streak), daily points against the alliance median, and weekly history against
+  the quota line.
+- **Members**, **Leaderboards**, **Opponent**, **Trends**, **Stages**, **Data:** this week's roster with daily heat
+  cells (relative to each day's alliance median), full server boards, opponent scouting, alliance-level trends
+  (quota compliance by week, stage win rate), stage rules, capture integrity and downloads.
 
 Sister project: [S117 Capitol War rankings](https://jeffxlabs.github.io/ZR-S117-Capitol/).
 
