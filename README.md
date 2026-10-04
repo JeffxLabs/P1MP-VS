@@ -1,196 +1,129 @@
-# S117 [P1MP] JU1CE — Alliance Duel Performance Intelligence (P1MP-VS)
+# [P1MP] JU1CE — Alliance Competition (VS) tracker
 
-Tactical multi-week performance analysis, daily stage breakdowns, and member combat intelligence for **[P1MP] JU1CE** (Server 117) during the weekly Alliance Duel (Alliance Competition / VS) in *Z Route: Redemption*.
+Weekly Alliance Competition ("VS" / Alliance Duel) results for **[P1MP] JU1CE**, Server 117, in *Z Route: Redemption*:
+every daily leaderboard (MON–SAT) and the weekly total, per-member performance, quota tracking, opponent scouting and
+multi-week trends.
 
-🌐 **Live Interactive Multi-Week Dashboard**: [https://jeffxlabs.github.io/P1MP-VS/](https://jeffxlabs.github.io/P1MP-VS/)  
-📦 **GitHub Repository**: [https://github.com/JeffxLabs/P1MP-VS](https://github.com/JeffxLabs/P1MP-VS)
+**Dashboard:** https://jeffxlabs.github.io/P1MP-VS/ — dark/light themes, 10 languages, deep links for every view
+(`?week=2026-10-03&view=members&player=…&lang=fr&theme=light`), works offline from `file://`.
 
----
-
-## ⚡ Features & Capabilities
-
-- 📅 **Multi-Week Event Selector**: Seamlessly switch between any past or present VS match week, or view the **Multi-Week / Career Trends** dashboard.
-- 👥 **Operatives Performance Tracker**: Searchable, tier-filtered (*Titans 100M+*, *Elites 50M+*, *Core 20M+*, *Vanguard 5M+*, *Support*), and sortable roster of all 96 alliance members with inline daily trajectory sparklines.
-- 🗂️ **Interactive Combat Dossier Modal**: Click any member to inspect their full combat dossier, complete with daily points trajectory, internal alliance rank, duel rank, and career history across multiple weeks.
-- ⚔️ **Daily Stage Breakdown & Stage Intel**: Head-to-head comparison cards for all 6 VS stages with win counters, point meters, MVP badges, and expandable **Stage Objectives & Activities** directories.
-- 🏆 **Full Duel Leaderboards**: Complete daily standings (Mon–Sat + Weekly Total) covering all ~190 duel combatants with live alliance filtering (`[P1MP]` vs `[0BS]`).
-- ✅ **Strict Rank Integrity Verification**: Automated contiguity audits ensuring strictly contiguous rankings ($1 \dots N$) with zero skipped numbers across every leaderboard.
-- 🎯 **Mathematical Integrity Cross-Check**: Deep verification comparing daily sums against reported weekly totals down to the exact single digit.
+Sister project: [S117 Capitol War rankings](https://jeffxlabs.github.io/ZR-S117-Capitol/).
 
 ---
 
-## 🎖️ Alliance Competition Mechanics & Daily "Wins" System
+## Weeks tracked
 
-The Alliance Competition runs weekly from **Monday to Saturday** across 6 tactical phases. Each day's victory awards competition points known as **"Wins"**. 
+| Week (Sat) | Opponent | Score | Weekly points (leaderboard) | Data snapshot (server time, UTC−2) |
+| :-- | :-- | :-: | :-- | :-- |
+| 2026-10-03 | [DOOM] Armageddon · S119 | **9 : 0** (clinched) | 4,855,902,583 vs 3,932,140,155 | Sat 2026-10-03 22:02–22:23 (Saturday stage still running) |
+| 2026-09-19 | [0BS] ZeroBullsht · S113 | **9 : 0** (clinched) | official 4,033,210,605 vs 3,516,839,111 | ≈ Sat 2026-09-19 23:24 (legacy capture, Saturday still running) |
 
-| Phase / Day | Stage Name | Wins Awarded | Focus Area |
-| :--- | :--- | :---: | :--- |
-| **Monday (Day 1)** | **Stage 1: Radar Exploration** | **1 Win** | Radar missions, fighter components, stamina, gathering |
-| **Tuesday (Day 2)** | **Stage 2: Base Construction** | **2 Wins** | Building speedups, construction power, survivor recruitment, UR tasks |
-| **Wednesday (Day 3)** | **Stage 3: Tech Research** | **2 Wins** | Research speedups, research power, fighter component chests |
-| **Thursday (Day 4)** | **Stage 4: Hero Training** | **2 Wins** | Hero recruitment, UR/SSR/SR shards, skill EXP, hero EXP |
-| **Friday (Day 5)** | **Stage 5: Full Military Preparation**| **2 Wins** | Soldier training across all tiers (T1–T10), training/building/research speedups |
-| **Saturday (Day 6)** | **Stage 6: Enemy Assault** | **4 Wins** | Cross-server territory raid, enemy eliminations (T1–T10), soldier losses, healing |
-| **TOTAL** | **6 Daily Stages** | **13 Wins** | **First alliance to reach 7 Wins clinches match victory** |
+Each board's own snapshot time (MON 22:02, TUE 22:09, WED 22:14, THU 22:15, FRI 22:18, SAT 22:20, This Week 22:23 for
+2026-10-03) is in `data/weeks/<week>/week_summary.json` (`snapshots`) and shown on the dashboard.
 
-> [!NOTE]
-> Saturday's **Enemy Assault** provides **4 Wins** (nearly one-third of the total match points), making it the decisive climax of the duel where cross-server invasions and troop casualties take center stage.
+The 2026-09-26 week was not captured (the game only shows the current week).
 
----
+### 2026-10-03 vs [DOOM] Armageddon (S119)
 
-## 📋 Comprehensive Stage Objectives & Activities Directory
+| Stage | Wins | [P1MP] | [DOOM] | Players | Top [P1MP] | Top [DOOM] |
+| :-- | :-: | --: | --: | :-: | :-- | :-- |
+| Mon · Radar Exploration | 1 | **843,652,863** | 632,286,784 | 90 / 93 | ViE 64.0M | Anr23 30.1M |
+| Tue · Base Construction | 2 | **578,994,917** | 530,727,851 | 89 / 90 | Whiteline876 30.1M | snaiperpool 13.2M |
+| Wed · Tech Research | 2 | **652,113,534** | 565,291,503 | 89 / 88 | Whiteline876 30.4M | iSeeU 20.7M |
+| Thu · Hero Training | 2 | **1,675,713,376** | 1,326,704,853 | 90 / 92 | Whiteline876 75.0M | Anr23 50.4M |
+| Fri · Full Military Preparation | 2 | **651,720,934** | 527,295,423 | 89 / 90 | RollingStoners 23.4M | Anr23 15.8M |
+| Sat · Enemy Assault (live at 22:20) | 4 | 450,967,191 | 418,698,867 | 93 / 91 | TheRequiem 34.4M | EvVa 19.3M |
 
-*(Note: Base activity criteria only; point rewards scale with individual alliance tech and research bonuses)*
-
-### Stage 1: Radar Exploration (Monday • 1 Win)
-- Purchase packs containing Diamonds [1 Diamond]
-- Complete 1 Radar Mission
-- Use 1 Fighter Part
-- Use 1 Fighter Combat Chip
-- Use 1 Stamina
-- Consume 650 Hero EXP
-- Gather 10 Food (Radar gathering quests do not count)
-- Gather 10 Metal (Radar gathering quests do not count)
-- Gather 6 Oil (Radar gathering quests do not count)
-
-### Stage 2: Base Construction (Tuesday • 2 Wins)
-- Purchase packs containing Diamonds [1 Diamond]
-- Gain 10 Power for every construction
-- 1-min Build Speedup
-- Recruit Survivors 1x
-- Complete 1 UR Special Ops mission
-- Dispatch UR Transport Truck 1x
-
-### Stage 3: Tech Research (Wednesday • 2 Wins)
-- Purchase packs containing Diamonds [1 Diamond]
-- Complete 1 Radar Mission
-- Use 1 Research Data
-- Gain 10 Power for every research
-- 1-min Research Speedup
-- For each Lv.1 Fighter Component Chest opened
-- For each Lv.2 Fighter Component Chest opened
-- For each Lv.3 Fighter Component Chest opened
-- For each Lv.4 Fighter Component Chest opened
-- For each Lv.5 Fighter Component Chest opened
-- For each Lv.6 Fighter Component Chest opened
-- For each Lv.7 Fighter Component Chest opened
-
-### Stage 4: Hero Training (Thursday • 2 Wins)
-- Purchase packs containing Diamonds [1 Diamond]
-- Use 1 UR Hero Shard
-- Recruit Hero 1x
-- Use 1 Skill EXP Book
-- Consume 650 Hero EXP
-- Use 1 SSR Hero Shard
-- Use 1 SR Hero Shard
-
-### Stage 5: Full Military Preparation (Friday • 2 Wins)
-- Purchase packs containing Diamonds [1 Diamond]
-- Complete 1 Radar Mission
-- Gain 10 Power for every construction
-- Gain 10 Power for every research
-- 1-min Training Speedup
-- 1-min Build Speedup
-- 1-min Research Speedup
-- Train a T1 to T10 Soldier (separate points per tier from T1 through T10)
-
-### Stage 6: Enemy Assault (Saturday • 4 Wins)
-- Purchase packs containing Diamonds [1 Diamond]
-- Dispatch UR Transport Truck 1x
-- Complete 1 UR Special Ops mission
-- Speed up Healing by 1 min
-- 1-min Training Speedup
-- 1-min Research Speedup
-- 1-min Build Speedup
-- Eliminate a Lv.T1 to T10 Soldier (specific match) [Tiers T1 through T10]
-- For every T1 to T10 soldier eliminated [Tiers T1 through T10]
-- For every T1 to T10 soldier lost [Tiers T1 through T10]
+Quota (11.4M weekly): 84 of 95 members met it, 1 near (11M–11.4M), 10 below.
 
 ---
 
-## 🏆 Current Week Results (2026-09-19: vs S113 [0BS] ZeroBullsht)
+## Competition rules
 
-* **Match Score**: **9 : 0** (P1MP swept Stages 1–5, securing the duel win prior to Stage 6 conclusion; leading Stage 6 for potential 13:0 sweep).
-* **Official Alliance Total**: **4,033,210,605** vs **3,516,839,111** (+516,371,494 differential).
-* **Player Leaderboard Total**: **3,972,836,367** vs **3,392,933,707** (+579,902,660 differential).
-
-### Stage Breakdown
-
-| Stage | Day | Wins | [P1MP] Score | [0BS] Score | Winner | Stage MVP |
-| :---: | :--- | :---: | :---: | :---: | :---: | :--- |
-| **I** | Monday | **1** | **734,338,768** | 492,307,324 | 🏆 **P1MP** | ViE (62.1M) |
-| **II** | Tuesday | **2** | **525,316,659** | 483,141,612 | 🏆 **P1MP** | ViE (31.6M) |
-| **III** | Wednesday | **2** | **574,853,865** | 540,459,859 | 🏆 **P1MP** | JimmyJam (29.9M) |
-| **IV** | Thursday | **2** | **1,125,991,764** | 1,105,036,660 | 🏆 **P1MP** | RollingStoners (66.0M) |
-| **V** | Friday | **2** | **597,607,611** | 564,402,820 | 🏆 **P1MP** | Oreooo [0BS] (24.1M) |
-| **VI** | Saturday | **4** | **475,101,938** | 331,490,836 | 🏆 **P1MP** (leading) | TheRequiem (62.0M+) |
+Monday–Saturday, one stage per day. Daily wins: Mon 1, Tue–Fri 2 each, Sat 4 — 13 in total, 7 clinches the match.
+Stage objectives are listed on the dashboard's **Stages** view (`data/competition_stages.json`).
 
 ---
 
-## 🔍 Data Integrity & Cross-Check Audit
+## Data quality
 
-An exhaustive cross-check was performed comparing every player's reported **Weekly Total** against their cumulative daily sum:
+Every published board is checked before it is pushed:
 
-1. **P1MP Members**:
-   - **95 out of 96 operatives (99.0%)** exhibit an **exact 1:1 match down to the single digit** between their reported weekly total and the sum of their Monday through Saturday scores.
-   - The sole variance is `Dogboy` (+4,415,248 pts), who joined P1MP mid-week on Wednesday after scoring 4.41M in his previous alliance on Monday/Tuesday.
-2. **Opponent [0BS] Combatants**:
-   - Apparent discrepancies were audited and identified as OCR character variations on stylized symbols (e.g. `MrPoopypantsр` on Thursday, `GUEL07777` on Wednesday, `RO0ON` on Friday, `★rente★` on Tuesday).
-   - Upon canonical alias unification, **100% of combatant scores match their reported weekly totals**, confirming mathematical accuracy across all 190 ranks.
-3. **Contiguity Verification**:
-   - Zero skipped ranks detected across Mon (182), Tue (179), Wed (191), Thu (192), Fri (191), Sat (187), and Week (190).
+- **Every rank read several times.** Each rank is read on 2–4 screenshots (3.4 on average) and voted on: points must
+  agree exactly, names are compared on their letters/digits with look-alike characters folded (l/I/1, O/0,
+  Cyrillic/Latin twins), so a decorative symbol or one stray misread cannot win.
+- **No skipped or duplicated ranks.** Ranks come from the row geometry and the rank digits on screen; every frame must
+  overlap the previous one, and any gap is scrolled back to and re-read. Missing, single-read, disagreeing,
+  out-of-order or repeated-player ranks are revisited (repair pass) before a board is accepted.
+- **Weekly checksum.** Each player's weekly total must equal the sum of their six days. For 2026-10-03: 183 exact,
+  6 joined their alliance mid-week (points earned before joining only appear in the weekly total), 5 left before the
+  weekly capture (on day boards only). No unexplained differences.
+- **Live boards.** Saturday and This Week change while being read: if a scan shows movement, the board is scanned again
+  and merged per player, then re-ranked.
+- **Evidence.** Compressed screenshots (720 px WebP) of the frames behind every board are in
+  `data/weeks/<week>/screenshots/<tab>/`, chosen so each rank appears on at least two of them, with `index.json`
+  (capture time and ranks on each frame). Per-rank read counts and agreement are in `capture_qa.json`.
 
 ---
 
-## 📁 Repository Structure
+## Capturing a week
 
-```
-P1MP-VS/
-├── index.html                   # Interactive multi-week dashboard & visual tracking application
-├── README.md                    # Intelligence briefing & pipeline documentation
-├── data/
-│   ├── competition_stages.json  # Comprehensive stage rules, daily wins & activity directory
-│   ├── weeks_index.json         # Master registry of all ingested VS weeks
-│   ├── multi_week_analytics.json# Career standings, multi-week trajectories & win rates
-│   ├── embedded_data.js         # Offline-first bundle containing all weeks, stages & analytics
-│   └── weeks/
-│       └── 2026-09-19/          # Week archive (Mon-Sat + Weekly Total, summaries, roster)
-│           ├── duel_summary.json
-│           ├── p1mp_members.json
-│           ├── mon.json
-│           ├── tue.json
-│           ├── wed.json
-│           ├── thu.json
-│           ├── fri.json
-│           ├── sat.json
-│           └── week.json
-└── pipeline/
-    ├── capture_all.py           # Automated BlueStacks capture & Vision OCR ingest engine
-    ├── build_analytics.py       # Single-week roster aggregator & mathematical validator
-    ├── build_multiweek.py       # Multi-week aggregator & rank contiguity auditor
-    ├── cleaner.py               # Data normalizer and integrity checker
-    ├── vision_ocr.swift         # Native Apple Vision OCR worker source
-    └── vision_ocr               # High-performance compiled native binary
+Requirements: macOS with Xcode command-line tools (Swift, Vision), `adb`, `cwebp` (optional, `brew install webp`),
+BlueStacks at 1080×1920 portrait with the game running.
+
+```sh
+adb connect 127.0.0.1:5555
+python3 pipeline/capture_all.py --opp-server 119  # all seven tabs, week = this Saturday (server time)
+python3 pipeline/capture_all.py --tabs sat,week  # just refresh today's and the weekly board
 ```
 
+What it does:
+
+1. **Navigates by OCR** from wherever the game is: backs out, taps the **VS** icon on the right-hand side of the city
+   screen, then **RANKINGS** at the bottom of the Alliance Competition page.
+2. For **MON, TUE, WED, THUR, FRI, SAT, This Week** in that order: taps the tab and confirms it is the highlighted one
+   (pixel check), confirms the list starts at rank 1, then scrolls to the very bottom (the list lazy-loads more rows
+   near its end; the bottom is only accepted after a second check). The pinned own-rank row under the list is ignored.
+3. **Continuous capture:** the list is scrolled continuously while screenshots are taken back to back and read by
+   Apple Vision OCR as they arrive (a screenshot is a single rendered frame, so it is sharp even mid-scroll). About
+   45–55 s per tab; a full week of seven tabs is roughly 7–10 minutes including repairs.
+4. Writes `data/weeks/<week>/{mon,tue,wed,thu,fri,sat,week}.json`, `capture.json`, `capture_qa.json`, the screenshot
+   archive, then runs `pipeline/build_week.py` (analytics, `week_data.js`, `data/manifest.js`, cache-busting stamps).
+   Exits non-zero if any rank is unresolved (`--allow-incomplete` to override).
+
+Then publish:
+
+```sh
+git add data index.html README.md && git commit -m "data: VS week 2026-10-10" && git push
+```
+
+Useful flags: `--no-navigate` (Rankings already open), `--week YYYY-MM-DD`, `--no-screenshots`, `--no-build`.
+
+Rebuild a board from saved frames after a parser change (no emulator): `python3 pipeline/reprocess.py <week> <tab> <frames dir>`
+(full-size frames are kept in `~/Library/Caches/s117-vs-captures/`).
+
+### Other accounts
+
+Account settings live in `pipeline/profiles/*.json` (home tag, device, look-alike tag spellings). `--profile p2mp`
+targets the [P2MP] account on its own BlueStacks instance and pauses/resumes the Apparatchik guard around the capture
+(`pipeline/apparatchik_control.py`, pairing as in the Capitol project); that week data belongs in a separate P2MP repo.
+
 ---
 
-## 🚀 Ingesting Future Weekly Events
+## Repository layout
 
-To document a new VS Alliance Competition week from BlueStacks:
-
-1. Ensure device `127.0.0.1:5555` is connected:
-   ```bash
-   adb connect 127.0.0.1:5555
-   ```
-2. In-game, navigate to **Alliance Competition -> Rankings**.
-3. Run the automated pipeline:
-   ```bash
-   python3 pipeline/capture_all.py --week 2026-09-26 --device 127.0.0.1:5555
-   ```
-4. Deploy updates to GitHub Pages:
-   ```bash
-   git add data/ index.html README.md
-   git commit -m "feat(duel): document week 2026-09-26 VS performance"
-   git push origin main
-   ```
+```
+index.html                    dashboard (single file, no build step)
+data/manifest.js|json         weeks list (+ data_version for cache busting)
+data/i18n.js, data/stages.js  generated by pipeline/build_i18n.py
+data/competition_stages.json  stage rules and activities
+data/weeks/<week>/            boards (*.json), week_summary.json, week_data.js, capture*.json, meta.json, screenshots/
+pipeline/capture_all.py       capture: navigation, tabs, continuous scan, voting, repair, live-board merge
+pipeline/vs_frame_parser.py   screenshot OCR boxes -> ranked rows (row geometry, pinned-row exclusion)
+pipeline/build_week.py        analytics, checksum, manifest
+pipeline/reprocess.py         rebuild a board from saved frames
+pipeline/screenshots.py       compressed screenshot archive
+pipeline/vision_ocr.swift     Apple Vision OCR worker; pixel_probe.swift: tab highlight check
+pipeline/build_i18n.py        translations (10 languages); stamp_assets.py: cache busting
+pipeline/tests/               node checks for translations, data files and the page scripts
+```
