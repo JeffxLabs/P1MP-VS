@@ -233,6 +233,8 @@ def build(week_id, profile, opp_server=None):
                 st = "mismatch"
             p["check"] = {"diff": diff, "status": st}
             p["tier"] = tier_of(p["weekly_points"])
+            # Known joins can predate the first captured week; preserve them across rebuilds.
+            p["new_member"] = p["key"] in {name_key(x) for x in meta_over.get("new_members", [])}
             p["quota_met"] = p["weekly_points"] >= QUOTA
             p["deficit"] = max(0, QUOTA - p["weekly_points"])
             # Day-to-day consistency: coefficient of variation of the six days (lower = steadier)

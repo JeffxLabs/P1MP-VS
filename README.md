@@ -8,7 +8,7 @@ multi-week trends.
 (`?week=2026-10-03&view=members&player=…&lang=fr&theme=light`), works offline from `file://`, laid out for phones and desktop.
 
 - **Overview:** score and day-by-day results, quota check (who is below the 11.4M quota, who missed twice in a row,
-  who is new), key takeaways, top performers, biggest movers vs the previous captured week, stage points, rank tiers.
+  with new members listed separately and exempt from the below-quota list and repeat-miss warnings), key takeaways, top performers, biggest movers vs the previous captured week, stage points, rank tiers.
 - **Week by week** (`view=record`): every member × every tracked week, colour-coded met / near / below / not in alliance
   / week not captured, with quota record, current streak, average and trend. Filters for "below this week", "missed
   any week", "never missed" and "on a streak". OCR look-alikes (0/O, 1/l/I) are folded so a player matches across weeks.

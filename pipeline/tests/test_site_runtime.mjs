@@ -17,7 +17,7 @@ const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
 assert.equal(scripts.length, 2, 'Expected before-paint theme script and app script');
 const exportCode = `window.TEST = {state, overview, members, leaderboards, stages, dataView,
   trends, render, eventBar, boardKey, rosterRows, badgesFor, visibleBoard, openProfile,
-  closeProfile, sync, theme, statusStage, date, t, n, loadWeek,
+  closeProfile, sync, theme, statusStage, date, t, n, loadWeek, quotaCard, quotaMisses, newMember,
   setLang:value=>lang=value, getLang:()=>lang, setData:value=>data=value,
   getData:()=>data, getRenderToken:()=>renderToken};`;
 assert.match(scripts[1], /\nrender\(\);\n/, 'App startup instrumentation anchor changed');
@@ -213,6 +213,33 @@ assert.equal(stored.T.state.week, synthetic.summary.id, 'Newest week is default'
 const one = harness({ twoWeeks: false });
 one.T.state.view = 'trends'; await one.T.render();
 assert.ok(one.node('#view').innerHTML.includes(one.T.t('need_two')), 'Single-week empty state');
+
+// New members are separate from quota misses, including known first-capture joins.
+const joins = harness({ twoWeeks: false });
+const oldWeek = joins.original;
+const dark = oldWeek.members.find(p => p.key === 'darktime66');
+assert.equal(dark.new_member, true, 'DarkTime66 was new on September 19');
+assert.ok(!joins.T.quotaMisses(oldWeek).some(p => p.key === dark.key));
+const latestId = '2026-10-03';
+new vm.Script(read(`data/weeks/${latestId}/week_data.js`)).runInContext(joins.context);
+joins.context.window.VS_MANIFEST.push({ id: latestId });
+const latest = joins.context.window.VS_WEEKS[latestId];
+joins.T.setData(latest); joins.T.state.week = latestId;
+const misses = joins.T.quotaMisses(latest);
+assert.ok(misses.length > 0, 'Established misses remain visible');
+for (const p of latest.members.filter(p => !p.quota_met && joins.T.newMember(p, latest))) {
+  assert.ok(!misses.some(m => m.key === p.key), `${p.player} must not be a quota miss`);
+}
+const card = joins.T.quotaCard(), below = card.split('<h3 class="card-title"')[1];
+assert.ok(!below.includes('skinnybigpoppa'), 'Joined-midweek player must not appear in below-quota table');
+assert.ok(card.includes(joins.T.t('new_member')), 'New players remain visible in their own section');
+// A prior new-player shortfall must not be called a second miss.
+const currentDark = latest.members.find(p => p.key === dark.key);
+const saved = { ...currentDark };
+Object.assign(currentDark, { quota_met: false, tier: 'passenger' });
+const darkRow = joins.T.quotaCard().match(/<tr>[^]*?darktime66[^]*?<\/tr>/)?.[0] || '';
+assert.ok(!darkRow.includes(joins.T.t('missed_twice')));
+Object.assign(currentDark, saved);
 
 // Loading is selection-driven, versioned, shared between concurrent callers,
 // and recoverable after a failed script request. Execute the real week source

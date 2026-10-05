@@ -28,7 +28,7 @@
       "2026-09-19T23:24:00-02:00"
     ],
     "captured_at_approximate": true,
-    "data_version": "e1a6681388"
+    "data_version": "60a0a4141f"
   },
   {
     "id": "2026-10-03",
@@ -59,6 +59,6 @@
       "2026-10-03T22:23:16-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "3cd18eeddb"
+    "data_version": "efb1d03114"
   }
 ]
