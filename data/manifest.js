@@ -60,5 +60,36 @@ window.VS_MANIFEST = [
     ],
     "captured_at_approximate": false,
     "data_version": "efb1d03114"
+  },
+  {
+    "id": "2026-10-10",
+    "home": {
+      "tag": "P1MP",
+      "name": "JU1CE",
+      "server": "S117"
+    },
+    "opponent": {
+      "tag": "RedR",
+      "name": "RedRush",
+      "server": ""
+    },
+    "status": "final",
+    "score": {
+      "home": 13,
+      "opp": 0
+    },
+    "decided": "home",
+    "weekly_points": {
+      "home": 4608925082,
+      "opp": 4240688969
+    },
+    "members": 96,
+    "captured_at_server": "2026-10-10T23:57:28-02:00",
+    "capture_window_server": [
+      "2026-10-10T23:46:46-02:00",
+      "2026-10-10T23:57:28-02:00"
+    ],
+    "captured_at_approximate": false,
+    "data_version": "a7f3385744"
   }
 ];
