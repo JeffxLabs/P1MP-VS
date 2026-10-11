@@ -83,7 +83,8 @@ Every published board is checked before it is pushed:
 ## Capturing a week
 
 Requirements: macOS with Xcode command-line tools (Swift, Vision), `adb`, `cwebp` (optional, `brew install webp`),
-BlueStacks at 1080×1920 portrait with the game running.
+BlueStacks at 1080×1920 portrait with the game running. The P1MP profile pauses Apparatchik, switches from its
+`Tiramisu64_1` instance to Jeff's `Tiramisu64` instance for the capture, then restores Apparatchik's instance and game.
 
 ```sh
 adb connect 127.0.0.1:5555
@@ -111,7 +112,8 @@ Then publish:
 git add data index.html README.md && git commit -m "data: VS week 2026-10-10" && git push
 ```
 
-Useful flags: `--no-navigate` (Rankings already open), `--week YYYY-MM-DD`, `--no-screenshots`, `--no-build`.
+Useful flags: `--no-navigate` (Rankings already open), `--no-switch` (skip automatic instance switching),
+`--week YYYY-MM-DD`, `--no-screenshots`, `--no-build`.
 
 Rebuild a board from saved frames after a parser change (no emulator): `python3 pipeline/reprocess.py <week> <tab> <frames dir>`
 (full-size frames are kept in `~/Library/Caches/s117-vs-captures/`).
