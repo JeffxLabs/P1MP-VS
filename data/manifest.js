@@ -13,7 +13,7 @@ window.VS_MANIFEST = [
     },
     "status": "final",
     "score": {
-      "home": 13,
+      "home": 9,
       "opp": 0
     },
     "decided": "home",
@@ -28,7 +28,7 @@ window.VS_MANIFEST = [
       "2026-09-19T23:24:00-02:00"
     ],
     "captured_at_approximate": true,
-    "data_version": "60a0a4141f"
+    "data_version": "51a3abaa50"
   },
   {
     "id": "2026-10-03",
@@ -44,10 +44,10 @@ window.VS_MANIFEST = [
     },
     "status": "final",
     "score": {
-      "home": 13,
-      "opp": 0
+      "home": null,
+      "opp": null
     },
-    "decided": "home",
+    "decided": null,
     "weekly_points": {
       "home": 4855902583,
       "opp": 3932140155
@@ -59,7 +59,7 @@ window.VS_MANIFEST = [
       "2026-10-03T22:23:16-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "efb1d03114"
+    "data_version": "4811f4a465"
   },
   {
     "id": "2026-10-10",
@@ -75,10 +75,10 @@ window.VS_MANIFEST = [
     },
     "status": "final",
     "score": {
-      "home": 13,
-      "opp": 0
+      "home": null,
+      "opp": null
     },
-    "decided": "home",
+    "decided": null,
     "weekly_points": {
       "home": 4608925082,
       "opp": 4240688969
@@ -90,7 +90,7 @@ window.VS_MANIFEST = [
       "2026-10-10T23:57:28-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "a7f3385744"
+    "data_version": "5189828a36"
   },
   {
     "id": "2026-10-17",
@@ -106,10 +106,10 @@ window.VS_MANIFEST = [
     },
     "status": "final",
     "score": {
-      "home": 8,
-      "opp": 5
+      "home": null,
+      "opp": null
     },
-    "decided": "home",
+    "decided": null,
     "weekly_points": {
       "home": 4594666832,
       "opp": 4538930384
@@ -121,6 +121,6 @@ window.VS_MANIFEST = [
       "2026-10-17T22:58:08-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "4aba902879"
+    "data_version": "92b4a0bb0c"
   }
 ];
