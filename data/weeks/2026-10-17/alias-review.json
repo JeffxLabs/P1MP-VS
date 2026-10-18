@@ -1,0 +1,33 @@
+{
+  "applied_at": "2026-10-18T00:43:29.818038+00:00",
+  "provenance": {
+    "method": "Visual review of captured rows and alliance labels; same-rank points unanimous. Exact observed normalized spelling whitelist, alliance-scoped; no fuzzy/wildcard aliases. Display names omit undecodable decorative glyphs. Original evidence unchanged; fresh capture must pass ordinary QA/checksums.",
+    "reviewed_at": "2026-10-18T00:40:54.697382+00:00",
+    "reviewed_frame_basenames": [
+      "00128_mon_repair1_36_0.png",
+      "00060_mon_p1_s00_051.png",
+      "00280_tue_repair1_92_0.png"
+    ],
+    "reviewed_unresolved_rows": 11,
+    "source_archive_commit": "94c66724cd2a1e1c708c1bdf7def7a06429fd509",
+    "source_job_id": "94301C05-05E1-45E3-94A0-1F3044D0E641",
+    "source_repository": "git@github.com:JeffxLabs/P1MP-VS.git"
+  },
+  "rules": [
+    {
+      "display": "\u041a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u0439",
+      "key": "^(?:2\u043a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u0439|2\u043a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u04392|2\u043a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u04393|2\u043a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u0439\u0430|2\u043a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u0439\u0437|2\u043a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u0439\u044d|3\u043a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u04393|3\u043a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u0439\u0437|akoconanb\u0e40n2|akoconanb\u0e40\u0e172|akoconanb\u0e40\u0e17a|akoconanb\u0e40\u0e2b2|\u0437\u043a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u04393|\u0437\u043a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u0439\u0437|\u043a\u043e\u0441\u043e\u043b\u0430\u043f\u044b\u0439)$",
+      "tag": "BIW"
+    },
+    {
+      "display": "ARCHANGEL",
+      "key": "^(?:archangel|archangell|\u0444archangel|\u0444archangeloo|\u0444archangel\u0444|\u0444archangel\u0444o|\u5fe0archangel|\u5fe0archangel\u9f0e|\u60e0archangel|\u60e0archangell|\u8981archangel|\u9f0earchangel\u795f)$",
+      "tag": "BIW"
+    },
+    {
+      "display": "DarkwingDuck",
+      "key": "^(?:darkwingduck|darkwingducke|darkwingduckg|darkwingducko|darkwingduck\u96ea)$",
+      "tag": "BIW"
+    }
+  ]
+}

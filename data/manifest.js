@@ -91,5 +91,36 @@ window.VS_MANIFEST = [
     ],
     "captured_at_approximate": false,
     "data_version": "a7f3385744"
+  },
+  {
+    "id": "2026-10-17",
+    "home": {
+      "tag": "P1MP",
+      "name": "JU1CE",
+      "server": "S117"
+    },
+    "opponent": {
+      "tag": "BIW",
+      "name": "BloodWing",
+      "server": ""
+    },
+    "status": "final",
+    "score": {
+      "home": 8,
+      "opp": 5
+    },
+    "decided": "home",
+    "weekly_points": {
+      "home": 4594666832,
+      "opp": 4538930384
+    },
+    "members": 95,
+    "captured_at_server": "2026-10-17T22:58:08-02:00",
+    "capture_window_server": [
+      "2026-10-17T22:46:21-02:00",
+      "2026-10-17T22:58:08-02:00"
+    ],
+    "captured_at_approximate": false,
+    "data_version": "4aba902879"
   }
 ];

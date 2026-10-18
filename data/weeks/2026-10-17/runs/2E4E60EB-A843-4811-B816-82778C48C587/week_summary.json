@@ -1,0 +1,309 @@
+{
+  "id": "2026-10-17",
+  "home": {
+    "tag": "P1MP",
+    "name": "JU1CE",
+    "server": "S117"
+  },
+  "opponent": {
+    "tag": "BIW",
+    "name": "BloodWing",
+    "server": ""
+  },
+  "status": "final",
+  "live_tabs": [
+    "sat",
+    "week"
+  ],
+  "captured_at_server": "2026-10-17T22:58:08-02:00",
+  "capture_window_server": [
+    "2026-10-17T22:46:21-02:00",
+    "2026-10-17T22:58:08-02:00"
+  ],
+  "captured_at_approximate": false,
+  "snapshots": {
+    "mon": {
+      "at": "2026-10-17T22:46:21-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "tue": {
+      "at": "2026-10-17T22:48:14-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "wed": {
+      "at": "2026-10-17T22:50:16-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "thu": {
+      "at": "2026-10-17T22:51:39-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "fri": {
+      "at": "2026-10-17T22:53:56-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "sat": {
+      "at": "2026-10-17T22:56:28-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "week": {
+      "at": "2026-10-17T22:58:08-02:00",
+      "source": "screenshots",
+      "approximate": false
+    }
+  },
+  "score": {
+    "home": 8,
+    "opp": 5
+  },
+  "wins_remaining": 0,
+  "decided": "home",
+  "leading_live": {},
+  "total_wins": 13,
+  "wins_to_clinch": 7,
+  "weekly_points": {
+    "home": 4594666832,
+    "opp": 4538930384
+  },
+  "official_points": null,
+  "quota": 11400000,
+  "home_quota": {
+    "met": 89,
+    "near": 0,
+    "below": 6,
+    "members": 95,
+    "left": 0
+  },
+  "stages": [
+    {
+      "day": "mon",
+      "stage": 1,
+      "wins": 1,
+      "status": "final",
+      "home_points": 714804857,
+      "opp_points": 764123908,
+      "home_players": 91,
+      "opp_players": 90,
+      "winner": "opp",
+      "margin": 49319051,
+      "home_share": 48.33,
+      "home_top10_share": 28.7,
+      "home_median": 7224196,
+      "mvp_home": {
+        "player": "chauncey",
+        "points": 41997000,
+        "rank": 2
+      },
+      "mvp_opp": {
+        "player": "chak~",
+        "points": 49919838,
+        "rank": 1
+      }
+    },
+    {
+      "day": "tue",
+      "stage": 2,
+      "wins": 2,
+      "status": "final",
+      "home_points": 604399428,
+      "opp_points": 596182969,
+      "home_players": 93,
+      "opp_players": 90,
+      "winner": "home",
+      "margin": 8216459,
+      "home_share": 50.34,
+      "home_top10_share": 23.2,
+      "home_median": 6623186,
+      "mvp_home": {
+        "player": "ViE",
+        "points": 29388660,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Krematoriy",
+        "points": 13888536,
+        "rank": 4
+      }
+    },
+    {
+      "day": "wed",
+      "stage": 3,
+      "wins": 2,
+      "status": "final",
+      "home_points": 650135908,
+      "opp_points": 733148793,
+      "home_players": 92,
+      "opp_players": 89,
+      "winner": "opp",
+      "margin": 83012885,
+      "home_share": 47.0,
+      "home_top10_share": 27.8,
+      "home_median": 7204720,
+      "mvp_home": {
+        "player": "ViE",
+        "points": 29913266,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Maximus",
+        "points": 22913094,
+        "rank": 3
+      }
+    },
+    {
+      "day": "thu",
+      "stage": 4,
+      "wins": 2,
+      "status": "final",
+      "home_points": 1309649513,
+      "opp_points": 1320374204,
+      "home_players": 92,
+      "opp_players": 88,
+      "winner": "opp",
+      "margin": 10724691,
+      "home_share": 49.8,
+      "home_top10_share": 25.1,
+      "home_median": 13013532,
+      "mvp_home": {
+        "player": "Whiteline876",
+        "points": 50369402,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Волкофф",
+        "points": 40604808,
+        "rank": 4
+      }
+    },
+    {
+      "day": "fri",
+      "stage": 5,
+      "wins": 2,
+      "status": "final",
+      "home_points": 750788542,
+      "opp_points": 716422629,
+      "home_players": 94,
+      "opp_players": 89,
+      "winner": "home",
+      "margin": 34365913,
+      "home_share": 51.17,
+      "home_top10_share": 31.4,
+      "home_median": 7122376,
+      "mvp_home": {
+        "player": "RollingStoners",
+        "points": 39683602,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "drKsen",
+        "points": 26067753,
+        "rank": 4
+      }
+    },
+    {
+      "day": "sat",
+      "stage": 6,
+      "wins": 4,
+      "status": "final",
+      "home_points": 557892178,
+      "opp_points": 526644912,
+      "home_players": 94,
+      "opp_players": 92,
+      "winner": "home",
+      "margin": 31247266,
+      "home_share": 51.44,
+      "home_top10_share": 47.1,
+      "home_median": 3067684,
+      "mvp_home": {
+        "player": "JimmyJam",
+        "points": 48335083,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Maximus",
+        "points": 36097421,
+        "rank": 3
+      }
+    }
+  ],
+  "integrity": {
+    "tabs": {
+      "mon": {
+        "rows": 181,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "tue": {
+        "rows": 183,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "wed": {
+        "rows": 181,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "thu": {
+        "rows": 180,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "fri": {
+        "rows": 183,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "sat": {
+        "rows": 186,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": true
+      },
+      "week": {
+        "rows": 188,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": true
+      }
+    },
+    "checksum": {
+      "exact": 184,
+      "joined": 4,
+      "left": 4
+    },
+    "checksum_issues": []
+  },
+  "notes": []
+}
