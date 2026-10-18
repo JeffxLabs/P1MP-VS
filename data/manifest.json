@@ -13,7 +13,7 @@
     },
     "status": "final",
     "score": {
-      "home": 9,
+      "home": 13,
       "opp": 0
     },
     "decided": "home",
@@ -28,7 +28,7 @@
       "2026-09-19T23:24:00-02:00"
     ],
     "captured_at_approximate": true,
-    "data_version": "51a3abaa50"
+    "data_version": "60a0a4141f"
   },
   {
     "id": "2026-10-03",
@@ -44,10 +44,10 @@
     },
     "status": "final",
     "score": {
-      "home": null,
-      "opp": null
+      "home": 13,
+      "opp": 0
     },
-    "decided": null,
+    "decided": "home",
     "weekly_points": {
       "home": 4855902583,
       "opp": 3932140155
@@ -59,7 +59,7 @@
       "2026-10-03T22:23:16-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "4811f4a465"
+    "data_version": "efb1d03114"
   },
   {
     "id": "2026-10-10",
@@ -75,10 +75,10 @@
     },
     "status": "final",
     "score": {
-      "home": null,
-      "opp": null
+      "home": 13,
+      "opp": 0
     },
-    "decided": null,
+    "decided": "home",
     "weekly_points": {
       "home": 4608925082,
       "opp": 4240688969
@@ -90,7 +90,7 @@
       "2026-10-10T23:57:28-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "5189828a36"
+    "data_version": "a7f3385744"
   },
   {
     "id": "2026-10-17",
@@ -106,10 +106,10 @@
     },
     "status": "final",
     "score": {
-      "home": null,
-      "opp": null
+      "home": 8,
+      "opp": 5
     },
-    "decided": null,
+    "decided": "home",
     "weekly_points": {
       "home": 4594666832,
       "opp": 4538930384
@@ -121,6 +121,6 @@
       "2026-10-17T22:58:08-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "92b4a0bb0c"
+    "data_version": "4aba902879"
   }
 ]
