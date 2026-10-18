@@ -1665,7 +1665,7 @@
         },
         {
           "rank": 118,
-          "player": "TheCanadian",
+          "player": "Jeff",
           "n_obs": 4,
           "n_clean": 3,
           "points_agree": 1.0,
@@ -1674,7 +1674,7 @@
             "5259964": 3
           },
           "name_reads": {
-            "TheCanadian": 3
+            "Jeff": 3
           }
         },
         {
@@ -2611,7 +2611,7 @@
         },
         {
           "rank": 3,
-          "player": "TheCanadian",
+          "player": "Jeff",
           "n_obs": 5,
           "n_clean": 4,
           "points_agree": 1.0,
@@ -2620,7 +2620,7 @@
             "14078634": 4
           },
           "name_reads": {
-            "TheCanadian": 4
+            "Jeff": 4
           }
         },
         {
@@ -5842,7 +5842,7 @@
         },
         {
           "rank": 49,
-          "player": "TheCanadian",
+          "player": "Jeff",
           "n_obs": 3,
           "n_clean": 3,
           "points_agree": 1.0,
@@ -5851,7 +5851,7 @@
             "9477014": 3
           },
           "name_reads": {
-            "TheCanadian": 3
+            "Jeff": 3
           }
         },
         {
@@ -8078,7 +8078,7 @@
         },
         {
           "rank": 26,
-          "player": "TheCanadian",
+          "player": "Jeff",
           "n_obs": 4,
           "n_clean": 2,
           "points_agree": 1.0,
@@ -8087,7 +8087,7 @@
             "22632104": 2
           },
           "name_reads": {
-            "TheCanadian": 2
+            "Jeff": 2
           }
         },
         {
@@ -10452,7 +10452,7 @@
         },
         {
           "rank": 14,
-          "player": "TheCanadian",
+          "player": "Jeff",
           "n_obs": 3,
           "n_clean": 3,
           "points_agree": 1.0,
@@ -10461,7 +10461,7 @@
             "15891029": 3
           },
           "name_reads": {
-            "TheCanadian": 3
+            "Jeff": 3
           }
         },
         {
@@ -13098,7 +13098,7 @@
         },
         {
           "rank": 18,
-          "player": "TheCanadian",
+          "player": "Jeff",
           "n_obs": 3,
           "n_clean": 3,
           "points_agree": 1.0,
@@ -13107,7 +13107,7 @@
             "12461503": 3
           },
           "name_reads": {
-            "TheCanadian": 3
+            "Jeff": 3
           }
         },
         {
@@ -15869,7 +15869,7 @@
         },
         {
           "rank": 28,
-          "player": "TheCanadian",
+          "player": "Jeff",
           "n_obs": 4,
           "n_clean": 3,
           "points_agree": 1.0,
@@ -15878,7 +15878,7 @@
             "79800248": 3
           },
           "name_reads": {
-            "TheCanadian": 3
+            "Jeff": 3
           }
         },
         {
