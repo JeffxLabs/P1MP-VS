@@ -121,6 +121,37 @@
       "2026-10-17T22:58:08-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "4aba902879"
+    "data_version": "97a4b20afe"
+  },
+  {
+    "id": "2026-10-24",
+    "home": {
+      "tag": "P1MP",
+      "name": "JU1CE",
+      "server": "S117"
+    },
+    "opponent": {
+      "tag": "ALM",
+      "name": "AlrightArmy",
+      "server": ""
+    },
+    "status": "final",
+    "score": {
+      "home": 13,
+      "opp": 0
+    },
+    "decided": "home",
+    "weekly_points": {
+      "home": 4715428401,
+      "opp": 4298420832
+    },
+    "members": 94,
+    "captured_at_server": "2026-10-24T23:53:09-02:00",
+    "capture_window_server": [
+      "2026-10-24T23:41:45-02:00",
+      "2026-10-24T23:53:09-02:00"
+    ],
+    "captured_at_approximate": false,
+    "data_version": "309dca5cbf"
   }
 ]

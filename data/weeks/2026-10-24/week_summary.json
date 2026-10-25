@@ -1,0 +1,320 @@
+{
+  "id": "2026-10-24",
+  "home": {
+    "tag": "P1MP",
+    "name": "JU1CE",
+    "server": "S117"
+  },
+  "opponent": {
+    "tag": "ALM",
+    "name": "AlrightArmy",
+    "server": ""
+  },
+  "status": "final",
+  "live_tabs": [
+    "sat",
+    "week"
+  ],
+  "captured_at_server": "2026-10-24T23:53:09-02:00",
+  "capture_window_server": [
+    "2026-10-24T23:41:45-02:00",
+    "2026-10-24T23:53:09-02:00"
+  ],
+  "captured_at_approximate": false,
+  "snapshots": {
+    "mon": {
+      "at": "2026-10-24T23:41:45-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "tue": {
+      "at": "2026-10-24T23:43:51-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "wed": {
+      "at": "2026-10-24T23:46:37-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "thu": {
+      "at": "2026-10-24T23:48:57-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "fri": {
+      "at": "2026-10-24T23:50:22-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "sat": {
+      "at": "2026-10-24T23:51:39-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "week": {
+      "at": "2026-10-24T23:53:09-02:00",
+      "source": "screenshots",
+      "approximate": false
+    }
+  },
+  "score": {
+    "home": 13,
+    "opp": 0
+  },
+  "wins_remaining": 0,
+  "decided": "home",
+  "leading_live": {},
+  "total_wins": 13,
+  "wins_to_clinch": 7,
+  "weekly_points": {
+    "home": 4715428401,
+    "opp": 4298420832
+  },
+  "official_points": null,
+  "quota": 11400000,
+  "home_quota": {
+    "met": 87,
+    "near": 1,
+    "below": 6,
+    "members": 94,
+    "left": 0
+  },
+  "stages": [
+    {
+      "day": "mon",
+      "stage": 1,
+      "wins": 1,
+      "status": "final",
+      "home_points": 804734555,
+      "opp_points": 753087994,
+      "home_players": 92,
+      "opp_players": 94,
+      "winner": "home",
+      "margin": 51646561,
+      "home_share": 51.66,
+      "home_top10_share": 28.0,
+      "home_median": 7544828,
+      "mvp_home": {
+        "player": "JimmyJam",
+        "points": 43121732,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "bulger",
+        "points": 23910504,
+        "rank": 5
+      }
+    },
+    {
+      "day": "tue",
+      "stage": 2,
+      "wins": 2,
+      "status": "final",
+      "home_points": 595128242,
+      "opp_points": 545174834,
+      "home_players": 92,
+      "opp_players": 92,
+      "winner": "home",
+      "margin": 49953408,
+      "home_share": 52.19,
+      "home_top10_share": 23.7,
+      "home_median": 6534035,
+      "mvp_home": {
+        "player": "Chungi",
+        "points": 27301807,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "NerV25",
+        "points": 12553985,
+        "rank": 6
+      }
+    },
+    {
+      "day": "wed",
+      "stage": 3,
+      "wins": 2,
+      "status": "final",
+      "home_points": 715252052,
+      "opp_points": 601387501,
+      "home_players": 92,
+      "opp_players": 89,
+      "winner": "home",
+      "margin": 113864551,
+      "home_share": 54.32,
+      "home_top10_share": 30.5,
+      "home_median": 7315295,
+      "mvp_home": {
+        "player": "InvaderPimp",
+        "points": 30464763,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Fynnヅ",
+        "points": 29550483,
+        "rank": 3
+      }
+    },
+    {
+      "day": "thu",
+      "stage": 4,
+      "wins": 2,
+      "status": "final",
+      "home_points": 1527346002,
+      "opp_points": 1494359631,
+      "home_players": 92,
+      "opp_players": 93,
+      "winner": "home",
+      "margin": 32986371,
+      "home_share": 50.55,
+      "home_top10_share": 27.9,
+      "home_median": 13997740,
+      "mvp_home": {
+        "player": "chauncey",
+        "points": 55961948,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Qbaloc",
+        "points": 48086762,
+        "rank": 3
+      }
+    },
+    {
+      "day": "fri",
+      "stage": 5,
+      "wins": 2,
+      "status": "final",
+      "home_points": 643573239,
+      "opp_points": 587738914,
+      "home_players": 93,
+      "opp_players": 94,
+      "winner": "home",
+      "margin": 55834325,
+      "home_share": 52.27,
+      "home_top10_share": 25.5,
+      "home_median": 7235817,
+      "mvp_home": {
+        "player": "RollingStoners",
+        "points": 24015808,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Julieeee",
+        "points": 17862797,
+        "rank": 4
+      }
+    },
+    {
+      "day": "sat",
+      "stage": 6,
+      "wins": 4,
+      "status": "final",
+      "home_points": 429344701,
+      "opp_points": 411132924,
+      "home_players": 93,
+      "opp_players": 96,
+      "winner": "home",
+      "margin": 18211777,
+      "home_share": 51.08,
+      "home_top10_share": 33.2,
+      "home_median": 3144732,
+      "mvp_home": {
+        "player": "ViE",
+        "points": 22104029,
+        "rank": 2
+      },
+      "mvp_opp": {
+        "player": "Julieeee",
+        "points": 29108646,
+        "rank": 1
+      }
+    }
+  ],
+  "integrity": {
+    "tabs": {
+      "mon": {
+        "rows": 186,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "tue": {
+        "rows": 184,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "wed": {
+        "rows": 181,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "thu": {
+        "rows": 185,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "fri": {
+        "rows": 187,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "sat": {
+        "rows": 189,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": true
+      },
+      "week": {
+        "rows": 190,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": true
+      }
+    },
+    "checksum": {
+      "exact": 184,
+      "joined": 3,
+      "live": 2,
+      "mismatch": 1,
+      "left": 5
+    },
+    "checksum_issues": [
+      {
+        "player": "BMW95",
+        "tag": "ALM",
+        "weekly": 9797148,
+        "sum_days": 31554978,
+        "diff": -21757830,
+        "status": "mismatch"
+      }
+    ]
+  },
+  "notes": []
+}

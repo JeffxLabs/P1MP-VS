@@ -1,0 +1,31 @@
+{
+  "runs": [
+    {
+      "started_server": "2026-10-24T23:40:03-02:00",
+      "ended_server": "2026-10-24T23:53:11-02:00",
+      "started_utc": "2026-10-25T01:40:03+00:00",
+      "tabs": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "week"
+      ],
+      "live_tabs": [
+        "sat",
+        "week"
+      ],
+      "device": "127.0.0.1:5555",
+      "profile": "p1mp",
+      "frames": 987,
+      "frames_dir": "/Users/jeff/Library/Caches/s117-vs-captures/p1mp/2026-10-24/20261024-234003"
+    }
+  ],
+  "live_tabs": [
+    "sat",
+    "week"
+  ],
+  "last_capture_server": "2026-10-24T23:53:11-02:00"
+}
