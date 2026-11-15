@@ -1,19 +1,19 @@
 [
   {
     "rank": 1,
+    "player": "Whiteline876",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "points": 26282164
+  },
+  {
+    "rank": 2,
     "player": "Anr23",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
     "points": 26268472
-  },
-  {
-    "rank": 2,
-    "player": "Whiteline876",
-    "alliance": "[P1MP] JU1CE",
-    "alliance_tag": "P1MP",
-    "alliance_name": "JU1CE",
-    "points": 22287521
   },
   {
     "rank": 3,
@@ -53,15 +53,15 @@
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
     "alliance_name": "JU1CE",
-    "points": 11500285
+    "points": 11648395
   },
   {
     "rank": 8,
-    "player": "ViE",
+    "player": "Jeff",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
     "alliance_name": "JU1CE",
-    "points": 11276049
+    "points": 11326324
   },
   {
     "rank": 9,
@@ -69,18 +69,26 @@
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
-    "points": 11242038
+    "points": 11282186
   },
   {
     "rank": 10,
+    "player": "ViE",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "points": 11276049
+  },
+  {
+    "rank": 11,
     "player": "BabeK",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
-    "points": 10755922
+    "points": 10756582
   },
   {
-    "rank": 11,
+    "rank": 12,
     "player": "archer339",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -88,7 +96,7 @@
     "points": 10655066
   },
   {
-    "rank": 12,
+    "rank": 13,
     "player": "NiGaN",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
@@ -96,20 +104,12 @@
     "points": 9774180
   },
   {
-    "rank": 13,
+    "rank": 14,
     "player": "Sem3",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
-    "points": 9398252
-  },
-  {
-    "rank": 14,
-    "player": "Jeff",
-    "alliance": "[P1MP] JU1CE",
-    "alliance_tag": "P1MP",
-    "alliance_name": "JU1CE",
-    "points": 9342090
+    "points": 9451084
   },
   {
     "rank": 15,
@@ -117,7 +117,7 @@
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
-    "points": 9065810
+    "points": 9136546
   },
   {
     "rank": 16,
@@ -125,7 +125,7 @@
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
-    "points": 8838889
+    "points": 8895270
   },
   {
     "rank": 17,
@@ -241,19 +241,19 @@
   },
   {
     "rank": 31,
+    "player": "EveryOneF",
+    "alliance": "[DOOM] Armageddon",
+    "alliance_tag": "DOOM",
+    "alliance_name": "Armageddon",
+    "points": 7879648
+  },
+  {
+    "rank": 32,
     "player": "Zlaya",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
     "points": 7852573
-  },
-  {
-    "rank": 32,
-    "player": "EveryOneF",
-    "alliance": "[DOOM] Armageddon",
-    "alliance_tag": "DOOM",
-    "alliance_name": "Armageddon",
-    "points": 7824462
   },
   {
     "rank": 33,
@@ -305,6 +305,14 @@
   },
   {
     "rank": 39,
+    "player": "Судья",
+    "alliance": "[DOOM] Armageddon",
+    "alliance_tag": "DOOM",
+    "alliance_name": "Armageddon",
+    "points": 7319241
+  },
+  {
+    "rank": 40,
     "player": "ARKAN8",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -312,7 +320,7 @@
     "points": 7305643
   },
   {
-    "rank": 40,
+    "rank": 41,
     "player": "Cole64",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -320,7 +328,7 @@
     "points": 7301489
   },
   {
-    "rank": 41,
+    "rank": 42,
     "player": "KaryLive",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -328,20 +336,12 @@
     "points": 7293952
   },
   {
-    "rank": 42,
+    "rank": 43,
     "player": "SplashX",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
     "points": 7259786
-  },
-  {
-    "rank": 43,
-    "player": "Судья",
-    "alliance": "[DOOM] Armageddon",
-    "alliance_tag": "DOOM",
-    "alliance_name": "Armageddon",
-    "points": 7259066
   },
   {
     "rank": 44,
@@ -417,27 +417,27 @@
   },
   {
     "rank": 53,
-    "player": "ЛюбимаЯ",
+    "player": "Chickendog",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "points": 6002272
+  },
+  {
+    "rank": 54,
+    "player": "Любимая",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
     "points": 5972929
   },
   {
-    "rank": 54,
+    "rank": 55,
     "player": "ALEXBATE",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
     "points": 5955717
-  },
-  {
-    "rank": 55,
-    "player": "Chickendog",
-    "alliance": "[P1MP] JU1CE",
-    "alliance_tag": "P1MP",
-    "alliance_name": "JU1CE",
-    "points": 5927670
   },
   {
     "rank": 56,
@@ -501,7 +501,7 @@
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
     "alliance_name": "JU1CE",
-    "points": 5193707
+    "points": 5256832
   },
   {
     "rank": 64,
@@ -529,6 +529,14 @@
   },
   {
     "rank": 67,
+    "player": "EveryOnejunior",
+    "alliance": "[DOOM] Armageddon",
+    "alliance_tag": "DOOM",
+    "alliance_name": "Armageddon",
+    "points": 5037151
+  },
+  {
+    "rank": 68,
     "player": "Tyronekiller",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -536,20 +544,12 @@
     "points": 4971917
   },
   {
-    "rank": 68,
+    "rank": 69,
     "player": "murattdmtt",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
     "points": 4966389
-  },
-  {
-    "rank": 69,
-    "player": "EveryOneJunior",
-    "alliance": "[DOOM] Armageddon",
-    "alliance_tag": "DOOM",
-    "alliance_name": "Armageddon",
-    "points": 4902111
   },
   {
     "rank": 70,
@@ -561,14 +561,30 @@
   },
   {
     "rank": 71,
-    "player": "MKatrinAmi*",
+    "player": "FerylWeaver",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "points": 4806857
+  },
+  {
+    "rank": 72,
+    "player": "Elizasnopchenko",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "points": 4741815
+  },
+  {
+    "rank": 73,
+    "player": "VKatrinAmiY",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
     "points": 4736201
   },
   {
-    "rank": 72,
+    "rank": 74,
     "player": "Kittanna",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -576,7 +592,7 @@
     "points": 4732484
   },
   {
-    "rank": 73,
+    "rank": 75,
     "player": "ARMAGEDdON",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
@@ -584,7 +600,7 @@
     "points": 4721001
   },
   {
-    "rank": 74,
+    "rank": 76,
     "player": "KILLABWOY2002",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -592,15 +608,7 @@
     "points": 4689508
   },
   {
-    "rank": 75,
-    "player": "Elizasnopchenko",
-    "alliance": "[P1MP] JU1CE",
-    "alliance_tag": "P1MP",
-    "alliance_name": "JU1CE",
-    "points": 4663721
-  },
-  {
-    "rank": 76,
+    "rank": 77,
     "player": "BHBH",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -608,7 +616,7 @@
     "points": 4655749
   },
   {
-    "rank": 77,
+    "rank": 78,
     "player": "OCETIN",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
@@ -616,7 +624,7 @@
     "points": 4643438
   },
   {
-    "rank": 78,
+    "rank": 79,
     "player": "Femida",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
@@ -624,7 +632,7 @@
     "points": 4601845
   },
   {
-    "rank": 79,
+    "rank": 80,
     "player": "Аммон",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
@@ -632,7 +640,7 @@
     "points": 4572703
   },
   {
-    "rank": 80,
+    "rank": 81,
     "player": "Rango46",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -640,7 +648,7 @@
     "points": 4569323
   },
   {
-    "rank": 81,
+    "rank": 82,
     "player": "MGLA",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
@@ -648,7 +656,7 @@
     "points": 4531415
   },
   {
-    "rank": 82,
+    "rank": 83,
     "player": "Bad°Boy",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -656,20 +664,12 @@
     "points": 4527739
   },
   {
-    "rank": 83,
+    "rank": 84,
     "player": "DrZombie",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
     "alliance_name": "JU1CE",
     "points": 4507577
-  },
-  {
-    "rank": 84,
-    "player": "FerylWeaver",
-    "alliance": "[P1MP] JU1CE",
-    "alliance_tag": "P1MP",
-    "alliance_name": "JU1CE",
-    "points": 4442857
   },
   {
     "rank": 85,
@@ -753,19 +753,19 @@
   },
   {
     "rank": 95,
+    "player": "PreacheR",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "points": 4117138
+  },
+  {
+    "rank": 96,
     "player": "Tekinsoldier",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
     "alliance_name": "JU1CE",
     "points": 4089917
-  },
-  {
-    "rank": 96,
-    "player": "PreacheR",
-    "alliance": "[P1MP] JU1CE",
-    "alliance_tag": "P1MP",
-    "alliance_name": "JU1CE",
-    "points": 4083624
   },
   {
     "rank": 97,
@@ -793,7 +793,7 @@
   },
   {
     "rank": 100,
-    "player": "Mgk-0G",
+    "player": "Mgk-OG",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
     "alliance_name": "JU1CE",
@@ -817,7 +817,7 @@
   },
   {
     "rank": 103,
-    "player": "Skitzo",
+    "player": "Skitz0",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
     "alliance_name": "JU1CE",
@@ -877,7 +877,7 @@
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
-    "points": 3649057
+    "points": 3664306
   },
   {
     "rank": 111,
@@ -1001,6 +1001,14 @@
   },
   {
     "rank": 126,
+    "player": "Бандит95",
+    "alliance": "[DOOM] Armageddon",
+    "alliance_tag": "DOOM",
+    "alliance_name": "Armageddon",
+    "points": 3122572
+  },
+  {
+    "rank": 127,
     "player": "Bahamut1",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -1008,7 +1016,15 @@
     "points": 3119891
   },
   {
-    "rank": 127,
+    "rank": 128,
+    "player": "Mohammad2824",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "points": 3118194
+  },
+  {
+    "rank": 129,
     "player": "Sarife",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
@@ -1016,23 +1032,15 @@
     "points": 3100408
   },
   {
-    "rank": 128,
-    "player": "Бандит95",
-    "alliance": "[DOOM] Armageddon",
-    "alliance_tag": "DOOM",
-    "alliance_name": "Armageddon",
-    "points": 3016581
-  },
-  {
-    "rank": 129,
+    "rank": 130,
     "player": "компост",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
-    "points": 3007819
+    "points": 3058705
   },
   {
-    "rank": 130,
+    "rank": 131,
     "player": "Nando6331",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -1040,7 +1048,7 @@
     "points": 2988246
   },
   {
-    "rank": 131,
+    "rank": 132,
     "player": "Hinoben",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
@@ -1048,7 +1056,7 @@
     "points": 2983481
   },
   {
-    "rank": 132,
+    "rank": 133,
     "player": "Iriska86",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
@@ -1056,7 +1064,7 @@
     "points": 2979471
   },
   {
-    "rank": 133,
+    "rank": 134,
     "player": "Mario",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
@@ -1064,7 +1072,7 @@
     "points": 2965836
   },
   {
-    "rank": 134,
+    "rank": 135,
     "player": "MrWhiskey",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -1072,20 +1080,12 @@
     "points": 2925974
   },
   {
-    "rank": 135,
+    "rank": 136,
     "player": "Barosrus",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
     "points": 2846406
-  },
-  {
-    "rank": 136,
-    "player": "Mohammad2824",
-    "alliance": "[P1MP] JU1CE",
-    "alliance_tag": "P1MP",
-    "alliance_name": "JU1CE",
-    "points": 2829386
   },
   {
     "rank": 137,
@@ -1137,7 +1137,7 @@
   },
   {
     "rank": 143,
-    "player": "pinkymit",
+    "player": "pinkymii",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
@@ -1177,7 +1177,7 @@
   },
   {
     "rank": 148,
-    "player": "SofaV",
+    "player": "SofaY",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
@@ -1209,6 +1209,14 @@
   },
   {
     "rank": 152,
+    "player": "VHC",
+    "alliance": "[DOOM] Armageddon",
+    "alliance_tag": "DOOM",
+    "alliance_name": "Armageddon",
+    "points": 2320248
+  },
+  {
+    "rank": 153,
     "player": "Goodjian",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -1216,15 +1224,23 @@
     "points": 2311551
   },
   {
-    "rank": 153,
+    "rank": 154,
+    "player": "Shama-Adler",
+    "alliance": "[DOOM] Armageddon",
+    "alliance_tag": "DOOM",
+    "alliance_name": "Armageddon",
+    "points": 2253601
+  },
+  {
+    "rank": 155,
     "player": "ДИМОН555",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
-    "points": 2247510
+    "points": 2247630
   },
   {
-    "rank": 154,
+    "rank": 156,
     "player": "PhantomLord",
     "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
@@ -1232,28 +1248,12 @@
     "points": 2176000
   },
   {
-    "rank": 155,
+    "rank": 157,
     "player": "Анна•••",
     "alliance": "[DOOM] Armageddon",
     "alliance_tag": "DOOM",
     "alliance_name": "Armageddon",
     "points": 2175688
-  },
-  {
-    "rank": 156,
-    "player": "Shama-Adler",
-    "alliance": "[DOOM] Armageddon",
-    "alliance_tag": "DOOM",
-    "alliance_name": "Armageddon",
-    "points": 2103443
-  },
-  {
-    "rank": 157,
-    "player": "VHC",
-    "alliance": "[DOOM] Armageddon",
-    "alliance_tag": "DOOM",
-    "alliance_name": "Armageddon",
-    "points": 2078745
   },
   {
     "rank": 158,

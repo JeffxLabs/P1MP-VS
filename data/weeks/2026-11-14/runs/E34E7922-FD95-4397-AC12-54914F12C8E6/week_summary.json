@@ -1,0 +1,429 @@
+{
+  "id": "2026-11-14",
+  "home": {
+    "tag": "P1MP",
+    "name": "JU1CE",
+    "server": "S117"
+  },
+  "opponent": {
+    "tag": "DOOM",
+    "name": "Armageddon",
+    "server": ""
+  },
+  "status": "final",
+  "live_tabs": [
+    "sat",
+    "week"
+  ],
+  "captured_at_server": "2026-11-14T23:57:59-02:00",
+  "capture_window_server": [
+    "2026-11-14T22:58:42-02:00",
+    "2026-11-14T23:57:59-02:00"
+  ],
+  "captured_at_approximate": false,
+  "snapshots": {
+    "mon": {
+      "at": "2026-11-14T22:58:42-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "tue": {
+      "at": "2026-11-14T23:00:31-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "wed": {
+      "at": "2026-11-14T23:02:42-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "thu": {
+      "at": "2026-11-14T23:04:40-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "fri": {
+      "at": "2026-11-14T23:07:18-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "sat": {
+      "at": "2026-11-14T23:57:27-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "week": {
+      "at": "2026-11-14T23:57:59-02:00",
+      "source": "screenshots",
+      "approximate": false
+    }
+  },
+  "score": {
+    "home": 0,
+    "opp": 13
+  },
+  "wins_remaining": 0,
+  "decided": "opp",
+  "leading_live": {},
+  "total_wins": 13,
+  "wins_to_clinch": 7,
+  "weekly_points": {
+    "home": 4123540539,
+    "opp": 4992346607
+  },
+  "official_points": null,
+  "quota": 11400000,
+  "home_quota": {
+    "met": 81,
+    "near": 0,
+    "below": 4,
+    "members": 85,
+    "left": 1
+  },
+  "stages": [
+    {
+      "day": "mon",
+      "stage": 1,
+      "wins": 1,
+      "status": "final",
+      "home_points": 860707124,
+      "opp_points": 948086761,
+      "home_players": 84,
+      "opp_players": 93,
+      "winner": "opp",
+      "margin": 87379637,
+      "home_share": 47.58,
+      "home_top10_share": 39.2,
+      "home_median": 7374028,
+      "mvp_home": {
+        "player": "RollingStoners",
+        "points": 61724634,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Mi11enium",
+        "points": 44804978,
+        "rank": 4
+      }
+    },
+    {
+      "day": "tue",
+      "stage": 2,
+      "wins": 2,
+      "status": "final",
+      "home_points": 496177577,
+      "opp_points": 626914695,
+      "home_players": 86,
+      "opp_players": 92,
+      "winner": "opp",
+      "margin": 130737118,
+      "home_share": 44.18,
+      "home_top10_share": 20.9,
+      "home_median": 5625339,
+      "mvp_home": {
+        "player": "Bad®Boy",
+        "points": 13649338,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "ツMoro paツ",
+        "points": 13424786,
+        "rank": 2
+      }
+    },
+    {
+      "day": "wed",
+      "stage": 3,
+      "wins": 2,
+      "status": "final",
+      "home_points": 615752974,
+      "opp_points": 832136912,
+      "home_players": 86,
+      "opp_players": 99,
+      "winner": "opp",
+      "margin": 216383938,
+      "home_share": 42.53,
+      "home_top10_share": 29.7,
+      "home_median": 5585448,
+      "mvp_home": {
+        "player": "JimmyJam",
+        "points": 31412109,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Anr23",
+        "points": 23436916,
+        "rank": 2
+      }
+    },
+    {
+      "day": "thu",
+      "stage": 4,
+      "wins": 2,
+      "status": "final",
+      "home_points": 1137722383,
+      "opp_points": 1497763287,
+      "home_players": 84,
+      "opp_players": 97,
+      "winner": "opp",
+      "margin": 360040904,
+      "home_share": 43.17,
+      "home_top10_share": 26.6,
+      "home_median": 11909872,
+      "mvp_home": {
+        "player": "Whiteline876",
+        "points": 38807984,
+        "rank": 2
+      },
+      "mvp_opp": {
+        "player": "Anr23",
+        "points": 62258182,
+        "rank": 1
+      }
+    },
+    {
+      "day": "fri",
+      "stage": 5,
+      "wins": 2,
+      "status": "final",
+      "home_points": 634561543,
+      "opp_points": 823351371,
+      "home_players": 85,
+      "opp_players": 97,
+      "winner": "opp",
+      "margin": 188789828,
+      "home_share": 43.53,
+      "home_top10_share": 28.0,
+      "home_median": 7249118,
+      "mvp_home": {
+        "player": "Whiteline876",
+        "points": 25740912,
+        "rank": 3
+      },
+      "mvp_opp": {
+        "player": "Anr23",
+        "points": 39032747,
+        "rank": 1
+      }
+    },
+    {
+      "day": "sat",
+      "stage": 6,
+      "wins": 4,
+      "status": "final",
+      "home_points": 405642097,
+      "opp_points": 529548593,
+      "home_players": 86,
+      "opp_players": 99,
+      "winner": "opp",
+      "margin": 123906496,
+      "home_share": 43.38,
+      "home_top10_share": 31.7,
+      "home_median": 3950676,
+      "mvp_home": {
+        "player": "Whiteline876",
+        "points": 26282164,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "Anr23",
+        "points": 26268472,
+        "rank": 2
+      }
+    }
+  ],
+  "integrity": {
+    "tabs": {
+      "mon": {
+        "rows": 177,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {
+          "140": "name disagree"
+        },
+        "live": false
+      },
+      "tue": {
+        "rows": 178,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "wed": {
+        "rows": 185,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {
+          "47": "name disagree",
+          "48": "name disagree",
+          "124": "name disagree"
+        },
+        "live": false
+      },
+      "thu": {
+        "rows": 182,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {
+          "101": "name disagree",
+          "108": "name disagree",
+          "166": "name disagree"
+        },
+        "live": false
+      },
+      "fri": {
+        "rows": 182,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {
+          "12": "name disagree",
+          "127": "name disagree"
+        },
+        "live": false
+      },
+      "sat": {
+        "rows": 185,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": true
+      },
+      "week": {
+        "rows": 185,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": true
+      }
+    },
+    "checksum": {
+      "exact": 157,
+      "joined": 11,
+      "mismatch": 13,
+      "left": 11,
+      "live": 2
+    },
+    "checksum_issues": [
+      {
+        "player": "Mohammad2824",
+        "tag": "P1MP",
+        "weekly": 32677886,
+        "sum_days": 32966694,
+        "diff": -288808,
+        "status": "mismatch"
+      },
+      {
+        "player": "FerylWeaver",
+        "tag": "P1MP",
+        "weekly": 28272642,
+        "sum_days": 28636642,
+        "diff": -364000,
+        "status": "mismatch"
+      },
+      {
+        "player": "BabeK",
+        "tag": "DOOM",
+        "weekly": 75523343,
+        "sum_days": 75524003,
+        "diff": -660,
+        "status": "mismatch"
+      },
+      {
+        "player": "Serg15pav",
+        "tag": "DOOM",
+        "weekly": 73044222,
+        "sum_days": 73055132,
+        "diff": -10910,
+        "status": "mismatch"
+      },
+      {
+        "player": "EveryOneF",
+        "tag": "DOOM",
+        "weekly": 52309684,
+        "sum_days": 52364870,
+        "diff": -55186,
+        "status": "mismatch"
+      },
+      {
+        "player": "компост",
+        "tag": "DOOM",
+        "weekly": 47042103,
+        "sum_days": 47092989,
+        "diff": -50886,
+        "status": "mismatch"
+      },
+      {
+        "player": "DozaPsixoza",
+        "tag": "DOOM",
+        "weekly": 46501671,
+        "sum_days": 46516920,
+        "diff": -15249,
+        "status": "mismatch"
+      },
+      {
+        "player": "ДИМОН555",
+        "tag": "DOOM",
+        "weekly": 38562726,
+        "sum_days": 38562846,
+        "diff": -120,
+        "status": "mismatch"
+      },
+      {
+        "player": "Бандит95",
+        "tag": "DOOM",
+        "weekly": 33451023,
+        "sum_days": 33557014,
+        "diff": -105991,
+        "status": "mismatch"
+      },
+      {
+        "player": "урас",
+        "tag": "DOOM",
+        "weekly": 30249042,
+        "sum_days": 35028478,
+        "diff": -4779436,
+        "status": "mismatch"
+      },
+      {
+        "player": "EveryOneJunior",
+        "tag": "DOOM",
+        "weekly": 29951498,
+        "sum_days": 30086538,
+        "diff": -135040,
+        "status": "mismatch"
+      },
+      {
+        "player": "Mak099",
+        "tag": "DOOM",
+        "weekly": 17296515,
+        "sum_days": 19787027,
+        "diff": -2490512,
+        "status": "mismatch"
+      },
+      {
+        "player": "Anr23",
+        "tag": "DOOM",
+        "weekly": 6137859,
+        "sum_days": 173071250,
+        "diff": -166933391,
+        "status": "mismatch"
+      }
+    ]
+  },
+  "notes": []
+}

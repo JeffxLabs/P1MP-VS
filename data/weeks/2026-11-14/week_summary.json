@@ -15,10 +15,10 @@
     "sat",
     "week"
   ],
-  "captured_at_server": "2026-11-14T23:11:54-02:00",
+  "captured_at_server": "2026-11-14T23:57:59-02:00",
   "capture_window_server": [
     "2026-11-14T22:58:42-02:00",
-    "2026-11-14T23:11:54-02:00"
+    "2026-11-14T23:57:59-02:00"
   ],
   "captured_at_approximate": false,
   "snapshots": {
@@ -48,12 +48,12 @@
       "approximate": false
     },
     "sat": {
-      "at": "2026-11-14T23:08:43-02:00",
+      "at": "2026-11-14T23:57:27-02:00",
       "source": "screenshots",
       "approximate": false
     },
     "week": {
-      "at": "2026-11-14T23:11:54-02:00",
+      "at": "2026-11-14T23:57:59-02:00",
       "source": "screenshots",
       "approximate": false
     }
@@ -68,8 +68,8 @@
   "total_wins": 13,
   "wins_to_clinch": 7,
   "weekly_points": {
-    "home": 4117164217,
-    "opp": 4991835742
+    "home": 4123540539,
+    "opp": 4992346607
   },
   "official_points": null,
   "quota": 11400000,
@@ -211,24 +211,24 @@
       "stage": 6,
       "wins": 4,
       "status": "final",
-      "home_points": 398612967,
-      "opp_points": 528513528,
+      "home_points": 405642097,
+      "opp_points": 529548593,
       "home_players": 86,
       "opp_players": 99,
       "winner": "opp",
-      "margin": 129900561,
-      "home_share": 42.99,
-      "home_top10_share": 30.7,
+      "margin": 123906496,
+      "home_share": 43.38,
+      "home_top10_share": 31.7,
       "home_median": 3950676,
       "mvp_home": {
         "player": "Whiteline876",
-        "points": 22287521,
-        "rank": 2
+        "points": 26282164,
+        "rank": 1
       },
       "mvp_opp": {
         "player": "Anr23",
         "points": 26268472,
-        "rank": 1
+        "rank": 2
       }
     }
   ],
@@ -312,19 +312,99 @@
       }
     },
     "checksum": {
-      "exact": 167,
+      "exact": 157,
       "joined": 11,
+      "mismatch": 13,
       "left": 11,
-      "live": 2,
-      "mismatch": 3
+      "live": 2
     },
     "checksum_issues": [
+      {
+        "player": "Mohammad2824",
+        "tag": "P1MP",
+        "weekly": 32677886,
+        "sum_days": 32966694,
+        "diff": -288808,
+        "status": "mismatch"
+      },
+      {
+        "player": "FerylWeaver",
+        "tag": "P1MP",
+        "weekly": 28272642,
+        "sum_days": 28636642,
+        "diff": -364000,
+        "status": "mismatch"
+      },
+      {
+        "player": "BabeK",
+        "tag": "DOOM",
+        "weekly": 75523343,
+        "sum_days": 75524003,
+        "diff": -660,
+        "status": "mismatch"
+      },
+      {
+        "player": "Serg15pav",
+        "tag": "DOOM",
+        "weekly": 73044222,
+        "sum_days": 73055132,
+        "diff": -10910,
+        "status": "mismatch"
+      },
+      {
+        "player": "EveryOneF",
+        "tag": "DOOM",
+        "weekly": 52309684,
+        "sum_days": 52364870,
+        "diff": -55186,
+        "status": "mismatch"
+      },
+      {
+        "player": "компост",
+        "tag": "DOOM",
+        "weekly": 47042103,
+        "sum_days": 47092989,
+        "diff": -50886,
+        "status": "mismatch"
+      },
+      {
+        "player": "DozaPsixoza",
+        "tag": "DOOM",
+        "weekly": 46501671,
+        "sum_days": 46516920,
+        "diff": -15249,
+        "status": "mismatch"
+      },
+      {
+        "player": "ДИМОН555",
+        "tag": "DOOM",
+        "weekly": 38562726,
+        "sum_days": 38562846,
+        "diff": -120,
+        "status": "mismatch"
+      },
+      {
+        "player": "Бандит95",
+        "tag": "DOOM",
+        "weekly": 33451023,
+        "sum_days": 33557014,
+        "diff": -105991,
+        "status": "mismatch"
+      },
       {
         "player": "урас",
         "tag": "DOOM",
         "weekly": 30249042,
         "sum_days": 35028478,
         "diff": -4779436,
+        "status": "mismatch"
+      },
+      {
+        "player": "EveryOneJunior",
+        "tag": "DOOM",
+        "weekly": 29951498,
+        "sum_days": 30086538,
+        "diff": -135040,
         "status": "mismatch"
       },
       {

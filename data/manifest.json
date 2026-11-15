@@ -173,16 +173,16 @@
     },
     "decided": "opp",
     "weekly_points": {
-      "home": 4117164217,
-      "opp": 4991835742
+      "home": 4123540539,
+      "opp": 4992346607
     },
     "members": 85,
-    "captured_at_server": "2026-11-14T23:11:54-02:00",
+    "captured_at_server": "2026-11-14T23:57:59-02:00",
     "capture_window_server": [
       "2026-11-14T22:58:42-02:00",
-      "2026-11-14T23:11:54-02:00"
+      "2026-11-14T23:57:59-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "8bf158ee61"
+    "data_version": "8473eb7e28"
   }
 ]
