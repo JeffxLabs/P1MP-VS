@@ -153,5 +153,36 @@ window.VS_MANIFEST = [
     ],
     "captured_at_approximate": false,
     "data_version": "309dca5cbf"
+  },
+  {
+    "id": "2026-11-14",
+    "home": {
+      "tag": "P1MP",
+      "name": "JU1CE",
+      "server": "S117"
+    },
+    "opponent": {
+      "tag": "DOOM",
+      "name": "Armageddon",
+      "server": ""
+    },
+    "status": "final",
+    "score": {
+      "home": 0,
+      "opp": 13
+    },
+    "decided": "opp",
+    "weekly_points": {
+      "home": 4117164217,
+      "opp": 4991835742
+    },
+    "members": 85,
+    "captured_at_server": "2026-11-14T23:11:54-02:00",
+    "capture_window_server": [
+      "2026-11-14T22:58:42-02:00",
+      "2026-11-14T23:11:54-02:00"
+    ],
+    "captured_at_approximate": false,
+    "data_version": "8bf158ee61"
   }
 ];
