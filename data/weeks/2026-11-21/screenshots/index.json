@@ -1,0 +1,620 @@
+{
+ "mon": [
+  {
+   "file": "mon/00012_mon_p1_top0.webp",
+   "ranks": [
+    1,
+    6
+   ],
+   "taken_at_server": "2026-11-17T15:07:52-02:00"
+  },
+  {
+   "file": "mon/00015_mon_p1_s00_002.webp",
+   "ranks": [
+    5,
+    10
+   ],
+   "taken_at_server": "2026-11-17T15:07:54-02:00"
+  },
+  {
+   "file": "mon/00016_mon_p1_s00_003.webp",
+   "ranks": [
+    7,
+    11
+   ],
+   "taken_at_server": "2026-11-17T15:07:54-02:00"
+  },
+  {
+   "file": "mon/00018_mon_p1_s00_005.webp",
+   "ranks": [
+    11,
+    15
+   ],
+   "taken_at_server": "2026-11-17T15:07:55-02:00"
+  },
+  {
+   "file": "mon/00019_mon_p1_s00_006.webp",
+   "ranks": [
+    12,
+    17
+   ],
+   "taken_at_server": "2026-11-17T15:07:55-02:00"
+  },
+  {
+   "file": "mon/00021_mon_p1_s00_008.webp",
+   "ranks": [
+    16,
+    20
+   ],
+   "taken_at_server": "2026-11-17T15:07:56-02:00"
+  },
+  {
+   "file": "mon/00022_mon_p1_s00_009.webp",
+   "ranks": [
+    17,
+    22
+   ],
+   "taken_at_server": "2026-11-17T15:07:57-02:00"
+  },
+  {
+   "file": "mon/00023_mon_p1_s00_010.webp",
+   "ranks": [
+    20,
+    24
+   ],
+   "taken_at_server": "2026-11-17T15:07:57-02:00"
+  },
+  {
+   "file": "mon/00024_mon_p1_s00_011.webp",
+   "ranks": [
+    22,
+    26
+   ],
+   "taken_at_server": "2026-11-17T15:07:58-02:00"
+  },
+  {
+   "file": "mon/00025_mon_p1_s00_012.webp",
+   "ranks": [
+    23,
+    28
+   ],
+   "taken_at_server": "2026-11-17T15:07:58-02:00"
+  },
+  {
+   "file": "mon/00027_mon_p1_s00_014.webp",
+   "ranks": [
+    27,
+    31
+   ],
+   "taken_at_server": "2026-11-17T15:07:59-02:00"
+  },
+  {
+   "file": "mon/00028_mon_p1_s00_015.webp",
+   "ranks": [
+    28,
+    33
+   ],
+   "taken_at_server": "2026-11-17T15:08:00-02:00"
+  },
+  {
+   "file": "mon/00029_mon_p1_s00_016.webp",
+   "ranks": [
+    30,
+    34
+   ],
+   "taken_at_server": "2026-11-17T15:08:00-02:00"
+  },
+  {
+   "file": "mon/00031_mon_p1_s00_018.webp",
+   "ranks": [
+    33,
+    38
+   ],
+   "taken_at_server": "2026-11-17T15:08:01-02:00"
+  },
+  {
+   "file": "mon/00032_mon_p1_s00_019.webp",
+   "ranks": [
+    35,
+    40
+   ],
+   "taken_at_server": "2026-11-17T15:08:02-02:00"
+  },
+  {
+   "file": "mon/00034_mon_p1_s00_021.webp",
+   "ranks": [
+    38,
+    43
+   ],
+   "taken_at_server": "2026-11-17T15:08:02-02:00"
+  },
+  {
+   "file": "mon/00035_mon_p1_s00_022.webp",
+   "ranks": [
+    40,
+    45
+   ],
+   "taken_at_server": "2026-11-17T15:08:03-02:00"
+  },
+  {
+   "file": "mon/00036_mon_p1_s00_023.webp",
+   "ranks": [
+    42,
+    46
+   ],
+   "taken_at_server": "2026-11-17T15:08:03-02:00"
+  },
+  {
+   "file": "mon/00037_mon_p1_s00_024.webp",
+   "ranks": [
+    43,
+    48
+   ],
+   "taken_at_server": "2026-11-17T15:08:04-02:00"
+  },
+  {
+   "file": "mon/00039_mon_p1_s00_026.webp",
+   "ranks": [
+    47,
+    52
+   ],
+   "taken_at_server": "2026-11-17T15:08:05-02:00"
+  },
+  {
+   "file": "mon/00040_mon_p1_s00_027.webp",
+   "ranks": [
+    49,
+    54
+   ],
+   "taken_at_server": "2026-11-17T15:08:05-02:00"
+  },
+  {
+   "file": "mon/00042_mon_p1_s00_029.webp",
+   "ranks": [
+    52,
+    57
+   ],
+   "taken_at_server": "2026-11-17T15:08:06-02:00"
+  },
+  {
+   "file": "mon/00043_mon_p1_s00_030.webp",
+   "ranks": [
+    54,
+    59
+   ],
+   "taken_at_server": "2026-11-17T15:08:07-02:00"
+  },
+  {
+   "file": "mon/00045_mon_p1_s00_032.webp",
+   "ranks": [
+    58,
+    62
+   ],
+   "taken_at_server": "2026-11-17T15:08:08-02:00"
+  },
+  {
+   "file": "mon/00046_mon_p1_s00_033.webp",
+   "ranks": [
+    59,
+    64
+   ],
+   "taken_at_server": "2026-11-17T15:08:08-02:00"
+  },
+  {
+   "file": "mon/00048_mon_p1_s00_035.webp",
+   "ranks": [
+    63,
+    67
+   ],
+   "taken_at_server": "2026-11-17T15:08:09-02:00"
+  },
+  {
+   "file": "mon/00049_mon_p1_s00_036.webp",
+   "ranks": [
+    64,
+    69
+   ],
+   "taken_at_server": "2026-11-17T15:08:09-02:00"
+  },
+  {
+   "file": "mon/00051_mon_p1_s00_038.webp",
+   "ranks": [
+    68,
+    72
+   ],
+   "taken_at_server": "2026-11-17T15:08:10-02:00"
+  },
+  {
+   "file": "mon/00052_mon_p1_s00_039.webp",
+   "ranks": [
+    69,
+    74
+   ],
+   "taken_at_server": "2026-11-17T15:08:11-02:00"
+  },
+  {
+   "file": "mon/00054_mon_p1_s00_041.webp",
+   "ranks": [
+    73,
+    78
+   ],
+   "taken_at_server": "2026-11-17T15:08:12-02:00"
+  },
+  {
+   "file": "mon/00055_mon_p1_s00_042.webp",
+   "ranks": [
+    75,
+    80
+   ],
+   "taken_at_server": "2026-11-17T15:08:12-02:00"
+  },
+  {
+   "file": "mon/00057_mon_p1_s00_044.webp",
+   "ranks": [
+    79,
+    83
+   ],
+   "taken_at_server": "2026-11-17T15:08:13-02:00"
+  },
+  {
+   "file": "mon/00058_mon_p1_s00_045.webp",
+   "ranks": [
+    80,
+    85
+   ],
+   "taken_at_server": "2026-11-17T15:08:14-02:00"
+  },
+  {
+   "file": "mon/00059_mon_p1_s00_046.webp",
+   "ranks": [
+    82,
+    87
+   ],
+   "taken_at_server": "2026-11-17T15:08:14-02:00"
+  },
+  {
+   "file": "mon/00061_mon_p1_s00_048.webp",
+   "ranks": [
+    85,
+    90
+   ],
+   "taken_at_server": "2026-11-17T15:08:15-02:00"
+  },
+  {
+   "file": "mon/00062_mon_p1_s00_049.webp",
+   "ranks": [
+    87,
+    92
+   ],
+   "taken_at_server": "2026-11-17T15:08:16-02:00"
+  },
+  {
+   "file": "mon/00063_mon_p1_s00_050.webp",
+   "ranks": [
+    89,
+    94
+   ],
+   "taken_at_server": "2026-11-17T15:08:17-02:00"
+  },
+  {
+   "file": "mon/00064_mon_p1_s00_051.webp",
+   "ranks": [
+    92,
+    97
+   ],
+   "taken_at_server": "2026-11-17T15:08:17-02:00"
+  },
+  {
+   "file": "mon/00065_mon_p1_s00_052.webp",
+   "ranks": [
+    94,
+    98
+   ],
+   "taken_at_server": "2026-11-17T15:08:18-02:00"
+  },
+  {
+   "file": "mon/00066_mon_p1_s00_053.webp",
+   "ranks": [
+    97,
+    102
+   ],
+   "taken_at_server": "2026-11-17T15:08:18-02:00"
+  },
+  {
+   "file": "mon/00067_mon_p1_s00_054.webp",
+   "ranks": [
+    99,
+    103
+   ],
+   "taken_at_server": "2026-11-17T15:08:19-02:00"
+  },
+  {
+   "file": "mon/00068_mon_p1_s00_055.webp",
+   "ranks": [
+    101,
+    105
+   ],
+   "taken_at_server": "2026-11-17T15:08:19-02:00"
+  },
+  {
+   "file": "mon/00069_mon_p1_s00_056.webp",
+   "ranks": [
+    102,
+    107
+   ],
+   "taken_at_server": "2026-11-17T15:08:20-02:00"
+  },
+  {
+   "file": "mon/00071_mon_p1_s00_058.webp",
+   "ranks": [
+    106,
+    110
+   ],
+   "taken_at_server": "2026-11-17T15:08:20-02:00"
+  },
+  {
+   "file": "mon/00072_mon_p1_s00_059.webp",
+   "ranks": [
+    107,
+    112
+   ],
+   "taken_at_server": "2026-11-17T15:08:21-02:00"
+  },
+  {
+   "file": "mon/00074_mon_p1_s00_061.webp",
+   "ranks": [
+    111,
+    115
+   ],
+   "taken_at_server": "2026-11-17T15:08:22-02:00"
+  },
+  {
+   "file": "mon/00075_mon_p1_s00_062.webp",
+   "ranks": [
+    113,
+    117
+   ],
+   "taken_at_server": "2026-11-17T15:08:22-02:00"
+  },
+  {
+   "file": "mon/00076_mon_p1_s00_063.webp",
+   "ranks": [
+    114,
+    118
+   ],
+   "taken_at_server": "2026-11-17T15:08:23-02:00"
+  },
+  {
+   "file": "mon/00077_mon_p1_s00_064.webp",
+   "ranks": [
+    116,
+    120
+   ],
+   "taken_at_server": "2026-11-17T15:08:23-02:00"
+  },
+  {
+   "file": "mon/00079_mon_p1_s00_066.webp",
+   "ranks": [
+    119,
+    124
+   ],
+   "taken_at_server": "2026-11-17T15:08:24-02:00"
+  },
+  {
+   "file": "mon/00080_mon_p1_s00_067.webp",
+   "ranks": [
+    121,
+    126
+   ],
+   "taken_at_server": "2026-11-17T15:08:25-02:00"
+  },
+  {
+   "file": "mon/00082_mon_p1_s00_069.webp",
+   "ranks": [
+    124,
+    129
+   ],
+   "taken_at_server": "2026-11-17T15:08:25-02:00"
+  },
+  {
+   "file": "mon/00083_mon_p1_s00_070.webp",
+   "ranks": [
+    126,
+    130
+   ],
+   "taken_at_server": "2026-11-17T15:08:26-02:00"
+  },
+  {
+   "file": "mon/00085_mon_p1_s00_072.webp",
+   "ranks": [
+    129,
+    134
+   ],
+   "taken_at_server": "2026-11-17T15:08:27-02:00"
+  },
+  {
+   "file": "mon/00086_mon_p1_s00_073.webp",
+   "ranks": [
+    131,
+    136
+   ],
+   "taken_at_server": "2026-11-17T15:08:27-02:00"
+  },
+  {
+   "file": "mon/00088_mon_p1_s00_075.webp",
+   "ranks": [
+    134,
+    139
+   ],
+   "taken_at_server": "2026-11-17T15:08:28-02:00"
+  },
+  {
+   "file": "mon/00089_mon_p1_s00_076.webp",
+   "ranks": [
+    136,
+    141
+   ],
+   "taken_at_server": "2026-11-17T15:08:29-02:00"
+  },
+  {
+   "file": "mon/00090_mon_p1_s00_077.webp",
+   "ranks": [
+    138,
+    143
+   ],
+   "taken_at_server": "2026-11-17T15:08:29-02:00"
+  },
+  {
+   "file": "mon/00092_mon_p1_s00_079.webp",
+   "ranks": [
+    141,
+    146
+   ],
+   "taken_at_server": "2026-11-17T15:08:30-02:00"
+  },
+  {
+   "file": "mon/00094_mon_p1_s00_081.webp",
+   "ranks": [
+    144,
+    149
+   ],
+   "taken_at_server": "2026-11-17T15:08:31-02:00"
+  },
+  {
+   "file": "mon/00095_mon_p1_s00_082.webp",
+   "ranks": [
+    146,
+    151
+   ],
+   "taken_at_server": "2026-11-17T15:08:31-02:00"
+  },
+  {
+   "file": "mon/00097_mon_p1_s00_084.webp",
+   "ranks": [
+    149,
+    154
+   ],
+   "taken_at_server": "2026-11-17T15:08:32-02:00"
+  },
+  {
+   "file": "mon/00098_mon_p1_s00_085.webp",
+   "ranks": [
+    151,
+    155
+   ],
+   "taken_at_server": "2026-11-17T15:08:33-02:00"
+  },
+  {
+   "file": "mon/00099_mon_p1_s00_086.webp",
+   "ranks": [
+    153,
+    157
+   ],
+   "taken_at_server": "2026-11-17T15:08:33-02:00"
+  },
+  {
+   "file": "mon/00101_mon_p1_s00_088.webp",
+   "ranks": [
+    156,
+    160
+   ],
+   "taken_at_server": "2026-11-17T15:08:34-02:00"
+  },
+  {
+   "file": "mon/00102_mon_p1_s00_089.webp",
+   "ranks": [
+    158,
+    162
+   ],
+   "taken_at_server": "2026-11-17T15:08:35-02:00"
+  },
+  {
+   "file": "mon/00104_mon_p1_s00_091.webp",
+   "ranks": [
+    161,
+    166
+   ],
+   "taken_at_server": "2026-11-17T15:08:35-02:00"
+  },
+  {
+   "file": "mon/00105_mon_p1_s00_092.webp",
+   "ranks": [
+    163,
+    168
+   ],
+   "taken_at_server": "2026-11-17T15:08:36-02:00"
+  },
+  {
+   "file": "mon/00107_mon_p1_s00_094.webp",
+   "ranks": [
+    167,
+    171
+   ],
+   "taken_at_server": "2026-11-17T15:08:37-02:00"
+  },
+  {
+   "file": "mon/00108_mon_p1_s00_095.webp",
+   "ranks": [
+    168,
+    173
+   ],
+   "taken_at_server": "2026-11-17T15:08:37-02:00"
+  },
+  {
+   "file": "mon/00110_mon_p1_s00_097.webp",
+   "ranks": [
+    171,
+    176
+   ],
+   "taken_at_server": "2026-11-17T15:08:38-02:00"
+  },
+  {
+   "file": "mon/00111_mon_p1_s00_098.webp",
+   "ranks": [
+    173,
+    178
+   ],
+   "taken_at_server": "2026-11-17T15:08:39-02:00"
+  },
+  {
+   "file": "mon/00112_mon_p1_s00_099.webp",
+   "ranks": [
+    175,
+    179
+   ],
+   "taken_at_server": "2026-11-17T15:08:39-02:00"
+  },
+  {
+   "file": "mon/00114_mon_p1_s00_101.webp",
+   "ranks": [
+    178,
+    183
+   ],
+   "taken_at_server": "2026-11-17T15:08:40-02:00"
+  },
+  {
+   "file": "mon/00115_mon_p1_s00_102.webp",
+   "ranks": [
+    180,
+    184
+   ],
+   "taken_at_server": "2026-11-17T15:08:40-02:00"
+  },
+  {
+   "file": "mon/00121_mon_p1_s00_108.webp",
+   "ranks": [
+    182,
+    185
+   ],
+   "taken_at_server": "2026-11-17T15:08:44-02:00"
+  },
+  {
+   "file": "mon/00122_mon_p1_bottom.webp",
+   "ranks": [
+    181,
+    185
+   ],
+   "taken_at_server": "2026-11-17T15:08:47-02:00"
+  }
+ ]
+}

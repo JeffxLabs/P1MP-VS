@@ -184,5 +184,36 @@ window.VS_MANIFEST = [
     ],
     "captured_at_approximate": false,
     "data_version": "8473eb7e28"
+  },
+  {
+    "id": "2026-11-21",
+    "home": {
+      "tag": "P1MP",
+      "name": "JU1CE",
+      "server": "S117"
+    },
+    "opponent": {
+      "tag": "Lava",
+      "name": "Lavapit",
+      "server": ""
+    },
+    "status": "in_progress",
+    "score": {
+      "home": 1,
+      "opp": 0
+    },
+    "decided": null,
+    "weekly_points": {
+      "home": 805062716,
+      "opp": 763648798
+    },
+    "members": 86,
+    "captured_at_server": "2026-11-17T15:08:47-02:00",
+    "capture_window_server": [
+      "2026-11-17T15:08:47-02:00",
+      "2026-11-17T15:08:47-02:00"
+    ],
+    "captured_at_approximate": false,
+    "data_version": "20e031af79"
   }
 ];
