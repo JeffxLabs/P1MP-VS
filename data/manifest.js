@@ -200,20 +200,20 @@ window.VS_MANIFEST = [
     "status": "in_progress",
     "score": {
       "home": 1,
-      "opp": 0
+      "opp": 2
     },
     "decided": null,
     "weekly_points": {
-      "home": 805062716,
-      "opp": 763648798
+      "home": 1307048220,
+      "opp": 1385324364
     },
     "members": 86,
-    "captured_at_server": "2026-11-17T15:08:47-02:00",
+    "captured_at_server": "2026-11-18T07:04:53-02:00",
     "capture_window_server": [
       "2026-11-17T15:08:47-02:00",
-      "2026-11-17T15:08:47-02:00"
+      "2026-11-18T07:04:53-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "20e031af79"
+    "data_version": "bd3ef96761"
   }
 ];
