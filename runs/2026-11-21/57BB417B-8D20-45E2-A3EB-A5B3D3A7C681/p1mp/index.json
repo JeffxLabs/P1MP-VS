@@ -1,0 +1,67 @@
+{
+  "accepted": false,
+  "account": "p1mp",
+  "capture": {
+    "accepted": false,
+    "account": "p1mp",
+    "identity_proof": {
+      "account": "p1mp",
+      "identity": "jeff",
+      "player_id": "127036448885",
+      "serial": "127.0.0.1:5555",
+      "verified_at": "2026-11-19T09:09:16.827245+00:00"
+    },
+    "week": "2026-11-21"
+  },
+  "capture_events": 31,
+  "chunks": [
+    {
+      "bytes": 10309204,
+      "captures": 31,
+      "file": "frames-0000.zip",
+      "frame_ids": [
+        "frames/p1mp/2026-11-21/20261119-070838/00001_nav.png",
+        "frames/p1mp/2026-11-21/20261119-070838/00002_vs_icon_verify.png",
+        "frames/p1mp/2026-11-21/20261119-070838/00003_nav_after_vs.png",
+        "frames/p1mp/2026-11-21/20261119-070838/00004_to_city.png",
+        "frames/p1mp/2026-11-21/20261119-070838/00005_nav.png",
+        "frames/p1mp/2026-11-21/20261119-070838/00006_vs_icon_verify.png",
+        "frames/p1mp/2026-11-21/20261119-070838/00007_nav_after_vs.png",
+        "frames/p1mp/2026-11-21/20261119-070916/00001_nav.png",
+        "frames/p1mp/2026-11-21/20261119-070916/00002_vs_icon_verify.png",
+        "frames/p1mp/2026-11-21/20261119-070916/00003_nav_after_vs.png",
+        "frames/p1mp/2026-11-21/20261119-070916/00004_to_city.png",
+        "frames/p1mp/2026-11-21/20261119-070916/00005_nav.png",
+        "frames/p1mp/2026-11-21/20261119-070916/00006_vs_icon_verify.png",
+        "frames/p1mp/2026-11-21/20261119-070916/00007_nav_after_vs.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00001_boot.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00002_boot.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00003_boot.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00004_navigation_control_verify.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00005_boot.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00006_navigation_control_verify.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00007_boot.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00008_navigation_control_verify.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00009_boot.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00010_navigation_control_verify.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00011_boot.png",
+        "identity/1fe471b5-5a07-42c8-8e0b-c4137aa101d0/00012_account_identity.png",
+        "identity/87319426-e0a0-4209-b1ab-7a5e4b0ca9a1/00001_boot.png",
+        "identity/87319426-e0a0-4209-b1ab-7a5e4b0ca9a1/00002_boot.png",
+        "identity/87319426-e0a0-4209-b1ab-7a5e4b0ca9a1/00003_boot.png",
+        "identity/87319426-e0a0-4209-b1ab-7a5e4b0ca9a1/00004_boot.png",
+        "identity/87319426-e0a0-4209-b1ab-7a5e4b0ca9a1/00005_account_identity.png"
+      ],
+      "sha256": "72579dcff376f1740c10608bcc249d641f66a793a324f418f7fe2d918140d2dd",
+      "unique_images": 31
+    }
+  ],
+  "job_id": "57BB417B-8D20-45E2-A3EB-A5B3D3A7C681",
+  "purpose": "capture",
+  "requested_accounts": [
+    "p2mp",
+    "p1mp"
+  ],
+  "schema_version": 1,
+  "week": "2026-11-21"
+}
