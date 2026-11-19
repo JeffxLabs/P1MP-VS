@@ -1,0 +1,72 @@
+{
+  "accepted": false,
+  "account": "p1mp",
+  "capture": {
+    "accepted": false,
+    "account": "p1mp",
+    "identity_proof": {
+      "account": "p1mp",
+      "identity": "jeff",
+      "player_id": "127036448885",
+      "serial": "127.0.0.1:5555",
+      "verified_at": "2026-11-19T09:04:08.433570+00:00"
+    },
+    "week": "2026-11-21"
+  },
+  "capture_events": 36,
+  "chunks": [
+    {
+      "bytes": 11608291,
+      "captures": 36,
+      "file": "frames-0000.zip",
+      "frame_ids": [
+        "frames/p1mp/2026-11-21/20261119-070329/00001_nav.png",
+        "frames/p1mp/2026-11-21/20261119-070329/00002_vs_icon_verify.png",
+        "frames/p1mp/2026-11-21/20261119-070329/00003_nav_after_vs.png",
+        "frames/p1mp/2026-11-21/20261119-070329/00004_to_city.png",
+        "frames/p1mp/2026-11-21/20261119-070329/00005_nav.png",
+        "frames/p1mp/2026-11-21/20261119-070329/00006_vs_icon_verify.png",
+        "frames/p1mp/2026-11-21/20261119-070329/00007_nav_after_vs.png",
+        "frames/p1mp/2026-11-21/20261119-070408/00001_nav.png",
+        "frames/p1mp/2026-11-21/20261119-070408/00002_vs_icon_verify.png",
+        "frames/p1mp/2026-11-21/20261119-070408/00003_nav_after_vs.png",
+        "frames/p1mp/2026-11-21/20261119-070408/00004_navigation_control_verify.png",
+        "frames/p1mp/2026-11-21/20261119-070408/00005_nav.png",
+        "frames/p1mp/2026-11-21/20261119-070408/00006_to_city.png",
+        "frames/p1mp/2026-11-21/20261119-070408/00007_nav.png",
+        "frames/p1mp/2026-11-21/20261119-070408/00008_vs_icon_verify.png",
+        "frames/p1mp/2026-11-21/20261119-070408/00009_nav_after_vs.png",
+        "identity/7f243614-e35a-4505-a8e6-bc995ee50d91/00001_boot.png",
+        "identity/7f243614-e35a-4505-a8e6-bc995ee50d91/00002_boot.png",
+        "identity/7f243614-e35a-4505-a8e6-bc995ee50d91/00003_boot.png",
+        "identity/7f243614-e35a-4505-a8e6-bc995ee50d91/00004_boot.png",
+        "identity/7f243614-e35a-4505-a8e6-bc995ee50d91/00005_account_identity.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00001_boot.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00002_boot.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00003_boot.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00004_boot.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00005_boot.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00006_navigation_control_verify.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00007_boot.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00008_boot.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00009_boot.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00010_boot.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00011_navigation_control_verify.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00012_boot.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00013_navigation_control_verify.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00014_boot.png",
+        "identity/b51ec116-42f3-43a3-abd5-b91540a687b8/00015_account_identity.png"
+      ],
+      "sha256": "68c0d14c437d4498637851bdcd51e93aa00a65e51b882067e10c1ba75b3175a5",
+      "unique_images": 36
+    }
+  ],
+  "job_id": "32A245FC-9952-4F15-B76E-F767C7539388",
+  "purpose": "capture",
+  "requested_accounts": [
+    "p2mp",
+    "p1mp"
+  ],
+  "schema_version": 1,
+  "week": "2026-11-21"
+}
