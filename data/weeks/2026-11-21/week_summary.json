@@ -12,10 +12,10 @@
   },
   "status": "in_progress",
   "live_tabs": [],
-  "captured_at_server": "2026-11-19T14:25:18-02:00",
+  "captured_at_server": "2026-11-19T15:15:17-02:00",
   "capture_window_server": [
     "2026-11-17T15:08:47-02:00",
-    "2026-11-19T14:25:18-02:00"
+    "2026-11-19T15:15:17-02:00"
   ],
   "captured_at_approximate": false,
   "snapshots": {
@@ -30,7 +30,7 @@
       "approximate": false
     },
     "wed": {
-      "at": "2026-11-19T14:25:18-02:00",
+      "at": "2026-11-19T15:15:17-02:00",
       "source": "screenshots",
       "approximate": false
     }
@@ -53,8 +53,8 @@
   "home_quota": {
     "met": 73,
     "near": 0,
-    "below": 14,
-    "members": 87,
+    "below": 15,
+    "members": 88,
     "left": 0
   },
   "stages": [
@@ -242,7 +242,7 @@
         "live": false
       },
       "week": {
-        "rows": 191,
+        "rows": 193,
         "contiguous": true,
         "points_descending": true,
         "missing_points": 0,
@@ -252,7 +252,7 @@
       }
     },
     "checksum": {
-      "exact": 191
+      "exact": 193
     },
     "checksum_issues": []
   },

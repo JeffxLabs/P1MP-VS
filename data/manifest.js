@@ -207,13 +207,13 @@ window.VS_MANIFEST = [
       "home": 2006143168,
       "opp": 2040144621
     },
-    "members": 87,
-    "captured_at_server": "2026-11-19T14:25:18-02:00",
+    "members": 88,
+    "captured_at_server": "2026-11-19T15:15:17-02:00",
     "capture_window_server": [
       "2026-11-17T15:08:47-02:00",
-      "2026-11-19T14:25:18-02:00"
+      "2026-11-19T15:15:17-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "f8a1d44c84"
+    "data_version": "c79c8faeb7"
   }
 ];
