@@ -51,8 +51,21 @@
       "profile": "p1mp",
       "frames": 138,
       "frames_dir": "p1mp/2026-11-21/20261119-151253"
+    },
+    {
+      "started_server": "2026-11-20T07:02:46-02:00",
+      "ended_server": "2026-11-20T07:04:00-02:00",
+      "started_utc": "2026-11-20T09:02:46+00:00",
+      "tabs": [
+        "thu"
+      ],
+      "live_tabs": [],
+      "device": "127.0.0.1:5555",
+      "profile": "p1mp",
+      "frames": 133,
+      "frames_dir": "p1mp/2026-11-21/20261120-070246"
     }
   ],
   "live_tabs": [],
-  "last_capture_server": "2026-11-19T15:15:19-02:00"
+  "last_capture_server": "2026-11-20T07:04:00-02:00"
 }

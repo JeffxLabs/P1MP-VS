@@ -199,21 +199,21 @@
     },
     "status": "in_progress",
     "score": {
-      "home": 3,
+      "home": 5,
       "opp": 2
     },
     "decided": null,
     "weekly_points": {
-      "home": 2006143168,
-      "opp": 2040144621
+      "home": 3135502621,
+      "opp": 3162525807
     },
-    "members": 88,
-    "captured_at_server": "2026-11-19T15:15:17-02:00",
+    "members": 90,
+    "captured_at_server": "2026-11-20T07:03:59-02:00",
     "capture_window_server": [
       "2026-11-17T15:08:47-02:00",
-      "2026-11-19T15:15:17-02:00"
+      "2026-11-20T07:03:59-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "c79c8faeb7"
+    "data_version": "ecc800000d"
   }
 ]
