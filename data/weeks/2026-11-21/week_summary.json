@@ -12,10 +12,10 @@
   },
   "status": "in_progress",
   "live_tabs": [],
-  "captured_at_server": "2026-11-20T07:03:59-02:00",
+  "captured_at_server": "2026-11-21T07:04:39-02:00",
   "capture_window_server": [
     "2026-11-17T15:08:47-02:00",
-    "2026-11-20T07:03:59-02:00"
+    "2026-11-21T07:04:39-02:00"
   ],
   "captured_at_approximate": false,
   "snapshots": {
@@ -38,28 +38,33 @@
       "at": "2026-11-20T07:03:59-02:00",
       "source": "screenshots",
       "approximate": false
+    },
+    "fri": {
+      "at": "2026-11-21T07:04:39-02:00",
+      "source": "screenshots",
+      "approximate": false
     }
   },
   "score": {
-    "home": 5,
+    "home": 7,
     "opp": 2
   },
-  "wins_remaining": 6,
-  "decided": null,
+  "wins_remaining": 4,
+  "decided": "home",
   "leading_live": {},
   "total_wins": 13,
   "wins_to_clinch": 7,
   "weekly_points": {
-    "home": 3135502621,
-    "opp": 3162525807
+    "home": 3790255519,
+    "opp": 3779379226
   },
   "official_points": null,
   "quota": 11400000,
   "home_quota": {
-    "met": 82,
+    "met": 83,
     "near": 0,
     "below": 8,
-    "members": 90,
+    "members": 91,
     "left": 0
   },
   "stages": [
@@ -167,18 +172,26 @@
       "day": "fri",
       "stage": 5,
       "wins": 2,
-      "status": "pending",
-      "home_points": 0,
-      "opp_points": 0,
-      "home_players": 0,
-      "opp_players": 0,
-      "winner": null,
-      "margin": 0,
-      "home_share": null,
-      "home_top10_share": null,
-      "home_median": 0,
-      "mvp_home": null,
-      "mvp_opp": null
+      "status": "final",
+      "home_points": 654752898,
+      "opp_points": 616853419,
+      "home_players": 85,
+      "opp_players": 100,
+      "winner": "home",
+      "margin": 37899479,
+      "home_share": 51.49,
+      "home_top10_share": 27.5,
+      "home_median": 7227971,
+      "mvp_home": {
+        "player": "Whiteline876",
+        "points": 25106625,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "kki",
+        "points": 15083988,
+        "rank": 7
+      }
     },
     {
       "day": "sat",
@@ -237,7 +250,7 @@
         "live": false
       },
       "fri": {
-        "rows": 0,
+        "rows": 185,
         "contiguous": true,
         "points_descending": true,
         "missing_points": 0,
@@ -255,7 +268,7 @@
         "live": false
       },
       "week": {
-        "rows": 195,
+        "rows": 197,
         "contiguous": true,
         "points_descending": true,
         "missing_points": 0,
@@ -265,7 +278,7 @@
       }
     },
     "checksum": {
-      "exact": 195
+      "exact": 197
     },
     "checksum_issues": []
   },
