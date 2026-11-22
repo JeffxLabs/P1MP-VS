@@ -10,7 +10,7 @@
     "name": "Lavapit",
     "server": ""
   },
-  "status": "in_progress",
+  "status": "final",
   "live_tabs": [],
   "captured_at_server": "2026-11-21T07:04:39-02:00",
   "capture_window_server": [
@@ -46,25 +46,25 @@
     }
   },
   "score": {
-    "home": 7,
+    "home": 11,
     "opp": 2
   },
-  "wins_remaining": 4,
+  "wins_remaining": 0,
   "decided": "home",
   "leading_live": {},
   "total_wins": 13,
   "wins_to_clinch": 7,
   "weekly_points": {
-    "home": 3790255519,
-    "opp": 3779379226
+    "home": 4234262590,
+    "opp": 4163100287
   },
   "official_points": null,
   "quota": 11400000,
   "home_quota": {
     "met": 83,
     "near": 0,
-    "below": 8,
-    "members": 91,
+    "below": 9,
+    "members": 92,
     "left": 0
   },
   "stages": [
@@ -197,18 +197,26 @@
       "day": "sat",
       "stage": 6,
       "wins": 4,
-      "status": "pending",
-      "home_points": 0,
-      "opp_points": 0,
-      "home_players": 0,
-      "opp_players": 0,
-      "winner": null,
-      "margin": 0,
-      "home_share": null,
-      "home_top10_share": null,
-      "home_median": 0,
-      "mvp_home": null,
-      "mvp_opp": null
+      "status": "final",
+      "home_points": 444007071,
+      "opp_points": 383721061,
+      "home_players": 83,
+      "opp_players": 93,
+      "winner": "home",
+      "margin": 60286010,
+      "home_share": 53.64,
+      "home_top10_share": 39.2,
+      "home_median": 3620736,
+      "mvp_home": {
+        "player": "Whiteline876",
+        "points": 38887695,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "kki",
+        "points": 27912039,
+        "rank": 2
+      }
     }
   ],
   "integrity": {
@@ -259,7 +267,7 @@
         "live": false
       },
       "sat": {
-        "rows": 0,
+        "rows": 176,
         "contiguous": true,
         "points_descending": true,
         "missing_points": 0,
@@ -268,7 +276,7 @@
         "live": false
       },
       "week": {
-        "rows": 197,
+        "rows": 198,
         "contiguous": true,
         "points_descending": true,
         "missing_points": 0,
@@ -278,7 +286,7 @@
       }
     },
     "checksum": {
-      "exact": 197
+      "exact": 198
     },
     "checksum_issues": []
   },

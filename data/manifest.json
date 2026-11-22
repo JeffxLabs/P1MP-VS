@@ -197,23 +197,23 @@
       "name": "Lavapit",
       "server": ""
     },
-    "status": "in_progress",
+    "status": "final",
     "score": {
-      "home": 7,
+      "home": 11,
       "opp": 2
     },
     "decided": "home",
     "weekly_points": {
-      "home": 3790255519,
-      "opp": 3779379226
+      "home": 4234262590,
+      "opp": 4163100287
     },
-    "members": 91,
+    "members": 92,
     "captured_at_server": "2026-11-21T07:04:39-02:00",
     "capture_window_server": [
       "2026-11-17T15:08:47-02:00",
       "2026-11-21T07:04:39-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "83ba42e905"
+    "data_version": "893ba599e3"
   }
 ]
