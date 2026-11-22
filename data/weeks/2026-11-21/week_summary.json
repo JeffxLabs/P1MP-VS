@@ -290,5 +290,7 @@
     },
     "checksum_issues": []
   },
-  "notes": []
+  "notes": [
+    "Caveat (partial Saturday recovery): Saturday ranks 1-46 were captured at 23:57 server time (3 min before reset); ranks 47-175 were recovered from the 23:47 server time run (down to 982,890 pts), which was interrupted at rank 176 by a Logged Out popup. Players below rank 175 on Saturday (< 982,890 pts, including 9 [P1MP] members seen Mon-Fri: VoltaP1MP, Skitzo, Mgk-0G, Squad0o, Juan29362, TheStoolPusher, PettyPandaPimp, EllieG, PriscilaBaum) and any points gained after 23:47 (ranks 47-175) or 23:57 (ranks 1-46) are not included. The weekly board (week.json) was synthesized by summing Mon-Sat."
+  ]
 }
