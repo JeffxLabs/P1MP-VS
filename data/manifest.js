@@ -215,5 +215,36 @@ window.VS_MANIFEST = [
     ],
     "captured_at_approximate": false,
     "data_version": "c12fefc0c8"
+  },
+  {
+    "id": "2026-11-28",
+    "home": {
+      "tag": "P1MP",
+      "name": "JU1CE",
+      "server": "S117"
+    },
+    "opponent": {
+      "tag": "BoSS",
+      "name": "KoreanBoss",
+      "server": ""
+    },
+    "status": "in_progress",
+    "score": {
+      "home": 1,
+      "opp": 0
+    },
+    "decided": null,
+    "weekly_points": {
+      "home": 977549380,
+      "opp": 857894636
+    },
+    "members": 89,
+    "captured_at_server": "2026-11-24T07:04:52-02:00",
+    "capture_window_server": [
+      "2026-11-24T07:04:52-02:00",
+      "2026-11-24T07:04:52-02:00"
+    ],
+    "captured_at_approximate": false,
+    "data_version": "7f3a025860"
   }
 ];
