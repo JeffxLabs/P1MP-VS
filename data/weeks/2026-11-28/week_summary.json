@@ -12,10 +12,10 @@
   },
   "status": "in_progress",
   "live_tabs": [],
-  "captured_at_server": "2026-11-24T07:04:52-02:00",
+  "captured_at_server": "2026-11-25T07:08:39-02:00",
   "capture_window_server": [
     "2026-11-24T07:04:52-02:00",
-    "2026-11-24T07:04:52-02:00"
+    "2026-11-25T07:08:39-02:00"
   ],
   "captured_at_approximate": false,
   "snapshots": {
@@ -23,28 +23,33 @@
       "at": "2026-11-24T07:04:52-02:00",
       "source": "screenshots",
       "approximate": false
+    },
+    "tue": {
+      "at": "2026-11-25T07:08:39-02:00",
+      "source": "screenshots",
+      "approximate": false
     }
   },
   "score": {
-    "home": 1,
+    "home": 3,
     "opp": 0
   },
-  "wins_remaining": 12,
+  "wins_remaining": 10,
   "decided": null,
   "leading_live": {},
   "total_wins": 13,
   "wins_to_clinch": 7,
   "weekly_points": {
-    "home": 977549380,
-    "opp": 857894636
+    "home": 1550680915,
+    "opp": 1373657596
   },
   "official_points": null,
   "quota": 11400000,
   "home_quota": {
-    "met": 28,
-    "near": 1,
-    "below": 60,
-    "members": 89,
+    "met": 61,
+    "near": 0,
+    "below": 30,
+    "members": 91,
     "left": 0
   },
   "stages": [
@@ -77,18 +82,26 @@
       "day": "tue",
       "stage": 2,
       "wins": 2,
-      "status": "pending",
-      "home_points": 0,
-      "opp_points": 0,
-      "home_players": 0,
-      "opp_players": 0,
-      "winner": null,
-      "margin": 0,
-      "home_share": null,
-      "home_top10_share": null,
-      "home_median": 0,
-      "mvp_home": null,
-      "mvp_opp": null
+      "status": "final",
+      "home_points": 573131535,
+      "opp_points": 515762960,
+      "home_players": 90,
+      "opp_players": 93,
+      "winner": "home",
+      "margin": 57368575,
+      "home_share": 52.63,
+      "home_top10_share": 21.8,
+      "home_median": 6056525,
+      "mvp_home": {
+        "player": "Bad®Boy",
+        "points": 18775986,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "인중맞고싶냐",
+        "points": 18376929,
+        "rank": 2
+      }
     },
     {
       "day": "wed",
@@ -174,12 +187,14 @@
         "live": false
       },
       "tue": {
-        "rows": 0,
+        "rows": 183,
         "contiguous": true,
         "points_descending": true,
         "missing_points": 0,
         "missing_names": 0,
-        "unresolved": {},
+        "unresolved": {
+          "183": "name disagree"
+        },
         "live": false
       },
       "wed": {
@@ -219,7 +234,7 @@
         "live": false
       },
       "week": {
-        "rows": 183,
+        "rows": 188,
         "contiguous": true,
         "points_descending": true,
         "missing_points": 0,
@@ -229,7 +244,7 @@
       }
     },
     "checksum": {
-      "exact": 183
+      "exact": 188
     },
     "checksum_issues": []
   },
