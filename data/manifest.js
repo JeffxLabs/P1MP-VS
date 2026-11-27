@@ -230,21 +230,21 @@ window.VS_MANIFEST = [
     },
     "status": "in_progress",
     "score": {
-      "home": 3,
+      "home": 7,
       "opp": 0
     },
-    "decided": null,
+    "decided": "home",
     "weekly_points": {
-      "home": 1550680915,
-      "opp": 1373657596
+      "home": 3663833674,
+      "opp": 3274756307
     },
-    "members": 91,
-    "captured_at_server": "2026-11-25T07:08:39-02:00",
+    "members": 92,
+    "captured_at_server": "2026-11-27T07:10:15-02:00",
     "capture_window_server": [
       "2026-11-24T07:04:52-02:00",
-      "2026-11-25T07:08:39-02:00"
+      "2026-11-27T07:10:15-02:00"
     ],
     "captured_at_approximate": false,
-    "data_version": "086c48c36d"
+    "data_version": "2aa172438d"
   }
 ];

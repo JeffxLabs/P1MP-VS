@@ -5217,6 +5217,5143 @@
         }
       ],
       "captured_at": "2026-11-25T07:08:39-02:00"
+    },
+    "wed": {
+      "tab": "wed",
+      "live": false,
+      "passes": [
+        {
+          "pass": 1,
+          "bottom_rank": 182,
+          "ranks": 182,
+          "frames": 121,
+          "rejected_frames": 2,
+          "unresolved": {
+            "31": "name disagree",
+            "182": "name disagree"
+          },
+          "finished_at": "2026-11-27T07:07:32-02:00"
+        }
+      ],
+      "unresolved": {
+        "31": "name disagree",
+        "182": "name disagree"
+      },
+      "diagnostics": [
+        {
+          "rank": 1,
+          "player": "TheRequiem",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "28989395": 3
+          },
+          "name_reads": {
+            "TheRequiem": 3
+          }
+        },
+        {
+          "rank": 2,
+          "player": "AyeGee",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "27819810": 3
+          },
+          "name_reads": {
+            "AyeGee": 3
+          }
+        },
+        {
+          "rank": 3,
+          "player": "BossPenguin",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "26621676": 4
+          },
+          "name_reads": {
+            "BossPenguin": 4
+          }
+        },
+        {
+          "rank": 4,
+          "player": "InvaderPimp",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "26375402": 4
+          },
+          "name_reads": {
+            "InvaderPimp": 4
+          }
+        },
+        {
+          "rank": 5,
+          "player": "췌짱맞고싶냐K",
+          "n_obs": 5,
+          "n_clean": 5,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "25906349": 5
+          },
+          "name_reads": {
+            "췌짱맞고싶냐K": 3,
+            "췌장맞고싶냐K": 2
+          }
+        },
+        {
+          "rank": 6,
+          "player": "Whiteline876",
+          "n_obs": 6,
+          "n_clean": 5,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "24412376": 5
+          },
+          "name_reads": {
+            "Whiteline876": 5
+          }
+        },
+        {
+          "rank": 7,
+          "player": "ARKAN8",
+          "n_obs": 7,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "24147263": 3
+          },
+          "name_reads": {
+            "ARKAN8": 3
+          }
+        },
+        {
+          "rank": 8,
+          "player": "앨리ally",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "22224758": 4
+          },
+          "name_reads": {
+            "앨리ally": 4
+          }
+        },
+        {
+          "rank": 9,
+          "player": "먹깨비",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "20511928": 3
+          },
+          "name_reads": {
+            "먹깨비": 3
+          }
+        },
+        {
+          "rank": 10,
+          "player": "JimmyJam",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "20172506": 4
+          },
+          "name_reads": {
+            "JimmyJam": 4
+          }
+        },
+        {
+          "rank": 11,
+          "player": "chauncey",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "20108317": 4
+          },
+          "name_reads": {
+            "chauncey": 4
+          }
+        },
+        {
+          "rank": 12,
+          "player": "꼬맹집사",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "18463480": 3
+          },
+          "name_reads": {
+            "꼬맹집사": 3
+          }
+        },
+        {
+          "rank": 13,
+          "player": "Shunter",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "18090103": 4
+          },
+          "name_reads": {
+            "Shunter": 4
+          }
+        },
+        {
+          "rank": 14,
+          "player": "DarkTime66",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "16668705": 3
+          },
+          "name_reads": {
+            "DarkTime66": 3
+          }
+        },
+        {
+          "rank": 15,
+          "player": "RollingStoners",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "15985347": 3
+          },
+          "name_reads": {
+            "RollingStoners": 3
+          }
+        },
+        {
+          "rank": 16,
+          "player": "I나무",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "15364767": 4
+          },
+          "name_reads": {
+            "I나무": 4
+          }
+        },
+        {
+          "rank": 17,
+          "player": "Eldagrim",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "14637636": 3
+          },
+          "name_reads": {
+            "Eldagrim": 3
+          }
+        },
+        {
+          "rank": 18,
+          "player": "{•9•?-LilBear",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "13254018": 3
+          },
+          "name_reads": {
+            "S-я•?-LilBear": 1,
+            "{•9•?-LilBear": 1,
+            "feeo7-LilBear": 1
+          }
+        },
+        {
+          "rank": 19,
+          "player": "Snideski",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "12631363": 4
+          },
+          "name_reads": {
+            "Snideski": 4
+          }
+        },
+        {
+          "rank": 20,
+          "player": "NATOO",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "12056638": 3
+          },
+          "name_reads": {
+            "NATOO": 3
+          }
+        },
+        {
+          "rank": 21,
+          "player": "BHBH",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "11542625": 4
+          },
+          "name_reads": {
+            "BHBH": 4
+          }
+        },
+        {
+          "rank": 22,
+          "player": "Jeff",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "11139291": 4
+          },
+          "name_reads": {
+            "Jeff": 4
+          }
+        },
+        {
+          "rank": 23,
+          "player": "CuteCat",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "11065430": 3
+          },
+          "name_reads": {
+            "CuteCat": 3
+          }
+        },
+        {
+          "rank": 24,
+          "player": "BoSS벳",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10987849": 4
+          },
+          "name_reads": {
+            "BoSS벳": 4
+          }
+        },
+        {
+          "rank": 25,
+          "player": "Chickendog",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10650541": 4
+          },
+          "name_reads": {
+            "Chickendog": 4
+          }
+        },
+        {
+          "rank": 26,
+          "player": "Bad°Boy",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10487934": 3
+          },
+          "name_reads": {
+            "Bad°Boy": 3
+          }
+        },
+        {
+          "rank": 27,
+          "player": "Hooligan32rus",
+          "n_obs": 6,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10411851": 4
+          },
+          "name_reads": {
+            "Hooligan32rus": 4
+          }
+        },
+        {
+          "rank": 28,
+          "player": "BoSS용이",
+          "n_obs": 8,
+          "n_clean": 7,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10341306": 7
+          },
+          "name_reads": {
+            "BOSS용이": 3,
+            "BoSS용이": 4
+          }
+        },
+        {
+          "rank": 29,
+          "player": "alggagi",
+          "n_obs": 8,
+          "n_clean": 6,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10292257": 6
+          },
+          "name_reads": {
+            "alggagi": 6
+          }
+        },
+        {
+          "rank": 30,
+          "player": "Squad00",
+          "n_obs": 7,
+          "n_clean": 7,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9916818": 7
+          },
+          "name_reads": {
+            "Squad0o": 3,
+            "Squad00": 4
+          }
+        },
+        {
+          "rank": 31,
+          "player": "S e(",
+          "n_obs": 7,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 0.5,
+          "points_reads": {
+            "9891845": 4
+          },
+          "name_reads": {
+            "B": 1,
+            "(S) eгB": 1,
+            "S e(": 2
+          }
+        },
+        {
+          "rank": 32,
+          "player": "MrWhiskey",
+          "n_obs": 7,
+          "n_clean": 7,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9742636": 7
+          },
+          "name_reads": {
+            "MrWhiskey": 7
+          }
+        },
+        {
+          "rank": 33,
+          "player": "KaryLive",
+          "n_obs": 7,
+          "n_clean": 6,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9638575": 6
+          },
+          "name_reads": {
+            "KaryLive": 6
+          }
+        },
+        {
+          "rank": 34,
+          "player": "MartyMar",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9635827": 3
+          },
+          "name_reads": {
+            "MartyMar": 3
+          }
+        },
+        {
+          "rank": 35,
+          "player": "DrZombie",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9450356": 3
+          },
+          "name_reads": {
+            "DrZombie": 3
+          }
+        },
+        {
+          "rank": 36,
+          "player": "PreacheR",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9423308": 3
+          },
+          "name_reads": {
+            "PreacheR": 3
+          }
+        },
+        {
+          "rank": 37,
+          "player": "Cagatai-차가타이-",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9124243": 3
+          },
+          "name_reads": {
+            "Cagatai-차가타이-": 3
+          }
+        },
+        {
+          "rank": 38,
+          "player": "spacesss",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9012163": 4
+          },
+          "name_reads": {
+            "spacesss": 4
+          }
+        },
+        {
+          "rank": 39,
+          "player": "Elizasnopchenko",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8964409": 3
+          },
+          "name_reads": {
+            "Elizasnopchenko": 3
+          }
+        },
+        {
+          "rank": 40,
+          "player": "막걸리한잔",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8882374": 4
+          },
+          "name_reads": {
+            "막걸리한잔": 4
+          }
+        },
+        {
+          "rank": 41,
+          "player": "agustd",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8861459": 4
+          },
+          "name_reads": {
+            "agustd": 4
+          }
+        },
+        {
+          "rank": 42,
+          "player": "LittleCrisis",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8836341": 3
+          },
+          "name_reads": {
+            "LittleCrisis": 3
+          }
+        },
+        {
+          "rank": 43,
+          "player": "여니파어",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8791024": 3
+          },
+          "name_reads": {
+            "여니파어": 3
+          }
+        },
+        {
+          "rank": 44,
+          "player": "불뿜는파이리",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8726770": 3
+          },
+          "name_reads": {
+            "불뿜는파이리": 3
+          }
+        },
+        {
+          "rank": 45,
+          "player": "WoongK-웅크~퉤이☆",
+          "n_obs": 3,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8662417": 2
+          },
+          "name_reads": {
+            "WoongK-웅크~퉤이☆": 2
+          }
+        },
+        {
+          "rank": 46,
+          "player": "NickiV",
+          "n_obs": 3,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8586591": 2
+          },
+          "name_reads": {
+            "NickiV": 2
+          }
+        },
+        {
+          "rank": 47,
+          "player": "EFENDİ",
+          "n_obs": 3,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8451669": 2
+          },
+          "name_reads": {
+            "EFENDİ": 2
+          }
+        },
+        {
+          "rank": 48,
+          "player": "Jony1°haish",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8447694": 3
+          },
+          "name_reads": {
+            "Jony1°haish": 3
+          }
+        },
+        {
+          "rank": 49,
+          "player": "사탄입니다",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8408232": 3
+          },
+          "name_reads": {
+            "사탄입니다": 3
+          }
+        },
+        {
+          "rank": 50,
+          "player": "BOSS킹콩",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8354136": 3
+          },
+          "name_reads": {
+            "BOSS킹콩": 2,
+            "BoSS킹콩": 1
+          }
+        },
+        {
+          "rank": 51,
+          "player": "똥침맞고싶니",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8342540": 3
+          },
+          "name_reads": {
+            "똥침맞고싶니": 3
+          }
+        },
+        {
+          "rank": 52,
+          "player": "Cole64",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8338739": 3
+          },
+          "name_reads": {
+            "Cole64": 3
+          }
+        },
+        {
+          "rank": 53,
+          "player": "ViE",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8308867": 4
+          },
+          "name_reads": {
+            "ViE": 4
+          }
+        },
+        {
+          "rank": 54,
+          "player": "gopro",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8257611": 3
+          },
+          "name_reads": {
+            "gopro": 3
+          }
+        },
+        {
+          "rank": 55,
+          "player": "Rango46",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8236502": 3
+          },
+          "name_reads": {
+            "Rango46": 3
+          }
+        },
+        {
+          "rank": 56,
+          "player": "Brody138",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8145740": 3
+          },
+          "name_reads": {
+            "Brody138": 3
+          }
+        },
+        {
+          "rank": 57,
+          "player": "호이잇",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8098720": 3
+          },
+          "name_reads": {
+            "호이잇": 3
+          }
+        },
+        {
+          "rank": 58,
+          "player": "Agam0017",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8091739": 4
+          },
+          "name_reads": {
+            "Agam0017": 4
+          }
+        },
+        {
+          "rank": 59,
+          "player": "BORZ-95",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8051869": 3
+          },
+          "name_reads": {
+            "BORZ-95": 3
+          }
+        },
+        {
+          "rank": 60,
+          "player": "TheStoolPusher",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8034621": 3
+          },
+          "name_reads": {
+            "TheStoolPusher": 3
+          }
+        },
+        {
+          "rank": 61,
+          "player": "Tekinsoldier",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8024545": 4
+          },
+          "name_reads": {
+            "Tekinsoldier": 4
+          }
+        },
+        {
+          "rank": 62,
+          "player": "IrishkA",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7991203": 3
+          },
+          "name_reads": {
+            "IrishkA": 3
+          }
+        },
+        {
+          "rank": 63,
+          "player": "-Makoy-마코이",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7990685": 4
+          },
+          "name_reads": {
+            "-Makoy-마코이": 4
+          }
+        },
+        {
+          "rank": 64,
+          "player": "Sinister-Soul",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7987538": 4
+          },
+          "name_reads": {
+            "Sinister-Soul": 4
+          }
+        },
+        {
+          "rank": 65,
+          "player": "Konstantinos86",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7953884": 3
+          },
+          "name_reads": {
+            "Konstantinos86": 3
+          }
+        },
+        {
+          "rank": 66,
+          "player": "아푸냐나도아푸다",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7946322": 4
+          },
+          "name_reads": {
+            "아푸냐나도아푸다": 4
+          }
+        },
+        {
+          "rank": 67,
+          "player": "고구마대왕",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7921823": 3
+          },
+          "name_reads": {
+            "고구마대왕": 3
+          }
+        },
+        {
+          "rank": 68,
+          "player": "1Евгений",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7907149": 4
+          },
+          "name_reads": {
+            "1Евгений": 4
+          }
+        },
+        {
+          "rank": 69,
+          "player": "Tyronekiller",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7870941": 4
+          },
+          "name_reads": {
+            "Tyronekiller": 4
+          }
+        },
+        {
+          "rank": 70,
+          "player": "ComandanteMike",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7816209": 3
+          },
+          "name_reads": {
+            "ComandanteMike": 3
+          }
+        },
+        {
+          "rank": 71,
+          "player": "KILLABWOY2002",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7799559": 4
+          },
+          "name_reads": {
+            "KILLABWOY2002": 4
+          }
+        },
+        {
+          "rank": 72,
+          "player": "Boss어케",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7706153": 4
+          },
+          "name_reads": {
+            "Boss어케": 2,
+            "BoSs어케": 2
+          }
+        },
+        {
+          "rank": 73,
+          "player": "PhantomLord",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7687802": 3
+          },
+          "name_reads": {
+            "PhantomLord": 3
+          }
+        },
+        {
+          "rank": 74,
+          "player": "Elmayo",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7672758": 3
+          },
+          "name_reads": {
+            "Elmayo": 3
+          }
+        },
+        {
+          "rank": 75,
+          "player": "BOSS아레스",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7658848": 3
+          },
+          "name_reads": {
+            "BOSS아레스": 3
+          }
+        },
+        {
+          "rank": 76,
+          "player": "한부장",
+          "n_obs": 4,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7646812": 2
+          },
+          "name_reads": {
+            "한부장": 2
+          }
+        },
+        {
+          "rank": 77,
+          "player": "InkedBabyeePIMP",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7610133": 3
+          },
+          "name_reads": {
+            "InkedBabyeePIMP": 3
+          }
+        },
+        {
+          "rank": 78,
+          "player": "Yun윤",
+          "n_obs": 4,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7585574": 2
+          },
+          "name_reads": {
+            "Yun윤": 2
+          }
+        },
+        {
+          "rank": 79,
+          "player": "Kosht83",
+          "n_obs": 4,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7585304": 2
+          },
+          "name_reads": {
+            "Kosht83": 2
+          }
+        },
+        {
+          "rank": 80,
+          "player": "bluepumpkin",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7577156": 3
+          },
+          "name_reads": {
+            "bluepumpkin": 3
+          }
+        },
+        {
+          "rank": 81,
+          "player": "Skitzo",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7517409": 3
+          },
+          "name_reads": {
+            "Skitz0": 1,
+            "Skitzo": 2
+          }
+        },
+        {
+          "rank": 82,
+          "player": "한은주",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7512898": 4
+          },
+          "name_reads": {
+            "한은주": 4
+          }
+        },
+        {
+          "rank": 83,
+          "player": "Papago",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7456439": 4
+          },
+          "name_reads": {
+            "Papago": 4
+          }
+        },
+        {
+          "rank": 84,
+          "player": "Kittanna",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7421025": 3
+          },
+          "name_reads": {
+            "Kittanna": 3
+          }
+        },
+        {
+          "rank": 85,
+          "player": "CrazyGreg",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7419929": 4
+          },
+          "name_reads": {
+            "CrazyGreg": 4
+          }
+        },
+        {
+          "rank": 86,
+          "player": "-ANKA-",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7374039": 4
+          },
+          "name_reads": {
+            "-ANKA-": 4
+          }
+        },
+        {
+          "rank": 87,
+          "player": "laggingPotato",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7368737": 3
+          },
+          "name_reads": {
+            "laggingPotato": 3
+          }
+        },
+        {
+          "rank": 88,
+          "player": "Maryrose",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7308285": 4
+          },
+          "name_reads": {
+            "Maryrose": 4
+          }
+        },
+        {
+          "rank": 89,
+          "player": "Green64",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7307807": 4
+          },
+          "name_reads": {
+            "Green64": 4
+          }
+        },
+        {
+          "rank": 90,
+          "player": "MinikPanda",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7289367": 3
+          },
+          "name_reads": {
+            "MinikPanda": 3
+          }
+        },
+        {
+          "rank": 91,
+          "player": "B3N",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7287845": 4
+          },
+          "name_reads": {
+            "B3N": 4
+          }
+        },
+        {
+          "rank": 92,
+          "player": "카드병정",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7276642": 4
+          },
+          "name_reads": {
+            "카드병정": 4
+          }
+        },
+        {
+          "rank": 93,
+          "player": "Paul18",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7272129": 3
+          },
+          "name_reads": {
+            "Paul18": 3
+          }
+        },
+        {
+          "rank": 94,
+          "player": "Slickback",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7253341": 4
+          },
+          "name_reads": {
+            "Slickback": 4
+          }
+        },
+        {
+          "rank": 95,
+          "player": "가출원숭이",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7226032": 3
+          },
+          "name_reads": {
+            "가출원숭이": 3
+          }
+        },
+        {
+          "rank": 96,
+          "player": "BOSS미사일",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7223610": 3
+          },
+          "name_reads": {
+            "BOSS미사일": 2,
+            "BoSS미사일": 1
+          }
+        },
+        {
+          "rank": 97,
+          "player": "DAMDUK",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7219167": 4
+          },
+          "name_reads": {
+            "DAMDUK": 4
+          }
+        },
+        {
+          "rank": 98,
+          "player": "BOSS원숭이",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7217806": 3
+          },
+          "name_reads": {
+            "BOSS원숭이": 2,
+            "BoSS원숭이": 1
+          }
+        },
+        {
+          "rank": 99,
+          "player": "Bahamut1",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7199790": 4
+          },
+          "name_reads": {
+            "Bahamut1": 4
+          }
+        },
+        {
+          "rank": 100,
+          "player": "Imoza",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7191152": 4
+          },
+          "name_reads": {
+            "Imoza": 4
+          }
+        },
+        {
+          "rank": 101,
+          "player": "archer339",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "6610631": 3
+          },
+          "name_reads": {
+            "archer339": 3
+          }
+        },
+        {
+          "rank": 102,
+          "player": "DukoTR",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "6531004": 4
+          },
+          "name_reads": {
+            "DukoTR": 4
+          }
+        },
+        {
+          "rank": 103,
+          "player": "skinnybigpoppa",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "6432864": 4
+          },
+          "name_reads": {
+            "skinnybigpoppa": 4
+          }
+        },
+        {
+          "rank": 104,
+          "player": "2hIgH2cArE",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "6183374": 3
+          },
+          "name_reads": {
+            "2hIgH2cArE": 3
+          }
+        },
+        {
+          "rank": 105,
+          "player": "Nando6331",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "6123403": 3
+          },
+          "name_reads": {
+            "Nando6331": 3
+          }
+        },
+        {
+          "rank": 106,
+          "player": "SingularityPIMP",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "5916415": 4
+          },
+          "name_reads": {
+            "SingularityPIMP": 4
+          }
+        },
+        {
+          "rank": 107,
+          "player": "Disorder762",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "5879335": 3
+          },
+          "name_reads": {
+            "Disorder762": 3
+          }
+        },
+        {
+          "rank": 108,
+          "player": "VikciN",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "5750209": 4
+          },
+          "name_reads": {
+            "VikciN": 4
+          }
+        },
+        {
+          "rank": 109,
+          "player": "Dogboy",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "5680410": 3
+          },
+          "name_reads": {
+            "Dogboy": 3
+          }
+        },
+        {
+          "rank": 110,
+          "player": "SUNG-JIN-WOO",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "5565398": 3
+          },
+          "name_reads": {
+            "SUNG-JIN-WOO": 3
+          }
+        },
+        {
+          "rank": 111,
+          "player": "wsdfg",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "5478665": 4
+          },
+          "name_reads": {
+            "wsdfg": 4
+          }
+        },
+        {
+          "rank": 112,
+          "player": "FerylWeaver",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "5336625": 3
+          },
+          "name_reads": {
+            "FerylWeaver": 3
+          }
+        },
+        {
+          "rank": 113,
+          "player": "HAMMERS",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "5265876": 4
+          },
+          "name_reads": {
+            "HAMMERS": 4
+          }
+        },
+        {
+          "rank": 114,
+          "player": "아이스크림야",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "5193269": 3
+          },
+          "name_reads": {
+            "아이스크림야": 3
+          }
+        },
+        {
+          "rank": 115,
+          "player": "StitchQu33n",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4971048": 3
+          },
+          "name_reads": {
+            "StitchQu33n": 3
+          }
+        },
+        {
+          "rank": 116,
+          "player": "HandStrong",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4908300": 4
+          },
+          "name_reads": {
+            "HandStrong": 4
+          }
+        },
+        {
+          "rank": 117,
+          "player": "악마곰",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4849950": 3
+          },
+          "name_reads": {
+            "악마곰": 3
+          }
+        },
+        {
+          "rank": 118,
+          "player": "박비서",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4808876": 4
+          },
+          "name_reads": {
+            "박비서": 4
+          }
+        },
+        {
+          "rank": 119,
+          "player": "Blockboy5",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4794943": 3
+          },
+          "name_reads": {
+            "Blockboy5": 3
+          }
+        },
+        {
+          "rank": 120,
+          "player": "Boo100",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4662912": 3
+          },
+          "name_reads": {
+            "Boo100": 3
+          }
+        },
+        {
+          "rank": 121,
+          "player": "mAra",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4650775": 4
+          },
+          "name_reads": {
+            "mAra": 4
+          }
+        },
+        {
+          "rank": 122,
+          "player": "SadSquatch",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4648277": 3
+          },
+          "name_reads": {
+            "SadSquatch": 3
+          }
+        },
+        {
+          "rank": 123,
+          "player": "Burak5758",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4575895": 4
+          },
+          "name_reads": {
+            "Burak5758": 4
+          }
+        },
+        {
+          "rank": 124,
+          "player": "Jane제인",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4536532": 3
+          },
+          "name_reads": {
+            "Jane제인": 3
+          }
+        },
+        {
+          "rank": 125,
+          "player": "Grandpaowl",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4309120": 3
+          },
+          "name_reads": {
+            "Grandpaowl": 3
+          }
+        },
+        {
+          "rank": 126,
+          "player": "Analbrutal",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4301434": 4
+          },
+          "name_reads": {
+            "Analbrutal": 4
+          }
+        },
+        {
+          "rank": 127,
+          "player": "하모니",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4275826": 3
+          },
+          "name_reads": {
+            "하모니": 3
+          }
+        },
+        {
+          "rank": 128,
+          "player": "눈알맞고싶냐",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4245187": 3
+          },
+          "name_reads": {
+            "눈알맞고싶냐": 3
+          }
+        },
+        {
+          "rank": 129,
+          "player": "Bode",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4139710": 4
+          },
+          "name_reads": {
+            "Bode": 4
+          }
+        },
+        {
+          "rank": 130,
+          "player": "Gindzatw",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3977344": 4
+          },
+          "name_reads": {
+            "Gindzatw": 4
+          }
+        },
+        {
+          "rank": 131,
+          "player": "즐겜요",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3872335": 4
+          },
+          "name_reads": {
+            "즐겜요": 4
+          }
+        },
+        {
+          "rank": 132,
+          "player": "BOSS광전사",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3715998": 4
+          },
+          "name_reads": {
+            "BOSS광전사": 4
+          }
+        },
+        {
+          "rank": 133,
+          "player": "Luke65",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3697050": 3
+          },
+          "name_reads": {
+            "Luke65": 3
+          }
+        },
+        {
+          "rank": 134,
+          "player": "Bigbee",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3657485": 4
+          },
+          "name_reads": {
+            "Bigbee": 4
+          }
+        },
+        {
+          "rank": 135,
+          "player": "다람이",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3642815": 4
+          },
+          "name_reads": {
+            "다람이": 4
+          }
+        },
+        {
+          "rank": 136,
+          "player": "말랭이",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3612217": 3
+          },
+          "name_reads": {
+            "말랭이": 3
+          }
+        },
+        {
+          "rank": 137,
+          "player": "백수들의왕",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3535923": 3
+          },
+          "name_reads": {
+            "백수들의왕": 3
+          }
+        },
+        {
+          "rank": 138,
+          "player": "VoltaP1MP",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3458600": 3
+          },
+          "name_reads": {
+            "VoltaP1MP": 3
+          }
+        },
+        {
+          "rank": 139,
+          "player": "GrandmaFrog",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3435529": 3
+          },
+          "name_reads": {
+            "GrandmaFrog": 3
+          }
+        },
+        {
+          "rank": 140,
+          "player": "Astaroth16zam",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3294041": 3
+          },
+          "name_reads": {
+            "Astaroth16zam": 3
+          }
+        },
+        {
+          "rank": 141,
+          "player": "BoSS토끼",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3255210": 3
+          },
+          "name_reads": {
+            "BOSS토끼": 1,
+            "BoSS토끼": 2
+          }
+        },
+        {
+          "rank": 142,
+          "player": "R1c4rd0",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3206375": 3
+          },
+          "name_reads": {
+            "R1c4rd0": 3
+          }
+        },
+        {
+          "rank": 143,
+          "player": "bozo09",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3179284": 3
+          },
+          "name_reads": {
+            "bozo09": 3
+          }
+        },
+        {
+          "rank": 144,
+          "player": "BOSS잭스",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3078103": 4
+          },
+          "name_reads": {
+            "BOSS잭스": 2,
+            "BoSS잭스": 2
+          }
+        },
+        {
+          "rank": 145,
+          "player": "Kiwihaka",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2957850": 3
+          },
+          "name_reads": {
+            "Kiwihaka": 3
+          }
+        },
+        {
+          "rank": 146,
+          "player": "무우청",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2906565": 3
+          },
+          "name_reads": {
+            "무우청": 3
+          }
+        },
+        {
+          "rank": 147,
+          "player": "BOSS청룡",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2863587": 3
+          },
+          "name_reads": {
+            "BOSS청룡": 2,
+            "BoSS청룡": 1
+          }
+        },
+        {
+          "rank": 148,
+          "player": "달달구리",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2838692": 3
+          },
+          "name_reads": {
+            "달달구리": 3
+          }
+        },
+        {
+          "rank": 149,
+          "player": "ASH-90",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2778378": 4
+          },
+          "name_reads": {
+            "ASH-90": 4
+          }
+        },
+        {
+          "rank": 150,
+          "player": "킹콩이",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2655361": 3
+          },
+          "name_reads": {
+            "킹콩이": 3
+          }
+        },
+        {
+          "rank": 151,
+          "player": "Svensen003",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2633141": 3
+          },
+          "name_reads": {
+            "Svensen003": 3
+          }
+        },
+        {
+          "rank": 152,
+          "player": "PriscilaBaum",
+          "n_obs": 3,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2554678": 2
+          },
+          "name_reads": {
+            "PriscilaBaum": 2
+          }
+        },
+        {
+          "rank": 153,
+          "player": "JenniferFTW",
+          "n_obs": 3,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2527171": 2
+          },
+          "name_reads": {
+            "JenniferFTW": 2
+          }
+        },
+        {
+          "rank": 154,
+          "player": "GoodBabyGirl",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2386303": 3
+          },
+          "name_reads": {
+            "GoodBabyGirl": 3
+          }
+        },
+        {
+          "rank": 155,
+          "player": "정점남",
+          "n_obs": 3,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2385398": 2
+          },
+          "name_reads": {
+            "정점남": 2
+          }
+        },
+        {
+          "rank": 156,
+          "player": "SupremeDuke",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2292198": 3
+          },
+          "name_reads": {
+            "SupremeDuke": 3
+          }
+        },
+        {
+          "rank": 157,
+          "player": "Goodjian",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2287533": 3
+          },
+          "name_reads": {
+            "Goodjian": 3
+          }
+        },
+        {
+          "rank": 158,
+          "player": "리아조나",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2241314": 3
+          },
+          "name_reads": {
+            "리아조나": 3
+          }
+        },
+        {
+          "rank": 159,
+          "player": "-NERO-",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2149600": 4
+          },
+          "name_reads": {
+            "-NERO-": 4
+          }
+        },
+        {
+          "rank": 160,
+          "player": "사는이유",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2065762": 3
+          },
+          "name_reads": {
+            "사는이유": 3
+          }
+        },
+        {
+          "rank": 161,
+          "player": "Lílith",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2023531": 3
+          },
+          "name_reads": {
+            "Lílith": 3
+          }
+        },
+        {
+          "rank": 162,
+          "player": "수달이",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1958180": 3
+          },
+          "name_reads": {
+            "수달이": 3
+          }
+        },
+        {
+          "rank": 163,
+          "player": "MACHA",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1871903": 3
+          },
+          "name_reads": {
+            "MACHA": 3
+          }
+        },
+        {
+          "rank": 164,
+          "player": "vintagemean",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1810273": 4
+          },
+          "name_reads": {
+            "vintagemean": 4
+          }
+        },
+        {
+          "rank": 165,
+          "player": "VolumMAXIM",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1615001": 3
+          },
+          "name_reads": {
+            "VolumMAXIM": 3
+          }
+        },
+        {
+          "rank": 166,
+          "player": "Sammycat",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1612170": 3
+          },
+          "name_reads": {
+            "Sammycat": 3
+          }
+        },
+        {
+          "rank": 167,
+          "player": "두더지",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1426901": 4
+          },
+          "name_reads": {
+            "두더지": 4
+          }
+        },
+        {
+          "rank": 168,
+          "player": "GTLN",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1372982": 3
+          },
+          "name_reads": {
+            "GTLN": 3
+          }
+        },
+        {
+          "rank": 169,
+          "player": "Auozturk",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1360589": 4
+          },
+          "name_reads": {
+            "Auozturk": 4
+          }
+        },
+        {
+          "rank": 170,
+          "player": "Zegion",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1342740": 3
+          },
+          "name_reads": {
+            "Zegion": 3
+          }
+        },
+        {
+          "rank": 171,
+          "player": "Mohammad2824",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1312500": 3
+          },
+          "name_reads": {
+            "Mohammad2824": 3
+          }
+        },
+        {
+          "rank": 172,
+          "player": "DewaLipan",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1276800": 4
+          },
+          "name_reads": {
+            "DewaLipan": 4
+          }
+        },
+        {
+          "rank": 173,
+          "player": "복나라",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1135004": 3
+          },
+          "name_reads": {
+            "복나라": 3
+          }
+        },
+        {
+          "rank": 174,
+          "player": "Juan29362",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1134610": 4
+          },
+          "name_reads": {
+            "Juan29362": 4
+          }
+        },
+        {
+          "rank": 175,
+          "player": "희와하루",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "871271": 3
+          },
+          "name_reads": {
+            "희와하루": 3
+          }
+        },
+        {
+          "rank": 176,
+          "player": "리난데용",
+          "n_obs": 6,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "840000": 3
+          },
+          "name_reads": {
+            "리난데용": 3
+          }
+        },
+        {
+          "rank": 177,
+          "player": "난널원해",
+          "n_obs": 7,
+          "n_clean": 5,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "819168": 5
+          },
+          "name_reads": {
+            "난널원해": 5
+          }
+        },
+        {
+          "rank": 178,
+          "player": "Jdubbs",
+          "n_obs": 10,
+          "n_clean": 7,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "760929": 7
+          },
+          "name_reads": {
+            "Jdubbs": 7
+          }
+        },
+        {
+          "rank": 179,
+          "player": "EllieG",
+          "n_obs": 9,
+          "n_clean": 9,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "634725": 9
+          },
+          "name_reads": {
+            "EllieG": 9
+          }
+        },
+        {
+          "rank": 180,
+          "player": "jaceland",
+          "n_obs": 8,
+          "n_clean": 8,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "525036": 8
+          },
+          "name_reads": {
+            "jaceland": 8
+          }
+        },
+        {
+          "rank": 181,
+          "player": "BoSS레드",
+          "n_obs": 8,
+          "n_clean": 7,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "472500": 7
+          },
+          "name_reads": {
+            "BOSS레드": 3,
+            "BoSS레드": 4
+          }
+        },
+        {
+          "rank": 182,
+          "player": "f••?곰",
+          "n_obs": 7,
+          "n_clean": 7,
+          "points_agree": 1.0,
+          "name_agree": 0.429,
+          "points_reads": {
+            "472500": 7
+          },
+          "name_reads": {
+            "5•.•?곰": 2,
+            "f••?곰": 2,
+            "{•.•?곰": 1,
+            "f•.•?곰": 1,
+            "Sog・7吾": 1
+          }
+        }
+      ],
+      "captured_at": "2026-11-27T07:07:32-02:00"
+    },
+    "thu": {
+      "tab": "thu",
+      "live": false,
+      "passes": [
+        {
+          "pass": 1,
+          "bottom_rank": 179,
+          "ranks": 179,
+          "frames": 125,
+          "rejected_frames": 11,
+          "unresolved": {},
+          "finished_at": "2026-11-27T07:10:16-02:00"
+        }
+      ],
+      "unresolved": {},
+      "diagnostics": [
+        {
+          "rank": 1,
+          "player": "먹깨비",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "63185358": 3
+          },
+          "name_reads": {
+            "먹깨비": 3
+          }
+        },
+        {
+          "rank": 2,
+          "player": "Eldagrim",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "61921082": 3
+          },
+          "name_reads": {
+            "Eldagrim": 3
+          }
+        },
+        {
+          "rank": 3,
+          "player": "꼬맹집사",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "58525556": 4
+          },
+          "name_reads": {
+            "꼬맹집사": 4
+          }
+        },
+        {
+          "rank": 4,
+          "player": "WoongK-웅크~퉤이☆",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "45256986": 4
+          },
+          "name_reads": {
+            "WoongK-웅크~퉤이☆": 4
+          }
+        },
+        {
+          "rank": 5,
+          "player": "RollingStoners",
+          "n_obs": 5,
+          "n_clean": 5,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "38660144": 5
+          },
+          "name_reads": {
+            "RollingStoners": 5
+          }
+        },
+        {
+          "rank": 6,
+          "player": "앨리ally",
+          "n_obs": 6,
+          "n_clean": 5,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "38554956": 5
+          },
+          "name_reads": {
+            "앨리ally": 5
+          }
+        },
+        {
+          "rank": 7,
+          "player": "췌쟝맞고싶냐K",
+          "n_obs": 7,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "37543664": 3
+          },
+          "name_reads": {
+            "췌쟝맞고싶냐K": 2,
+            "췌장맞고싶냐K": 1
+          }
+        },
+        {
+          "rank": 8,
+          "player": "gopro",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "35471478": 4
+          },
+          "name_reads": {
+            "gopro": 4
+          }
+        },
+        {
+          "rank": 9,
+          "player": "ARKAN8",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "34244600": 3
+          },
+          "name_reads": {
+            "ARKAN8": 3
+          }
+        },
+        {
+          "rank": 10,
+          "player": "호이잇",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "33415078": 4
+          },
+          "name_reads": {
+            "호이잇": 4
+          }
+        },
+        {
+          "rank": 11,
+          "player": "JimmyJam",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "32088132": 4
+          },
+          "name_reads": {
+            "JimmyJam": 4
+          }
+        },
+        {
+          "rank": 12,
+          "player": "Cole64",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "31991230": 3
+          },
+          "name_reads": {
+            "Cole64": 3
+          }
+        },
+        {
+          "rank": 13,
+          "player": "Boss어케",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "31323353": 4
+          },
+          "name_reads": {
+            "Boss어케": 4
+          }
+        },
+        {
+          "rank": 14,
+          "player": "NATOO",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "31064420": 4
+          },
+          "name_reads": {
+            "NATOO": 4
+          }
+        },
+        {
+          "rank": 15,
+          "player": "BoSS벳",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "30541554": 3
+          },
+          "name_reads": {
+            "BoSS벳": 3
+          }
+        },
+        {
+          "rank": 16,
+          "player": "I나무",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "27851774": 4
+          },
+          "name_reads": {
+            "I나무": 4
+          }
+        },
+        {
+          "rank": 17,
+          "player": "AyeGee",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "27808580": 4
+          },
+          "name_reads": {
+            "AyeGee": 4
+          }
+        },
+        {
+          "rank": 18,
+          "player": "BoSS킹콩",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "27761144": 4
+          },
+          "name_reads": {
+            "BOSS킹콩": 1,
+            "BoSS킹콩": 3
+          }
+        },
+        {
+          "rank": 19,
+          "player": "BossPenguin",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "27215062": 4
+          },
+          "name_reads": {
+            "BossPenguin": 4
+          }
+        },
+        {
+          "rank": 20,
+          "player": "아푸냐나도아푸다",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "26996838": 4
+          },
+          "name_reads": {
+            "아푸냐나도아푸다": 4
+          }
+        },
+        {
+          "rank": 21,
+          "player": "Agam0017",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "26890446": 4
+          },
+          "name_reads": {
+            "Agam0017": 4
+          }
+        },
+        {
+          "rank": 22,
+          "player": "Whiteline876",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "26542514": 4
+          },
+          "name_reads": {
+            "Whiteline876": 4
+          }
+        },
+        {
+          "rank": 23,
+          "player": "TheRequiem",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "26321784": 4
+          },
+          "name_reads": {
+            "TheRequiem": 4
+          }
+        },
+        {
+          "rank": 24,
+          "player": "DarkTime66",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "26246876": 4
+          },
+          "name_reads": {
+            "DarkTime66": 4
+          }
+        },
+        {
+          "rank": 25,
+          "player": "아이스크림야",
+          "n_obs": 5,
+          "n_clean": 5,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "26078902": 5
+          },
+          "name_reads": {
+            "아이스크림야": 5
+          }
+        },
+        {
+          "rank": 26,
+          "player": "KaryLive",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "25683666": 4
+          },
+          "name_reads": {
+            "KaryLive": 4
+          }
+        },
+        {
+          "rank": 27,
+          "player": "Cagatai-차가타이-",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "25403893": 3
+          },
+          "name_reads": {
+            "Cagatai-차가타이-": 3
+          }
+        },
+        {
+          "rank": 28,
+          "player": "alggagi",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "25255862": 3
+          },
+          "name_reads": {
+            "alggagi": 3
+          }
+        },
+        {
+          "rank": 29,
+          "player": "feeo7-LilBear",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "25106468": 3
+          },
+          "name_reads": {
+            "fog-7-LilBear": 1,
+            "feeo7-LilBear": 1,
+            "Sog-7-LilBear": 1
+          }
+        },
+        {
+          "rank": 30,
+          "player": "Imoza",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "24843624": 3
+          },
+          "name_reads": {
+            "Imoza": 3
+          }
+        },
+        {
+          "rank": 31,
+          "player": "chauncey",
+          "n_obs": 4,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "24352094": 2
+          },
+          "name_reads": {
+            "chauncey": 2
+          }
+        },
+        {
+          "rank": 32,
+          "player": "BoSS원숭이",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "24291734": 3
+          },
+          "name_reads": {
+            "BOSS원숭이": 1,
+            "BoSS원숭이": 2
+          }
+        },
+        {
+          "rank": 33,
+          "player": "DrZombie",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "24225518": 4
+          },
+          "name_reads": {
+            "DrZombie": 4
+          }
+        },
+        {
+          "rank": 34,
+          "player": "Snideski",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "24021930": 3
+          },
+          "name_reads": {
+            "Snideski": 3
+          }
+        },
+        {
+          "rank": 35,
+          "player": "MartyMar",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "23935384": 4
+          },
+          "name_reads": {
+            "MartyMar": 4
+          }
+        },
+        {
+          "rank": 36,
+          "player": "Elizasnopchenko",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "23908526": 3
+          },
+          "name_reads": {
+            "Elizasnopchenko": 3
+          }
+        },
+        {
+          "rank": 37,
+          "player": "사탄입니다",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "23808196": 3
+          },
+          "name_reads": {
+            "사탄입니다": 3
+          }
+        },
+        {
+          "rank": 38,
+          "player": "막걸리한잔",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "23437403": 4
+          },
+          "name_reads": {
+            "막걸리한잔": 4
+          }
+        },
+        {
+          "rank": 39,
+          "player": "MrWhiskey",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "22425150": 3
+          },
+          "name_reads": {
+            "MrWhiskey": 3
+          }
+        },
+        {
+          "rank": 40,
+          "player": "Disorder762",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "22420750": 4
+          },
+          "name_reads": {
+            "Disorder762": 4
+          }
+        },
+        {
+          "rank": 41,
+          "player": "Yun윤",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "22243804": 4
+          },
+          "name_reads": {
+            "Yun윤": 3,
+            "Yunü": 1
+          }
+        },
+        {
+          "rank": 42,
+          "player": "Jeff",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "22193024": 3
+          },
+          "name_reads": {
+            "Jeff": 3
+          }
+        },
+        {
+          "rank": 43,
+          "player": "BORZ-95",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "21647123": 4
+          },
+          "name_reads": {
+            "BORZ-95": 4
+          }
+        },
+        {
+          "rank": 44,
+          "player": "Brody138",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "21293458": 4
+          },
+          "name_reads": {
+            "Brody138": 4
+          }
+        },
+        {
+          "rank": 45,
+          "player": "Shunter",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "20530890": 3
+          },
+          "name_reads": {
+            "Shunter": 3
+          }
+        },
+        {
+          "rank": 46,
+          "player": "Squad00",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "20478586": 4
+          },
+          "name_reads": {
+            "Squad00": 4
+          }
+        },
+        {
+          "rank": 47,
+          "player": "Kosht83",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "20139692": 3
+          },
+          "name_reads": {
+            "Kosht83": 3
+          }
+        },
+        {
+          "rank": 48,
+          "player": "Bad°Boy",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "20000808": 3
+          },
+          "name_reads": {
+            "Bad°Boy": 3
+          }
+        },
+        {
+          "rank": 49,
+          "player": "한부장",
+          "n_obs": 4,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "19593346": 2
+          },
+          "name_reads": {
+            "한부장": 2
+          }
+        },
+        {
+          "rank": 50,
+          "player": "Rango46",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "19588244": 3
+          },
+          "name_reads": {
+            "Rango46": 3
+          }
+        },
+        {
+          "rank": 51,
+          "player": "B3N",
+          "n_obs": 4,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "19280040": 2
+          },
+          "name_reads": {
+            "B3N": 2
+          }
+        },
+        {
+          "rank": 52,
+          "player": "Goodjian",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "19247388": 3
+          },
+          "name_reads": {
+            "Goodjian": 3
+          }
+        },
+        {
+          "rank": 53,
+          "player": "박비서",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "18966360": 4
+          },
+          "name_reads": {
+            "박비서": 4
+          }
+        },
+        {
+          "rank": 54,
+          "player": "Konstantinos86",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "18884906": 3
+          },
+          "name_reads": {
+            "Konstantinos86": 3
+          }
+        },
+        {
+          "rank": 55,
+          "player": "Chickendog",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "18517286": 4
+          },
+          "name_reads": {
+            "Chickendog": 4
+          }
+        },
+        {
+          "rank": 56,
+          "player": "EFENDİ",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "18512598": 4
+          },
+          "name_reads": {
+            "EFENDİ": 4
+          }
+        },
+        {
+          "rank": 57,
+          "player": "Jony1°haish",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "18326512": 3
+          },
+          "name_reads": {
+            "Jony1°haish": 3
+          }
+        },
+        {
+          "rank": 58,
+          "player": "PhantomLord",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "17975232": 4
+          },
+          "name_reads": {
+            "PhantomLord": 4
+          }
+        },
+        {
+          "rank": 59,
+          "player": "IrishkA",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "17869822": 4
+          },
+          "name_reads": {
+            "IrishkA": 4
+          }
+        },
+        {
+          "rank": 60,
+          "player": "KILLABWOY2002",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "17653490": 3
+          },
+          "name_reads": {
+            "KILLABWOY2002": 3
+          }
+        },
+        {
+          "rank": 61,
+          "player": "Hooligan32rus",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "17519404": 4
+          },
+          "name_reads": {
+            "Hooligan32rus": 4
+          }
+        },
+        {
+          "rank": 62,
+          "player": "Blockboy5",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "17253986": 3
+          },
+          "name_reads": {
+            "Blockboy5": 3
+          }
+        },
+        {
+          "rank": 63,
+          "player": "skinnybigpoppa",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "17056668": 3
+          },
+          "name_reads": {
+            "skinnybigpoppa": 3
+          }
+        },
+        {
+          "rank": 64,
+          "player": "Dogboy",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "16204020": 3
+          },
+          "name_reads": {
+            "Dogboy": 3
+          }
+        },
+        {
+          "rank": 65,
+          "player": "-Makoy-마코이",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "16158422": 3
+          },
+          "name_reads": {
+            "-Makoy-마코이": 3
+          }
+        },
+        {
+          "rank": 66,
+          "player": "DukoTR",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "16145330": 4
+          },
+          "name_reads": {
+            "DukoTR": 4
+          }
+        },
+        {
+          "rank": 67,
+          "player": "BoSS잭스",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "15989544": 3
+          },
+          "name_reads": {
+            "BoSS잭스": 2,
+            "BOSS잭스": 1
+          }
+        },
+        {
+          "rank": 68,
+          "player": "wsdfg",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "15850140": 4
+          },
+          "name_reads": {
+            "wsdfg": 4
+          }
+        },
+        {
+          "rank": 69,
+          "player": "한은주",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "15696704": 4
+          },
+          "name_reads": {
+            "한은주": 4
+          }
+        },
+        {
+          "rank": 70,
+          "player": "ComandanteMike",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "15067710": 3
+          },
+          "name_reads": {
+            "ComandanteMike": 3
+          }
+        },
+        {
+          "rank": 71,
+          "player": "Kittanna",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "14992036": 4
+          },
+          "name_reads": {
+            "Kittanna": 4
+          }
+        },
+        {
+          "rank": 72,
+          "player": "BoSS토끼",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "14977536": 3
+          },
+          "name_reads": {
+            "BoSS토끼": 3
+          }
+        },
+        {
+          "rank": 73,
+          "player": "카드병정",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "14973226": 3
+          },
+          "name_reads": {
+            "카드병정": 3
+          }
+        },
+        {
+          "rank": 74,
+          "player": "Jane제인",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "14599888": 4
+          },
+          "name_reads": {
+            "Jane제인": 4
+          }
+        },
+        {
+          "rank": 75,
+          "player": "Papago",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "14443960": 3
+          },
+          "name_reads": {
+            "Papago": 3
+          }
+        },
+        {
+          "rank": 76,
+          "player": "즐겜요",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "14413372": 3
+          },
+          "name_reads": {
+            "즐겜요": 3
+          }
+        },
+        {
+          "rank": 77,
+          "player": "BHBH",
+          "n_obs": 6,
+          "n_clean": 6,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "14224130": 6
+          },
+          "name_reads": {
+            "BHBH": 6
+          }
+        },
+        {
+          "rank": 78,
+          "player": "BOSS아레스",
+          "n_obs": 6,
+          "n_clean": 5,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "14112830": 5
+          },
+          "name_reads": {
+            "BOSS아레스": 5
+          }
+        },
+        {
+          "rank": 79,
+          "player": "agustd",
+          "n_obs": 5,
+          "n_clean": 5,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "13956966": 5
+          },
+          "name_reads": {
+            "agustd": 5
+          }
+        },
+        {
+          "rank": 80,
+          "player": "InvaderPimp",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 0.75,
+          "name_agree": 1.0,
+          "points_reads": {
+            "15950984": 1,
+            "13936984": 3
+          },
+          "name_reads": {
+            "InvaderPimp": 4
+          }
+        },
+        {
+          "rank": 81,
+          "player": "Luke65",
+          "n_obs": 6,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "13620106": 4
+          },
+          "name_reads": {
+            "Luke65": 4
+          }
+        },
+        {
+          "rank": 82,
+          "player": "GoodBabyGirl",
+          "n_obs": 5,
+          "n_clean": 5,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "13584252": 5
+          },
+          "name_reads": {
+            "GoodBabyGirl": 5
+          }
+        },
+        {
+          "rank": 83,
+          "player": "spacesss",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "13583400": 3
+          },
+          "name_reads": {
+            "spacesss": 3
+          }
+        },
+        {
+          "rank": 84,
+          "player": "SadSquatch",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "13536498": 3
+          },
+          "name_reads": {
+            "SadSquatch": 3
+          }
+        },
+        {
+          "rank": 85,
+          "player": "Gindzatw",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "13349777": 4
+          },
+          "name_reads": {
+            "Gindzatw": 4
+          }
+        },
+        {
+          "rank": 86,
+          "player": "Analbrutal",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "13175300": 3
+          },
+          "name_reads": {
+            "Analbrutal": 3
+          }
+        },
+        {
+          "rank": 87,
+          "player": "ViE",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "13047286": 4
+          },
+          "name_reads": {
+            "ViE": 4
+          }
+        },
+        {
+          "rank": 88,
+          "player": "InkedBabyeePIMP",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "13009588": 4
+          },
+          "name_reads": {
+            "InkedBabyeePIMP": 4
+          }
+        },
+        {
+          "rank": 89,
+          "player": "Green64",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "12948636": 3
+          },
+          "name_reads": {
+            "Green64": 3
+          }
+        },
+        {
+          "rank": 90,
+          "player": "다람이",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "12755806": 4
+          },
+          "name_reads": {
+            "다람이": 4
+          }
+        },
+        {
+          "rank": 91,
+          "player": "HandStrong",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "12733950": 3
+          },
+          "name_reads": {
+            "HandStrong": 3
+          }
+        },
+        {
+          "rank": 92,
+          "player": "bluepumpkin",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "12695136": 3
+          },
+          "name_reads": {
+            "bluepumpkin": 3
+          }
+        },
+        {
+          "rank": 93,
+          "player": "mAra",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "12452618": 4
+          },
+          "name_reads": {
+            "mAra": 4
+          }
+        },
+        {
+          "rank": 94,
+          "player": "불뿜는파이리",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "12360044": 3
+          },
+          "name_reads": {
+            "불뿜는파이리": 3
+          }
+        },
+        {
+          "rank": 95,
+          "player": "TheStoolPusher",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "12302631": 3
+          },
+          "name_reads": {
+            "TheStoolPusher": 3
+          }
+        },
+        {
+          "rank": 96,
+          "player": "Skitz0",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "12154934": 3
+          },
+          "name_reads": {
+            "Skitz0": 2,
+            "Skitzo": 1
+          }
+        },
+        {
+          "rank": 97,
+          "player": "킹콩이",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "12022114": 3
+          },
+          "name_reads": {
+            "킹콩이": 3
+          }
+        },
+        {
+          "rank": 98,
+          "player": "FerylWeaver",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "11509912": 4
+          },
+          "name_reads": {
+            "FerylWeave": 1,
+            "FerylWeaver": 3
+          }
+        },
+        {
+          "rank": 99,
+          "player": "Mohammad2824",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "11211106": 3
+          },
+          "name_reads": {
+            "Mohammad2824": 3
+          }
+        },
+        {
+          "rank": 100,
+          "player": "Tekinsoldier",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10989716": 4
+          },
+          "name_reads": {
+            "Tekinsoldier": 4
+          }
+        },
+        {
+          "rank": 101,
+          "player": "Astaroth16zam",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10850015": 3
+          },
+          "name_reads": {
+            "Astaroth16zam": 3
+          }
+        },
+        {
+          "rank": 102,
+          "player": "Slickback",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10628082": 3
+          },
+          "name_reads": {
+            "Slickback": 3
+          }
+        },
+        {
+          "rank": 103,
+          "player": "Sinister-Soul",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10560980": 4
+          },
+          "name_reads": {
+            "Sinister-Soul": 4
+          }
+        },
+        {
+          "rank": 104,
+          "player": "Bode",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10493100": 3
+          },
+          "name_reads": {
+            "Bode": 3
+          }
+        },
+        {
+          "rank": 105,
+          "player": "Kiwihaka",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10463312": 3
+          },
+          "name_reads": {
+            "Kiwihaka": 3
+          }
+        },
+        {
+          "rank": 106,
+          "player": "SingularityPIMP",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10376044": 4
+          },
+          "name_reads": {
+            "SingularityPIMP": 4
+          }
+        },
+        {
+          "rank": 107,
+          "player": "BoSS용이",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10274392": 3
+          },
+          "name_reads": {
+            "BoSS용이": 2,
+            "BOSS용이": 1
+          }
+        },
+        {
+          "rank": 108,
+          "player": "1Евгений",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10262004": 4
+          },
+          "name_reads": {
+            "1Евгений": 4
+          }
+        },
+        {
+          "rank": 109,
+          "player": "Tyronekiller",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "10205914": 3
+          },
+          "name_reads": {
+            "Tyronekiller": 3
+          }
+        },
+        {
+          "rank": 110,
+          "player": "Nando6331",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9864000": 3
+          },
+          "name_reads": {
+            "Nando6331": 3
+          }
+        },
+        {
+          "rank": 111,
+          "player": "Elmayo",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9706867": 4
+          },
+          "name_reads": {
+            "Elmayo": 4
+          }
+        },
+        {
+          "rank": 112,
+          "player": "Maryrose",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9660210": 3
+          },
+          "name_reads": {
+            "Maryrose": 3
+          }
+        },
+        {
+          "rank": 113,
+          "player": "여니파어",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9492504": 4
+          },
+          "name_reads": {
+            "여니파어": 4
+          }
+        },
+        {
+          "rank": 114,
+          "player": "GrandmaFrog",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9283210": 3
+          },
+          "name_reads": {
+            "GrandmaFrog": 3
+          }
+        },
+        {
+          "rank": 115,
+          "player": "Sammycat",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9154950": 3
+          },
+          "name_reads": {
+            "Sammycat": 3
+          }
+        },
+        {
+          "rank": 116,
+          "player": "DAMDUK",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9102816": 4
+          },
+          "name_reads": {
+            "DAMDUK": 4
+          }
+        },
+        {
+          "rank": 117,
+          "player": "PreacheR",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "9044108": 3
+          },
+          "name_reads": {
+            "PreacheR": 3
+          }
+        },
+        {
+          "rank": 118,
+          "player": "Bahamut1",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8953494": 4
+          },
+          "name_reads": {
+            "Bahamut1": 4
+          }
+        },
+        {
+          "rank": 119,
+          "player": "하모니",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8813676": 4
+          },
+          "name_reads": {
+            "하모니": 4
+          }
+        },
+        {
+          "rank": 120,
+          "player": "LittleCrisis",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8794988": 3
+          },
+          "name_reads": {
+            "LittleCrisis": 3
+          }
+        },
+        {
+          "rank": 121,
+          "player": "-ANKA-",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8715296": 4
+          },
+          "name_reads": {
+            "-ANKA-": 4
+          }
+        },
+        {
+          "rank": 122,
+          "player": ")B",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 0.667,
+          "points_reads": {
+            "8686554": 3
+          },
+          "name_reads": {
+            ")B": 1,
+            "B": 1,
+            "e) OB": 1
+          }
+        },
+        {
+          "rank": 123,
+          "player": "똥침맞고싶니",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8649346": 4
+          },
+          "name_reads": {
+            "똥침맞고싶니": 4
+          }
+        },
+        {
+          "rank": 124,
+          "player": "악마곰",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8648800": 4
+          },
+          "name_reads": {
+            "악마곰": 4
+          }
+        },
+        {
+          "rank": 125,
+          "player": "Paul18",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8533410": 3
+          },
+          "name_reads": {
+            "Paul18": 3
+          }
+        },
+        {
+          "rank": 126,
+          "player": "-NERO-",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8455160": 3
+          },
+          "name_reads": {
+            "-NERO-": 3
+          }
+        },
+        {
+          "rank": 127,
+          "player": "bozo09",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8415888": 4
+          },
+          "name_reads": {
+            "bozo09": 4
+          }
+        },
+        {
+          "rank": 128,
+          "player": "가출원숭이",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8401312": 3
+          },
+          "name_reads": {
+            "가출원숭이": 3
+          }
+        },
+        {
+          "rank": 129,
+          "player": "CuteCat",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8276086": 4
+          },
+          "name_reads": {
+            "CuteCat": 4
+          }
+        },
+        {
+          "rank": 130,
+          "player": "정점남",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8258648": 3
+          },
+          "name_reads": {
+            "정점남": 3
+          }
+        },
+        {
+          "rank": 131,
+          "player": "vintagemean",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8238810": 3
+          },
+          "name_reads": {
+            "vintagemean": 3
+          }
+        },
+        {
+          "rank": 132,
+          "player": "StitchQu33n",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "8105971": 3
+          },
+          "name_reads": {
+            "StitchQu33n": 2,
+            "StitchQu33n|": 1
+          }
+        },
+        {
+          "rank": 133,
+          "player": "2hIgH2cArE",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7706010": 3
+          },
+          "name_reads": {
+            "2hIgH2cArE": 3
+          }
+        },
+        {
+          "rank": 134,
+          "player": "SupremeDuke",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7686944": 4
+          },
+          "name_reads": {
+            "SupremeDuke": 4
+          }
+        },
+        {
+          "rank": 135,
+          "player": "archer339",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7537600": 3
+          },
+          "name_reads": {
+            "archer339": 3
+          }
+        },
+        {
+          "rank": 136,
+          "player": "Boo100",
+          "n_obs": 4,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7505080": 2
+          },
+          "name_reads": {
+            "Boo100": 2
+          }
+        },
+        {
+          "rank": 137,
+          "player": "고구마대왕",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7492256": 3
+          },
+          "name_reads": {
+            "고구마대왕": 3
+          }
+        },
+        {
+          "rank": 138,
+          "player": "laggingPotato",
+          "n_obs": 4,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7472116": 2
+          },
+          "name_reads": {
+            "laggingPotato": 2
+          }
+        },
+        {
+          "rank": 139,
+          "player": "Svensen003",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7420538": 3
+          },
+          "name_reads": {
+            "Svensen003": 3
+          }
+        },
+        {
+          "rank": 140,
+          "player": "R1c4rdo",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7368376": 3
+          },
+          "name_reads": {
+            "R1c4rdo": 2,
+            "R1c4rd0": 1
+          }
+        },
+        {
+          "rank": 141,
+          "player": "Bigbee",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7336670": 3
+          },
+          "name_reads": {
+            "Bigbee": 3
+          }
+        },
+        {
+          "rank": 142,
+          "player": "BOSS광전사",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7326848": 4
+          },
+          "name_reads": {
+            "BOSS광전사": 3,
+            "BoSS광전사": 1
+          }
+        },
+        {
+          "rank": 143,
+          "player": "MinikPanda",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7274910": 3
+          },
+          "name_reads": {
+            "MinikPanda": 3
+          }
+        },
+        {
+          "rank": 144,
+          "player": "CrazyGreg",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7222966": 4
+          },
+          "name_reads": {
+            "CrazyGreg": 4
+          }
+        },
+        {
+          "rank": 145,
+          "player": "VoltaP1MP",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "7193010": 4
+          },
+          "name_reads": {
+            "VoltaP1MP": 4
+          }
+        },
+        {
+          "rank": 146,
+          "player": "BoSS청룡",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "6931872": 3
+          },
+          "name_reads": {
+            "BoSS청룡": 3
+          }
+        },
+        {
+          "rank": 147,
+          "player": "달달구리",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "6150816": 3
+          },
+          "name_reads": {
+            "달달구리": 3
+          }
+        },
+        {
+          "rank": 148,
+          "player": "Zegion",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "5591200": 4
+          },
+          "name_reads": {
+            "Zegion": 4
+          }
+        },
+        {
+          "rank": 149,
+          "player": "리난데용",
+          "n_obs": 5,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "5378792": 4
+          },
+          "name_reads": {
+            "리 난데용": 1,
+            "리난데용": 3
+          }
+        },
+        {
+          "rank": 150,
+          "player": "백수들의왕",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4582479": 3
+          },
+          "name_reads": {
+            "백수들의왕": 3
+          }
+        },
+        {
+          "rank": 151,
+          "player": "songsari",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4370128": 4
+          },
+          "name_reads": {
+            "songsari": 4
+          }
+        },
+        {
+          "rank": 152,
+          "player": "Grandpaowl",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "4089874": 3
+          },
+          "name_reads": {
+            "Grandpaowl": 3
+          }
+        },
+        {
+          "rank": 153,
+          "player": "복나라",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3706387": 4
+          },
+          "name_reads": {
+            "복나라": 4
+          }
+        },
+        {
+          "rank": 154,
+          "player": "YouDNTKnwMe",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3661756": 3
+          },
+          "name_reads": {
+            "YouDNTKnwMe": 3
+          }
+        },
+        {
+          "rank": 155,
+          "player": "Auozturk",
+          "n_obs": 5,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3303992": 3
+          },
+          "name_reads": {
+            "Auozturk": 3
+          }
+        },
+        {
+          "rank": 156,
+          "player": "Burak5758",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "3092758": 3
+          },
+          "name_reads": {
+            "Burak5758": 3
+          }
+        },
+        {
+          "rank": 157,
+          "player": "PriscilaBaum",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2770093": 3
+          },
+          "name_reads": {
+            "PriscilaBaum": 3
+          }
+        },
+        {
+          "rank": 158,
+          "player": "눈알맞고싶냐",
+          "n_obs": 4,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2741370": 2
+          },
+          "name_reads": {
+            "눈알맞고싶냐": 2
+          }
+        },
+        {
+          "rank": 159,
+          "player": "HAMMERS",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2634118": 3
+          },
+          "name_reads": {
+            "HAMMERS": 3
+          }
+        },
+        {
+          "rank": 160,
+          "player": "두더지",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2472157": 3
+          },
+          "name_reads": {
+            "두더지": 3
+          }
+        },
+        {
+          "rank": 161,
+          "player": "말랭이",
+          "n_obs": 3,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2318914": 2
+          },
+          "name_reads": {
+            "말랭이": 2
+          }
+        },
+        {
+          "rank": 162,
+          "player": "Juan29362",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2222614": 3
+          },
+          "name_reads": {
+            "Juan29362": 3
+          }
+        },
+        {
+          "rank": 163,
+          "player": "무우청",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2074330": 3
+          },
+          "name_reads": {
+            "무우청": 3
+          }
+        },
+        {
+          "rank": 164,
+          "player": "리아조나",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "2027242": 4
+          },
+          "name_reads": {
+            "리아조나": 4
+          }
+        },
+        {
+          "rank": 165,
+          "player": "수달이",
+          "n_obs": 4,
+          "n_clean": 4,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1973404": 4
+          },
+          "name_reads": {
+            "수달이": 4
+          }
+        },
+        {
+          "rank": 166,
+          "player": "NickiV",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1920000": 3
+          },
+          "name_reads": {
+            "NickiV": 3
+          }
+        },
+        {
+          "rank": 167,
+          "player": "GTLN",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1637226": 3
+          },
+          "name_reads": {
+            "GTLN": 3
+          }
+        },
+        {
+          "rank": 168,
+          "player": "BOSS미사일",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1608800": 3
+          },
+          "name_reads": {
+            "BoSS미사일": 1,
+            "BOSS미사일": 2
+          }
+        },
+        {
+          "rank": 169,
+          "player": "VolumMAXIM",
+          "n_obs": 4,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1417650": 3
+          },
+          "name_reads": {
+            "VolumMAXIM": 3
+          }
+        },
+        {
+          "rank": 170,
+          "player": "사는이유",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1171134": 3
+          },
+          "name_reads": {
+            "사는이유": 3
+          }
+        },
+        {
+          "rank": 171,
+          "player": "JenniferFTW",
+          "n_obs": 3,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "1092374": 2
+          },
+          "name_reads": {
+            "JenniferFTW": 2
+          }
+        },
+        {
+          "rank": 172,
+          "player": "ASH-90",
+          "n_obs": 3,
+          "n_clean": 3,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "929998": 3
+          },
+          "name_reads": {
+            "ASH-90": 3
+          }
+        },
+        {
+          "rank": 173,
+          "player": "난널원해",
+          "n_obs": 5,
+          "n_clean": 2,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "860447": 2
+          },
+          "name_reads": {
+            "난널원해": 2
+          }
+        },
+        {
+          "rank": 174,
+          "player": "희와하루",
+          "n_obs": 6,
+          "n_clean": 5,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "618086": 5
+          },
+          "name_reads": {
+            "희와하루": 5
+          }
+        },
+        {
+          "rank": 175,
+          "player": "jaceland",
+          "n_obs": 8,
+          "n_clean": 6,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "346603": 6
+          },
+          "name_reads": {
+            "jaceland": 6
+          }
+        },
+        {
+          "rank": 176,
+          "player": "Jdubbs",
+          "n_obs": 8,
+          "n_clean": 8,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "344303": 8
+          },
+          "name_reads": {
+            "Jdubbs": 8
+          }
+        },
+        {
+          "rank": 177,
+          "player": "SUNG-JIN-WOO",
+          "n_obs": 8,
+          "n_clean": 8,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "178959": 8
+          },
+          "name_reads": {
+            "SUNG-JIN-WOO": 8
+          }
+        },
+        {
+          "rank": 178,
+          "player": "BOSS레드",
+          "n_obs": 7,
+          "n_clean": 7,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "120000": 7
+          },
+          "name_reads": {
+            "BOSS레드": 4,
+            "BoSS레드": 3
+          }
+        },
+        {
+          "rank": 179,
+          "player": "EllieG",
+          "n_obs": 7,
+          "n_clean": 6,
+          "points_agree": 1.0,
+          "name_agree": 1.0,
+          "points_reads": {
+            "40320": 6
+          },
+          "name_reads": {
+            "EllieG": 6
+          }
+        }
+      ],
+      "captured_at": "2026-11-27T07:10:16-02:00"
     }
   },
   "week": "2026-11-28",

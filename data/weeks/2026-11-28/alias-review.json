@@ -1,5 +1,5 @@
 {
-  "applied_at": "2026-11-25T09:04:10.895285+00:00",
+  "applied_at": "2026-11-27T09:03:27.573642+00:00",
   "provenance": {
     "method": "Visual review of captured rows and alliance labels; same-rank points unanimous. Exact observed normalized spelling whitelist, alliance-scoped; no fuzzy/wildcard aliases. Display names omit undecodable decorative glyphs. Original evidence unchanged; fresh capture must pass ordinary QA/checksums.",
     "reviewed_at": "2026-10-18T00:40:54.697382+00:00",
