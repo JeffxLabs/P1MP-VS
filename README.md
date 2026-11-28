@@ -7,8 +7,10 @@ multi-week trends.
 **Dashboard:** https://jeffxlabs.github.io/P1MP-VS/ — dark/light themes, 10 languages, deep links for every view
 (`?week=2026-10-03&view=members&player=…&lang=fr&theme=light`), works offline from `file://`, laid out for phones and desktop.
 
-- **Overview:** score and day-by-day results, quota check (who is below the 11.4M quota, who missed twice in a row,
-  with new members listed separately and exempt from the below-quota list and repeat-miss warnings), key takeaways, top performers, biggest movers vs the previous captured week, stage points, rank tiers.
+- **Overview:** duel score separate from weekly leaderboard points, daily results that open their leaderboards,
+  quota check (new members are listed separately and exempt from repeat-miss warnings), key takeaways, and an awards spotlight.
+- **Awards** (`view=awards`): filter by scoring, consistency, or progress; expand any award to see all recipients
+  and open their profiles. Awards for in-progress weeks are provisional; history-based awards use up to eight recorded weeks.
 - **Week by week** (`view=record`): every member × every tracked week, colour-coded met / near / below / not in alliance
   / week not captured, with quota record, current streak, average and trend. Filters for "below this week", "missed
   any week", "never missed" and "on a streak". OCR look-alikes (0/O, 1/l/I) are folded so a player matches across weeks.
@@ -16,9 +18,14 @@ multi-week trends.
   (quota margin or shortfall, days with no points, strongest stage and the stage with most room to grow vs the alliance
   median, week-over-week change, quota streak), daily points against the alliance median, and weekly history against
   the quota line.
-- **Members**, **Leaderboards**, **Opponent**, **Trends**, **Stages**, **Data:** this week's roster with daily heat
-  cells (relative to each day's alliance median), full server boards, opponent scouting, alliance-level trends
-  (quota compliance by week, stage win rate), stage rules, capture integrity and downloads.
+- **Members**, **Leaderboards**, **Opponent**, **Trends**, **Stages:** this week's roster with daily heat
+  cells (relative to each day's alliance median), full server boards, opponent scouting, alliance-level trends,
+  and stage rules.
+- **Data:** per-board capture times, row counts, CSV/JSON downloads, and expandable capture checks.
+  If a weekly leaderboard was built from daily boards rather than captured separately, it is labeled as such.
+
+This redesign is scoped to P1MP. It uses the same static week files, theme and language keys, and URL conventions as
+P2MP, so the UI can be ported later without replacing P2MP’s site configuration or captured data.
 
 Sister project: [S117 Capitol War rankings](https://jeffxlabs.github.io/ZR-S117-Capitol/).
 
