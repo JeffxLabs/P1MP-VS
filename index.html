@@ -4,46 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark light">
-<meta name="theme-color" content="#0b111e">
+<meta name="theme-color" content="#000000">
 <script>try{var th=new URLSearchParams(location.search).get('theme')||localStorage.getItem('p1mp.theme');if(th==='light'||th==='dark')document.documentElement.dataset.theme=th;}catch(e){}</script>
 <title>VS Intel</title>
 <meta name="description" content="Weekly Alliance Duel (VS) intelligence: week-by-week quota tracking, player insights, scores, rosters and capture integrity.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="data/site.js?v=696de11753"></script><script src="data/i18n.js?v=56ad955fce"></script>
+<script src="data/site.js?v=696de11753"></script><script src="data/i18n.js?v=3941c9fa5b"></script>
 <script src="data/manifest.js?v=c253665ed7"></script>
 <script src="data/stages.js?v=a300e519b5"></script>
 <style>
-/* Dashboard palette. Team colors identify sides, not quota status. */
+/* OLED night theme (from the Capitol site): true black canvas, near-black surfaces, hairlines */
 :root{
   color-scheme:dark;
-  --bg:#0b111e;--surface:#111a2a;--surface-2:#172237;--surface-3:#202e45;
-  --line:#253249;--line-2:#34455f;--line-3:#526582;
-  --text:#f1f5fc;--text-2:#bfccdf;--text-3:#97aac4;
-  --home:#27b8c4;--opp:#e46581;--home-ink:#71e8eb;--opp-ink:#ffa7ba;
-  --display-gradient:#163144;
+  --bg:#000;--surface:#0a0a0a;--surface-2:#131313;--surface-3:#1b1b1b;
+  --line:#1f1f1f;--line-2:#2e2e2e;--line-3:#444;
+  --text:#f2f2f2;--text-2:#a8a8a8;--text-3:#8c8c8c;
+  --home:#1aa3c2;--opp:#e5484d;--home-ink:#5fd0e8;--opp-ink:#ff8a8e;
   --gold:#f5b942;--silver:#cfd6de;--bronze:#d9935b;--rare:#9b7bea;--rare-ink:#c3b1f6;
   --up:#3fb950;--down:#f0605a;
   /* status (quota) - reserved, always paired with an icon and a label */
   --st-met:#0ca30c;--st-near:#fab219;--st-below:#d03b3b;
   --met-ink:#5fd16b;--near-ink:#f5b942;--below-ink:#ff7b72;
-  --header-bg:rgba(11,17,30,.96);--tooltip-bg:#192740;--scrim:rgba(4,8,16,.77);
-  --radius:16px;
+  --header-bg:rgba(0,0,0,.9);--tooltip-bg:#161616;--scrim:rgba(0,0,0,.75);
+  --radius:12px;
   --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
   --font-display:'Chakra Petch',var(--font);
 }
 :root[data-theme=light]{
   color-scheme:light;
-  --bg:#eef3f8;--surface:#fff;--surface-2:#f1f5fa;--surface-3:#e2ebf4;
-  --line:#d7e2ee;--line-2:#c3d3e4;--line-3:#8ca4bd;
-  --text:#152238;--text-2:#40546f;--text-3:#536983;
-  --home:#13879a;--opp:#c04867;--home-ink:#086575;--opp-ink:#a02948;
-  --display-gradient:#e2f6f8;
+  --bg:#f4f4f2;--surface:#fff;--surface-2:#f0f0ed;--surface-3:#e7e7e3;
+  --line:#e2e2de;--line-2:#cfcfca;--line-3:#a9a9a4;
+  --text:#111;--text-2:#4f4e4a;--text-3:#64635e;
+  --home:#0f87a3;--opp:#d93b40;--home-ink:#0b6f87;--opp-ink:#b8262c;
   --gold:#9a6400;--silver:#6b7682;--bronze:#a8602a;--rare:#7b5fd6;--rare-ink:#5d43b8;
   --up:#1a7f37;--down:#c4202a;
   --met-ink:#1a7f37;--near-ink:#8a5a00;--below-ink:#c4202a;
-  --header-bg:rgba(238,243,248,.96);--tooltip-bg:#fff;--scrim:rgba(15,27,46,.5);
+  --header-bg:rgba(244,244,242,.94);--tooltip-bg:#fff;--scrim:rgba(20,20,20,.45);
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -66,9 +64,8 @@ h1,h2,h3,p{margin:0}
 /* Header */
 .site-header{background:var(--header-bg);border-bottom:1px solid var(--line);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);z-index:40}
 .header-row{display:flex;align-items:center;gap:10px 12px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
-.brand{flex:1 1 auto;min-width:0;display:flex;align-items:center;gap:11px}
-.brand-mark{display:grid;place-items:center;flex:none;width:40px;height:40px;border:1px solid var(--home-ink);border-radius:12px 12px 12px 3px;color:var(--home-ink);background:var(--display-gradient);font:700 17px/1 var(--font-display);letter-spacing:.02em}
-.brand-name{display:block;font:700 17px/1.15 var(--font-display);letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand{flex:1 1 auto;min-width:0}
+.brand-name{display:block;font:700 16px/1.15 var(--font-display);letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .brand-sub{display:block;font-size:12px;color:var(--text-3)}
 .controls{display:flex;gap:8px;align-items:center;min-width:0}
 .select,.input,.icon-btn,.btn{height:38px;background:var(--surface);border:1px solid var(--line-2);border-radius:9px;color:var(--text);min-width:0}
@@ -80,10 +77,7 @@ h1,h2,h3,p{margin:0}
 .icon-btn{width:38px;flex:none;display:inline-grid;place-items:center;cursor:pointer;padding:0}
 .btn{display:inline-flex;align-items:center;gap:6px;padding:0 14px;font-weight:600;font-size:13.5px;cursor:pointer;text-decoration:none}
 .btn:hover{background:var(--surface-2)}
-.week-switch{display:flex;align-items:center;gap:4px;min-width:0}
-.week-switch .icon-btn{width:34px;font-size:20px;line-height:1}
-.icon-btn:disabled{opacity:.4;cursor:default}
-#weekSelect{width:200px;font-variant-numeric:tabular-nums}
+#weekSelect{width:auto;min-width:170px}
 .search{position:relative}
 .search .input{width:clamp(190px,18vw,260px);padding-left:34px}
 .search svg{position:absolute;left:11px;top:11px;color:var(--text-3);pointer-events:none}
@@ -95,8 +89,7 @@ h1,h2,h3,p{margin:0}
 @media(min-width:861px){.site-header{position:sticky;top:0}}
 @media(max-width:860px){
   .controls{flex:1 1 100%;flex-wrap:wrap}
-  .week-switch{flex:1 1 0}
-  #weekSelect{flex:1 1 0;width:0;font-size:13px;padding-left:8px;padding-right:22px;background-position:calc(100% - 13px) 16px,calc(100% - 8px) 16px}
+  #weekSelect{flex:1 1 0;width:auto}
   #langSelect{display:none}
   .search{flex:1 1 100%;order:3}
   .search .input{width:100%}
@@ -105,14 +98,10 @@ h1,h2,h3,p{margin:0}
 }
 
 /* Event bar and tabs */
-.event-bar:not(:empty){margin-bottom:18px}
-.eyebrow{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3);font-weight:700;margin-bottom:6px}
-.event-title{font:700 clamp(23px,4vw,38px)/1.1 var(--font-display);letter-spacing:-.01em;margin:0 0 12px;overflow-wrap:anywhere}
-.event-title .vs{color:var(--text-3);font-size:.68em;margin:0 .38em}
-.event-bar[data-compact=true] .event-title{font-size:clamp(17px,2.8vw,23px);margin-bottom:8px}
-.event-bar .pill{white-space:normal}
-.snapshot-link{cursor:pointer;text-align:left}
-.snapshot-link:hover{color:var(--home-ink);border-color:var(--home)}
+.event-bar{padding-top:clamp(18px,3vw,28px);padding-bottom:12px}
+.eyebrow{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3);font-weight:600;margin-bottom:6px}
+.event-title{font:700 clamp(21px,3.6vw,32px)/1.15 var(--font-display);text-transform:uppercase;letter-spacing:.01em;margin:0 0 10px;overflow-wrap:anywhere}
+.event-title .vs{color:var(--text-3);font-size:.7em;margin:0 .25em}
 .pills{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
 .pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600;border:1px solid var(--line-2);color:var(--text-2);white-space:nowrap;background:none;line-height:1.5}
 .pill-home{color:var(--home-ink);border-color:color-mix(in srgb,var(--home) 50%,transparent)}
@@ -121,28 +110,29 @@ h1,h2,h3,p{margin:0}
 .pill-live::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--st-near)}
 .pill-good{color:var(--met-ink);border-color:color-mix(in srgb,var(--st-met) 50%,transparent)}
 .pill-xs{font-size:11px;padding:0 7px}
-.tabs-bar{position:sticky;top:0;z-index:30;background:var(--header-bg);border-bottom:1px solid var(--line)}
-@media(min-width:861px){.tabs-bar{top:var(--header-h,60px)}}
-.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:thin;scrollbar-color:var(--line-3) transparent;padding:6px 2px}
-.tab{flex:none;background:none;border:1px solid transparent;border-radius:8px;padding:7px 12px;font-weight:600;color:var(--text-2);cursor:pointer;white-space:nowrap}
-.tab:hover{color:var(--text);background:var(--surface-2)}
-.tab[aria-selected=true]{color:var(--home-ink);border-color:color-mix(in srgb,var(--home) 44%,var(--line));background:var(--display-gradient)}
-main{padding-top:clamp(18px,3vw,30px);padding-bottom:56px;min-height:60vh}
+.tabs-bar{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
+@media(min-width:861px){.tabs-bar{top:var(--header-h,59px)}}
+.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;scroll-snap-type:x proximity}
+.tabs::-webkit-scrollbar{display:none}
+@media(max-width:600px){.tabs{-webkit-mask-image:linear-gradient(to right,#000 85%,transparent);mask-image:linear-gradient(to right,#000 85%,transparent);padding-right:32px}}
+.tab{flex:none;scroll-snap-align:start;background:none;border:0;border-bottom:2px solid transparent;padding:13px 13px 11px;font-weight:600;color:var(--text-2);cursor:pointer;white-space:nowrap}
+.tab:hover{color:var(--text)}
+.tab[aria-selected=true]{color:var(--text);border-bottom-color:var(--home-ink)}
+main{padding-top:20px;padding-bottom:56px;min-height:60vh}
 main:focus{outline:none}
 
 /* Cards, tiles, grids */
-.stack>*+*{margin-top:18px}
-.grid{display:grid;gap:16px}
+.stack>*+*{margin-top:14px}
+.grid{display:grid;gap:14px}
 .two{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
 .tiles{display:grid;gap:12px;grid-template-columns:repeat(4,minmax(0,1fr))}
 @media(max-width:900px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;min-width:0}
 @media(max-width:600px){.card{padding:15px}}
 .card-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px 12px;flex-wrap:wrap;margin-bottom:12px}
-.card h2,.card-title{font:700 18px/1.25 var(--font-display);color:var(--text);margin:0}
-h3.card-title{font-size:15px;color:var(--text-2)}
+.card h2,.card-title{font-size:12.5px;font-weight:650;letter-spacing:.07em;text-transform:uppercase;color:var(--text-2);margin:0}
 .card-note{font-size:12.5px;color:var(--text-3);margin:0 0 12px}
-.tile{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;min-width:0;box-shadow:inset 0 2px 0 color-mix(in srgb,var(--home) 30%,var(--line))}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:15px 16px;min-width:0}
 .tile-label{display:block;font-size:12.5px;color:var(--text-2)}
 .tile strong{display:block;font-size:clamp(21px,3vw,28px);font-weight:650;letter-spacing:-.015em;line-height:1.2;margin:4px 0 2px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
 .tile strong.name{color:var(--gold);font-size:clamp(17px,2.4vw,22px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -159,39 +149,30 @@ details{margin-top:12px}
 summary{cursor:pointer;color:var(--home-ink);font-size:13px;font-weight:600}
 
 /* Scoreboard */
-.scoreboard{padding:0;overflow:hidden}
-.score-hero{padding:clamp(12px,2.8vw,24px);text-align:center;background:linear-gradient(115deg,var(--display-gradient),transparent 55%),linear-gradient(245deg,color-mix(in srgb,var(--opp) 16%,var(--surface)),transparent 55%);border-bottom:1px solid var(--line)}
-.score-hero h2{font:700 12px/1.3 var(--font);letter-spacing:.13em;text-transform:uppercase;color:var(--text-2)}
-.score-row{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:12px;margin:10px auto 2px;max-width:660px}
-.team-name{font:700 clamp(20px,3vw,34px)/1.05 var(--font-display);overflow-wrap:anywhere}
-.team-sub{font-size:13px;color:var(--text-2);margin-top:5px;overflow-wrap:anywhere}
-.score{font:700 clamp(36px,7vw,74px)/1 var(--font-display);letter-spacing:.02em;white-space:nowrap}
-.score-sub{font-size:12px;color:var(--text-2);margin-top:7px}
-.score-body{padding:clamp(12px,2vw,20px)}
-.score-totals{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:6px;align-items:center;margin:0 0 9px}
-.score-totals>div:last-child{text-align:right}
-.score-totals strong{display:block;font:700 clamp(19px,3.5vw,27px)/1.1 var(--font-display)}
-.score-margin{font-size:12px;color:var(--text-2);text-align:center}
-.score-margin b{display:block;color:var(--text)}
-.stage-breakdown .card-h{margin-bottom:10px}
+.scoreboard{padding:20px 18px}
+.score-row{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:12px;text-align:center}
+.team-name{font:700 clamp(14px,2.4vw,22px)/1.2 var(--font-display);text-transform:uppercase;overflow-wrap:break-word}
+@media(max-width:520px){.team-name{font-size:clamp(11px,3.2vw,13px)}.score-row{gap:6px}.score-sub{max-width:112px;margin-left:auto;margin-right:auto;font-size:11.5px}}
+.team-sub{font-size:12.5px;color:var(--text-3);margin-top:2px}
+.score{font:700 clamp(40px,8vw,72px)/1 var(--font-display);letter-spacing:.02em;white-space:nowrap}
+.score-sub{font-size:12px;color:var(--text-3);margin-top:4px}
+.balance{margin-top:18px}
 .balance-legend{display:flex;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;font-size:13px;margin-bottom:8px}
 .key{display:inline-flex;align-items:center;gap:7px}
 .key i{width:10px;height:10px;border-radius:2px;display:inline-block;flex:none}
 .meter{display:flex;height:10px;gap:2px;border-radius:5px;overflow:hidden;background:var(--surface-3)}
 .meter span{display:block;height:100%;min-width:2px}
 .meter.thin{height:6px}
-.days{display:grid;gap:8px;grid-template-columns:repeat(6,minmax(0,1fr))}
+.days{display:grid;gap:10px;grid-template-columns:repeat(6,minmax(0,1fr));margin-top:18px}
 @media(max-width:1000px){.days{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:520px){.days{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.day-cell{background:var(--surface-2);border:1px solid var(--line);border-top:2px solid var(--line-3);border-radius:10px;padding:10px;min-width:0;display:flex;flex-direction:column;gap:5px}
-.day-cell.won{border-top-color:var(--home)}
-.day-cell.lost{border-top-color:var(--opp)}
-.day-cell.live{border-top-color:var(--near-ink)}
-.dc-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2px 8px;font-size:11px;color:var(--text-3);font-weight:700}
-.dc-stage{font-size:13px;font-weight:650;line-height:1.3;min-height:2.6em;hyphens:auto;overflow-wrap:anywhere}
-.dc-vals{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2px 6px;font-size:13px;font-weight:650}
-.dc-board{margin-top:auto;background:none;border:0;border-top:1px solid var(--line);padding:7px 0 2px;text-align:left;color:var(--home-ink);font-size:12px;font-weight:650;cursor:pointer}
-.dc-board:hover{text-decoration:underline;text-underline-offset:3px}
+.day-cell{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:11px 12px;min-width:0;display:flex;flex-direction:column;gap:6px}
+.day-cell.won{border-color:color-mix(in srgb,var(--home) 45%,var(--line))}
+.day-cell.lost{border-color:color-mix(in srgb,var(--opp) 45%,var(--line))}
+.dc-top{display:flex;justify-content:space-between;gap:6px;font-size:12px;color:var(--text-3);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.dc-stage{font-size:13px;font-weight:600;line-height:1.3;min-height:2.6em;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+.dc-vals{display:flex;justify-content:space-between;gap:6px;font-size:13px;font-weight:650}
+.dc-mvp{font-size:12px;color:var(--text-3)}
 .res{font-size:12px;font-weight:700;display:inline-flex;align-items:center;gap:5px}
 .res.win{color:var(--home-ink)}.res.loss{color:var(--opp-ink)}.res.live{color:var(--near-ink)}.res.pending{color:var(--text-3)}
 
@@ -309,49 +290,20 @@ th.sel,td.sel{box-shadow:inset 2px 0 0 var(--home-ink),inset -2px 0 0 var(--home
 .depth .d-sub{font-size:12px;color:var(--text-3);margin-top:5px}
 
 /* Achievements */
-.badges{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));align-items:start}
-.award-spotlight{border-color:color-mix(in srgb,var(--gold) 35%,var(--line));background:radial-gradient(ellipse at top left,color-mix(in srgb,var(--gold) 10%,var(--surface)),var(--surface) 70%)}
-.award-spotlight .badges{grid-template-columns:repeat(3,minmax(0,1fr))}
-@media(max-width:740px){.award-spotlight .badges{grid-template-columns:1fr}}
-.award-spotlight .badge{height:100%}
-.award-spotlight .badge:first-child{border-color:var(--gold)}
-.award-headline{display:flex;align-items:center;justify-content:space-between;gap:8px 12px;flex-wrap:wrap}
-.award-headline .card-note{margin:4px 0 0}
-.award-headline .btn{border-color:color-mix(in srgb,var(--gold) 50%,var(--line));color:var(--gold)}
-.award-spotlight .badges{margin-top:14px}
-.award-controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
-.award-controls [aria-pressed=true]{background:var(--display-gradient);border-color:var(--home);color:var(--home-ink)}
+.badges{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr))}
 .badge{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:start;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);min-width:0}
 .badge .b-ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:23px;background:var(--surface-3);line-height:1}
 .badge.legendary{border-color:color-mix(in srgb,var(--gold) 55%,var(--line));background:color-mix(in srgb,var(--gold) 7%,var(--surface-2))}
 .badge.legendary .b-ic{background:color-mix(in srgb,var(--gold) 22%,var(--surface-3))}
 .badge.rare{border-color:color-mix(in srgb,var(--rare) 50%,var(--line))}
 .badge.rare .b-ic{background:color-mix(in srgb,var(--rare) 20%,var(--surface-3))}
-.b-name{font-weight:650;font-size:14px;display:flex;gap:3px 8px;align-items:baseline;flex-wrap:wrap}
-.b-name h3{font:inherit;overflow-wrap:anywhere}
-.award-spotlight .b-name h3{font:700 17px/1.2 var(--font-display)}
+.b-name{font-weight:650;font-size:14px;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
 .b-rar{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3)}
 .legendary .b-rar{color:var(--gold)}.rare .b-rar{color:var(--rare-ink)}
 .b-desc{font-size:12.5px;color:var(--text-2);margin-top:2px}
-.b-holders{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:2px;font-size:12.5px}
-.b-holders li{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:0 8px}
-.b-holders .player-button{color:var(--home-ink);max-width:100%;white-space:normal;overflow-wrap:anywhere}
-.b-holders .v{color:var(--text-2);font-variant-numeric:tabular-nums}
-.b-details{margin-top:6px}
-.b-details summary{padding:5px 0}
-.b-details .b-holders{max-height:260px;overflow:auto}
-.export-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.export-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr) 126px;align-items:center;gap:6px 16px;padding:10px 12px;background:var(--surface-2)}
-.export-row:nth-child(even){background:var(--surface)}
-.export-row+.export-row{border-top:1px solid var(--line)}
-.export-row strong,.export-meta>span:not(.pill){display:block;overflow-wrap:anywhere}
-.export-meta{grid-column:2;grid-row:1;font-size:13px}
-.export-meta .pill{white-space:normal}
-.data-downloads{grid-column:3;grid-row:1;justify-self:end;display:flex;gap:6px}
-.data-downloads .btn{height:36px;padding:0 10px}
-@media(max-width:570px){.export-row{grid-template-columns:minmax(0,1fr) auto}.data-downloads{grid-column:2}.export-meta{grid-column:1/-1;grid-row:2}}
-.data-detail>summary{padding:4px 0;margin-bottom:10px}
-.data-code{white-space:normal;overflow-wrap:anywhere;max-width:260px}
+.b-holders{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:7px;font-size:12.5px}
+.b-holders .player-button{font-size:12.5px;max-width:160px}
+.b-holders .v{color:var(--text-3);font-variant-numeric:tabular-nums;margin-left:3px}
 .b-val{font-size:12.5px;color:var(--text-3);font-variant-numeric:tabular-nums}
 .badge.locked{background:none;border-style:dashed}
 .badge.locked .b-ic{filter:grayscale(1);opacity:.55}
@@ -386,14 +338,10 @@ footer .langs button[aria-current=true]{color:var(--text);text-decoration:underl
 <body>
 <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 <header class="site-header" id="siteHeader"><div class="wrap header-row">
-  <div class="brand"><span class="brand-mark" aria-hidden="true">VS</span><div style="min-width:0"><span class="brand-name" id="brandName">VS Intel</span><span class="brand-sub" id="brandSub">Z Route: Redemption</span></div></div>
+  <div class="brand"><span class="brand-name" id="brandName">VS Intel</span><span class="brand-sub" id="brandSub">Z Route: Redemption</span></div>
   <div class="controls">
-    <div class="week-switch">
-      <button class="icon-btn" type="button" id="olderWeek" data-i18n-aria="older_week">‹</button>
-      <label class="sr-only" for="weekSelect" data-i18n="week">Week</label>
-      <select id="weekSelect" class="select" data-i18n-aria="week"></select>
-      <button class="icon-btn" type="button" id="newerWeek" data-i18n-aria="newer_week">›</button>
-    </div>
+    <label class="sr-only" for="weekSelect" data-i18n="week">Week</label>
+    <select id="weekSelect" class="select" data-i18n-aria="week"></select>
     <div class="search">
       <label class="sr-only" for="globalSearch" data-i18n="search">Search players</label>
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
@@ -406,8 +354,9 @@ footer .langs button[aria-current=true]{color:var(--text);text-decoration:underl
     <button id="copyLink" class="icon-btn" type="button" data-i18n-aria="copy_link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></button>
   </div>
 </div></header>
+<div class="wrap event-bar" id="eventBar"></div>
 <nav class="tabs-bar" aria-label="VS"><div class="wrap"><div id="viewTabs" class="tabs" role="tablist"></div></div></nav>
-<main id="main" class="wrap" tabindex="-1"><div class="event-bar" id="eventBar"></div><div id="view" role="tabpanel" aria-live="polite"></div></main>
+<main id="main" class="wrap" tabindex="-1"><div id="view" role="tabpanel" aria-live="polite"></div></main>
 <footer><div class="wrap"><span data-i18n="footer"></span> <a id="repoLink" href="https://github.com/JeffxLabs">JeffxLabs</a> · <a href="https://jeffxlabs.github.io/ZR-S117-Capitol/">S117 Capitol Intel</a><div class="langs" id="footerLangs"></div></div></footer>
 <dialog id="profile" aria-labelledby="profileTitle"><div id="profileBody"></div></dialog>
 <dialog id="linkDialog" aria-labelledby="linkTitle"><h2 id="linkTitle" data-i18n="copy_manual"></h2><input id="linkText" class="input" readonly style="width:100%"><p></p><button id="closeLink" class="btn" data-i18n="close"></button></dialog>
@@ -419,12 +368,12 @@ const SITE=Object.assign({repo:'JeffxLabs/P1MP-VS',home_tag:'',home_name:'',serv
 'use strict';
 (function(){
 const $=s=>document.querySelector(s), DAYS=['mon','tue','wed','thu','fri','sat'], BOARDS=[...DAYS,'week'];
-const VIEWS=['overview','awards','record','members','leaderboards','opponent','trends','stages','data'];
+const VIEWS=['overview','record','members','leaderboards','opponent','trends','stages','data'];
 const manifest=(window.VS_MANIFEST||[]).slice().sort((a,b)=>a.id.localeCompare(b.id)), initial=new URLSearchParams(location.search), loads=new Map();
 function stored(k){try{return localStorage.getItem(k)}catch(e){return null}}
 function persist(k,v){try{localStorage.setItem(k,v)}catch(e){}}
 let lang=initial.get('lang')||stored('p1mp.lang')||'en';if(!window.I18N?.[lang])lang='en';
-let state={week:manifest.some(w=>w.id===initial.get('week'))?initial.get('week'):manifest.at(-1)?.id,view:VIEWS.includes(initial.get('view'))?initial.get('view'):'overview',tab:BOARDS.includes(initial.get('tab'))?initial.get('tab'):'week',player:initial.get('player')||'',query:'',tier:'all',quota:'all',active:false,includeLeft:false,side:'all',sort:'alliance_rank',direction:1,recFilter:'all',recSort:'selected',former:false,awardGroup:'all'};
+let state={week:manifest.some(w=>w.id===initial.get('week'))?initial.get('week'):manifest.at(-1)?.id,view:VIEWS.includes(initial.get('view'))?initial.get('view'):'overview',tab:BOARDS.includes(initial.get('tab'))?initial.get('tab'):'week',player:initial.get('player')||'',query:'',tier:'all',quota:'all',active:false,includeLeft:false,side:'all',sort:'alliance_rank',direction:1,recFilter:'all',recSort:'selected',former:false};
 let data=null,renderToken=0,profileToken=0,lastProfileFocus=null,historyCache=null,recordLedger=null;
 // Near-quota floor: profile near_quota when the build records it, else the pipeline default (quota − 400K).
 const nearOf=sm=>sm?.near_quota??((sm?.quota||11.4e6)-4e5);
@@ -445,6 +394,7 @@ function fmtTime(v,opts){if(!v)return '—';const d=parseTime(v);return Number.i
 const capture=v=>fmtTime(v,{dateStyle:'medium',timeStyle:'short',timeZone:'Etc/GMT+2'});
 const timeServer=v=>fmtTime(v,{timeStyle:'short',timeZone:'Etc/GMT+2'});
 const timeLocal=v=>fmtTime(v,{dateStyle:'medium',timeStyle:'short'});
+const timeLocalShort=v=>fmtTime(v,{timeStyle:'short'});
 const team=o=>o?`[${o.tag}] ${o.name}`:'—', day=d=>t(d==='week'?'week_board':d), pill=(text,cls='')=>`<span class="pill ${cls}">${esc(text)}</span>`;
 const sum=a=>a.reduce((x,y)=>x+(y||0),0);
 function median(values){const v=values.filter(x=>x>0).sort((a,b)=>a-b);if(!v.length)return 0;const m=v.length>>1;return v.length%2?v[m]:(v[m-1]+v[m])/2}
@@ -456,19 +406,14 @@ function i18n(root=document){root.querySelectorAll('[data-i18n]').forEach(el=>el
 function sync(){const u=new URL(location.href);Object.entries({week:state.week,view:state.view,tab:state.tab,player:state.player,lang,theme:document.documentElement.dataset.theme}).forEach(([k,v])=>v?u.searchParams.set(k,v):u.searchParams.delete(k));try{history.replaceState(null,'',u)}catch(e){}}
 const SUN='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
 const MOON='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
-function theme(){const light=document.documentElement.dataset.theme==='light';$('#themeToggle').innerHTML=light?MOON:SUN;$('#themeToggle').setAttribute('aria-label',t(light?'theme_dark':'theme_light'));$('#themeToggle').title=t(light?'theme_dark':'theme_light');$('meta[name="theme-color"]').content=light?'#eef3f8':'#0b111e'}
+function theme(){const light=document.documentElement.dataset.theme==='light';$('#themeToggle').innerHTML=light?MOON:SUN;$('#themeToggle').setAttribute('aria-label',t(light?'theme_dark':'theme_light'));$('#themeToggle').title=t(light?'theme_dark':'theme_light');$('meta[name="theme-color"]').content=light?'#f4f4f2':'#000000'}
 function measureHeader(){try{const h=$('#siteHeader')?.offsetHeight;if(h)document.documentElement.style.setProperty('--header-h',h+'px')}catch(e){}}
-function revealTab(id){const el=$('#'+id),list=el?.parentElement;if(!list)return;const r=el.getBoundingClientRect(),p=list.getBoundingClientRect();if(r.right>p.right-2)list.scrollLeft+=r.right-p.right+2;else if(r.left<p.left+2)list.scrollLeft+=r.left-p.left-2}
-function revealActiveTabs(){revealTab('tab-'+state.view);if(state.view==='leaderboards')revealTab('board-'+state.tab)}
 function chrome(){
   document.documentElement.lang=lang;i18n();theme();$('#langSelect').value=lang;
-  $('#weekSelect').innerHTML=manifest.slice().reverse().map(w=>`<option value="${esc(w.id)}" title="${esc(date(w.id))} · vs ${esc(team(w.opponent))}">${esc(date(w.id))} [${esc(w.opponent?.tag||'')}]</option>`).join('');
+  $('#weekSelect').innerHTML=manifest.slice().reverse().map(w=>`<option value="${esc(w.id)}" title="${esc(date(w.id))} · vs ${esc(team(w.opponent))}">${esc(w.id)} [${esc(w.opponent?.tag||'')}]</option>`).join('');
   $('#weekSelect').value=state.week||'';
-  $('#olderWeek').disabled=!prevId(state.week);
-  $('#newerWeek').disabled=!nextId(state.week);
   $('#viewTabs').innerHTML=VIEWS.map(v=>`<button type="button" class="tab" id="tab-${v}" role="tab" aria-controls="view" aria-selected="${v===state.view}" tabindex="${v===state.view?0:-1}" data-view="${v}">${esc(viewLabel(v))}</button>`).join('');
   $('#view').setAttribute('aria-labelledby','tab-'+state.view);
-  revealTab('tab-'+state.view);
   $('#footerLangs').innerHTML=Object.entries(window.LANG_NAMES||{}).map(([k,name])=>`<button type="button" data-lang="${k}" lang="${k}" aria-current="${k===lang}">${esc(name)}</button>`).join('');
   measureHeader();
 }
@@ -477,7 +422,6 @@ function chrome(){
 function loadWeek(id){if(window.VS_WEEKS?.[id])return Promise.resolve(window.VS_WEEKS[id]);if(loads.has(id))return loads.get(id);const entry=manifest.find(w=>w.id===id);if(!entry)return Promise.reject(new Error('Unknown week'));const promise=new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=`data/weeks/${encodeURIComponent(id)}/week_data.js?v=${encodeURIComponent(entry.data_version||id)}`;s.onload=()=>{if(window.VS_WEEKS?.[id])resolve(window.VS_WEEKS[id]);else{loads.delete(id);s.remove();reject(new Error('Missing week'))}};s.onerror=()=>{loads.delete(id);s.remove();reject(new Error('Script load failed'))};document.head.append(s)});loads.set(id,promise);return promise}
 async function allWeeks(){return Promise.all(manifest.map(w=>loadWeek(w.id)))}
 const prevId=id=>{const i=manifest.findIndex(w=>w.id===id);return i>0?manifest[i-1].id:null};
-const nextId=id=>{const i=manifest.findIndex(w=>w.id===id);return i>=0?manifest[i+1]?.id:null};
 const prevWeek=(w=data)=>{const id=prevId(w?.summary?.id);return id?window.VS_WEEKS?.[id]||null:null};
 const everyone=w=>[...(w.members||[]),...(w.opponents||[]),...(w.others||[])];
 // OCR can read 0/O and 1/l/I differently from week to week; fold them for cross-week identity only.
@@ -533,22 +477,17 @@ function barChart({groups,series,title,threshold=null,refs=null,height=240,span=
 function spark(values,title){const v=values.filter(x=>x!=null);if(v.length<2)return '';const max=Math.max(1,...v),min=Math.min(...v),rng=max-min||1,x=i=>4+i*76/(values.length-1),y=val=>22-(val-min)/rng*18;const pts=values.map((val,i)=>val==null?null:`${x(i)},${y(val)}`).filter(Boolean).join(' ');return `<svg class="spark" viewBox="0 0 84 26" role="img" aria-label="${esc(title)}"><polyline points="${pts}" fill="none" stroke="var(--home-ink)" stroke-width="2" stroke-linejoin="round"/>${values.map((val,i)=>val==null?'':`<circle cx="${x(i)}" cy="${y(val)}" r="2.5" fill="var(--home-ink)"/>`).join('')}</svg>`}
 
 // ---------- header / event bar ----------
-function overviewSnapshot(){const s=data.summary,latest=s.captured_at_server||s.capture_window_server?.at(-1);if(!latest)return '';
-  const label=(s.captured_at_approximate?'≈ ':'')+t('latest_capture',{time:capture(latest)});
-  const tip=`${t('local_time')}: ${timeLocal(latest)}`;
-  return state.view==='data'?`<span class="pill" title="${esc(tip)}">${esc(label)}</span>`:`<button type="button" class="pill snapshot-link" data-view="data" title="${esc(tip)}">${esc(label)} <span aria-hidden="true">↗</span></button>`}
-function eventBar(){const s=data.summary,decided=s.decided||(s.score.home>=7?'home':s.score.opp>=7?'opp':null),live=s.status==='in_progress',bar=$('#eventBar'),overview=state.view==='overview',tag=overview?'h1':'p';
-  bar.dataset.compact=String(!overview);
-  bar.innerHTML=`<div class="eyebrow">${esc(t('vs_week'))} · ${esc(date(s.id))}</div><${tag} class="event-title"><span class="home">[${esc(s.home.tag)}]</span> ${esc(s.home.name)}<span class="vs">vs</span><span class="opp">[${esc(s.opponent.tag)}]</span> ${esc(s.opponent.name)}</${tag}><div class="pills">${pill(t(live?'in_progress':'final'),live?'pill-live':'')}${decided?pill(t(live?'clinched':'won_by',{name:team(decided==='home'?s.home:s.opponent)}),decided==='home'?'pill-good':'pill-opp'):live?pill(t('wins_remaining',{n:n(s.wins_remaining)})):''}${overviewSnapshot()}</div>`}
+function overviewSnapshot(){const s=data?.summary;if(!s)return '';const win=s.capture_window_server||(s.captured_at_server?[s.captured_at_server,s.captured_at_server]:null);if(!win)return '';const first=timeServer(win[0]),last=timeServer(win[1]||win[0]);const approx=!!s.captured_at_approximate;const label=(approx?'≈ ':'')+t('snapshot_window',{first,last})+(approx?` (${t('approximate')})`:'');const tip=`${t('local_time')}: ${timeLocalShort(win[0])} – ${timeLocalShort(win[1]||win[0])}\n${t('snapshot_final_note')}`;return `<span class="pill" title="${esc(tip)}">${esc(label)}</span>`}
+function eventBar(){const s=data.summary,decided=s.decided||(s.score.home>=7?'home':s.score.opp>=7?'opp':null),live=s.status==='in_progress';
+  $('#eventBar').innerHTML=`<div class="eyebrow">${esc(t('vs_week'))} · ${esc(date(s.id))}</div><h1 class="event-title"><span class="home">[${esc(s.home.tag)}]</span> ${esc(s.home.name)}<span class="vs">vs</span><span class="opp">[${esc(s.opponent.tag)}]</span> ${esc(s.opponent.name)}</h1><div class="pills">${live?pill(t('in_progress'),'pill-live'):''}${decided?pill(t(live?'clinched':'won_by',{name:team(decided==='home'?s.home:s.opponent)}),decided==='home'?'pill-good':'pill-opp'):pill(t('wins_remaining',{n:n(s.wins_remaining)}))}${overviewSnapshot()}${pill(t('quota_target',{n:n(s.quota,true)}))}</div>`}
 const viewLabel=v=>t(v==='record'?'week_by_week':v);
 function heading(v,sub=''){return `<div class="view-h"><h1>${esc(viewLabel(v))}</h1>${sub?`<p>${sub}</p>`:''}</div>`}
 
 // ---------- overview ----------
 function statusStage(s){if(s.status==='pending')return t('pending');if(s.status==='live')return t('live')+' · '+t((data.summary.leading_live?.[s.day]||(s.home_points>s.opp_points?'home':s.home_points<s.opp_points?'opp':null))==='home'?'leading':(data.summary.leading_live?.[s.day]==='opp'||s.home_points<s.opp_points)?'trailing':'undecided');return t('final')+' · '+(s.winner==='home'?team(data.summary.home):s.winner==='opp'?team(data.summary.opponent):t('undecided'))}
 function stageResult(s){if(s.status==='pending')return ['pending','○',t('pending')];if(s.status==='live'){const lead=data.summary.leading_live?.[s.day]||(s.home_points>s.opp_points?'home':s.home_points<s.opp_points?'opp':'tie');return ['live','●',lead==='home'?t('leading'):lead==='opp'?t('trailing'):t('undecided')]}return s.winner==='home'?['win','✓',t('win')]:s.winner==='opp'?['loss','✕',t('loss')]:['pending','=',t('undecided')]}
-function dayStrip(){const s=data.summary;return `<div class="days">${(s.stages||[]).map(x=>{const [cls,icon,label]=stageResult(x),ready=x.status!=='pending',hasBoard=data.boards[x.day]?.length;
-  return `<div class="day-cell ${cls==='win'?'won':cls==='loss'?'lost':cls}"><div class="dc-top"><span>${esc(day(x.day))}</span><span>${esc(winsLabel(x.wins))}</span></div><h3 class="dc-stage">${esc(t(x.stage===5?'stage_5_short':'stage_'+x.stage))}</h3><span class="res ${cls}"><span aria-hidden="true">${icon}</span>${esc(x.status==='live'?`${t('live')} · ${label}`:label)}</span>${ready?`<div class="dc-vals" title="${esc(`${team(s.home)}: ${n(x.home_points)} · ${team(s.opponent)}: ${n(x.opp_points)}`)}"><span class="home num"><span class="sr-only">${esc(team(s.home))}: </span>${n(x.home_points,true)}</span><span class="opp num"><span class="sr-only">${esc(team(s.opponent))}: </span>${n(x.opp_points,true)}</span></div>${split(x.home_points,x.opp_points,true)}`:''}${hasBoard?`<button type="button" class="dc-board" data-view="leaderboards" data-board="${esc(x.day)}" aria-label="${esc(`${day(x.day)} · ${t('leaderboards')}`)}">${esc(t('leaderboards'))} <span aria-hidden="true">→</span></button>`:''}</div>`}).join('')}</div>`}
-const derivedWeek=w=>w.boards.week?.some(r=>r.raw==='synthesized_from_days');
+function dayStrip(){return `<div class="days">${(data.summary.stages||[]).map(x=>{const [cls,icon,label]=stageResult(x),tip=[`${day(x.day)} · ${t('stage_'+x.stage)}`,statusStage(x),`${team(data.summary.home)}: ${n(x.home_points)} · ${t('players')}: ${n(x.home_players)}`,`${team(data.summary.opponent)}: ${n(x.opp_points)} · ${t('players')}: ${n(x.opp_players)}`,`${t('difference')}: ${n((x.home_points||0)-(x.opp_points||0))}`,x.mvp_opp?`MVP ${team(data.summary.opponent)}: ${x.mvp_opp.player} · ${n(x.mvp_opp.points,true)}`:''].filter(Boolean).join('\n');
+  return `<div class="day-cell ${cls==='win'?'won':cls==='loss'?'lost':''}" tabindex="0" data-tip="${esc(tip)}"><div class="dc-top"><span>${esc(day(x.day))}</span><span>${esc(winsLabel(x.wins))}</span></div><div class="dc-stage">${esc(t(x.stage===5?'stage_5_short':'stage_'+x.stage))}</div><span class="res ${cls}"><span aria-hidden="true">${icon}</span>${esc(label)}</span><div class="dc-vals"><span class="home num">${n(x.home_points,true)}</span><span class="opp num">${n(x.opp_points,true)}</span></div>${split(x.home_points,x.opp_points,true)}<div class="dc-mvp ellipsis">★ ${esc(x.mvp_home?.player||'—')} · ${n(x.mvp_home?.points,true)}</div></div>`}).join('')}</div>`}
 const current=(w=data)=>(w.members||[]).filter(p=>!leftPlayer(p));
 // The first capture alone does not prove everyone was new; explicit metadata covers known joins.
 function newMember(p,w=data){if(p.new_member||p.check?.status==='joined')return true;const prev=prevWeek(w);if(!prev)return false;const old=findIn(prev.members,p.key);return !old||leftPlayer(old)}
@@ -587,29 +526,24 @@ function moversCard(){const prev=prevWeek();if(!prev)return '';const moves=curre
   const list=(items,color)=>items.length?rankList(items,{color,value:x=>`<span class="delta ${x.value>0?'up':'down'}">${x.value>0?'▲':'▼'} ${n(Math.abs(x.value),true)}</span>`,sub:x=>`${n(x.from,true)} → ${n(x.to,true)}`}):`<p class="muted small">—</p>`;
   return `<section class="card"><div class="card-h"><h2>${esc(t('movers'))}</h2><span class="small dim">${esc(t('vs_date',{date:dateShort(prev.summary.id)}))}</span></div><div class="grid two" style="gap:18px"><div><h3 class="card-title up" style="margin-bottom:6px">${esc(t('biggest_gains'))}</h3>${list(up,'var(--up)')}</div><div><h3 class="card-title down" style="margin-bottom:6px">${esc(t('biggest_drops'))}</h3>${list(down,'var(--down)')}</div></div></section>`}
 function topCard(){const list=current(data).slice().sort((a,b)=>b.weekly_points-a.weekly_points).slice(0,10).map(p=>({key:p.key,player:p.player,value:p.weekly_points,share:p.share}));return `<section class="card"><div class="card-h"><h2>${esc(t('top_performers'))}</h2><button class="btn" data-view="members">${esc(t('members'))} →</button></div>${rankList(list,{value:x=>n(x.value,true),sub:x=>`${pct(x.share)} ${esc(t('of_alliance'))}`})}</section>`}
-function overview(){const s=data.summary,h=s.weekly_points.home,o=s.weekly_points.opp,gap=Math.abs(h-o),lead=h>o?s.home:h<o?s.opponent:null,prev=prevWeek(),comparable=s.status==='final'&&prev?.summary.status==='final',q=quotaCounts(data),pq=comparable?quotaCounts(prev):null;
-  const movers=comparable?moversCard():'',days=startedDays(data).length,full=days?current(data).filter(p=>p.active_days>=days).length:0;
-  const misses=quotaMisses(data),newBelow=q.near+q.below-misses.length,repeat=comparable?misses.filter(p=>{const old=findIn(prev.members,p.key);return old&&!leftPlayer(old)&&!old.quota_met&&!newMember(old,prev)}).length:null;
+function overview(){const s=data.summary,h=s.weekly_points.home,o=s.weekly_points.opp,prev=prevWeek(),q=quotaCounts(data),pq=prev?quotaCounts(prev):null,top=current(data).slice().sort((a,b)=>b.weekly_points-a.weekly_points)[0];
+  const movers=moversCard(),full=current(data).filter(p=>(p.active_days||0)>=startedDays(data).length).length,pfull=prev?current(prev).filter(p=>(p.active_days||0)>=startedDays(prev).length).length:null;
   const tiles=`<div class="tiles">
+    ${tile(t('weekly_points'),`${n(h,true)}`,`${prev?delta(deltaPct(h,prev.summary.weekly_points.home),pctAbs(deltaPct(h,prev.summary.weekly_points.home)))+' ':''}${esc(t('share'))} ${pct(h+o?100*h/(h+o):0)}`)}
     ${tile(t('quota_met_tile'),`${n(q.met)}<small> / ${n(q.members)}</small>`,`${pct(q.members?100*q.met/q.members:0)}${pq?` · ${esc(dateShort(prev.summary.id))}: ${pct(pq.members?100*pq.met/pq.members:0)}`:''}`)}
-    ${tile(t(s.status==='in_progress'?'below_quota_so_far':'below_quota'),n(q.near+q.below),[newBelow?`${esc(t('new_member'))}: ${n(newBelow)}`:'',repeat!=null?`${esc(t('missed_twice'))}: ${n(repeat)}`:''].filter(Boolean).join(' · '))}
-    ${tile(t('full_attendance'),`${n(full)}<small> / ${n(q.members)}</small>`,esc(t('stages_count',{n:n(days),total:n(DAYS.length)})))}
-    ${tile(`[${s.home.tag}] · ${t('weekly_points')}`,n(h,true),comparable?`${delta(deltaPct(h,prev.summary.weekly_points.home),pctAbs(deltaPct(h,prev.summary.weekly_points.home)))} ${esc(t('vs_date',{date:dateShort(prev.summary.id)}))}`:esc(t(s.status==='final'?'final':'provisional')))}
+    ${tile(t('full_attendance'),`${n(full)}<small> / ${n(q.members)}</small>`,prev?`${esc(dateShort(prev.summary.id))}: ${n(pfull)}`:esc(t('all_days_hint')))}
+    ${top?tile(t('top_performer'),`<button class="player-button" style="max-width:100%" data-player="${esc(top.key)}">${esc(top.player)}</button>`,`${n(top.weekly_points,true)} · ${pct(top.share)}`,'name'):''}
   </div>`;
   return `<div class="stack">
-  <section class="card scoreboard"><div class="score-hero"><h2>${esc(t('duel_score'))}</h2><div class="score-row"><div><div class="team-name home">${esc(s.home.tag)}</div><div class="team-sub">${esc(s.home.name)}${s.home.server?' · '+esc(s.home.server):''}</div></div><div class="score num">${n(s.score.home)} : ${n(s.score.opp)}</div><div><div class="team-name opp">${esc(s.opponent.tag)}</div><div class="team-sub">${esc(s.opponent.name)}${s.opponent.server?' · '+esc(s.opponent.server):''}</div></div></div><div class="score-sub">${esc(t('wins_of',{n:n(s.total_wins||13),k:n(s.wins_to_clinch||7)}))}</div></div>
-  <div class="score-body"><div class="card-h"><h2>${esc(t('weekly_points'))}</h2>${derivedWeek(data)?pill(t('derived_board')):''}</div>
-  <div class="score-totals"><div class="home"><span class="small">[${esc(s.home.tag)}]</span><strong class="num" title="${n(h)}">${n(h,true)}</strong></div><div class="score-margin">${esc(t('difference'))}<b class="num" title="${n(gap)}">${lead?`[${esc(lead.tag)}] +`:''}${n(gap,true)}</b></div><div class="opp"><span class="small">[${esc(s.opponent.tag)}]</span><strong class="num" title="${n(o)}">${n(o,true)}</strong></div></div>${split(h,o)}
-  </div></section>
+  <section class="card scoreboard"><div class="score-row"><div><div class="team-name home">${esc('['+s.home.tag+']')}<br>${esc(s.home.name)}</div><div class="team-sub">${esc(s.home.server)}</div></div><div><div class="score num">${n(s.score.home)} : ${n(s.score.opp)}</div><div class="score-sub">${esc(t('wins_of',{n:n(s.total_wins||13),k:n(s.wins_to_clinch||7)}))}</div></div><div><div class="team-name opp">${esc('['+s.opponent.tag+']')}<br>${esc(s.opponent.name)}</div><div class="team-sub">${esc(s.opponent.server)}</div></div></div>
+  <div class="balance"><div class="balance-legend"><span class="key"><i style="background:var(--home)"></i><b class="num">${n(h)}</b>&nbsp;<span class="dim">${pct(h+o?100*h/(h+o):0)}</span></span><span class="key"><span class="dim">${pct(h+o?100*o/(h+o):0)}</span>&nbsp;<b class="num">${n(o)}</b><i style="background:var(--opp)"></i></span></div>${split(h,o)}</div>
+  ${dayStrip()}${s.status==='in_progress'?`<p class="small dim" style="margin-top:12px">${esc(t('capture_note'))}</p>`:''}</section>
   ${tiles}
-  ${awardsSpotlight()}
-  <section class="card stage-breakdown"><div class="card-h"><h2>${esc(t('stage_points'))}</h2></div>${dayStrip()}</section>
   <div class="grid two">${quotaCard()}<section class="card"><div class="card-h"><h2>${esc(t('takeaways'))}</h2></div>${insightList(allianceInsights())}</section></div>
+  ${achievementsCard()}
   <div class="grid two">${topCard()}${movers||stageChartCard()}</div>
   ${movers?`<div class="grid two">${stageChartCard()}${depth()}</div>`:depth()}</div>`}
-function stageChartCard(){const s=data.summary,stages=(s.stages||[]).filter(x=>x.status!=='pending');
-  const mvp=m=>m?`${esc(m.player)} · ${n(m.points,true)}`:'—';
-  return `<section class="card"><div class="card-h"><h2>${esc(t('stage_points'))}</h2></div>${legend()}${barChart({title:t('stage_points'),span:'half',series:[{key:'home',label:team(s.home),color:'var(--home)'},{key:'opp',label:team(s.opponent),color:'var(--opp)'}],groups:stages.map(x=>({label:day(x.day),values:{home:x.home_points,opp:x.opp_points}}))})}<details><summary>${esc(t('show_table'))}</summary>${wrapTable([t('days'),team(s.home),team(s.opponent),t('difference'),`MVP [${s.home.tag}]`,`MVP [${s.opponent.tag}]`].map(esc),stages.map(x=>`<tr><td title="${esc(statusStage(x))}">${esc(day(x.day))}</td><td class="num">${n(x.home_points)} <span class="dim">· ${esc(t('n_players',{n:n(x.home_players)}))}</span></td><td class="num">${n(x.opp_points)} <span class="dim">· ${esc(t('n_players',{n:n(x.opp_players)}))}</span></td><td class="num">${n(x.home_points-x.opp_points)}</td><td>${mvp(x.mvp_home)}</td><td>${mvp(x.mvp_opp)}</td></tr>`).join(''),{label:t('stage_points')})}</details></section>`}
+function stageChartCard(){const s=data.summary;return `<section class="card"><div class="card-h"><h2>${esc(t('stage_points'))}</h2></div>${legend()}${barChart({title:t('stage_points'),span:'half',series:[{key:'home',label:team(s.home),color:'var(--home)'},{key:'opp',label:team(s.opponent),color:'var(--opp)'}],groups:(s.stages||[]).map(x=>({label:day(x.day),values:{home:x.home_points,opp:x.opp_points}}))})}<details><summary>${esc(t('show_table'))}</summary>${wrapTable([t('days'),team(s.home),team(s.opponent),t('difference'),'MVP'].map(esc),(s.stages||[]).map(x=>`<tr><td>${esc(day(x.day))}</td><td class="num">${n(x.home_points)}</td><td class="num">${n(x.opp_points)}</td><td class="num">${n((x.home_points||0)-(x.opp_points||0))}</td><td>${esc(x.mvp_home?.player||'—')} · ${n(x.mvp_home?.points,true)}</td></tr>`).join(''))}</details></section>`}
 function depth(){const h=(data.boards.week||[]).filter(r=>r.alliance_tag===data.summary.home.tag),o=(data.boards.week||[]).filter(r=>r.alliance_tag===data.summary.opponent.tag),ranges=[[0,10,'top10'],[10,20,'top20'],[20,50,'top50'],[50,100,'top100'],[100,Infinity,'rest']],items=ranges.map(([a,b,k])=>({label:t(k),home:sum(h.slice(a,b).map(r=>r.points)),opp:sum(o.slice(a,b).map(r=>r.points))})).filter(x=>x.home||x.opp);
   return `<section class="card"><div class="card-h"><h2>${esc(t('depth'))}</h2></div><p class="card-note">${esc(t('depth_note'))}</p>${legend()}<div class="depth">${items.map(x=>{const d=x.home-x.opp;return `<div data-tip="${esc(`${x.label}\n${team(data.summary.home)}: ${n(x.home)}\n${team(data.summary.opponent)}: ${n(x.opp)}`)}"><div class="d-h"><span>${esc(x.label)}</span>${delta(d)}</div>${split(x.home,x.opp,true)}<div class="d-sub num">${n(x.home,true)} · ${n(x.opp,true)}</div></div>`}).join('')}</div><details><summary>${esc(t('expand'))}</summary>${wrapTable([t('tier'),team(data.summary.home),team(data.summary.opponent),t('difference')].map(esc),items.map(x=>`<tr><td>${esc(x.label)}</td><td class="num">${n(x.home)}</td><td class="num">${n(x.opp)}</td><td class="num">${n(x.home-x.opp)}</td></tr>`).join(''))}</details></section>`}
 
@@ -655,7 +589,6 @@ async function record(token){try{const weeks=await allWeeks();if(token!==renderT
 // Display order; rarity comes from how many members earned a badge this week.
 const BADGES=[['mvp','🏆'],['server_first','🥇'],['stage_mvp','👑'],['giant_slayer','🗡️'],['server_top10','⚔️'],['ten_times','💎'],['unstoppable','🔥'],['hat_trick','🎩'],['saturday_hero','🌅'],['all_rounder','🧩'],['metronome','🎼'],['glow_up','🚀'],['climber','🧗'],['comeback','🔄'],['strong_debut','🌱'],['buzzer_beater','⏱️'],['photo_finish','📸'],['personal_best','🌟'],['six_for_six','📅']];
 const BADGE_ICON=Object.fromEntries(BADGES);
-const AWARD_GROUPS={rank:['mvp','server_first','stage_mvp','giant_slayer','server_top10','ten_times','saturday_hero'],consistency:['unstoppable','hat_trick','all_rounder','metronome','buzzer_beater','photo_finish','six_for_six'],progress:['glow_up','climber','comeback','strong_debut','personal_best']};
 const RECENT=8;
 // The selected week plus up to RECENT-1 captured weeks before it (enough for streaks and personal bests).
 const recentIds=id=>{const i=manifest.findIndex(w=>w.id===id);return i<0?[]:manifest.slice(Math.max(0,i-RECENT+1),i+1).map(w=>w.id)};
@@ -689,17 +622,10 @@ function badgesFor(w){const ids=recentIds(w.summary.id),hist=[];for(let i=ids.le
   const order=BADGES.map(b=>b[0]),rank=id=>order.indexOf(id);byPlayer.forEach(v=>v.sort((a,b)=>(byBadge[a.id].length-byBadge[b.id].length)||rank(a.id)-rank(b.id)));
   const res={w,byBadge,byPlayer,members:list.length,rec:recOf};badgeCache.set(ck,res);return res}
 const rarity=(count,members)=>count/Math.max(1,members)<=.03?'legendary':count/Math.max(1,members)<=.15?'rare':'common';
-function badgeTile(id,{holders=null,value='',count=holders?.length||0,members=1,locked=false,hint='',limit=3}={}){const r=locked?'common':rarity(count,members);
-  const list=items=>`<ul class="b-holders">${items.map(h=>`<li>${memberButton(h)}${h.value?`<span class="v">${esc(h.value)}</span>`:''}</li>`).join('')}</ul>`;
-  return `<article class="badge ${locked?'locked':r}" data-award="${id}"><div class="b-ic" aria-hidden="true">${BADGE_ICON[id]}</div><div style="min-width:0"><div class="b-name"><h3>${esc(t('badge_'+id))}</h3>${locked?'':`<span class="b-rar">${esc(t('rarity_'+r))}</span>`}${value?`<span class="b-val">${esc(value)}</span>`:''}</div><p class="b-desc">${esc(locked&&hint?hint:t('badge_'+id+'_d'))}</p>${holders?`<div class="small dim" style="margin-top:5px">${esc(t('award_recipients',{n:n(holders.length)}))}</div>${list(holders.slice(0,limit))}${holders.length>limit?`<details class="b-details"><summary>${esc(t('more_holders',{n:n(holders.length-limit)}))}</summary>${list(holders.slice(limit))}</details>`:''}`:''}</div></article>`}
-const earnedIds=b=>BADGES.map(([id])=>id).filter(id=>b.byBadge[id]?.length);
-function awardsSpotlight(){const b=badgesFor(data),ids=earnedIds(b),featured=['mvp','server_first','stage_mvp','giant_slayer','server_top10','all_rounder','glow_up'].filter(id=>b.byBadge[id]?.length).slice(0,3);
-  return `<section class="card award-spotlight"><div class="award-headline"><div><h2>${esc(t('award_spotlight'))}</h2><p class="card-note">${esc(ids.length?t('award_rollup',{types:n(ids.length),players:n(b.byPlayer.size)}):t('no_badges'))}${data.summary.status==='in_progress'?` · ${esc(t('provisional'))}`:''}</p></div><button type="button" class="btn" data-view="awards">${esc(t('all_awards'))} <span aria-hidden="true">→</span></button></div>${featured.length?`<div class="badges">${featured.map(id=>badgeTile(id,{holders:b.byBadge[id],members:b.members,limit:2})).join('')}</div>`:''}</section>`}
-function awardGrid(b=badgesFor(data)){const ids=earnedIds(b).filter(id=>state.awardGroup==='all'||AWARD_GROUPS[state.awardGroup].includes(id));
-  return ids.length?`<div class="badges">${ids.map(id=>badgeTile(id,{holders:b.byBadge[id],members:b.members})).join('')}</div>`:`<p class="empty">${esc(t('no_badges'))}</p>`}
-function awards(){const b=badgesFor(data),ids=earnedIds(b),counts=ids.map(id=>b.byBadge[id].length);
-  return `${heading('awards',esc(t('award_intro')))}<div class="stack"><div class="tiles">${tile(t('award_types'),n(ids.length))}${tile(t('award_players'),`${n(b.byPlayer.size)}<small> / ${n(b.members)}</small>`)}${tile(t('award_total'),n(sum(counts)))}${tile(t('award_legendary'),n(counts.filter(c=>rarity(c,b.members)==='legendary').length))}</div>
-  <section class="card"><div class="card-h"><h2>${esc(t('all_awards'))}</h2>${data.summary.status==='in_progress'?pill(t('provisional'),'pill-live'):''}</div><div class="award-controls" role="group" aria-label="${esc(t('filter'))}">${['all',...Object.keys(AWARD_GROUPS)].map(group=>`<button type="button" class="btn" data-award-group="${group}" aria-pressed="${state.awardGroup===group}">${esc(t(group==='all'?'all':`award_group_${group}`))} · ${n(group==='all'?ids.length:ids.filter(id=>AWARD_GROUPS[group].includes(id)).length)}</button>`).join('')}</div><div id="awardGrid" aria-live="polite">${awardGrid(b)}</div></section></div>`}
+function badgeTile(id,{holders=null,value='',count=0,members=1,locked=false,hint=''}={}){const r=locked?'common':rarity(count,members),shown=holders&&holders.length<=20?holders.slice(0,6):[];
+  return `<div class="badge ${locked?'locked':r}"><div class="b-ic" aria-hidden="true">${BADGE_ICON[id]}</div><div style="min-width:0"><div class="b-name">${esc(t('badge_'+id))}${locked?'':`<span class="b-rar">${esc(t('rarity_'+r))}</span>`}${value?`<span class="b-val">${esc(value)}</span>`:''}</div><div class="b-desc">${esc(locked&&hint?hint:t('badge_'+id+'_d'))}</div>${holders?`<div class="b-holders">${shown.map(h=>`<span>${memberButton(h)}${h.value?`<span class="v">${esc(h.value)}</span>`:''}</span>`).join('')}${!shown.length?`<span class="dim">${esc(t('n_players',{n:n(holders.length)}))}</span>`:holders.length>shown.length?`<span class="dim">${esc(t('more_holders',{n:n(holders.length-shown.length)}))}</span>`:''}</div>`:''}</div></div>`}
+function achievementsCard(){const b=badgesFor(data),ids=BADGES.map(x=>x[0]).filter(id=>b.byBadge[id]?.length).sort((a,c)=>b.byBadge[a].length-b.byBadge[c].length);if(!ids.length)return '';
+  return `<section class="card"><div class="card-h"><h2>${esc(t('achievements'))}</h2><span class="small dim">${esc(t('achievements_sub',{n:n(ids.length),m:n(b.byPlayer.size)}))}</span></div><div class="badges">${ids.map(id=>badgeTile(id,{holders:b.byBadge[id],count:b.byBadge[id].length,members:b.members})).join('')}</div></section>`}
 function miniBadges(p){const b=badgesFor(data),mine=b.byPlayer.get(p.key);if(!mine)return '';const top=mine.slice(0,3);return `<span class="mini-badges" title="${esc(mine.map(x=>t('badge_'+x.id)).join(' · '))}" aria-label="${esc(t('achievements'))}: ${esc(mine.map(x=>t('badge_'+x.id)).join(', '))}">${top.map(x=>BADGE_ICON[x.id]).join('')}${mine.length>3?'<span class="dim small">+'+n(mine.length-3)+'</span>':''}</span>`}
 function withinReach(p,w,earned,rec){const s=w.summary,started=startedDays(w),med=dayMedians(w),out=[],full=started.length===6;
   const missed=started.filter(d=>!p.days?.[d]?.points);if(full&&!earned.has('six_for_six')&&missed.length&&missed.length<=2)out.push(['six_for_six',t('hint_six',{days:missed.map(day).join(', ')})]);
@@ -735,10 +661,10 @@ function headToHead(){const h=current(data).slice().sort((a,b)=>a.alliance_rank-
 // ---------- leaderboards ----------
 function visibleBoard(){return (data.boards[state.tab]||[]).filter(r=>{const side=r.alliance_tag===data.summary.home.tag?'home':r.alliance_tag===data.summary.opponent.tag?'opponent':'others';return (state.side==='all'||state.side===side)&&(!state.query||(r.player+' '+r.alliance).toLocaleLowerCase().includes(state.query.toLocaleLowerCase()))})}
 function boardTable(){const rows=visibleBoard(),home=data.summary.home.tag,opp=data.summary.opponent.tag;return `<p class="count" style="margin:0 0 8px">${n(rows.length)} / ${n((data.boards[state.tab]||[]).length)}</p>${wrapTable([esc(t('rank')),{html:esc(t('player')),cls:'sticky-col'},esc(t('alliance')),{html:esc(t('points')),cls:'r'}],rows.map(r=>`<tr class="${r.alliance_tag===home?'home-row':''}"><td><span class="rk ${r.rank<=3?'m'+r.rank:''}">${n(r.rank)}</span></td><td class="sticky-col">${memberButton({key:boardKey(r),player:r.player})}</td><td><span class="${r.alliance_tag===home?'home':r.alliance_tag===opp?'opp':'dim'}">${esc(r.alliance)}</span></td><td class="r num">${n(r.points)}</td></tr>`).join(''),{style:'max-height:75vh'})}`}
-function leaderboards(){const snap=data.summary.snapshots?.[state.tab],derived=state.tab==='week'&&derivedWeek(data),hasRows=!!data.boards[state.tab]?.length,live=(data.summary.live_tabs||[]).includes(state.tab);const snapText=snap?.at?`${snap.approximate?'≈ ':''}${t('snapshot_server_time',{time:capture(snap.at)})}`:'';const snapTip=snap?.at?`${t('local_time')}: ${timeLocal(snap.at)}`:'';
-  return `${heading('leaderboards',esc(t('leaderboards_intro')))}<section class="card"><div class="segmented" role="tablist" aria-label="${esc(t('leaderboards'))}" style="margin-bottom:14px">${BOARDS.map(d=>`<button id="board-${d}" role="tab" aria-selected="${state.tab===d}" tabindex="${state.tab===d?0:-1}" aria-controls="boardPanel" data-board="${d}">${esc(day(d))}</button>`).join('')}</div>
-  <div id="boardPanel" role="tabpanel" aria-labelledby="board-${state.tab}">${!hasRows?`<p class="empty">${esc(t('board_unavailable'))}</p>`:`<div class="pills" style="margin-bottom:12px">${snapText?`<span class="pill" title="${esc(snapTip)}">${esc(snapText)}</span>`:derived?pill(t('derived_board')):''}${live?pill(t('live'),'pill-live'):''}</div>${live?`<p class="note">${esc(t('live_note'))}</p>`:''}
-  <div class="toolbar"><input id="boardSearch" class="input" type="search" value="${esc(state.query)}" placeholder="${esc(t('search'))}" aria-label="${esc(t('search'))}"><label class="sr-only" for="sideFilter">${esc(t('filter'))}</label><select id="sideFilter" class="select"><option value="all">${esc(t('all'))}</option><option value="home" ${state.side==='home'?'selected':''}>${esc(team(data.summary.home))}</option><option value="opponent" ${state.side==='opponent'?'selected':''}>${esc(team(data.summary.opponent))}</option><option value="others" ${state.side==='others'?'selected':''}>${esc(t('rest'))}</option></select><button class="btn" data-download="visible" data-format="csv">${esc(t('download_csv'))}</button></div><div id="boardTable">${boardTable()}</div>`}</div></section>`}
+function leaderboards(){const snap=data.summary.snapshots?.[state.tab];const snapText=snap?.at?`${snap.approximate?'≈ ':''}${t('snapshot_server_time',{time:timeServer(snap.at)})}`:'';const snapTip=snap?.at?`${t('local_time')}: ${timeLocalShort(snap.at)}`:'';
+  return `${heading('leaderboards',esc(t('leaderboards_intro')))}<section class="card" id="boardPanel" role="tabpanel" aria-labelledby="board-${state.tab}"><div class="segmented" role="tablist" aria-label="${esc(t('leaderboards'))}" style="margin-bottom:14px">${BOARDS.map(d=>`<button id="board-${d}" role="tab" aria-selected="${state.tab===d}" tabindex="${state.tab===d?0:-1}" aria-controls="boardPanel" data-board="${d}">${esc(day(d))}</button>`).join('')}</div>
+  <div class="pills" style="margin-bottom:12px">${snapText?`<span class="pill" title="${esc(snapTip)}">${esc(snapText)}</span>`:''}${isLive(data)&&(data.summary.live_tabs||[]).includes(state.tab)?pill(t('live'),'pill-live'):''}</div>${isLive(data)&&(data.summary.live_tabs||[]).includes(state.tab)?`<p class="note">${esc(t('live_note'))}</p>`:''}
+  <div class="toolbar"><input id="boardSearch" class="input" type="search" value="${esc(state.query)}" placeholder="${esc(t('search'))}" aria-label="${esc(t('search'))}"><label class="sr-only" for="sideFilter">${esc(t('filter'))}</label><select id="sideFilter" class="select"><option value="all">${esc(t('all'))}</option><option value="home" ${state.side==='home'?'selected':''}>${esc(team(data.summary.home))}</option><option value="opponent" ${state.side==='opponent'?'selected':''}>${esc(team(data.summary.opponent))}</option><option value="others" ${state.side==='others'?'selected':''}>${esc(t('rest'))}</option></select><button class="btn" data-download="visible" data-format="csv">${esc(t('download_csv'))}</button></div><div id="boardTable">${boardTable()}</div></section>`}
 
 // ---------- trends (alliance level) ----------
 async function trends(token){if(manifest.length<2){$('#view').innerHTML=heading('trends')+`<div class="card empty">${esc(t('need_two'))}</div>`;return}
@@ -752,31 +678,22 @@ async function trends(token){if(manifest.length<2){$('#view').innerHTML=heading(
 
 // ---------- stages & data ----------
 function stages(){return `${heading('stages',esc(t('rules_text')))}<div class="grid two">${(window.VS_STAGES?.stages||[]).map(s=>`<section class="card stage-card"><div class="eyebrow">${esc(day(s.day_code))} · ${esc(winsLabel(s.wins_awarded))}</div><h2 class="stage-name">${esc(t('stage_'+s.day_index))}</h2><p class="muted small">${esc(t('stage_desc_'+s.day_index))}</p><ul lang="en">${s.activities.map(a=>`<li>${esc(a)}</li>`).join('')}</ul></section>`).join('')}</div>`}
-function dataView(){const s=data.summary,integrity=s.integrity||{},checks=integrity.checksum,snapshots=s.snapshots||{},derived=derivedWeek(data);
-  const captured=BOARDS.filter(d=>snapshots[d]?.at&&data.boards[d]?.length&&!(d==='week'&&derived));
-  const qa=BOARDS.filter(d=>integrity.tabs?.[d]&&data.boards[d]?.length&&!(d==='week'&&derived));
-  const issues=integrity.checksum_issues||[],unresolved=x=>Object.entries(x.unresolved||{});
-  const exports=(d,label)=>`<div class="data-downloads">${['csv','json'].map(format=>`<button type="button" class="btn" data-download="${d}" data-format="${format}" aria-label="${esc(`${t('download_'+format)} · ${label}`)}">${format.toUpperCase()}</button>`).join('')}</div>`;
-  const rows=[...BOARDS,'members'].map(d=>{const members=d==='members',label=members?t('members'):day(d),board=members?data.members:data.boards[d],snap=members?null:snapshots[d],built=d==='week'&&derived;
-    const srcKey='source_'+String(snap?.source||'').replace(/\s+/g,'_'),srcLabel=window.I18N?.[lang]?.[srcKey]?t(srcKey):(snap?.source||'—');
-    const stamp=built?pill(t('derived_board')):snap?.at?`<span title="${esc(timeLocal(snap.at))}">${snap.approximate?'≈ ':''}${esc(capture(snap.at))}</span><span class="small dim">${esc(srcLabel)}</span>`:`<span class="dim">${esc(board?.length?`${t('snapshot')}: —`:t('not_captured_short'))}</span>`;
-    return `<li class="export-row"><div><strong>${esc(label)}</strong>${board?.length?`<span class="small dim">${esc(t('rows'))}: ${n(board.length)}</span>`:''}</div>${board?.length?exports(d,label):''}${members?'':`<div class="export-meta">${stamp}</div>`}</li>`}).join('');
-  const qaRows=qa.map(d=>{const x=integrity.tabs[d],u=unresolved(x);return `<tr><td>${esc(day(d))}</td><td>${n(x.rows)}</td><td>${esc(t(x.contiguous?'yes':'no'))}</td><td>${esc(t(x.points_descending?'yes':'no'))}</td><td>${u.length?`<details style="margin:0"><summary>${n(u.length)}</summary><ul class="data-code">${u.map(([rank,reason])=>`<li>#${esc(rank)} · ${esc(reason)}</li>`).join('')}</ul></details>`:n(0)}</td><td>${n(x.missing_points)}</td><td>${n(x.missing_names)}</td><td>${esc(t(x.live?'yes':'no'))}</td></tr>`}).join('');
-  return `${heading('data',esc(t('data_intro')))}<div class="stack"><div class="tiles">${tile(t('captured_boards'),`${n(captured.length)}<small> / ${n(BOARDS.length)}</small>`)}${tile(t('captured_rows'),n(sum(captured.map(d=>data.boards[d].length))))}${tile(t('unresolved'),n(qa.length?sum(qa.map(d=>unresolved(integrity.tabs[d]).length)):null),esc(t('unresolved_hint')))}${tile(t('mismatch'),n(checks&&!derived?checks.mismatch||0:null),esc(t(derived?'derived_board':'checksum')))}</div>
-  <section class="card"><div class="card-h"><h2>${esc(t('data_exports'))}</h2><span class="small dim">${esc(t('server_time'))}</span></div><ul class="export-list" role="list">${rows}</ul>${captured.some(d=>snapshots[d]?.source==='screenshots')?`<p style="margin-top:12px"><a href="https://github.com/${SITE.repo}/tree/main/data/weeks/${encodeURIComponent(state.week)}/screenshots" target="_blank" rel="noopener">${esc(t('screenshots'))} ↗</a></p>`:''}</section>
-  <section class="card"><h2>${esc(t('integrity'))}</h2><details class="data-detail"><summary>${esc(t('show_table'))}</summary>${qa.length?wrapTable([t('days'),t('rows'),t('contiguous'),t('descending'),t('unresolved'),t('missing_points'),t('missing_names'),t('rescanned')].map(esc),qaRows,{label:t('integrity')}):'<p>—</p>'}</details>
-  <details class="data-detail"><summary>${esc(t('checksum'))}</summary>${derived?`<p class="note">${esc(t('derived_checksum'))}</p>`:checks?`<div class="pills">${['exact','live','joined','left','alliance_change','mismatch'].map(k=>pill(t(k==='live'?'changed_during_capture':k)+': '+n(checks[k]||0),k==='mismatch'&&checks[k]?'pill-opp':'')).join('')}</div>`:'<p>—</p>'}${issues.length?wrapTable([t('player'),t('alliance'),t('weekly_points'),t('days_total'),t('difference'),t('checksum')].map(esc),issues.map(x=>`<tr><td>${esc(x.player)}</td><td>[${esc(x.tag)}]</td><td>${n(x.weekly)}</td><td>${n(x.sum_days)}</td><td>${n(x.diff)}</td><td>${esc(t(x.status))}</td></tr>`).join(''),{label:t('checksum')}):''}</details>${(s.notes||[]).map(note=>`<p class="note">${esc(typeof note==='string'?note:JSON.stringify(note))}</p>`).join('')}</section>
+function dataView(){const s=data.summary,integrity=s.integrity||{},checks=integrity.checksum||{},snapshots=s.snapshots||{};const snapRows=BOARDS.map(d=>{const snap=snapshots[d];if(!snap)return `<tr><td>${esc(day(d))}</td><td colspan="3">—</td></tr>`;const srcKey='source_'+String(snap.source||'').replace(/\s+/g,'_');const srcLabel=window.I18N?.[lang]?.[srcKey]?t(srcKey):(snap.source||'—');return `<tr><td>${esc(day(d))}</td><td title="${esc(timeLocal(snap.at))}">${esc(`${snap.approximate?'≈ ':''}${capture(snap.at)}`)}</td><td>${esc(srcLabel)}</td><td>${esc(t(snap.approximate?'yes':'no'))}</td></tr>`}).join('');
+  return `${heading('data')}<div class="stack"><section class="card"><div class="card-h"><h2>${esc(t('snapshots'))}</h2><span class="small dim">${esc(t('server_time'))}</span></div><p class="card-note">${esc(t('snapshot_final_note'))}</p>${wrapTable([t('days'),t('snapshot'),t('source'),t('approximate')].map(esc),snapRows)}</section>
+  <section class="card"><div class="card-h"><h2>${esc(t('integrity'))}</h2><span class="small dim">${esc(t('captured',{date:capture(s.captured_at_server)}))} · ${esc(t('server_time'))}</span></div>${wrapTable([t('days'),t('rows'),t('contiguous'),t('descending'),t('unresolved'),t('missing_points'),t('missing_names'),t('rescanned')].map(esc),BOARDS.map(d=>{const x=integrity.tabs?.[d];if(!x)return `<tr><td>${esc(day(d))}</td><td colspan="7">—</td></tr>`;return `<tr><td>${esc(day(d))}</td><td>${n(x.rows)}</td><td>${esc(t(x.contiguous?'yes':'no'))}</td><td>${esc(t(x.points_descending?'yes':'no'))}</td><td>${esc(JSON.stringify(x.unresolved??{}))}</td><td>${n(x.missing_points)}</td><td>${n(x.missing_names)}</td><td>${esc(t(x.live?'yes':'no'))}</td></tr>`}).join(''))}</section>
+  <section class="card"><div class="card-h"><h2>${esc(t('checksum'))}</h2></div><div class="pills">${['exact','live','joined','left','alliance_change','mismatch'].map(k=>pill(t(k==='live'?'changed_during_capture':k)+': '+n(checks[k]||0),k==='mismatch'&&checks[k]?'pill-opp':'')).join('')}</div><p class="card-note" style="margin-top:12px">${esc(t('check_mismatch'))}</p>${wrapTable([t('player'),t('alliance'),t('weekly_points'),t('days_total'),t('difference'),t('checksum')].map(esc),(integrity.checksum_issues||[]).map(x=>`<tr><td>${esc(x.player)}</td><td>[${esc(x.tag)}]</td><td>${n(x.weekly)}</td><td>${n(x.sum_days)}</td><td>${n(x.diff)}</td><td>${esc(t(x.status))}</td></tr>`).join(''))}${(s.notes||[]).map(note=>`<p class="note">${esc(typeof note==='string'?note:JSON.stringify(note))}</p>`).join('')}</section>
+  <section class="card"><div class="card-h"><h2>${esc(t('data'))}</h2></div><div class="stack">${[...BOARDS,'members'].map(d=>`<div class="toolbar" style="margin:0"><strong style="min-width:110px">${esc(d==='members'?t('members'):day(d))}</strong><button class="btn" data-download="${d}" data-format="csv">${esc(t('download_csv'))}</button><button class="btn" data-download="${d}" data-format="json">${esc(t('download_json'))}</button></div>`).join('')}</div><p style="margin-top:14px"><a href="https://github.com/${SITE.repo}/tree/main/data/weeks/${encodeURIComponent(state.week)}/screenshots" target="_blank" rel="noopener">${esc(t('screenshots'))} ↗</a></p></section>
   <section class="card"><div class="card-h"><h2>${esc(t('methodology'))}</h2></div><p class="muted">${esc(t('methodology_text'))}</p></section></div>`}
 function errorBox(){return `<div class="card empty">${esc(t('error'))}<p></p><button id="retry" class="btn">${esc(t('retry'))}</button></div>`}
 
 // ---------- render ----------
 async function render(){const token=++renderToken;chrome();sync();$('#view').setAttribute('aria-busy','true');$('#view').innerHTML=`<p class="empty">${esc(t('loading'))}</p>`;
   try{if(!state.week)throw Error('No manifest');const w=await loadWeek(state.week);if(token!==renderToken)return;data=w;
+    if(['overview','members','opponent'].includes(state.view))await loadRecent(state.week);if(token!==renderToken)return;
     eventBar();
-    if(['overview','awards','members','opponent'].includes(state.view))await loadRecent(state.week);if(token!==renderToken)return;
-    $('#view').innerHTML=state.view==='overview'?overview():state.view==='awards'?awards():state.view==='members'?members():state.view==='opponent'?members(true):state.view==='leaderboards'?leaderboards():state.view==='stages'?stages():state.view==='data'?dataView():`<p class="empty">${esc(t('loading'))}</p>`;
+    $('#view').innerHTML=state.view==='overview'?overview():state.view==='members'?members():state.view==='opponent'?members(true):state.view==='leaderboards'?leaderboards():state.view==='stages'?stages():state.view==='data'?dataView():`<p class="empty">${esc(t('loading'))}</p>`;
     if(state.view==='trends')await trends(token);if(state.view==='record')await record(token);if(state.player)await openProfile(state.player,false)}
-  catch(e){if(token===renderToken){$('#view').innerHTML=errorBox();console.error(e)}}finally{if(token===renderToken){revealActiveTabs();$('#view').setAttribute('aria-busy','false')}}}
+  catch(e){if(token===renderToken){$('#view').innerHTML=errorBox();console.error(e)}}finally{if(token===renderToken)$('#view').setAttribute('aria-busy','false')}}
 function rosterUpdate(){if($('#rosterTable'))$('#rosterTable').innerHTML=rosterTable(state.view==='opponent');if($('#boardTable'))$('#boardTable').innerHTML=boardTable();if($('#recordTable')&&recordLedger)$('#recordTable').innerHTML=recordTable(recordLedger)}
 
 // ---------- player profile ----------
@@ -835,10 +752,7 @@ function search(){const q=$('#globalSearch').value.trim().toLocaleLowerCase(),bo
 
 // ---------- events ----------
 $('#langSelect').innerHTML=Object.entries(window.LANG_NAMES||{}).map(([k,name])=>`<option value="${k}">${esc(name)}</option>`).join('');
-function setWeek(id){if(!id||id===state.week)return;closeProfileIfOpen();state.week=id;state.query='';$('#globalSearch').value='';$('#globalSearch').setAttribute('aria-expanded','false');$('#searchResults').hidden=true;render()}
-$('#weekSelect').addEventListener('change',e=>setWeek(e.target.value));
-$('#olderWeek').addEventListener('click',()=>setWeek(prevId(state.week)));
-$('#newerWeek').addEventListener('click',()=>setWeek(nextId(state.week)));
+$('#weekSelect').addEventListener('change',e=>{closeProfile();state.week=e.target.value;state.query='';$('#globalSearch').value='';$('#searchResults').hidden=true;render()});
 $('#langSelect').addEventListener('change',e=>{lang=e.target.value;persist('p1mp.lang',lang);render()});
 $('#themeToggle').addEventListener('click',()=>{document.documentElement.dataset.theme=document.documentElement.dataset.theme==='light'?'dark':'light';persist('p1mp.theme',document.documentElement.dataset.theme);theme();sync()});
 $('#copyLink').addEventListener('click',async()=>{sync();try{await navigator.clipboard.writeText(location.href);toast(t('copied'))}catch(e){$('#linkText').value=location.href;$('#linkDialog').showModal();$('#linkText').select()}});
@@ -849,8 +763,7 @@ $('#searchResults').addEventListener('keydown',e=>{const items=[...$('#searchRes
 $('#profile').addEventListener('cancel',e=>{e.preventDefault();closeProfile()});
 $('#profile').addEventListener('click',e=>{if(e.target===$('#profile')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeProfile()}});
 document.addEventListener('click',e=>{if(!e.target.closest('.search')){$('#searchResults').hidden=true;$('#globalSearch').setAttribute('aria-expanded','false')}const tipEl=e.target.closest?.('[data-tip]');const b=e.target.closest('button');if(tipEl&&!b){if(tipFor===tipEl)hideTip();else tipAt(tipEl);return}if(!b)return;
-  if(b.dataset.view){closeProfileIfOpen();state.view=b.dataset.view;state.query='';state.tier='all';state.quota='all';state.active=false;if(b.dataset.board){state.tab=b.dataset.board;state.side='all'}if(state.view==='awards')state.awardGroup='all';window.scrollTo?.(0,0);render().then(()=>$('#tab-'+state.view)?.focus({preventScroll:true}))}
-  else if(b.dataset.awardGroup&&state.view==='awards'){state.awardGroup=b.dataset.awardGroup;document.querySelectorAll('[data-award-group]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));$('#awardGrid').innerHTML=awardGrid()}
+  if(b.dataset.view){closeProfileIfOpen();state.view=b.dataset.view;state.query='';state.tier='all';state.quota='all';state.active=false;window.scrollTo?.(0,0);render().then(()=>$('#tab-'+state.view)?.focus())}
   else if(b.dataset.board){state.tab=b.dataset.board;render().then(()=>$('#board-'+state.tab)?.focus())}
   else if(b.dataset.player){$('#searchResults').hidden=true;$('#globalSearch').setAttribute('aria-expanded','false');openProfile(b.dataset.player)}
   else if(b.dataset.sort){state.direction=state.sort===b.dataset.sort?-state.direction:(['player','alliance_rank','balance'].includes(b.dataset.sort)?1:-1);state.sort=b.dataset.sort;rosterUpdate();document.querySelector('[data-sort="'+state.sort+'"]')?.focus()}
@@ -862,8 +775,7 @@ document.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;co
 document.addEventListener('pointermove',e=>{if(e.pointerType==='mouse'&&tipFor&&e.target.closest?.('[data-tip]')===tipFor)showTip(tipFor,e.clientX,e.clientY)});
 document.addEventListener('focusin',e=>{const el=e.target.closest?.('[data-tip]');if(el)tipAt(el);else hideTip()});
 window.addEventListener('scroll',()=>{if(tipFor)hideTip()},{passive:true});
-window.addEventListener('resize',()=>{measureHeader();revealActiveTabs()});
-document.fonts?.addEventListener('loadingdone',()=>{measureHeader();revealActiveTabs()});
+window.addEventListener('resize',measureHeader);
 document.addEventListener('input',e=>{if(['rosterSearch','boardSearch','recordSearch'].includes(e.target.id)){state.query=e.target.value;rosterUpdate()}});
 document.addEventListener('change',e=>{const id=e.target.id;if(id==='tierFilter')state.tier=e.target.value;else if(id==='quotaFilter')state.quota=e.target.value;else if(id==='activeFilter')state.active=e.target.checked;else if(id==='includeLeftFilter')state.includeLeft=e.target.checked;else if(id==='sideFilter')state.side=e.target.value;else if(id==='recordSort')state.recSort=e.target.value;else if(id==='formerToggle')state.former=e.target.checked;else return;rosterUpdate()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')hideTip();const b=e.target.closest('[role=tab]');if(!b)return;const tabs=[...b.parentElement.querySelectorAll('[role=tab]')],i=tabs.indexOf(b);let j;if(e.key==='ArrowRight')j=(i+1)%tabs.length;else if(e.key==='ArrowLeft')j=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')j=0;else if(e.key==='End')j=tabs.length-1;else return;e.preventDefault();tabs[j].click();tabs[j].focus()});

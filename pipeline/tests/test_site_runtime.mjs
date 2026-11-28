@@ -15,7 +15,7 @@ const html = read('index.html');
 const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
   .filter(match => !/\bsrc\s*=/.test(match[1])).map(match => match[2]);
 assert.equal(scripts.length, 2, 'Expected before-paint theme script and app script');
-const exportCode = `window.TEST = {state, overview, awards, members, leaderboards, stages, dataView,
+const exportCode = `window.TEST = {state, overview, members, leaderboards, stages, dataView,
   trends, render, eventBar, boardKey, rosterRows, badgesFor, visibleBoard, openProfile,
   closeProfile, sync, theme, statusStage, date, t, n, loadWeek,
   setLang:value=>lang=value, getLang:()=>lang, setData:value=>data=value,
@@ -115,7 +115,7 @@ const h = harness(), { T, original, synthetic, node } = h;
 let combinations = 0;
 for (const lang of Object.keys(h.context.window.I18N)) {
   T.setLang(lang);
-  for (const view of ['overview', 'awards', 'record', 'members', 'leaderboards', 'opponent', 'trends', 'stages', 'data']) {
+  for (const view of ['overview', 'record', 'members', 'leaderboards', 'opponent', 'trends', 'stages', 'data']) {
     T.state.view = view; T.state.player = ''; T.state.week = original.summary.id;
     await T.render();
     assert.ok(node('#view').innerHTML.length > 100, `${lang}.${view} did not render`);
@@ -152,16 +152,6 @@ for (const h of earned.byBadge.six_for_six || []) assert.equal(original.members.
 for (const h of earned.byBadge.photo_finish || []) { const p = original.members.find(x => x.key === h.key); assert.ok(p.weekly_points >= quota && p.weekly_points < quota * 1.05); }
 for (const h of earned.byBadge.server_top10 || []) assert.ok(original.members.find(p => p.key === h.key).weekly_rank <= 10);
 assert.ok(!earned.byBadge.comeback && !earned.byBadge.personal_best, 'First tracked week has no week-over-week badges');
-const awardMarkup = T.awards();
-assert.equal([...awardMarkup.matchAll(/data-award="/g)].length, Object.keys(earned.byBadge).length);
-const attendance = awardMarkup.match(/<article [^>]*data-award="six_for_six"[\s\S]*?<\/article>/)?.[0];
-assert.ok(earned.byBadge.six_for_six.length > 20, 'Fixture must exercise a large recipient list');
-assert.match(attendance, /<details class="b-details">/);
-assert.equal([...attendance.matchAll(/data-player="/g)].length, earned.byBadge.six_for_six.length, 'Every recipient must be reachable');
-T.state.awardGroup = 'consistency';
-assert.match(T.awards(), /data-award="six_for_six"/);
-assert.doesNotMatch(T.awards(), /data-award="mvp"/);
-T.state.awardGroup = 'all';
 Object.assign(T.state, { tab: 'week', side: 'home', query: '' });
 assert.ok(T.visibleBoard().every(row => row.alliance_tag === original.summary.home.tag));
 
@@ -173,26 +163,10 @@ const eventBar = node('#eventBar').innerHTML;
 assert.match(overview, /class="score num">2 : 7<\/div>/);
 assert.ok(eventBar.includes(T.t('in_progress')) && overview.includes(T.t('leading')));
 assert.ok(!overview.includes('class="score num">6 : 7'));
-assert.ok(eventBar.includes('Latest capture: ') && eventBar.includes('2099') && eventBar.includes('server time (UTC−2)'), 'Week header must show latest capture date and server time');
-assert.ok(overview.includes(T.t('award_spotlight')) && overview.includes(T.t('provisional')));
-assert.match(overview, /data-view="leaderboards" data-board="sat"/);
+assert.ok(eventBar.includes('Snapshot: ') && eventBar.includes('server time (UTC−2)'), 'Week header must render snapshot window with server time');
 T.state.view = 'leaderboards'; T.state.tab = 'week';
 const boards = T.leaderboards();
 assert.ok(boards.includes('Snapshot') && boards.includes('server time'), 'Leaderboards must render snapshot time for current tab');
-const partial = JSON.parse(JSON.stringify(synthetic));
-partial.boards.sat = [];
-partial.boards.week.forEach(row => { row.raw = 'synthesized_from_days'; });
-delete partial.summary.snapshots.week;
-delete partial.summary.snapshots.sat;
-T.setData(partial);
-assert.ok(T.leaderboards().includes(T.t('derived_board')), 'Synthesized weekly leaderboard must identify its source');
-T.state.tab = 'sat';
-assert.ok(T.leaderboards().includes(T.t('board_unavailable')));
-assert.doesNotMatch(T.leaderboards(), /data-download=/, 'Missing board must not offer empty exports');
-assert.ok(T.dataView().includes(T.t('derived_checksum')), 'Calculated totals are not an independent checksum');
-assert.match(T.dataView(), /data-download="week"/);
-assert.doesNotMatch(T.dataView(), /data-download="sat"/);
-T.setData(synthetic); T.state.tab = 'week';
 const tied = { ...synthetic.summary.stages.at(-1), home_points: 10, opp_points: 10 };
 synthetic.summary.leading_live.sat = 'tie';
 assert.ok(T.statusStage(tied).includes(T.t('undecided')));
@@ -241,20 +215,13 @@ for (const [key, value] of Object.entries({ week: original.summary.id, view: 'le
 }
 deep.T.state.view = 'overview';
 await deep.T.render();
-assert.ok(deep.node('#eventBar').innerHTML.includes('Dernier relevé :') && deep.node('#eventBar').innerHTML.includes('heure serveur (UTC−2)'), 'French week header must render latest capture in French');
+assert.ok(deep.node('#eventBar').innerHTML.includes('Instantané :') && deep.node('#eventBar').innerHTML.includes('heure serveur (UTC−2)'), 'French week header must render snapshot in French');
 deep.node('#themeToggle').events.get('click')();
 assert.equal(deep.store.get('p1mp.theme'), 'dark');
 assert.equal(new URL(deep.location.href).searchParams.get('theme'), 'dark');
 const stored = harness({ storage: { 'p1mp.lang': 'ko', 'p1mp.theme': 'light' } });
 assert.equal(stored.T.getLang(), 'ko'); assert.equal(stored.document.documentElement.dataset.theme, 'light');
 assert.equal(stored.T.state.week, synthetic.summary.id, 'Newest week is default');
-await stored.T.render();
-assert.equal(stored.node('#newerWeek').disabled, true);
-stored.node('#olderWeek').events.get('click')();
-assert.equal(stored.T.state.week, original.summary.id);
-assert.equal(stored.node('#olderWeek').disabled, true);
-stored.node('#newerWeek').events.get('click')();
-assert.equal(stored.T.state.week, synthetic.summary.id);
 const one = harness({ twoWeeks: false });
 one.T.state.view = 'trends'; await one.T.render();
 assert.ok(one.node('#view').innerHTML.includes(one.T.t('need_two')), 'Single-week empty state');
