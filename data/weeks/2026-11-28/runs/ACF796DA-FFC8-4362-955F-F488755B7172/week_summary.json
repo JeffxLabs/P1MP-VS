@@ -1,0 +1,294 @@
+{
+  "id": "2026-11-28",
+  "home": {
+    "tag": "P1MP",
+    "name": "JU1CE",
+    "server": "S117"
+  },
+  "opponent": {
+    "tag": "BoSS",
+    "name": "KoreanBoss",
+    "server": ""
+  },
+  "status": "in_progress",
+  "live_tabs": [],
+  "captured_at_server": "2026-11-28T07:09:24-02:00",
+  "capture_window_server": [
+    "2026-11-24T07:04:52-02:00",
+    "2026-11-28T07:09:24-02:00"
+  ],
+  "captured_at_approximate": false,
+  "snapshots": {
+    "mon": {
+      "at": "2026-11-24T07:04:52-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "tue": {
+      "at": "2026-11-25T07:08:39-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "wed": {
+      "at": "2026-11-27T07:05:45-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "thu": {
+      "at": "2026-11-27T07:10:15-02:00",
+      "source": "screenshots",
+      "approximate": false
+    },
+    "fri": {
+      "at": "2026-11-28T07:09:24-02:00",
+      "source": "screenshots",
+      "approximate": false
+    }
+  },
+  "score": {
+    "home": 9,
+    "opp": 0
+  },
+  "wins_remaining": 4,
+  "decided": "home",
+  "leading_live": {},
+  "total_wins": 13,
+  "wins_to_clinch": 7,
+  "weekly_points": {
+    "home": 4282257398,
+    "opp": 3812689133
+  },
+  "official_points": null,
+  "quota": 11400000,
+  "home_quota": {
+    "met": 87,
+    "near": 1,
+    "below": 4,
+    "members": 92,
+    "left": 0
+  },
+  "stages": [
+    {
+      "day": "mon",
+      "stage": 1,
+      "wins": 1,
+      "status": "final",
+      "home_points": 977549380,
+      "opp_points": 857894636,
+      "home_players": 89,
+      "opp_players": 94,
+      "winner": "home",
+      "margin": 119654744,
+      "home_share": 53.26,
+      "home_top10_share": 33.8,
+      "home_median": 8232340,
+      "mvp_home": {
+        "player": "Whiteline876",
+        "points": 60852524,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "호이잇",
+        "points": 60131970,
+        "rank": 2
+      }
+    },
+    {
+      "day": "tue",
+      "stage": 2,
+      "wins": 2,
+      "status": "final",
+      "home_points": 573131535,
+      "opp_points": 515762960,
+      "home_players": 90,
+      "opp_players": 93,
+      "winner": "home",
+      "margin": 57368575,
+      "home_share": 52.63,
+      "home_top10_share": 21.8,
+      "home_median": 6056525,
+      "mvp_home": {
+        "player": "Bad®Boy",
+        "points": 18775986,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "인중맞고싶냐",
+        "points": 18376929,
+        "rank": 2
+      }
+    },
+    {
+      "day": "wed",
+      "stage": 3,
+      "wins": 2,
+      "status": "final",
+      "home_points": 737487103,
+      "opp_points": 608290916,
+      "home_players": 90,
+      "opp_players": 92,
+      "winner": "home",
+      "margin": 129196187,
+      "home_share": 54.8,
+      "home_top10_share": 30.2,
+      "home_median": 7517409,
+      "mvp_home": {
+        "player": "TheRequiem",
+        "points": 28989395,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "BossPenguin",
+        "points": 26621676,
+        "rank": 3
+      }
+    },
+    {
+      "day": "thu",
+      "stage": 4,
+      "wins": 2,
+      "status": "final",
+      "home_points": 1375665656,
+      "opp_points": 1292807795,
+      "home_players": 88,
+      "opp_players": 91,
+      "winner": "home",
+      "margin": 82857861,
+      "home_share": 51.55,
+      "home_top10_share": 24.5,
+      "home_median": 13349777,
+      "mvp_home": {
+        "player": "Eldagrim",
+        "points": 61921082,
+        "rank": 2
+      },
+      "mvp_opp": {
+        "player": "먹깨비",
+        "points": 63185358,
+        "rank": 1
+      }
+    },
+    {
+      "day": "fri",
+      "stage": 5,
+      "wins": 2,
+      "status": "final",
+      "home_points": 618423724,
+      "opp_points": 537932826,
+      "home_players": 91,
+      "opp_players": 90,
+      "winner": "home",
+      "margin": 80490898,
+      "home_share": 53.48,
+      "home_top10_share": 25.4,
+      "home_median": 7192558,
+      "mvp_home": {
+        "player": "Whiteline876",
+        "points": 24997002,
+        "rank": 1
+      },
+      "mvp_opp": {
+        "player": "BossPenguin",
+        "points": 19165909,
+        "rank": 3
+      }
+    },
+    {
+      "day": "sat",
+      "stage": 6,
+      "wins": 4,
+      "status": "pending",
+      "home_points": 0,
+      "opp_points": 0,
+      "home_players": 0,
+      "opp_players": 0,
+      "winner": null,
+      "margin": 0,
+      "home_share": null,
+      "home_top10_share": null,
+      "home_median": 0,
+      "mvp_home": null,
+      "mvp_opp": null
+    }
+  ],
+  "integrity": {
+    "tabs": {
+      "mon": {
+        "rows": 183,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {
+          "81": "name disagree",
+          "183": "name disagree"
+        },
+        "live": false
+      },
+      "tue": {
+        "rows": 183,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {
+          "183": "name disagree"
+        },
+        "live": false
+      },
+      "wed": {
+        "rows": 182,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {
+          "31": "name disagree",
+          "182": "name disagree"
+        },
+        "live": false
+      },
+      "thu": {
+        "rows": 179,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "fri": {
+        "rows": 181,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "sat": {
+        "rows": 0,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      },
+      "week": {
+        "rows": 201,
+        "contiguous": true,
+        "points_descending": true,
+        "missing_points": 0,
+        "missing_names": 0,
+        "unresolved": {},
+        "live": false
+      }
+    },
+    "checksum": {
+      "exact": 201
+    },
+    "checksum_issues": []
+  },
+  "notes": []
+}
